@@ -9,38 +9,52 @@ namespace Dominio.Entidades
     public class Promocion : Entidad
     {
         #region Atributos
-        private string nombre;
-        private string imagen;
+        private int fk_producto;
         private int activo;
-        private DateTime fecha;
+        private float precio;
+        private DateTime fecha_creacion;
+        private DateTime fecha_inicio;
+        private DateTime fecha_fin;
 
         #endregion
 
         #region Get's Set's
 
 
-        public string Nombre
+        public int Fk_Producto
         {
-            get { return nombre; }
+            get { return fk_producto; }
            
-        }
-
-        public string Imagen
-        {
-            get { return imagen; }
-            
         }
 
         public int Activo
         {
             get { return activo; }
             
-        }        
+        }
 
-        public DateTime Fecha
+        public float Precio
         {
-            get { return fecha; }
+            get { return precio; }
             
+        }
+
+        public DateTime Fecha_Creacion
+        {
+            get { return fecha_creacion; }
+
+        }
+
+        public DateTime Fecha_Inicio
+        {
+            get { return fecha_inicio; }
+
+        }
+
+        public DateTime Fecha_Fin
+        {
+            get { return fecha_fin; }
+
         }
 
         
@@ -51,10 +65,12 @@ namespace Dominio.Entidades
         public Promocion()
         {
             Id = 0;
-            nombre = String.Empty;
-            imagen = String.Empty;
+            fk_producto = 0;
+            precio = 0;
             activo = 0;
-            fecha = DateTime.Now;
+            fecha_creacion = DateTime.Now;
+            fecha_inicio = DateTime.Now;
+            fecha_fin = DateTime.Now;
         }
       
         #endregion
