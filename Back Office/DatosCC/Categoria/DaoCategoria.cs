@@ -34,7 +34,7 @@ namespace DatosCC.Categoria
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoCategoria.ParamImagen, SqlDbType.VarChar,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Imagen, false);
+                    ((Dominio.Entidades.Categoria)LaCategoria).Destacado, false);
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,
@@ -42,7 +42,11 @@ namespace DatosCC.Categoria
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoCategoria.ParamFechaCreacion, SqlDbType.Date,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Fecha.ToString(), false);
+                    ((Dominio.Entidades.Categoria)LaCategoria).Fecha_Creacion.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,
+                    ((Dominio.Entidades.Categoria)LaCategoria).Fk_categoria.ToString(), false);
                 parameters.Add(theParam);
 
                 List<Resultado> results = EjecutarStoredProcedure(RecursoCategoria.AddNuevaCategoria, parameters);
