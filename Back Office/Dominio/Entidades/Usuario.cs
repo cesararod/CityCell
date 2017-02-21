@@ -123,24 +123,27 @@ namespace Dominio.Entidades
 
         #region Constructores
 
-        public Usuario()
+        public Usuario(string input_Nombre, string input_Apellido, int input_cedula, string input_telefono, string input_celular,
+            string input_password, DateTime input_FNacimineto, DateTime input_FIngreso, string input_email, string input_tDoc, string input_origen
+            , int input_validacion_dc, int input_valido_dc, int input_fk_rol, int input_fk_genero)
+            : base()
         {
             Id = 0;
-            nombre = String.Empty;
-            apellido = String.Empty;
-            cedula = 0;
-            telefono = String.Empty;
-            celular = String.Empty;
-            password = String.Empty;
-            fecha_nacimiento = DateTime.Now;
-            fecha_ingreso = DateTime.Now;
-            email = String.Empty;
-            tipo_documento = String.Empty;
-            origen = String.Empty;
-            validacion_dc = 0;
-            valido_dc = 0;
-            fk_rol = 0;
-            fk_genero = 0;
+            nombre = input_Nombre;
+            apellido = input_Apellido;
+            cedula = input_cedula;
+            telefono = input_telefono;
+            celular = input_celular;
+            password = input_password;
+            fecha_nacimiento = input_FNacimineto;
+            fecha_ingreso = input_FIngreso;
+            email = input_email;
+            tipo_documento = input_tDoc;
+            origen = input_origen;
+            validacion_dc = input_validacion_dc;
+            valido_dc = input_valido_dc;
+            fk_rol = input_fk_rol;
+            fk_genero = input_fk_genero;
         }
       
         #endregion
