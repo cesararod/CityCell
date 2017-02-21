@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="ExceptionCcConBD.cs" />
     <Compile Include="ExceptionsCity.cs" />
+    <Compile Include="ParametroInvalidoException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,9 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExceptionCcRecursoGeneral.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

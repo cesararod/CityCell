@@ -1,1 +1,4 @@
 c:\users\cesar\documents\visual studio 2013\Projects\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csprojResolveAssemblyReference.cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csprojResolveAssemblyReference.cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.ExceptionCcRecursoGeneral.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csproj.GenerateResource.Cache

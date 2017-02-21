@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>c0132c68-84f2-4341-b402-b9d4d5d82ff1</ProjectGuid>
+    <ProjectGuid>{5912979A-B498-4AF5-89EA-502C7EE078DF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DatosCC</RootNamespace>
@@ -33,6 +33,25 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General.cs" />
+    <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
+    <Compile Include="InterfazDAO\IDao.cs" />
+    <Compile Include="Marca\DaoMarca.cs" />
+    <Compile Include="Marca\RecursoMarca.Designer.cs" />
+    <Compile Include="Parametro.cs" />
+    <Compile Include="RecursoGeneralBD.Designer.cs" />
+    <Compile Include="RecursoGeneralDAO.Designer.cs" />
+    <Compile Include="Resultado.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Marca\RecursoMarca.resx" />
+    <EmbeddedResource Include="RecursoGeneralBD.resx" />
+    <EmbeddedResource Include="RecursoGeneralDAO.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
