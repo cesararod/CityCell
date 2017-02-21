@@ -10,9 +10,20 @@ namespace Dominio.Entidades
     {
         #region Atributos
         private string nombre;
-        private string imagen;
-        private int activo;
-        private DateTime fecha;
+        private string apellido;
+        private int cedula;
+        private string telefono;
+        private string celular;
+        private string password;
+        private DateTime fecha_nacimiento;
+        private DateTime fecha_ingreso;
+        private string email;
+        private string tipo_documento;
+        private string origen;
+        private int validacion_dc;
+        private int valido_dc;
+        private int fk_genero;
+        private int fk_rol;       
 
         #endregion
 
@@ -25,25 +36,89 @@ namespace Dominio.Entidades
            
         }
 
-        public string Imagen
+        public string Apellido
         {
-            get { return imagen; }
+            get { return apellido; }
             
         }
-
-        public int Activo
-        {
-            get { return activo; }
-            
-        }        
-
-        public DateTime Fecha
-        {
-            get { return fecha; }
-            
-        }
-
         
+        public int Cedula
+        {
+            get { return cedula; }
+
+        }
+
+        public string Telefono
+        {
+            get { return telefono; }
+
+        }
+
+        public string Celular
+        {
+            get { return celular; }
+
+        }
+
+        public string Password
+        {
+            get { return password; }
+
+        }
+
+        public DateTime Fecha_Nacimiento
+        {
+            get { return fecha_nacimiento; }
+
+        }
+
+        public DateTime Fecha_Ingreso
+        {
+            get { return fecha_ingreso; }
+
+        }
+
+        public string Email
+        {
+            get { return email; }
+
+        }
+
+        public string Tipo_Documento
+        {
+            get { return tipo_documento; }
+
+        }
+
+        public string Origen
+        {
+            get { return origen; }
+
+        }
+
+        public int Validacion_dc
+        {
+            get { return validacion_dc; }
+
+        }
+
+        public int Valido_dc
+        {
+            get { return valido_dc; }
+
+        }
+
+        public int Fk_Genero
+        {
+            get { return fk_genero; }
+            
+        }
+
+        public int Fk_Rol
+        {
+            get { return fk_rol; }
+
+        }       
         #endregion
 
         #region Constructores
@@ -52,9 +127,20 @@ namespace Dominio.Entidades
         {
             Id = 0;
             nombre = String.Empty;
-            imagen = String.Empty;
-            activo = 0;
-            fecha = DateTime.Now;
+            apellido = String.Empty;
+            cedula = 0;
+            telefono = String.Empty;
+            celular = String.Empty;
+            password = String.Empty;
+            fecha_nacimiento = DateTime.Now;
+            fecha_ingreso = DateTime.Now;
+            email = String.Empty;
+            tipo_documento = String.Empty;
+            origen = String.Empty;
+            validacion_dc = 0;
+            valido_dc = 0;
+            fk_rol = 0;
+            fk_genero = 0;
         }
       
         #endregion
