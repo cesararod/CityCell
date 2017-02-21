@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominio.Entidades
 {
-    public class Promocion : Entidad
+    public class Usuario : Entidad
     {
         #region Atributos
         private string nombre;
@@ -48,7 +48,7 @@ namespace Dominio.Entidades
 
         #region Constructores
 
-        public Promocion()
+        public Usuario()
         {
             Id = 0;
             nombre = String.Empty;

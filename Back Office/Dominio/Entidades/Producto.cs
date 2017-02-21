@@ -8,12 +8,21 @@ namespace Dominio.Entidades
 {
     public class Producto : Entidad
     {
-         #region Atributos
+        #region Atributos
         private string nombre;
-        private string imagen;
         private int activo;
-        private DateTime fecha;
-
+        private string modelo;
+        private string descripcion;
+        private float precio;
+        private int cantidad;
+        private float peso;
+        private float alto;
+        private float ancho;
+        private float largo;
+        private int fk_marca;
+        private int fk_categoria;
+        private DateTime fecha_creacion;
+        private DateTime fecha_modificacion;
         #endregion
 
         #region Get's Set's
@@ -24,26 +33,84 @@ namespace Dominio.Entidades
             get { return nombre; }
            
         }
-
-        public string Imagen
-        {
-            get { return imagen; }
-            
-        }
-
+        
         public int Activo
         {
             get { return activo; }
             
-        }        
+        } 
 
-        public DateTime Fecha
+        public string Modelo
         {
-            get { return fecha; }
+            get { return modelo; }
             
         }
 
-        
+        public string Descripcion
+        {
+            get { return descripcion; }
+
+        }
+
+        public float Precio
+        {
+            get { return precio; }
+
+        }
+
+        public int Cantidad
+        {
+            get { return cantidad; }
+
+        }
+
+        public float Peso
+        {
+            get { return peso; }
+
+        }
+
+        public float Alto
+        {
+            get { return alto; }
+
+        }
+
+        public float Ancho
+        {
+            get { return ancho; }
+
+        }
+
+        public float Largo
+        {
+            get { return largo; }
+
+        }
+
+        public DateTime Fecha_Creacion
+        {
+            get { return fecha_creacion; }
+
+        }
+
+        public DateTime Fecha_Modificacion
+        {
+            get { return fecha_modificacion; }
+
+        }
+
+        public int Fk_Marca
+        {
+            get { return fk_marca; }
+
+        }
+
+        public int Fk_Categoria
+        {
+            get { return fk_categoria; }
+
+        }
         #endregion
 
         #region Constructores
@@ -52,9 +119,19 @@ namespace Dominio.Entidades
         {
             Id = 0;
             nombre = String.Empty;
-            imagen = String.Empty;
             activo = 0;
-            fecha = DateTime.Now;
+            modelo = String.Empty;
+            descripcion = String.Empty;
+            precio = 0;
+            cantidad = 0;
+            peso = 0;
+            alto = 0;
+            ancho = 0;
+            largo = 0;
+            fk_marca = 0;
+            fk_categoria = 0;
+            fecha_creacion = DateTime.Now;
+            fecha_modificacion = DateTime.Now;
         }
       
         #endregion

@@ -10,9 +10,10 @@ namespace Dominio.Entidades
     {
         #region Atributos
         private string nombre;
-        private string imagen;
+        private string destacado;
         private int activo;
-        private DateTime fecha;
+        private DateTime fecha_creacion;
+        private int fk_categoria;
 
         #endregion
 
@@ -25,9 +26,9 @@ namespace Dominio.Entidades
            
         }
 
-        public string Imagen
+        public string Destacado
         {
-            get { return imagen; }
+            get { return destacado; }
             
         }
 
@@ -37,12 +38,17 @@ namespace Dominio.Entidades
             
         }        
 
-        public DateTime Fecha
+        public DateTime Fecha_Creacion
         {
-            get { return fecha; }
+            get { return fecha_creacion; }
             
         }
 
+        public int Fk_categoria
+        {
+            get { return fk_categoria; }
+
+        }  
         
         #endregion
 
@@ -52,9 +58,10 @@ namespace Dominio.Entidades
         {
             Id = 0;
             nombre = String.Empty;
-            imagen = String.Empty;
+            destacado = String.Empty;
             activo = 0;
-            fecha = DateTime.Now;
+            fecha_creacion = DateTime.Now;
+            fk_categoria = 0;
         }
       
         #endregion
