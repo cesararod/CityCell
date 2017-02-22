@@ -7,14 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using Dominio.Entidades;
-
-
 using ExceptionCity;
 using DatosCC.InterfazDAO.BackOffice;
+using DatosCC.InterfazDAO;
 
 namespace DatosCC.Marca
 {
-    public class DaoMarca : General, IDaoMarca
+    public class DaoMarca : General, IDao
     {
         /// <summary>
         /// Método para agregar una marca nueva en la base de datos.
@@ -167,7 +166,6 @@ namespace DatosCC.Marca
 
             return true;
         }
-
 
     }
 }

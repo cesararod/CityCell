@@ -70,11 +70,11 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to M4_ModificarCompania.
+        ///   Looks up a localized string similar to ModificarCategoria.
         /// </summary>
-        internal static string ChangeCompany {
+        internal static string ChangeCategoria {
             get {
-                return ResourceManager.GetString("ChangeCompany", resourceCulture);
+                return ResourceManager.GetString("ChangeCategoria", resourceCulture);
             }
         }
         
@@ -223,11 +223,11 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to M4_EliminarCompania.
+        ///   Looks up a localized string similar to DesactivarCategoria.
         /// </summary>
-        internal static string DeleteCompany {
+        internal static string DeactivateCate {
             get {
-                return ResourceManager.GetString("DeleteCompany", resourceCulture);
+                return ResourceManager.GetString("DeactivateCate", resourceCulture);
             }
         }
         
@@ -273,6 +273,15 @@ namespace DatosCC.Categoria {
         internal static string ParamApellido {
             get {
                 return ResourceManager.GetString("ParamApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @destacado.
+        /// </summary>
+        internal static string ParamDestacado {
+            get {
+                return ResourceManager.GetString("ParamDestacado", resourceCulture);
             }
         }
         

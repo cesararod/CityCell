@@ -7,18 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using ExceptionCity;
-using DatosCC.InterfazDAO.BackOffice;
+using DatosCC.InterfazDAO;
 
 namespace DatosCC.Categoria
 {
-    public class DaoCategoria : General, IDaoMarca
+    public class DaoCategoria : General, IDao
     {
         /// <summary>
         /// Método para agregar una marca nueva en la base de datos.
         /// </summary>
         /// <param name="LaCategoria">Objeto de tipo Categoria para agregar en la base de datos.</param>
         /// <returns>True si fue agregada exitosamente.</returns>
-
         public bool Agregar(Entidad LaCategoria)
         {
 
@@ -29,26 +28,19 @@ namespace DatosCC.Categoria
 
                 //Las dos lineas siguientes tienen que repetirlas tantas veces como parametros reciba su stored procedure a llamar
                 //Parametro recibe (nombre del primer parametro en su stored procedure, el tipo de dato, el valor, false)
-                theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Nombre, false);
+                theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar,((Dominio.Entidades.Categoria)LaCategoria).Nombre, false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoCategoria.ParamImagen, SqlDbType.VarChar,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Destacado, false);
+                theParam = new Parametro(RecursoCategoria.ParamDestacado, SqlDbType.Int, LaCategoria.Id.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Activo.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,((Dominio.Entidades.Categoria)LaCategoria).Activo.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoCategoria.ParamFechaCreacion, SqlDbType.Date,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Fecha_Creacion.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamFechaCreacion, SqlDbType.Date,((Dominio.Entidades.Categoria)LaCategoria).Fecha_Creacion.ToString(), 
+                    false);
                 parameters.Add(theParam);
-
-                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,
-                    ((Dominio.Entidades.Categoria)LaCategoria).Fk_categoria.ToString(), false);
-                parameters.Add(theParam);
-
+                
                 List<Resultado> results = EjecutarStoredProcedure(RecursoCategoria.AddNuevaCategoria, parameters);
 
             }
@@ -61,6 +53,98 @@ namespace DatosCC.Categoria
 
             }
             catch (System.Data.SqlClient.SqlException ex)
+            {
+
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Metodo para modificar un Categoria en la base de datos.
+        /// </summary>
+        /// <param name="parametro">objeto de tipo Categoria para modificar en bd</param>
+        /// <returns>true si fue modificado</returns>
+        public bool Modificar(Entidad LaCategoria)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Categoria _LaCategoria = (Dominio.Entidades.Categoria)LaCategoria;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar, _LaCategoria.Nombre, false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int, _LaCategoria.Activo.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoCategoria.ParamDestacado, SqlDbType.Int, _LaCategoria.Destacado.ToString(), false);
+                parameters.Add(theParam);
+                
+
+                EjecutarStoredProcedure(RecursoCategoria.ChangeCategoria, parameters);
+
+            }
+            catch (FormatException ex)
+            {
+
+            }
+            catch (ArgumentNullException ex)
+            {
+
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Metodo para modificar un Categoria en la base de datos.
+        /// </summary>
+        /// <param name="parametro">objeto de tipo Categoria para desactivar en bd</param>
+        /// <returns>true si fue desactivado</returns>
+
+        public bool Desactivar(Entidad LaCategoria)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Categoria _LaCategoria = (Dominio.Entidades.Categoria)LaCategoria;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                EjecutarStoredProcedure(RecursoCategoria.DeactivateCate, parameters);
+
+            }
+            catch (FormatException ex)
+            {
+
+            }
+            catch (ArgumentNullException ex)
             {
 
             }

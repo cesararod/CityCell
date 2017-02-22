@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using ExceptionCity;
-using DatosCC.InterfazDAO.BackOffice;
+using DatosCC.InterfazDAO;
 
 namespace DatosCC.Producto
 {
-    public class DaoProducto
+    public class DaoProducto : General, IDao
     {
     }
 }

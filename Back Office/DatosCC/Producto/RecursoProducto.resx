@@ -117,74 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddNuevaCategoria" xml:space="preserve">
-    <value>AgregarCategoria</value>
+  <data name="AddNuevoProducto" xml:space="preserve">
+    <value>AgregarProducto</value>
   </data>
-  <data name="ChangeCategoria" xml:space="preserve">
-    <value>ModificarCategoria</value>
+  <data name="ChangeProducto" xml:space="preserve">
+    <value>ModificarProducto</value>
   </data>
-  <data name="Codigo_Error_Formato" xml:space="preserve">
-    <value>TGE_00_001</value>
-  </data>
-  <data name="ComAcronymCompany" xml:space="preserve">
-    <value>com_acronimo</value>
-  </data>
-  <data name="ComBudgetCompany" xml:space="preserve">
-    <value>com_presupuesto</value>
-  </data>
-  <data name="ComDeadlineCompany" xml:space="preserve">
-    <value>com_plazo_pago</value>
-  </data>
-  <data name="ComEmailCompany" xml:space="preserve">
-    <value>com_email</value>
-  </data>
-  <data name="ComIdCompany" xml:space="preserve">
-    <value>com_id</value>
-  </data>
-  <data name="ComIdPlace" xml:space="preserve">
-    <value>fk_lug_dir_id</value>
-  </data>
-  <data name="ComNameCompany" xml:space="preserve">
-    <value>com_nombre</value>
-  </data>
-  <data name="ComRegisterDateCompany" xml:space="preserve">
-    <value>com_fecha_registro</value>
-  </data>
-  <data name="ComRifCompany" xml:space="preserve">
-    <value>com_rif</value>
-  </data>
-  <data name="ComStatusCompany" xml:space="preserve">
-    <value>com_status</value>
-  </data>
-  <data name="ComTelephoneCompany" xml:space="preserve">
-    <value>com_telefono</value>
-  </data>
-  <data name="ConsultCompanies" xml:space="preserve">
-    <value>M4_ConsultarCompanias</value>
-  </data>
-  <data name="ConsultCompany" xml:space="preserve">
-    <value>M4_ConsultarCompania</value>
-  </data>
-  <data name="ConsultEnableCompanies" xml:space="preserve">
-    <value>M4_ConsultarCompaniasActivas</value>
-  </data>
-  <data name="ConsultLastCompanyId" xml:space="preserve">
-    <value>M4_ConsultarIdUltimaCompania</value>
-  </data>
-  <data name="DeactivateCate" xml:space="preserve">
-    <value>DesactivarCategoria</value>
-  </data>
-  <data name="DisableAbleComany" xml:space="preserve">
-    <value>M4_InhabilitarHabilitarCompania</value>
-  </data>
-  <data name="MensajeFinInfoLogger" xml:space="preserve">
-    <value>Salida del Método</value>
-  </data>
-  <data name="MensajeInicioInfoLogger" xml:space="preserve">
-    <value>Entrada en el Método</value>
-  </data>
-  <data name="Mensaje_Error_Formato" xml:space="preserve">
-    <value>Error de parseo</value>
+  <data name="DeactivateProducto" xml:space="preserve">
+    <value>DesactivarProducto</value>
   </data>
   <data name="ParamApellido" xml:space="preserve">
     <value>@apellido</value>
