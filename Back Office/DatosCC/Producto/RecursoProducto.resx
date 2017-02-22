@@ -126,43 +126,52 @@
   <data name="DeactivateProducto" xml:space="preserve">
     <value>DesactivarProducto</value>
   </data>
-  <data name="ParamApellido" xml:space="preserve">
-    <value>@apellido</value>
+  <data name="ParamAlto" xml:space="preserve">
+    <value>@Alto</value>
   </data>
-  <data name="ParamDestacado" xml:space="preserve">
-    <value>@destacado</value>
+  <data name="ParamAncho" xml:space="preserve">
+    <value>@ancho</value>
   </data>
-  <data name="ParamEmail" xml:space="preserve">
-    <value>@email</value>
+  <data name="ParamCantidad" xml:space="preserve">
+    <value>@cantidad</value>
+  </data>
+  <data name="ParamDescripcion" xml:space="preserve">
+    <value>@descripcion</value>
   </data>
   <data name="ParamFechaCreacion" xml:space="preserve">
     <value>@fecha_creacion</value>
   </data>
+  <data name="ParamFechaModificacion" xml:space="preserve">
+    <value>@fecha_mod</value>
+  </data>
   <data name="ParamId" xml:space="preserve">
     <value>@id</value>
   </data>
-  <data name="ParamIdLugar" xml:space="preserve">
-    <value>@id_lugar</value>
+  <data name="ParamIdCategoria" xml:space="preserve">
+    <value>@id_categoria</value>
+  </data>
+  <data name="ParamIdMarca" xml:space="preserve">
+    <value>@id_marca</value>
   </data>
   <data name="ParamImagen" xml:space="preserve">
     <value>@imagen</value>
   </data>
+  <data name="Paramlargo" xml:space="preserve">
+    <value>@largo</value>
+  </data>
+  <data name="ParamModelo" xml:space="preserve">
+    <value>@modelo</value>
+  </data>
   <data name="ParamNombre" xml:space="preserve">
     <value>@nombre</value>
   </data>
-  <data name="ParamPlazoPago" xml:space="preserve">
-    <value>@plazo_pago</value>
+  <data name="ParamPeso" xml:space="preserve">
+    <value>@peso</value>
   </data>
-  <data name="ParamPresupuesto" xml:space="preserve">
-    <value>@presupuesto</value>
+  <data name="ParamPrecio" xml:space="preserve">
+    <value>@precio</value>
   </data>
-  <data name="ParamRif" xml:space="preserve">
-    <value>@rif</value>
-  </data>
-  <data name="ParamStatus" xml:space="preserve">
-    <value>@activo</value>
-  </data>
-  <data name="ParamTelefono" xml:space="preserve">
-    <value>@telefono</value>
+  <data name="Paramstatus" xml:space="preserve">
+    <value>@valido</value>
   </data>
 </root>

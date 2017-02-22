@@ -88,29 +88,38 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @apellido.
+        ///   Looks up a localized string similar to @Alto.
         /// </summary>
-        internal static string ParamApellido {
+        internal static string ParamAlto {
             get {
-                return ResourceManager.GetString("ParamApellido", resourceCulture);
+                return ResourceManager.GetString("ParamAlto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @destacado.
+        ///   Looks up a localized string similar to @ancho.
         /// </summary>
-        internal static string ParamDestacado {
+        internal static string ParamAncho {
             get {
-                return ResourceManager.GetString("ParamDestacado", resourceCulture);
+                return ResourceManager.GetString("ParamAncho", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @email.
+        ///   Looks up a localized string similar to @cantidad.
         /// </summary>
-        internal static string ParamEmail {
+        internal static string ParamCantidad {
             get {
-                return ResourceManager.GetString("ParamEmail", resourceCulture);
+                return ResourceManager.GetString("ParamCantidad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @descripcion.
+        /// </summary>
+        internal static string ParamDescripcion {
+            get {
+                return ResourceManager.GetString("ParamDescripcion", resourceCulture);
             }
         }
         
@@ -124,6 +133,15 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @fecha_mod.
+        /// </summary>
+        internal static string ParamFechaModificacion {
+            get {
+                return ResourceManager.GetString("ParamFechaModificacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @id.
         /// </summary>
         internal static string ParamId {
@@ -133,11 +151,20 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @id_lugar.
+        ///   Looks up a localized string similar to @id_categoria.
         /// </summary>
-        internal static string ParamIdLugar {
+        internal static string ParamIdCategoria {
             get {
-                return ResourceManager.GetString("ParamIdLugar", resourceCulture);
+                return ResourceManager.GetString("ParamIdCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @id_marca.
+        /// </summary>
+        internal static string ParamIdMarca {
+            get {
+                return ResourceManager.GetString("ParamIdMarca", resourceCulture);
             }
         }
         
@@ -151,6 +178,24 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @largo.
+        /// </summary>
+        internal static string Paramlargo {
+            get {
+                return ResourceManager.GetString("Paramlargo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @modelo.
+        /// </summary>
+        internal static string ParamModelo {
+            get {
+                return ResourceManager.GetString("ParamModelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @nombre.
         /// </summary>
         internal static string ParamNombre {
@@ -160,47 +205,29 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @plazo_pago.
+        ///   Looks up a localized string similar to @peso.
         /// </summary>
-        internal static string ParamPlazoPago {
+        internal static string ParamPeso {
             get {
-                return ResourceManager.GetString("ParamPlazoPago", resourceCulture);
+                return ResourceManager.GetString("ParamPeso", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @presupuesto.
+        ///   Looks up a localized string similar to @precio.
         /// </summary>
-        internal static string ParamPresupuesto {
+        internal static string ParamPrecio {
             get {
-                return ResourceManager.GetString("ParamPresupuesto", resourceCulture);
+                return ResourceManager.GetString("ParamPrecio", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @rif.
+        ///   Looks up a localized string similar to @valido.
         /// </summary>
-        internal static string ParamRif {
+        internal static string Paramstatus {
             get {
-                return ResourceManager.GetString("ParamRif", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @activo.
-        /// </summary>
-        internal static string ParamStatus {
-            get {
-                return ResourceManager.GetString("ParamStatus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @telefono.
-        /// </summary>
-        internal static string ParamTelefono {
-            get {
-                return ResourceManager.GetString("ParamTelefono", resourceCulture);
+                return ResourceManager.GetString("Paramstatus", resourceCulture);
             }
         }
     }
