@@ -11,6 +11,7 @@ namespace DatosCC.InterfazDAO
     {
         bool Agregar(Dominio.Entidad parametro);
         bool Modificar(Dominio.Entidad parametro);
+        bool Desactivar(Dominio.Entidad parametro);
         Dominio.Entidad ConsultarXId(Dominio.Entidad parametro);
         List<Entidad> ConsultarTodos();  
     }

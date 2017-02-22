@@ -70,11 +70,11 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to M4_ModificarCompania.
+        ///   Looks up a localized string similar to ModificarMarca.
         /// </summary>
-        internal static string ChangeCompany {
+        internal static string ChangeMarca {
             get {
-                return ResourceManager.GetString("ChangeCompany", resourceCulture);
+                return ResourceManager.GetString("ChangeMarca", resourceCulture);
             }
         }
         
@@ -223,11 +223,11 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to M4_EliminarCompania.
+        ///   Looks up a localized string similar to DesactivarMarca.
         /// </summary>
-        internal static string DeleteCompany {
+        internal static string DeactivateMarca {
             get {
-                return ResourceManager.GetString("DeleteCompany", resourceCulture);
+                return ResourceManager.GetString("DeactivateMarca", resourceCulture);
             }
         }
         

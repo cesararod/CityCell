@@ -120,8 +120,8 @@
   <data name="AddNuevaMarca" xml:space="preserve">
     <value>AgregarMarca</value>
   </data>
-  <data name="ChangeCompany" xml:space="preserve">
-    <value>M4_ModificarCompania</value>
+  <data name="ChangeMarca" xml:space="preserve">
+    <value>ModificarMarca</value>
   </data>
   <data name="Codigo_Error_Formato" xml:space="preserve">
     <value>TGE_00_001</value>
@@ -171,8 +171,8 @@
   <data name="ConsultLastCompanyId" xml:space="preserve">
     <value>M4_ConsultarIdUltimaCompania</value>
   </data>
-  <data name="DeleteCompany" xml:space="preserve">
-    <value>M4_EliminarCompania</value>
+  <data name="DeactivateMarca" xml:space="preserve">
+    <value>DesactivarMarca</value>
   </data>
   <data name="DisableAbleComany" xml:space="preserve">
     <value>M4_InhabilitarHabilitarCompania</value>

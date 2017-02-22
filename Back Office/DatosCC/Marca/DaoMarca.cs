@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+using Dominio.Entidades;
+
+
 using ExceptionCity;
 using DatosCC.InterfazDAO.BackOffice;
 
@@ -67,6 +70,99 @@ namespace DatosCC.Marca
             catch (Exception ex)
             {
                
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Metodo para modificar un marca en la base de datos.
+        /// </summary>
+        /// <param name="parametro">objeto de tipo Marca para modificar en bd</param>
+        /// <returns>true si fue modificado</returns>
+        public bool Modificar(Entidad LaMarca)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Marca _LaMarca = (Dominio.Entidades.Marca)LaMarca;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoMarca.ParamNombre, SqlDbType.VarChar, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoMarca.ParamImagen, SqlDbType.VarChar, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
+                EjecutarStoredProcedure(RecursoMarca.ChangeMarca, parameters);
+
+            }
+            catch (FormatException ex)
+            {
+                
+            }
+            catch (ArgumentNullException ex)
+            {
+                
+            }
+            catch (ExceptionCcConBD ex)
+            {
+               
+            }
+            catch (Exception ex)
+            {
+               
+            }
+           
+            return true;
+        }
+
+        /// <summary>
+        /// Metodo para modificar un marca en la base de datos.
+        /// </summary>
+        /// <param name="parametro">objeto de tipo Marca para desactivar en bd</param>
+        /// <returns>true si fue desactivado</returns>
+       
+        public bool Desactivar(Entidad LaMarca)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Marca _LaMarca = (Dominio.Entidades.Marca)LaMarca;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
+                EjecutarStoredProcedure(RecursoMarca.DeactivateMarca, parameters);
+
+            }
+            catch (FormatException ex)
+            {
+
+            }
+            catch (ArgumentNullException ex)
+            {
+
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+
             }
 
             return true;
