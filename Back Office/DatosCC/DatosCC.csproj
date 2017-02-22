@@ -35,23 +35,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria\DaoCategoria.cs" />
+    <Compile Include="Categoria\RecursoCategoria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoCategoria.resx</DependentUpon>
+    </Compile>
     <Compile Include="General.cs" />
     <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
     <Compile Include="InterfazDAO\IDao.cs" />
     <Compile Include="Marca\DaoMarca.cs" />
     <Compile Include="Marca\RecursoMarca.Designer.cs" />
     <Compile Include="Parametro.cs" />
+    <Compile Include="Producto\DaoProducto.cs" />
+    <Compile Include="Promocion\DaoPromocion.cs" />
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
     <Compile Include="Resultado.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Categoria\RecursoCategoria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoCategoria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Marca\RecursoMarca.resx" />
     <EmbeddedResource Include="RecursoGeneralBD.resx" />
     <EmbeddedResource Include="RecursoGeneralDAO.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{21df7daf-9a2e-496b-8ec5-03e331a51318}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExceptionCity\ExceptionCity.csproj">
+      <Project>{c318f8c5-3ae7-45ae-9ce3-6833b90a0cc9}</Project>
+      <Name>ExceptionCity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
