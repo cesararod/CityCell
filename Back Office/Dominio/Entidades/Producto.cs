@@ -9,6 +9,7 @@ namespace Dominio.Entidades
     public class Producto : Entidad
     {
         #region Atributos
+        private int id;
         private string nombre;
         private int activo;
         private string modelo;
@@ -27,6 +28,10 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
+        public int ID
+        {
+            get { return id; }
+        } 
 
         public string Nombre
         {
@@ -132,6 +137,27 @@ namespace Dominio.Entidades
             fk_categoria = 0;
             fecha_creacion = DateTime.Now;
             fecha_modificacion = DateTime.Now;
+        }
+
+        public Producto(int inputId, string inputNombre, int inputActivo, string inputModelo, string inputDescripcion, float inputPrecio,
+            int inputCantidad, float inputPeso, float inputAlto, float inputAncho, float inputLargo, DateTime inputFechaCrea, DateTime inputFechaMod
+            , int inputMarca, int inputCategoria)    
+        {
+            Id = inputId;
+            nombre = inputNombre;
+            activo = inputActivo;
+            modelo = inputModelo;
+            descripcion = inputDescripcion;
+            precio = inputPrecio;
+            cantidad = inputCantidad;
+            peso = inputPeso;
+            alto = inputAlto;
+            ancho = inputAncho;
+            largo = inputLargo;
+            fecha_creacion = inputFechaCrea;
+            fecha_modificacion = inputFechaMod;
+            fk_marca = inputMarca;
+            fk_categoria = inputCategoria;
         }
       
         #endregion

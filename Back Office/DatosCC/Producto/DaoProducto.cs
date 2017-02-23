@@ -188,5 +188,146 @@ namespace DatosCC.Producto
 
             return true;
         }
+
+        public Entidad ConsultarXId(Entidad parametro)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Producto _ElProducto = (Dominio.Entidades.Producto)parametro;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoProducto.ParamId, SqlDbType.Int,
+                    _ElProducto.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoProducto.ConsultProductoXId, parameters);
+
+                //Guardar los datos 
+                DataRow row = dt.Rows[0];
+
+                int _id = int.Parse(row[RecursoProducto.ProductoId].ToString());
+                String _nombre = row[RecursoProducto.ProductoNombre].ToString();
+                int _activo = int.Parse(row[RecursoProducto.ProductoActivo].ToString());
+                String _modelo = row[RecursoProducto.ProductoModelo].ToString();
+                String _descripcion = row[RecursoProducto.ProductoDescripcion].ToString();
+                float _precio = float.Parse(row[RecursoProducto.ProductoPrecio].ToString());
+                int _cantidad = int.Parse(row[RecursoProducto.ProductoCantidad].ToString());
+                float _peso = float.Parse(row[RecursoProducto.ProductoPeso].ToString());
+                float _alto = float.Parse(row[RecursoProducto.ProductoAlto].ToString());
+                float _ancho = float.Parse(row[RecursoProducto.ProductoAncho].ToString());
+                float _largo = float.Parse(row[RecursoProducto.ProductoLargo].ToString());
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoProducto.ProductoFechaCre].ToString());
+                DateTime _fechaModificacion = DateTime.Parse(row[RecursoProducto.ProductoFechaMod].ToString());
+                int _fkMarca = int.Parse(row[RecursoProducto.ProductoFkMARCA].ToString());
+                int _fkCategoria = int.Parse(row[RecursoProducto.ProductofKCategoria].ToString());
+
+                //Creo un objeto de tipo Compania con los datos de la fila y lo guardo.
+                _ElProducto = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso, 
+                                                              _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria);
+                //_ElProducto.Id = _id;
+
+            }
+            catch (FormatException ex)
+            {
+                
+                /*throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoProducto.Codigo,
+                     RecursoProducto.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+                
+                /*throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoProducto.Codigo,
+                    RecursoProducto.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+                
+                /*throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoProducto.Codigo,
+                   RecursoProducto.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+                /*
+                throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoProducto.Codigo,
+                    RecursoProducto.MensajeOtro, ex);*/
+            }
+
+            return _ElProducto;
+        }
+
+        /// <summary>
+        /// Funcion que permite buscar todas las facturas en la base de datos
+        /// </summary>
+        /// <returns>Retorna la lista con todas las facturas</returns>
+        public List<Entidad> ConsultarTodos()
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Parametro theParam = new Parametro();
+            List<Entidad> listProducto = new List<Entidad>();
+
+            try
+            {
+                //Guardo la tabla que me regresa el procedimiento de consultar contactos
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoProducto.ConsultProductos, parameters);
+
+                //Guardar los datos 
+                foreach (DataRow row in dt.Rows)
+                {
+
+                    int _id = int.Parse(row[RecursoProducto.ProductoId].ToString());
+                    String _nombre = row[RecursoProducto.ProductoNombre].ToString();
+                    int _activo = int.Parse(row[RecursoProducto.ProductoActivo].ToString());
+                    String _modelo = row[RecursoProducto.ProductoModelo].ToString();
+                    String _descripcion = row[RecursoProducto.ProductoDescripcion].ToString();
+                    float _precio = float.Parse(row[RecursoProducto.ProductoPrecio].ToString());
+                    int _cantidad = int.Parse(row[RecursoProducto.ProductoCantidad].ToString());
+                    float _peso = float.Parse(row[RecursoProducto.ProductoPeso].ToString());
+                    float _alto = float.Parse(row[RecursoProducto.ProductoAlto].ToString());
+                    float _ancho = float.Parse(row[RecursoProducto.ProductoAncho].ToString());
+                    float _largo = float.Parse(row[RecursoProducto.ProductoLargo].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoProducto.ProductoFechaCre].ToString());
+                    DateTime _fechaModificacion = DateTime.Parse(row[RecursoProducto.ProductoFechaMod].ToString());
+                    int _fkMarca = int.Parse(row[RecursoProducto.ProductoFkMARCA].ToString());
+                    int _fkCategoria = int.Parse(row[RecursoProducto.ProductofKCategoria].ToString());
+
+
+                    Dominio.Entidades.Producto _ElProducto = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso,
+                                                              _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria);
+                    //_ElProducto.Id = facId;
+
+                    listProducto.Add(_ElProducto);
+                }
+
+
+            }
+            catch (FormatException ex)
+            {
+                
+               /* throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoProducto.Codigo,
+                     RecursoProducto.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+                
+               /* throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoProducto.Codigo,
+                    RecursoProducto.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+               
+                /*throw new ExceptionsCity(RecursoProducto.Codigo,
+                   RecursoProducto.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+
+                /*throw new ExceptionsCity(RecursoProducto.Codigo,
+                    RecursoProducto.MensajeOtro, ex);*/
+            }
+
+            return listProducto;
+        }
+
     }
 }
