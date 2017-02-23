@@ -113,9 +113,13 @@ namespace DatosCC.Producto
 
                 theParam = new Parametro(RecursoProducto.ParamPrecio, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Precio.ToString(),
                     false);
-                parameters.Add(theParam);                
+                parameters.Add(theParam);
 
-                List<Resultado> results = EjecutarStoredProcedure(RecursoProducto.AddNuevoProducto, parameters);
+                theParam = new Parametro(RecursoProducto.ParamCantidad, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Cantidad.ToString(),
+                    false);
+                parameters.Add(theParam);  
+
+                List<Resultado> results = EjecutarStoredProcedure(RecursoProducto.ChangeProducto, parameters);
 
             }
             catch (ArgumentNullException ex)
@@ -162,7 +166,7 @@ namespace DatosCC.Producto
                     false);
                 parameters.Add(theParam);
                 
-                List<Resultado> results = EjecutarStoredProcedure(RecursoProducto.AddNuevoProducto, parameters);
+                List<Resultado> results = EjecutarStoredProcedure(RecursoProducto.DeactivateProducto, parameters);
 
             }
             catch (ArgumentNullException ex)
