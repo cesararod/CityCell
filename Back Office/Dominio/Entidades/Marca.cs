@@ -9,6 +9,7 @@ namespace Dominio.Entidades
     public class Marca: Entidad
     {
         #region Atributos
+        private int id;
         private string nombre;
         private string imagen;
         private int activo;
@@ -18,6 +19,12 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
+
+        public int Id
+        {
+            get { return id; }
+
+        }        
 
         public string Nombre
         {
@@ -50,13 +57,21 @@ namespace Dominio.Entidades
 
         public Marca()
         {
-            Id = 0;
+            id = 0;
             nombre = String.Empty;
             imagen = String.Empty;
             activo = 0;
             fecha = DateTime.Now;
         }
-      
+
+        public Marca(int inputId, string inputNombre, string inputImagen, int inputActivo, DateTime inputFecha)
+        {
+            id = 0;
+            nombre = String.Empty;
+            imagen = String.Empty;
+            activo = inputActivo;
+            fecha = DateTime.Now;
+        }
         #endregion
     }
 }

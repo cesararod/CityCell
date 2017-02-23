@@ -133,15 +133,6 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Descripcion.
-        /// </summary>
-        internal static string MarcaDescripcion {
-            get {
-                return ResourceManager.GetString("MarcaDescripcion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Fecha_Creacion.
         /// </summary>
         internal static string MarcaFechaCre {
@@ -183,6 +174,15 @@ namespace DatosCC.Marca {
         internal static string MarcaId {
             get {
                 return ResourceManager.GetString("MarcaId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Imagen.
+        /// </summary>
+        internal static string MarcaImagen {
+            get {
+                return ResourceManager.GetString("MarcaImagen", resourceCulture);
             }
         }
         

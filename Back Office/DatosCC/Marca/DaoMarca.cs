@@ -186,11 +186,11 @@ namespace DatosCC.Marca
 
                 int _id = int.Parse(row[RecursoMarca.MarcaId].ToString());
                 String _nombre = row[RecursoMarca.MarcaNombre].ToString();
-                String _imagen = row[RecursoMarca.MarcaDescripcion].ToString();
+                String _imagen = row[RecursoMarca.MarcaImagen].ToString();
                 int _activo = int.Parse(row[RecursoMarca.MarcaActivo].ToString());
                 DateTime _fechaCreacion = DateTime.Parse(row[RecursoMarca.MarcaFechaCre].ToString());
 
-                //_LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);
+                _LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);
                 //_LaMarca.Id = _id;
 
             }
@@ -243,15 +243,15 @@ namespace DatosCC.Marca
 
                     int _id = int.Parse(row[RecursoMarca.MarcaId].ToString());
                     String _nombre = row[RecursoMarca.MarcaNombre].ToString();
-                    String _destacado = row[RecursoMarca.MarcaDescripcion].ToString();
+                    String _imagen = row[RecursoMarca.MarcaImagen].ToString();
                     int _activo = int.Parse(row[RecursoMarca.MarcaActivo].ToString());
                     DateTime _fechaCreacion = DateTime.Parse(row[RecursoMarca.MarcaFechaCre].ToString());
 
 
-                    //Dominio.Entidades.Marca _LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkMarca);
+                    Dominio.Entidades.Marca _LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);
                     //_ElProducto.Id = facId;
 
-                    //listMarca.Add(_LaMarca);
+                    listMarca.Add(_LaMarca);
                 }
 
 

@@ -141,9 +141,6 @@
   <data name="MarcaCantidad" xml:space="preserve">
     <value>cantidad</value>
   </data>
-  <data name="MarcaDescripcion" xml:space="preserve">
-    <value>Descripcion</value>
-  </data>
   <data name="MarcaFechaCre" xml:space="preserve">
     <value>Fecha_Creacion</value>
   </data>
@@ -158,6 +155,9 @@
   </data>
   <data name="MarcaId" xml:space="preserve">
     <value>id</value>
+  </data>
+  <data name="MarcaImagen" xml:space="preserve">
+    <value>Imagen</value>
   </data>
   <data name="MarcaModelo" xml:space="preserve">
     <value>Modelo</value>
