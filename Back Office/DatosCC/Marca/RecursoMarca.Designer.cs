@@ -88,137 +88,20 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to com_acronimo.
+        ///   Looks up a localized string similar to ConsultaMarca.
         /// </summary>
-        internal static string ComAcronymCompany {
+        internal static string ConsultMarcas {
             get {
-                return ResourceManager.GetString("ComAcronymCompany", resourceCulture);
+                return ResourceManager.GetString("ConsultMarcas", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to com_presupuesto.
+        ///   Looks up a localized string similar to ConsultaMarcaId.
         /// </summary>
-        internal static string ComBudgetCompany {
+        internal static string ConsultMarcaXId {
             get {
-                return ResourceManager.GetString("ComBudgetCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_plazo_pago.
-        /// </summary>
-        internal static string ComDeadlineCompany {
-            get {
-                return ResourceManager.GetString("ComDeadlineCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_email.
-        /// </summary>
-        internal static string ComEmailCompany {
-            get {
-                return ResourceManager.GetString("ComEmailCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_id.
-        /// </summary>
-        internal static string ComIdCompany {
-            get {
-                return ResourceManager.GetString("ComIdCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to fk_lug_dir_id.
-        /// </summary>
-        internal static string ComIdPlace {
-            get {
-                return ResourceManager.GetString("ComIdPlace", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_nombre.
-        /// </summary>
-        internal static string ComNameCompany {
-            get {
-                return ResourceManager.GetString("ComNameCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_fecha_registro.
-        /// </summary>
-        internal static string ComRegisterDateCompany {
-            get {
-                return ResourceManager.GetString("ComRegisterDateCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_rif.
-        /// </summary>
-        internal static string ComRifCompany {
-            get {
-                return ResourceManager.GetString("ComRifCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_status.
-        /// </summary>
-        internal static string ComStatusCompany {
-            get {
-                return ResourceManager.GetString("ComStatusCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to com_telefono.
-        /// </summary>
-        internal static string ComTelephoneCompany {
-            get {
-                return ResourceManager.GetString("ComTelephoneCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to M4_ConsultarCompanias.
-        /// </summary>
-        internal static string ConsultCompanies {
-            get {
-                return ResourceManager.GetString("ConsultCompanies", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to M4_ConsultarCompania.
-        /// </summary>
-        internal static string ConsultCompany {
-            get {
-                return ResourceManager.GetString("ConsultCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to M4_ConsultarCompaniasActivas.
-        /// </summary>
-        internal static string ConsultEnableCompanies {
-            get {
-                return ResourceManager.GetString("ConsultEnableCompanies", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to M4_ConsultarIdUltimaCompania.
-        /// </summary>
-        internal static string ConsultLastCompanyId {
-            get {
-                return ResourceManager.GetString("ConsultLastCompanyId", resourceCulture);
+                return ResourceManager.GetString("ConsultMarcaXId", resourceCulture);
             }
         }
         
@@ -232,11 +115,110 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to M4_InhabilitarHabilitarCompania.
+        ///   Looks up a localized string similar to Activo.
         /// </summary>
-        internal static string DisableAbleComany {
+        internal static string MarcaActivo {
             get {
-                return ResourceManager.GetString("DisableAbleComany", resourceCulture);
+                return ResourceManager.GetString("MarcaActivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cantidad.
+        /// </summary>
+        internal static string MarcaCantidad {
+            get {
+                return ResourceManager.GetString("MarcaCantidad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descripcion.
+        /// </summary>
+        internal static string MarcaDescripcion {
+            get {
+                return ResourceManager.GetString("MarcaDescripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha_Creacion.
+        /// </summary>
+        internal static string MarcaFechaCre {
+            get {
+                return ResourceManager.GetString("MarcaFechaCre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha_Modificacion.
+        /// </summary>
+        internal static string MarcaFechaMod {
+            get {
+                return ResourceManager.GetString("MarcaFechaMod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categoria_id.
+        /// </summary>
+        internal static string MarcafKCategoria {
+            get {
+                return ResourceManager.GetString("MarcafKCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca_Id.
+        /// </summary>
+        internal static string MarcaFkMARCA {
+            get {
+                return ResourceManager.GetString("MarcaFkMARCA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id.
+        /// </summary>
+        internal static string MarcaId {
+            get {
+                return ResourceManager.GetString("MarcaId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modelo.
+        /// </summary>
+        internal static string MarcaModelo {
+            get {
+                return ResourceManager.GetString("MarcaModelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        internal static string MarcaNombre {
+            get {
+                return ResourceManager.GetString("MarcaNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Peso.
+        /// </summary>
+        internal static string MarcaPeso {
+            get {
+                return ResourceManager.GetString("MarcaPeso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Precio.
+        /// </summary>
+        internal static string MarcaPrecio {
+            get {
+                return ResourceManager.GetString("MarcaPrecio", resourceCulture);
             }
         }
         

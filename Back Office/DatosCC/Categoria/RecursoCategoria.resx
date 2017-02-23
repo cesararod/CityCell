@@ -120,6 +120,24 @@
   <data name="AddNuevaCategoria" xml:space="preserve">
     <value>AgregarCategoria</value>
   </data>
+  <data name="CategoriaActivo" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="CategoriaDestacado" xml:space="preserve">
+    <value>Destacado</value>
+  </data>
+  <data name="CategoriaFechaCre" xml:space="preserve">
+    <value>Fecha_Creacion</value>
+  </data>
+  <data name="CategoriafKCategoria" xml:space="preserve">
+    <value>Categoria_id</value>
+  </data>
+  <data name="CategoriaId" xml:space="preserve">
+    <value>id</value>
+  </data>
+  <data name="CategoriaNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
   <data name="ChangeCategoria" xml:space="preserve">
     <value>ModificarCategoria</value>
   </data>
@@ -230,50 +248,5 @@
   </data>
   <data name="ParamTelefono" xml:space="preserve">
     <value>@telefono</value>
-  </data>
-  <data name="ProductoActivo" xml:space="preserve">
-    <value>Activo</value>
-  </data>
-  <data name="ProductoAlto" xml:space="preserve">
-    <value>Alto</value>
-  </data>
-  <data name="ProductoAncho" xml:space="preserve">
-    <value>Ancho</value>
-  </data>
-  <data name="ProductoCantidad" xml:space="preserve">
-    <value>cantidad</value>
-  </data>
-  <data name="ProductoDescripcion" xml:space="preserve">
-    <value>Descripcion</value>
-  </data>
-  <data name="ProductoFechaCre" xml:space="preserve">
-    <value>Fecha_Creacion</value>
-  </data>
-  <data name="ProductoFechaMod" xml:space="preserve">
-    <value>Fecha_Modificacion</value>
-  </data>
-  <data name="ProductofKCategoria" xml:space="preserve">
-    <value>Categoria_id</value>
-  </data>
-  <data name="ProductoFkMARCA" xml:space="preserve">
-    <value>Marca_Id</value>
-  </data>
-  <data name="ProductoId" xml:space="preserve">
-    <value>SKU</value>
-  </data>
-  <data name="ProductoLargo" xml:space="preserve">
-    <value>Largo</value>
-  </data>
-  <data name="ProductoModelo" xml:space="preserve">
-    <value>Modelo</value>
-  </data>
-  <data name="ProductoNombre" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="ProductoPeso" xml:space="preserve">
-    <value>Peso</value>
-  </data>
-  <data name="ProductoPrecio" xml:space="preserve">
-    <value>Precio</value>
   </data>
 </root>

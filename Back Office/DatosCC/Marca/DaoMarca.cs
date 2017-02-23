@@ -167,5 +167,122 @@ namespace DatosCC.Marca
             return true;
         }
 
+        public Entidad ConsultarXId(Entidad parametro)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Marca _LaMarca = (Dominio.Entidades.Marca)parametro;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int,
+                    _LaMarca.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoMarca.ConsultMarcaXId, parameters);
+
+                //Guardar los datos 
+                DataRow row = dt.Rows[0];
+
+                int _id = int.Parse(row[RecursoMarca.MarcaId].ToString());
+                String _nombre = row[RecursoMarca.MarcaNombre].ToString();
+                String _imagen = row[RecursoMarca.MarcaDescripcion].ToString();
+                int _activo = int.Parse(row[RecursoMarca.MarcaActivo].ToString());
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoMarca.MarcaFechaCre].ToString());
+
+                //_LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);
+                //_LaMarca.Id = _id;
+
+            }
+            catch (FormatException ex)
+            {
+
+                /*throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoMarca.Codigo,
+                     RecursoMarca.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+
+                /*throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoMarca.Codigo,
+                    RecursoMarca.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+                /*throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoMarca.Codigo,
+                   RecursoMarca.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+                /*
+                throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoMarca.Codigo,
+                    RecursoMarca.MensajeOtro, ex);*/
+            }
+
+            return _LaMarca;
+        }
+
+        /// <summary>
+        /// Funcion que permite buscar todas las facturas en la base de datos
+        /// </summary>
+        /// <returns>Retorna la lista con todas las facturas</returns>
+        public List<Entidad> ConsultarTodos()
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Parametro theParam = new Parametro();
+            List<Entidad> listMarca = new List<Entidad>();
+
+            try
+            {
+                //Guardo la tabla que me regresa el procedimiento de consultar contactos
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoMarca.ConsultMarcas, parameters);
+
+                //Guardar los datos 
+                foreach (DataRow row in dt.Rows)
+                {
+
+                    int _id = int.Parse(row[RecursoMarca.MarcaId].ToString());
+                    String _nombre = row[RecursoMarca.MarcaNombre].ToString();
+                    String _destacado = row[RecursoMarca.MarcaDescripcion].ToString();
+                    int _activo = int.Parse(row[RecursoMarca.MarcaActivo].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoMarca.MarcaFechaCre].ToString());
+
+
+                    //Dominio.Entidades.Marca _LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkMarca);
+                    //_ElProducto.Id = facId;
+
+                    //listMarca.Add(_LaMarca);
+                }
+
+
+            }
+            catch (FormatException ex)
+            {
+
+                /* throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoMarca.Codigo,
+                      RecursoMarca.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+
+                /* throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoMarca.Codigo,
+                     RecursoMarca.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+                /*throw new ExceptionsCity(RecursoMarca.Codigo,
+                   RecursoMarca.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+
+                /*throw new ExceptionsCity(RecursoMarca.Codigo,
+                    RecursoMarca.MensajeOtro, ex);*/
+            }
+
+            return listMarca;
+        }
+
     }
 }

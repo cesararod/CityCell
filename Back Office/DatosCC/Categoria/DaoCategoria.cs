@@ -176,12 +176,12 @@ namespace DatosCC.Categoria
                 //Guardar los datos 
                 DataRow row = dt.Rows[0];
 
-                int _id = int.Parse(row[RecursoCategoria.ProductoId].ToString());
-                String _nombre = row[RecursoCategoria.ProductoNombre].ToString();
-                String _destacado = row[RecursoCategoria.ProductoDescripcion].ToString();
-                int _activo = int.Parse(row[RecursoCategoria.ProductoActivo].ToString());         
-                DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.ProductoFechaCre].ToString());
-                int _fkCategoria = int.Parse(row[RecursoCategoria.ProductofKCategoria].ToString());
+                int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
+                String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
+                String _destacado = row[RecursoCategoria.CategoriaDestacado].ToString();
+                int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());         
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
+                int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
 
                 _LaCategoria = new Dominio.Entidades.Categoria(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);
                 //_LaCategoria.Id = _id;
@@ -234,12 +234,12 @@ namespace DatosCC.Categoria
                 foreach (DataRow row in dt.Rows)
                 {
 
-                    int _id = int.Parse(row[RecursoCategoria.ProductoId].ToString());
-                    String _nombre = row[RecursoCategoria.ProductoNombre].ToString();
-                    String _destacado = row[RecursoCategoria.ProductoDescripcion].ToString();
-                    int _activo = int.Parse(row[RecursoCategoria.ProductoActivo].ToString());
-                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.ProductoFechaCre].ToString());
-                    int _fkCategoria = int.Parse(row[RecursoCategoria.ProductofKCategoria].ToString());
+                    int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
+                    String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
+                    String _destacado = row[RecursoCategoria.CategoriaDestacado].ToString();
+                    int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
+                    int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
 
 
                     Dominio.Entidades.Categoria _LaCategoria = new Dominio.Entidades.Categoria(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);

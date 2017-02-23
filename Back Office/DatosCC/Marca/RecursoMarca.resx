@@ -126,56 +126,50 @@
   <data name="Codigo_Error_Formato" xml:space="preserve">
     <value>TGE_00_001</value>
   </data>
-  <data name="ComAcronymCompany" xml:space="preserve">
-    <value>com_acronimo</value>
+  <data name="ConsultMarcas" xml:space="preserve">
+    <value>ConsultaMarca</value>
   </data>
-  <data name="ComBudgetCompany" xml:space="preserve">
-    <value>com_presupuesto</value>
-  </data>
-  <data name="ComDeadlineCompany" xml:space="preserve">
-    <value>com_plazo_pago</value>
-  </data>
-  <data name="ComEmailCompany" xml:space="preserve">
-    <value>com_email</value>
-  </data>
-  <data name="ComIdCompany" xml:space="preserve">
-    <value>com_id</value>
-  </data>
-  <data name="ComIdPlace" xml:space="preserve">
-    <value>fk_lug_dir_id</value>
-  </data>
-  <data name="ComNameCompany" xml:space="preserve">
-    <value>com_nombre</value>
-  </data>
-  <data name="ComRegisterDateCompany" xml:space="preserve">
-    <value>com_fecha_registro</value>
-  </data>
-  <data name="ComRifCompany" xml:space="preserve">
-    <value>com_rif</value>
-  </data>
-  <data name="ComStatusCompany" xml:space="preserve">
-    <value>com_status</value>
-  </data>
-  <data name="ComTelephoneCompany" xml:space="preserve">
-    <value>com_telefono</value>
-  </data>
-  <data name="ConsultCompanies" xml:space="preserve">
-    <value>M4_ConsultarCompanias</value>
-  </data>
-  <data name="ConsultCompany" xml:space="preserve">
-    <value>M4_ConsultarCompania</value>
-  </data>
-  <data name="ConsultEnableCompanies" xml:space="preserve">
-    <value>M4_ConsultarCompaniasActivas</value>
-  </data>
-  <data name="ConsultLastCompanyId" xml:space="preserve">
-    <value>M4_ConsultarIdUltimaCompania</value>
+  <data name="ConsultMarcaXId" xml:space="preserve">
+    <value>ConsultaMarcaId</value>
   </data>
   <data name="DeactivateMarca" xml:space="preserve">
     <value>DesactivarMarca</value>
   </data>
-  <data name="DisableAbleComany" xml:space="preserve">
-    <value>M4_InhabilitarHabilitarCompania</value>
+  <data name="MarcaActivo" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="MarcaCantidad" xml:space="preserve">
+    <value>cantidad</value>
+  </data>
+  <data name="MarcaDescripcion" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
+  <data name="MarcaFechaCre" xml:space="preserve">
+    <value>Fecha_Creacion</value>
+  </data>
+  <data name="MarcaFechaMod" xml:space="preserve">
+    <value>Fecha_Modificacion</value>
+  </data>
+  <data name="MarcafKCategoria" xml:space="preserve">
+    <value>Categoria_id</value>
+  </data>
+  <data name="MarcaFkMARCA" xml:space="preserve">
+    <value>Marca_Id</value>
+  </data>
+  <data name="MarcaId" xml:space="preserve">
+    <value>id</value>
+  </data>
+  <data name="MarcaModelo" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="MarcaNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="MarcaPeso" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="MarcaPrecio" xml:space="preserve">
+    <value>Precio</value>
   </data>
   <data name="MensajeFinInfoLogger" xml:space="preserve">
     <value>Salida del Método</value>
