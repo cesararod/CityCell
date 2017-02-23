@@ -122,7 +122,6 @@ namespace DatosCC.Categoria
         /// </summary>
         /// <param name="parametro">objeto de tipo Categoria para desactivar en bd</param>
         /// <returns>true si fue desactivado</returns>
-
         public bool Desactivar(Entidad LaCategoria)
         {
             List<Parametro> parameters = new List<Parametro>();
@@ -158,6 +157,125 @@ namespace DatosCC.Categoria
             }
 
             return true;
+        }
+
+        public Entidad ConsultarXId(Entidad parametro)
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Dominio.Entidades.Categoria _LaCategoria = (Dominio.Entidades.Categoria)parametro;
+            Parametro theParam = new Parametro();
+
+            try
+            {
+                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int,
+                    _LaCategoria.Id.ToString(), false);
+                parameters.Add(theParam);
+
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoCategoria.ConsultCategoriaXId, parameters);
+
+                //Guardar los datos 
+                DataRow row = dt.Rows[0];
+
+                int _id = int.Parse(row[RecursoCategoria.ProductoId].ToString());
+                String _nombre = row[RecursoCategoria.ProductoNombre].ToString();
+                String _destacado = row[RecursoCategoria.ProductoDescripcion].ToString();
+                int _activo = int.Parse(row[RecursoCategoria.ProductoActivo].ToString());         
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.ProductoFechaCre].ToString());
+                int _fkCategoria = int.Parse(row[RecursoCategoria.ProductofKCategoria].ToString());
+
+                _LaCategoria = new Dominio.Entidades.Categoria(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);
+                //_LaCategoria.Id = _id;
+
+            }
+            catch (FormatException ex)
+            {
+
+                /*throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoCategoria.Codigo,
+                     RecursoCategoria.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+
+                /*throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoCategoria.Codigo,
+                    RecursoCategoria.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+                /*throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoCategoria.Codigo,
+                   RecursoCategoria.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+                /*
+                throw new ExcepcionesTangerine.ExceptionsTangerine(RecursoCategoria.Codigo,
+                    RecursoCategoria.MensajeOtro, ex);*/
+            }
+
+            return _LaCategoria;
+        }
+
+        /// <summary>
+        /// Funcion que permite buscar todas las facturas en la base de datos
+        /// </summary>
+        /// <returns>Retorna la lista con todas las facturas</returns>
+        public List<Entidad> ConsultarTodos()
+        {
+            List<Parametro> parameters = new List<Parametro>();
+            Parametro theParam = new Parametro();
+            List<Entidad> listCategoria = new List<Entidad>();
+
+            try
+            {
+                //Guardo la tabla que me regresa el procedimiento de consultar contactos
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoCategoria.ConsultCategorias, parameters);
+
+                //Guardar los datos 
+                foreach (DataRow row in dt.Rows)
+                {
+
+                    int _id = int.Parse(row[RecursoCategoria.ProductoId].ToString());
+                    String _nombre = row[RecursoCategoria.ProductoNombre].ToString();
+                    String _destacado = row[RecursoCategoria.ProductoDescripcion].ToString();
+                    int _activo = int.Parse(row[RecursoCategoria.ProductoActivo].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.ProductoFechaCre].ToString());
+                    int _fkCategoria = int.Parse(row[RecursoCategoria.ProductofKCategoria].ToString());
+
+
+                    Dominio.Entidades.Categoria _LaCategoria = new Dominio.Entidades.Categoria(_id, _nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);
+                    //_ElProducto.Id = facId;
+
+                    //listCategoria.Add(_LaCategoria);
+                }
+
+
+            }
+            catch (FormatException ex)
+            {
+
+                /* throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoCategoria.Codigo,
+                      RecursoCategoria.MensajeFormato, ex);*/
+            }
+            catch (ArgumentNullException ex)
+            {
+
+                /* throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoCategoria.Codigo,
+                     RecursoCategoria.MensajeNull, ex);*/
+            }
+            catch (ExceptionCcConBD ex)
+            {
+
+                /*throw new ExceptionsCity(RecursoCategoria.Codigo,
+                   RecursoCategoria.MensajeSQL, ex);*/
+            }
+            catch (Exception ex)
+            {
+
+                /*throw new ExceptionsCity(RecursoCategoria.Codigo,
+                    RecursoCategoria.MensajeOtro, ex);*/
+            }
+
+            return listCategoria;
         }
     }
 }

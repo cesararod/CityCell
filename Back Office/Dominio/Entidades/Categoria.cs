@@ -9,6 +9,7 @@ namespace Dominio.Entidades
     public class Categoria : Entidad
     {
         #region Atributos
+        private int id;
         private string nombre;
         private string destacado;
         private int activo;
@@ -19,6 +20,11 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
+        public int Id
+        {
+            get { return id; }
+
+        }   
 
         public string Nombre
         {
@@ -56,12 +62,22 @@ namespace Dominio.Entidades
 
         public Categoria()
         {
-            Id = 0;
+            id = 0;
             nombre = String.Empty;
             destacado = String.Empty;
             activo = 0;
             fecha_creacion = DateTime.Now;
             fk_categoria = 0;
+        }
+
+        public Categoria(int inputId, string inputNombre, string inputDestacado, int inputActivo, DateTime inputFechaCrea, int inputCategoria)
+        {
+            id = inputId;
+            nombre = inputNombre;
+            destacado = inputDestacado;
+            activo = inputActivo;
+            fecha_creacion = inputFechaCrea;
+            fk_categoria = inputCategoria;
         }
       
         #endregion
