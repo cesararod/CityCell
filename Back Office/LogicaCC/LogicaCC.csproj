@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>af20667a-4bcd-4230-b067-15fb1ff7ba9f</ProjectGuid>
+    <ProjectGuid>{F71BDC47-DAE9-49C3-B8CE-D35B6A6E9316}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LogicaCC</RootNamespace>
@@ -33,6 +33,51 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\LogicaCC.csproj.GenerateResource.Cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comando.cs" />
+    <Compile Include="Comandos\ComandoAgregarCategoria.cs" />
+    <Compile Include="Fabrica\FabricaComandos.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ResourcesLogic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourcesLogic.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="obj\Debug\LogicaCC.ResourcesLogic.resources" />
+    <EmbeddedResource Include="ResourcesLogic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcesLogic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatosCC\DatosCC.csproj">
+      <Project>{5912979a-b498-4af5-89ea-502c7ee078df}</Project>
+      <Name>DatosCC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{21df7daf-9a2e-496b-8ec5-03e331a51318}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExceptionCity\ExceptionCity.csproj">
+      <Project>{c318f8c5-3ae7-45ae-9ce3-6833b90a0cc9}</Project>
+      <Name>ExceptionCity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\LogicaCC.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

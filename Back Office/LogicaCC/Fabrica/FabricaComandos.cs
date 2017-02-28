@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+using LogicaCC.Comandos;
 
 namespace LogicaCC.Fabrica
 {
@@ -11,10 +12,16 @@ namespace LogicaCC.Fabrica
     {
         #region Categoria
 
-        /*public static Comando<Boolean> agregarUsuario(Dominio.Entidad Categoria)
+        /// <summary>
+        /// metodo para crear comando que permite agregar una categoria
+        /// </summary>
+        /// <param name="categoria">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearAgregarCategoria(Entidad categoria)
         {
-            return new Comandos.M2.ComandoAgregarUsuario(usuario);
-        }*/
+            Comando<bool> respuesta = new ComandoAgregarCategoria(categoria);
+            return respuesta;
+        }
 
         #endregion
 

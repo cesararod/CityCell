@@ -41,6 +41,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoCategoria.resx</DependentUpon>
     </Compile>
+    <Compile Include="Fabrica\FabricaDAOSqlServer.cs" />
     <Compile Include="General.cs" />
     <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
     <Compile Include="InterfazDAO\IDao.cs" />
