@@ -22,13 +22,13 @@ namespace Back_Office.GUI.Categoria {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl alert;
         
         /// <summary>
-        /// generar_factura control.
+        /// nueva_categoria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm generar_factura;
+        protected global::System.Web.UI.HtmlControls.HtmlForm nueva_categoria;
         
         /// <summary>
         /// nombre control.

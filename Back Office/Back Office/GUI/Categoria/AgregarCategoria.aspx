@@ -25,7 +25,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" runat="server" method="post" name="generar_factura" id="generar_factura">
+                <form role="form" runat="server" method="post" name="nueva_categoria" id="nueva_categoria">
                     <div class="box-body" runat="server">
                         
                         <div class="form-group" runat="server">
