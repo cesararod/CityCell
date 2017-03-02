@@ -46,9 +46,18 @@
     <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
     <Compile Include="InterfazDAO\IDao.cs" />
     <Compile Include="Marca\DaoMarca.cs" />
-    <Compile Include="Marca\RecursoMarca.Designer.cs" />
+    <Compile Include="Marca\RecursoMarca.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoMarca.resx</DependentUpon>
+    </Compile>
     <Compile Include="Parametro.cs" />
     <Compile Include="Producto\DaoProducto.cs" />
+    <Compile Include="Producto\RecursoProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoProducto.resx</DependentUpon>
+    </Compile>
     <Compile Include="Promocion\DaoPromocion.cs" />
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
@@ -59,7 +68,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoCategoria.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Marca\RecursoMarca.resx" />
+    <EmbeddedResource Include="Marca\RecursoMarca.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoMarca.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\RecursoProducto.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RecursoGeneralBD.resx" />
     <EmbeddedResource Include="RecursoGeneralDAO.resx" />
   </ItemGroup>

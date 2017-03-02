@@ -35,7 +35,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContratoAgregarCategoria.cs" />
+    <Compile Include="IContratoAgregarCategoria.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

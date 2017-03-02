@@ -12,7 +12,7 @@ namespace Dominio.Entidades
         private int id;
         private string nombre;
         private string destacado;
-        private int activo;
+        private string activo;
         private DateTime fecha_creacion;
         private int fk_categoria;
 
@@ -20,40 +20,45 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
-        public int Id
+        public int IdCat
         {
             get { return id; }
+            set { id = value; }
 
         }   
 
         public string Nombre
         {
             get { return nombre; }
+            set { nombre = value; }
            
         }
 
         public string Destacado
         {
             get { return destacado; }
+            set { destacado = value; }
             
         }
 
-        public int Activo
+        public string Activo
         {
             get { return activo; }
+            set { activo = value; }
             
         }        
 
         public DateTime Fecha_Creacion
         {
             get { return fecha_creacion; }
+            set { fecha_creacion = value; }
             
         }
 
         public int Fk_categoria
         {
             get { return fk_categoria; }
-
+            set { fk_categoria = value; }
         }  
         
         #endregion
@@ -65,12 +70,12 @@ namespace Dominio.Entidades
             id = 0;
             nombre = String.Empty;
             destacado = String.Empty;
-            activo = 0;
+            activo = String.Empty;
             fecha_creacion = DateTime.Now;
             fk_categoria = 0;
         }
 
-        public Categoria(int inputId, string inputNombre, string inputDestacado, int inputActivo, DateTime inputFechaCrea, int inputCategoria)
+        public Categoria(int inputId, string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea, int inputCategoria)
         {
             id = inputId;
             nombre = inputNombre;
@@ -78,6 +83,34 @@ namespace Dominio.Entidades
             activo = inputActivo;
             fecha_creacion = inputFechaCrea;
             fk_categoria = inputCategoria;
+        }   
+
+        public Categoria(string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea, int inputCategoria)
+        {
+            
+            nombre = inputNombre;
+            destacado = inputDestacado;
+            activo = inputActivo;
+            fecha_creacion = inputFechaCrea;
+            fk_categoria = inputCategoria;
+        }
+
+        public Categoria(int inputId, string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea)
+        {
+            id = inputId;
+            nombre = inputNombre;
+            destacado = inputDestacado;
+            activo = inputActivo;
+            fecha_creacion = inputFechaCrea;
+        }
+
+        public Categoria(string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea)
+        {
+           
+            nombre = inputNombre;
+            destacado = inputDestacado;
+            activo = inputActivo;
+            fecha_creacion = inputFechaCrea;
         }
       
         #endregion

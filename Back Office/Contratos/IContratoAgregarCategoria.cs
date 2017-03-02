@@ -8,12 +8,9 @@ namespace Contratos
 {
     public interface IContratoGenerarCategoria
     {
-        string moneda { get; set; }
-        string fecha { get; set; }
-        string compania { get; set; }
-        string proyecto { get; set; }
-        string descripcion { get; set; }
-        string monto { get; set; }
+        string nombre { get; set; }
+        string activo { get; set; }
+        string destacado { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }
         string alerta { set; }

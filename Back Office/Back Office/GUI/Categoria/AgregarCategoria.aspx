@@ -39,12 +39,16 @@
 
                         <div class="form-group" runat="server">
                             <label for="labelActivo">Activo</label>
-                            <input type="checkbox" name="activo" value="activo"> <br>
+                            <input type="checkbox" runat="server" name="activo" value="activo" id="activo"> <br>
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="labelDestacado">Destacado</label>
-                            <input type="checkbox" name="destacado" value="destacado"> <br>
+                            <input type="checkbox" runat="server" name="destacado" value="destacado" id="destacado"> <br>
+                        </div>
+
+                        <div class="box-footer" runat="server">
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerarCategoria_Click"></asp:Button>
                         </div>
 
                     </div>

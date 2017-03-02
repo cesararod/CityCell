@@ -81,7 +81,7 @@ namespace DatosCC.Categoria
 
             try
             {
-                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.IdCat.ToString(), false);
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar, _LaCategoria.Nombre, false);
@@ -130,10 +130,10 @@ namespace DatosCC.Categoria
 
             try
             {
-                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.IdCat.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int, _LaCategoria.Id.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int, _LaCategoria.IdCat.ToString(), false);
                 parameters.Add(theParam);
 
                 EjecutarStoredProcedure(RecursoCategoria.DeactivateCate, parameters);
@@ -168,7 +168,7 @@ namespace DatosCC.Categoria
             try
             {
                 theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int,
-                    _LaCategoria.Id.ToString(), false);
+                    _LaCategoria.IdCat.ToString(), false);
                 parameters.Add(theParam);
 
                 DataTable dt = EjecutarStoredProcedureTuplas(RecursoCategoria.ConsultCategoriaXId, parameters);

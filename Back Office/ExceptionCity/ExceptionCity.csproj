@@ -39,6 +39,11 @@
     <Compile Include="ExceptionsCity.cs" />
     <Compile Include="NullArgumentException.cs" />
     <Compile Include="ParametroInvalidoException.cs" />
+    <Compile Include="ResourcesLogic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourcesLogic.resx</DependentUpon>
+    </Compile>
     <Compile Include="WrongFormatException.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ExceptionCcRecursoGeneral.resx" />
+    <EmbeddedResource Include="ResourcesLogic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcesLogic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
