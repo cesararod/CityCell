@@ -20,7 +20,7 @@ namespace Dominio.Entidades
         #region Get's Set's
 
 
-        public int Id
+        public int IdMarca
         {
             get { return id; }
 

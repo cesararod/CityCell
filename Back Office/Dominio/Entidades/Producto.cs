@@ -28,7 +28,7 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
-        public int ID
+        public int IdProducto
         {
             get { return id; }
         } 

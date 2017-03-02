@@ -87,16 +87,16 @@ namespace DatosCC.Marca
 
             try
             {
-                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoMarca.ParamNombre, SqlDbType.VarChar, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamNombre, SqlDbType.VarChar, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoMarca.ParamImagen, SqlDbType.VarChar, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamImagen, SqlDbType.VarChar, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
                 //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
@@ -137,10 +137,10 @@ namespace DatosCC.Marca
 
             try
             {
-                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.Id.ToString(), false);
+                theParam = new Parametro(RecursoMarca.ParamStatus, SqlDbType.Int, _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
                 //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
@@ -176,7 +176,7 @@ namespace DatosCC.Marca
             try
             {
                 theParam = new Parametro(RecursoMarca.ParamId, SqlDbType.Int,
-                    _LaMarca.Id.ToString(), false);
+                    _LaMarca.IdMarca.ToString(), false);
                 parameters.Add(theParam);
 
                 DataTable dt = EjecutarStoredProcedureTuplas(RecursoMarca.ConsultMarcaXId, parameters);

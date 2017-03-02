@@ -14,27 +14,27 @@ namespace Dominio.Fabrica
         /// Metodo que crea la instancia de la entidad Marca
         /// </summary>
         /// <returns>Retorna la instancia a la clase Marca</returns>
-        static public Entidad MarcaVacia()
+         public static Entidad MarcaVacia()
         {
-            return new Dominio.Entidades.Marca();
+            return new Marca();
         }
         
         /// <summary>
         /// Metodo que crea la instancia de la entidad Categoria
         /// </summary>
         /// <returns>Retorna la instancia a la clase Categoria</returns>
-        static public Entidad CategoriaVacia()
+        public static Entidad CategoriaVacia()
         {
-            return new Dominio.Entidades.Categoria();
+            return new Categoria();
         }
 
         /// <summary>
         /// Metodo que crea la instancia de la entidad Categoria
         /// </summary>
         /// <returns>Retorna la instancia a la clase Categoria</returns>
-        static public Entidad CategoriaNoIdMadre(string nombre, string activo, string destacado,  DateTime fechaCreacion)
+        public static  Entidad CategoriaVacia(string nombre, string activo, string destacado, DateTime fechaCreacion)
         {
-            return new Dominio.Entidades.Categoria(nombre, activo, destacado, fechaCreacion);
+            return new Categoria(nombre, activo, destacado, fechaCreacion);
         }
     }
 }

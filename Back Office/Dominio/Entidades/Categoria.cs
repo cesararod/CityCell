@@ -65,52 +65,23 @@ namespace Dominio.Entidades
 
         #region Constructores
 
-        public Categoria()
+        public Categoria() : base()
         {
-            id = 0;
-            nombre = String.Empty;
-            destacado = String.Empty;
-            activo = String.Empty;
-            fecha_creacion = DateTime.Now;
-            fk_categoria = 0;
+            this.nombre = String.Empty;
+            this.destacado = String.Empty;
+            this.activo = String.Empty;
+            this.fecha_creacion = DateTime.Now;
+            this.fk_categoria = 0;
         }
 
-        public Categoria(int inputId, string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea, int inputCategoria)
-        {
-            id = inputId;
-            nombre = inputNombre;
-            destacado = inputDestacado;
-            activo = inputActivo;
-            fecha_creacion = inputFechaCrea;
-            fk_categoria = inputCategoria;
-        }   
-
-        public Categoria(string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea, int inputCategoria)
-        {
-            
-            nombre = inputNombre;
-            destacado = inputDestacado;
-            activo = inputActivo;
-            fecha_creacion = inputFechaCrea;
-            fk_categoria = inputCategoria;
-        }
-
-        public Categoria(int inputId, string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea)
-        {
-            id = inputId;
-            nombre = inputNombre;
-            destacado = inputDestacado;
-            activo = inputActivo;
-            fecha_creacion = inputFechaCrea;
-        }
 
         public Categoria(string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea)
         {
-           
-            nombre = inputNombre;
-            destacado = inputDestacado;
-            activo = inputActivo;
-            fecha_creacion = inputFechaCrea;
+
+            this.nombre = inputNombre;
+            this.destacado = inputDestacado;
+            this.activo = inputActivo;
+            this.fecha_creacion = inputFechaCrea;
         }
       
         #endregion
