@@ -33,18 +33,18 @@
                             <input type="text" runat="server" class="form-control"
                                 pattern="^[0-9a-zñA-ZÑ ]+$"
                                 oninvalid="setCustomValidity('Campo obligatorio, no puede tener símbolos')" oninput="setCustomValidity('')"
-                                id="nombre" name="Nombre"
+                                id="nombreCat" name="NombreCat"
                                 placeholder="Nombre" maxlength="50" required>
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="labelActivo">Activo</label>
-                            <input type="checkbox" runat="server" name="activo" value="activo" id="activo"> <br>
+                            <input type="checkbox" runat="server" name="activoCat" value="activo" id="activoCat"> <br>
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="labelDestacado">Destacado</label>
-                            <input type="checkbox" runat="server" name="destacado" value="destacado" id="destacado"> <br>
+                            <input type="checkbox" runat="server" name="destacadoCat" value="destacado" id="destacadoCat"> <br>
                         </div>
 
                         <div class="box-footer" runat="server">

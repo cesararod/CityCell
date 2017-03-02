@@ -31,31 +31,31 @@ namespace Back_Office.GUI.Categoria {
         protected global::System.Web.UI.HtmlControls.HtmlForm nueva_categoria;
         
         /// <summary>
-        /// nombre control.
+        /// nombreCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText nombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText nombreCat;
         
         /// <summary>
-        /// activo control.
+        /// activoCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox activo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox activoCat;
         
         /// <summary>
-        /// destacado control.
+        /// destacadoCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox destacado;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox destacadoCat;
         
         /// <summary>
         /// buttonGenerarCategoria control.

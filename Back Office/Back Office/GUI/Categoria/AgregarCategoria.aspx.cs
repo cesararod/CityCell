@@ -16,22 +16,22 @@ namespace Back_Office.GUI.Categoria
     {
 
         #region Implementacion de Contrato
-        public string Nombre
-        {   
-            get { return this.nombre.Value; }
-            set { this.nombre.Value = value; }
+        public string nombre
+        {
+            get { return this.nombreCat.Value; }
+            set { this.nombreCat.Value = value; }
         }
 
-        public string Activo
+        public string activo
         {
-            get { return this.activo.Value; }
-            set { this.activo.Value = value; }
+            get { return this.activoCat.Value; }
+            set { this.activoCat.Value = value; }
         }
 
-        public string Destacado
+        public string destacado
         {
-            get { return this.destacado.Value; }
-            set { this.destacado.Value = value; }
+            get { return this.destacadoCat.Value; }
+            set { this.destacadoCat.Value = value; }
         }
 
         public string alertaClase

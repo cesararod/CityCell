@@ -241,3 +241,4 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 *.suo
+Back Office/Back Office.v12.suo
