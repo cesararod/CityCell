@@ -51,7 +51,12 @@ namespace Presentador.CategoriaCC
                  Comando<bool> comandoGenerar = FabricaComandos.CrearAgregarCategoria(laCategoria);
                  comandoGenerar.Ejecutar();
              }
+             catch (ExceptionCity.ExceptionCcConBD ex)
              {
+                 vista.alertaClase = RecursoPresentadorCategoria.alertaError;
+                 vista.alertaRol = RecursoPresentadorCategoria.tipoAlerta;
+                 vista.alerta = RecursoPresentadorCategoria.alertaHtml + ex.Mensaje + ex.Excepcion.InnerException.Message
+                     + RecursoPresentadorCategoria.alertaHtmlFinal;
              }
          }
     }

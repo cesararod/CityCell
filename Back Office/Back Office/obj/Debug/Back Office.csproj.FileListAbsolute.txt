@@ -14,3 +14,6 @@ C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csprojResolveAssemblyReference.cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csprojResolveAssemblyReference.cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Categoria.ResourceGUICategoria.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csproj.GenerateResource.Cache
