@@ -22,10 +22,10 @@ namespace Back_Office.GUI.Categoria
             set { this.nombreCat.Value = value; }
         }
 
-        public string activo
+        public DropDownList activo
         {
-            get { return this.activoCat.Value; }
-            set { this.activoCat.Value = value; }
+            get { return activoCat; }
+            set { activoCat = value; }
         }
 
         public DropDownList destacado

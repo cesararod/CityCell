@@ -31,7 +31,7 @@ namespace DatosCC.Categoria
                 theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar,((Dominio.Entidades.Categoria)LaCategoria).Nombre, false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoCategoria.ParamDestacado, SqlDbType.Int, LaCategoria.Id.ToString(), false);
+                theParam = new Parametro(RecursoCategoria.ParamDestacado, SqlDbType.Int, ((Dominio.Entidades.Categoria)LaCategoria).Destacado.ToString(), false);
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int,((Dominio.Entidades.Categoria)LaCategoria).Activo.ToString(), false);
@@ -58,11 +58,13 @@ namespace DatosCC.Categoria
             }
             catch (ExceptionCcConBD ex)
             {
-
+                throw new ExceptionsCity(RecursoCategoria.Codigo,
+                   RecursoCategoria.MensajeSQL, ex);
             }
             catch (Exception ex)
             {
-
+                throw new ExceptionsCity(RecursoCategoria.Codigo,
+                    RecursoCategoria.MensajeOtro, ex);
             }
 
             return true;
@@ -179,7 +181,7 @@ namespace DatosCC.Categoria
                 int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
                 String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
                 int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
-                String _activo = row[RecursoCategoria.CategoriaActivo].ToString();         
+                int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());         
                 DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
                 int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
 
@@ -237,7 +239,7 @@ namespace DatosCC.Categoria
                     int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
                     String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
                     int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
-                    String _activo = row[RecursoCategoria.CategoriaActivo].ToString();
+                    int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());
                     DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
                     int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
 
@@ -265,8 +267,8 @@ namespace DatosCC.Categoria
             catch (ExceptionCcConBD ex)
             {
 
-                /*throw new ExceptionsCity(RecursoCategoria.Codigo,
-                   RecursoCategoria.MensajeSQL, ex);*/
+                throw new ExceptionsCity(RecursoCategoria.Codigo,
+                   RecursoCategoria.MensajeSQL, ex);
             }
             catch (Exception ex)
             {

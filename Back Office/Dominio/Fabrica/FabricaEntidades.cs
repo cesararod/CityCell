@@ -32,7 +32,7 @@ namespace Dominio.Fabrica
         /// Metodo que crea la instancia de la entidad Categoria
         /// </summary>
         /// <returns>Retorna la instancia a la clase Categoria</returns>
-        public static  Entidad CategoriaVacia(string nombre, string activo, int destacado, DateTime fechaCreacion)
+        public static  Entidad CategoriaVacia(string nombre, int activo, int destacado, DateTime fechaCreacion)
         {
             return new Categoria(nombre, destacado, activo, fechaCreacion);
         }

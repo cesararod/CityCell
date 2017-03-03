@@ -44,7 +44,7 @@ namespace Presentador.CategoriaCC
              {
                  Categoria laCategoria = (Categoria)FabricaEntidades.CategoriaVacia();
                  laCategoria.Nombre = vista.nombre;
-                 laCategoria.Activo = vista.activo;
+                 laCategoria.Activo = int.Parse(vista.activo.SelectedValue.ToString());
                  laCategoria.Destacado = int.Parse(vista.destacado.SelectedValue.ToString());
                  laCategoria.Fecha_Creacion = DateTime.Now;;
                  //laCategoria.tipoMoneda;

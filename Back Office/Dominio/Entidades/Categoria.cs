@@ -12,7 +12,7 @@ namespace Dominio.Entidades
         private int id;
         private string nombre;
         private int destacado;
-        private string activo;
+        private int activo;
         private DateTime fecha_creacion;
         private int fk_categoria;
 
@@ -41,7 +41,7 @@ namespace Dominio.Entidades
             
         }
 
-        public string Activo
+        public int Activo
         {
             get { return activo; }
             set { activo = value; }
@@ -69,13 +69,13 @@ namespace Dominio.Entidades
         {
             this.nombre = String.Empty;
             this.destacado = 0;
-            this.activo = String.Empty;
+            this.activo = 0;
             this.fecha_creacion = DateTime.Now;
             this.fk_categoria = 0;
         }
 
 
-        public Categoria(string inputNombre, int inputDestacado, string inputActivo, DateTime inputFechaCrea)
+        public Categoria(string inputNombre, int inputDestacado, int inputActivo, DateTime inputFechaCrea)
         {
 
             this.nombre = inputNombre;

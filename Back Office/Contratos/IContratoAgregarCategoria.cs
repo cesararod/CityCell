@@ -10,7 +10,7 @@ namespace Contratos
     public interface IContratoGenerarCategoria
     {
         string nombre { get; set; }
-        string activo { get; set; }
+        DropDownList activo { get; set; }
         DropDownList destacado { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }

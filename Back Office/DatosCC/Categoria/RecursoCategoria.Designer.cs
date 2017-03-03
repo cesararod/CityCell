@@ -133,6 +133,15 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error BD.
+        /// </summary>
+        internal static string Codigo {
+            get {
+                return ResourceManager.GetString("Codigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TGE_00_001.
         /// </summary>
         internal static string Codigo_Error_Formato {
@@ -336,6 +345,24 @@ namespace DatosCC.Categoria {
         internal static string MensajeInicioInfoLogger {
             get {
                 return ResourceManager.GetString("MensajeInicioInfoLogger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error no reconocido.
+        /// </summary>
+        internal static string MensajeOtro {
+            get {
+                return ResourceManager.GetString("MensajeOtro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error de BD - .
+        /// </summary>
+        internal static string MensajeSQL {
+            get {
+                return ResourceManager.GetString("MensajeSQL", resourceCulture);
             }
         }
         

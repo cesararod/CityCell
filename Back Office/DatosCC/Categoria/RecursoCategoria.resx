@@ -249,4 +249,13 @@
   <data name="ParamTelefono" xml:space="preserve">
     <value>@telefono</value>
   </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Error BD</value>
+  </data>
+  <data name="MensajeOtro" xml:space="preserve">
+    <value>Error no reconocido</value>
+  </data>
+  <data name="MensajeSQL" xml:space="preserve">
+    <value>Error de BD - </value>
+  </data>
 </root>
