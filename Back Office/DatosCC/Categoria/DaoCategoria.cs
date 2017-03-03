@@ -178,7 +178,7 @@ namespace DatosCC.Categoria
 
                 int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
                 String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
-                String _destacado = row[RecursoCategoria.CategoriaDestacado].ToString();
+                int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
                 String _activo = row[RecursoCategoria.CategoriaActivo].ToString();         
                 DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
                 int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
@@ -236,7 +236,7 @@ namespace DatosCC.Categoria
 
                     int _id = int.Parse(row[RecursoCategoria.CategoriaId].ToString());
                     String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
-                    String _destacado = row[RecursoCategoria.CategoriaDestacado].ToString();
+                    int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
                     String _activo = row[RecursoCategoria.CategoriaActivo].ToString();
                     DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
                     int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());

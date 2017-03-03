@@ -11,7 +11,7 @@ namespace Dominio.Entidades
         #region Atributos
         private int id;
         private string nombre;
-        private string destacado;
+        private int destacado;
         private string activo;
         private DateTime fecha_creacion;
         private int fk_categoria;
@@ -34,7 +34,7 @@ namespace Dominio.Entidades
            
         }
 
-        public string Destacado
+        public int Destacado
         {
             get { return destacado; }
             set { destacado = value; }
@@ -68,14 +68,14 @@ namespace Dominio.Entidades
         public Categoria() : base()
         {
             this.nombre = String.Empty;
-            this.destacado = String.Empty;
+            this.destacado = 0;
             this.activo = String.Empty;
             this.fecha_creacion = DateTime.Now;
             this.fk_categoria = 0;
         }
 
 
-        public Categoria(string inputNombre, string inputDestacado, string inputActivo, DateTime inputFechaCrea)
+        public Categoria(string inputNombre, int inputDestacado, string inputActivo, DateTime inputFechaCrea)
         {
 
             this.nombre = inputNombre;

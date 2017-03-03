@@ -28,10 +28,10 @@ namespace Back_Office.GUI.Categoria
             set { this.activoCat.Value = value; }
         }
 
-        public string destacado
+        public DropDownList destacado
         {
-            get { return this.destacadoCat.Value; }
-            set { this.destacadoCat.Value = value; }
+            get { return destacadoCat; }
+            set { destacadoCat = value; }
         }
 
         public string alertaClase
@@ -74,7 +74,7 @@ namespace Back_Office.GUI.Categoria
 
         }
 
-        protected void buttonGenerarFactura_Click(object sender, EventArgs e)
+        protected void buttonGenerarCategoria_Click(object sender, EventArgs e)
         {
             //this.nombre = Request.QueryString[ResourceGUICategoria.idC];
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];

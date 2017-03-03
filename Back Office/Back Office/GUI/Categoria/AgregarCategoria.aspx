@@ -35,18 +35,20 @@
                                 oninvalid="setCustomValidity('Campo obligatorio, no puede tener símbolos')" oninput="setCustomValidity('')"
                                 id="nombreCat" name="NombreCat"
                                 placeholder="Nombre" maxlength="50" required>
-                        </div>
+                        </div>                        
 
                         <div class="form-group" runat="server">
                             <label for="labelActivo">Activo</label>
                             <input type="checkbox" runat="server" name="activoCat" value="activo" id="activoCat"> <br>
                         </div>
-
+                                                
                         <div class="form-group" runat="server">
-                            <label for="labelDestacado">Destacado</label>
-                            <input type="checkbox" runat="server" name="destacadoCat" value="destacado" id="destacadoCat"> <br>
+                            <label for="labelDestacado">Destacado</label> <label for="Requerido" style="color: red;">*</label>
+                            <asp:DropDownList id="destacadoCat" name="destacadoCat" class="form-control"  runat="server">
+                                    <asp:ListItem Selected="True" Value="1"> Si </asp:ListItem>
+                                    <asp:ListItem Value="2"> No </asp:ListItem>
+                            </asp:DropDownList>
                         </div>
-
                         <div class="box-footer" runat="server">
                             <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerarCategoria_Click"></asp:Button>
                         </div>

@@ -45,7 +45,7 @@ namespace Presentador.CategoriaCC
                  Categoria laCategoria = (Categoria)FabricaEntidades.CategoriaVacia();
                  laCategoria.Nombre = vista.nombre;
                  laCategoria.Activo = vista.activo;
-                 laCategoria.Destacado = vista.destacado;
+                 laCategoria.Destacado = int.Parse(vista.destacado.SelectedValue.ToString());
                  laCategoria.Fecha_Creacion = DateTime.Now;;
                  //laCategoria.tipoMoneda;
                  Comando<bool> comandoGenerar = FabricaComandos.CrearAgregarCategoria(laCategoria);
@@ -59,5 +59,7 @@ namespace Presentador.CategoriaCC
                      + RecursoPresentadorCategoria.alertaHtmlFinal;
              }
          }
+        
+         
     }
 }
