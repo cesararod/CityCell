@@ -71,10 +71,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoriaCC\PresentadorAgregarCategoria.cs" />
+    <Compile Include="CategoriaCC\PresentadorConsultaCategoria.cs" />
     <Compile Include="CategoriaCC\RecursoPresentadorCategoria.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorCategoria.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaCC\PresentadorAgregarMarca.cs" />
+    <Compile Include="MarcaCC\RecursoPresentadorMarca.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorMarca.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +89,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorCategoria.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="MarcaCC\RecursoPresentadorMarca.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorMarca.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

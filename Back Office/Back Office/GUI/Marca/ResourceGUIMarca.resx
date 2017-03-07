@@ -117,17 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="alertaError" xml:space="preserve">
-    <value>alert alert-danger alert-dismissible</value>
+  <data name="alertClase" xml:space="preserve">
+    <value>class</value>
   </data>
-  <data name="alertaHtml" xml:space="preserve">
-    <value>&lt;div&gt;&lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;</value>
+  <data name="alertRole" xml:space="preserve">
+    <value>role</value>
   </data>
-  <data name="alertaHtmlFinal" xml:space="preserve">
-    <value>&lt;/div&gt;</value>
-  </data>
-  <data name="alertaModificado" xml:space="preserve">
-    <value>alert alert-success alert-dismissible</value>
+  <data name="amount" xml:space="preserve">
+    <value>Monto</value>
   </data>
   <data name="anulada" xml:space="preserve">
     <value>&lt;span class="label label-danger"&gt;Anulada&lt;/span&gt;</value>
@@ -135,20 +132,11 @@
   <data name="asd" xml:space="preserve">
     <value />
   </data>
-  <data name="blank" xml:space="preserve">
-    <value>.\n</value>
-  </data>
-  <data name="bolivares" xml:space="preserve">
-    <value>Bolivares</value>
-  </data>
   <data name="BotonAnular" xml:space="preserve">
     <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="AnularFacturaM8.aspx?idFac=</value>
   </data>
   <data name="BotonAnularInhabilitado" xml:space="preserve">
     <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" disabled="disabled" href="AnularFacturaM8.aspx?idFac=</value>
-  </data>
-  <data name="BotonFactura" xml:space="preserve">
-    <value>&lt;a title="Factura"  class="btn btn-info glyphicon glyphicon-file" href="Factura.aspx?idFac=</value>
   </data>
   <data name="BotonGenerarFactura" xml:space="preserve">
     <value>&lt;a  class="btn btn-default glyphicon glyphicon-pencil" href="ConsultarFacturaM8.aspx</value>
@@ -157,16 +145,13 @@
     <value>&lt;a title="Habilitar"  class="btn btn-success glyphicon glyphicon-ok"&gt;&lt;/a&gt;</value>
   </data>
   <data name="BotonInfo" xml:space="preserve">
-    <value>&lt;a class="btn btn-default glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"&gt;&lt;/a&gt;</value>
-  </data>
-  <data name="BotonInfo1" xml:space="preserve">
     <value>&lt;a title="Informacion" class="btn btn-default glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"&gt;&lt;/a&gt;</value>
   </data>
   <data name="BotonInvol" xml:space="preserve">
     <value>&lt;a title="Involucrados" class="btn btn-info glyphicon glyphicon-user"&gt;&lt;/a&gt;</value>
   </data>
   <data name="BotonMail" xml:space="preserve">
-    <value>&lt;a title="Correo" class="btn btn-default glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idFac=</value>
+    <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idFac=</value>
   </data>
   <data name="BotonMail1" xml:space="preserve">
     <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idCompania=</value>
@@ -183,181 +168,76 @@
   <data name="BotonPagarInhabilitado" xml:space="preserve">
     <value>&lt;a title="Pagar" disabled="disabled" class="btn btn-success glyphicon glyphicon-euro" </value>
   </data>
-  <data name="BotonPersonal" xml:space="preserve">
-    <value>&lt;a class="btn btn-info glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal"&gt;&lt;/a&gt;</value>
-  </data>
-  <data name="BS" xml:space="preserve">
-    <value>Bs</value>
-  </data>
-  <data name="Cancelado" xml:space="preserve">
-    <value>&lt;span class="label label-danger"&gt;Cancelado&lt;/span&gt;</value>
-  </data>
   <data name="CloseBoton" xml:space="preserve">
-    <value>&gt;&lt;/a&gt;</value>
-  </data>
-  <data name="CloseBoton1" xml:space="preserve">
     <value>&gt;&lt;/a&gt;</value>
   </data>
   <data name="CloseBotonParametro" xml:space="preserve">
     <value>"&gt;&lt;/a&gt;</value>
   </data>
-  <data name="CloseBotonParametro1" xml:space="preserve">
-    <value>"&gt;&lt;/a&gt;</value>
-  </data>
-  <data name="CloseDiv" xml:space="preserve">
-    <value>&lt;/div&gt;</value>
-  </data>
-  <data name="CloseTd" xml:space="preserve">
+  <data name="CloseTD" xml:space="preserve">
     <value>&lt;/td&gt;</value>
   </data>
-  <data name="CloseTD1" xml:space="preserve">
-    <value>&lt;/td&gt;</value>
-  </data>
-  <data name="CloseTh" xml:space="preserve">
-    <value>&lt;/th&gt;</value>
-  </data>
-  <data name="CloseTr" xml:space="preserve">
+  <data name="CloseTR" xml:space="preserve">
     <value>&lt;/tr&gt;</value>
-  </data>
-  <data name="CloseTR1" xml:space="preserve">
-    <value>&lt;/tr&gt;</value>
-  </data>
-  <data name="Codigo" xml:space="preserve">
-    <value>Codigo:</value>
-  </data>
-  <data name="codigoAnular" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="codigoCorreo" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="codigoMod" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="Coma" xml:space="preserve">
     <value>,</value>
   </data>
-  <data name="Completado" xml:space="preserve">
-    <value>&lt;span class="label label-success"&gt;Completado&lt;/span&gt;</value>
-  </data>
-  <data name="CompletadoAdestiempo" xml:space="preserve">
-    <value>&lt;span class="label label-warning"&gt;Completado a destiempo&lt;/span&gt;</value>
-  </data>
   <data name="dateTipe" xml:space="preserve">
     <value>dd/MM/yyyy</value>
   </data>
-  <data name="Desarrollo" xml:space="preserve">
-    <value>&lt;span class="label label-primary"&gt;En Desarrollo&lt;/span&gt;</value>
+  <data name="estado" xml:space="preserve">
+    <value>estado</value>
   </data>
-  <data name="Dolar" xml:space="preserve">
-    <value>$</value>
+  <data name="Extencion" xml:space="preserve">
+    <value>.png</value>
   </data>
-  <data name="dolares" xml:space="preserve">
-    <value>Dolares</value>
+  <data name="Factura" xml:space="preserve">
+    <value>Factura.aspx?idFac=</value>
   </data>
-  <data name="espacio" xml:space="preserve">
-    <value>  </value>
+  <data name="idC" xml:space="preserve">
+    <value>IdCompania</value>
   </data>
-  <data name="Estatus" xml:space="preserve">
-    <value>Estatus:</value>
+  <data name="idF" xml:space="preserve">
+    <value>idFac</value>
   </data>
-  <data name="Euro" xml:space="preserve">
-    <value>€</value>
+  <data name="idFac" xml:space="preserve">
+    <value>idFac</value>
   </data>
-  <data name="euros" xml:space="preserve">
-    <value>Euros</value>
-  </data>
-  <data name="FechaEstimadaCulminar" xml:space="preserve">
-    <value>FechaFin:</value>
-  </data>
-  <data name="FechaInicio" xml:space="preserve">
-    <value>FechaInicio:</value>
-  </data>
-  <data name="Iva" xml:space="preserve">
-    <value>IVA :</value>
-  </data>
-  <data name="Key" xml:space="preserve">
-    <value>Key</value>
-  </data>
-  <data name="MontoTotal" xml:space="preserve">
-    <value>TOTAL :</value>
-  </data>
-  <data name="MsjCorreo" xml:space="preserve">
-    <value>El correo se ha enviado</value>
-  </data>
-  <data name="MsjMAnulado" xml:space="preserve">
-    <value>La factura ha sido anulada.</value>
-  </data>
-  <data name="MsjModificado" xml:space="preserve">
-    <value>La factura ha sido modificada</value>
-  </data>
-  <data name="NombreProyecto" xml:space="preserve">
-    <value>Nombre:</value>
-  </data>
-  <data name="OpenBotonInfo" xml:space="preserve">
-    <value>&lt;a title="Informacion" class="btn btn-default glyphicon glyphicon-info-sign" href="InformacionProyecto.aspx?idCont=</value>
-  </data>
-  <data name="OpenBotonModificar" xml:space="preserve">
-    <value>&lt;a title="Modificar"  class="btn btn-default glyphicon glyphicon-pencil" href="modificarProyecto.aspx?idCont=</value>
-  </data>
-  <data name="OpenBotonPersonal" xml:space="preserve">
-    <value>&lt;a class="btn btn-info glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" OnClick="MostrarPersonal" id="Personal"</value>
-  </data>
-  <data name="OpenDiv" xml:space="preserve">
-    <value>&lt;div&gt;</value>
-  </data>
-  <data name="OpenDivRow" xml:space="preserve">
-    <value>&lt;div class="row"&gt;</value>
-  </data>
-  <data name="OpenH3" xml:space="preserve">
-    <value>&lt;h3&gt;</value>
+  <data name="idP" xml:space="preserve">
+    <value>IdProyecto</value>
   </data>
   <data name="OpenTD" xml:space="preserve">
     <value>&lt;td&gt;</value>
   </data>
-  <data name="OpenTD1" xml:space="preserve">
-    <value>&lt;td&gt;</value>
-  </data>
-  <data name="OpenTh" xml:space="preserve">
-    <value>&lt;th&gt;</value>
-  </data>
-  <data name="OpenTr" xml:space="preserve">
+  <data name="OpenTR" xml:space="preserve">
     <value>&lt;tr&gt;</value>
   </data>
-  <data name="OpenTR1" xml:space="preserve">
-    <value>&lt;tr&gt;</value>
+  <data name="pagada" xml:space="preserve">
+    <value>&lt;span class="label label-success"&gt;Pagada&lt;/span&gt;</value>
   </data>
-  <data name="Activada" xml:space="preserve">
-    <value>&lt;span class="label label-success"&gt;Activada&lt;/span&gt;</value>
+  <data name="path" xml:space="preserve">
+    <value>/m8</value>
   </data>
-  <data name="PorcentajeDeRealizacion" xml:space="preserve">
-    <value>PorcentajeRealizado:</value>
+  <data name="porPagar" xml:space="preserve">
+    <value>&lt;span class="label label-warning"&gt;Por Pagar&lt;/span&gt;</value>
   </data>
-  <data name="porActivar" xml:space="preserve">
-    <value>&lt;span class="label label-warning"&gt;Desactivado&lt;/span&gt;</value>
+  <data name="redirectHome" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx</value>
   </data>
-  <data name="PropuestaAprovada" xml:space="preserve">
-    <value>Propuesta:</value>
+  <data name="ruta" xml:space="preserve">
+    <value>ImgBrand\\</value>
   </data>
-  <data name="punto" xml:space="preserve">
-    <value>.</value>
+  <data name="volver" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx</value>
   </data>
-  <data name="recordar" xml:space="preserve">
-    <value>Se le recuerda que tiene una factura por pagar, por un monto de:</value>
+  <data name="volverAnular" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=2</value>
   </data>
-  <data name="recordatorio" xml:space="preserve">
-    <value>Recordatorio de Pago - Proyecto:</value>
+  <data name="volverCorreo" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=3</value>
   </data>
-  <data name="rutaFacturas" xml:space="preserve">
-    <value>C:\Tangerine\web\m8\</value>
-  </data>
-  <data name="saludos" xml:space="preserve">
-    <value>Saludos Cordiales, estimados:</value>
-  </data>
-  <data name="tipoAlerta" xml:space="preserve">
-    <value>alert</value>
-  </data>
-  <data name="TipoFecha" xml:space="preserve">
-    <value>dd/MM/yyyy</value>
+  <data name="volverModificado" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=1</value>
   </data>
 </root>

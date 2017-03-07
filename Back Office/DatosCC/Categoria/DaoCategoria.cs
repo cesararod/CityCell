@@ -226,6 +226,7 @@ namespace DatosCC.Categoria
             List<Parametro> parameters = new List<Parametro>();
             Parametro theParam = new Parametro();
             List<Entidad> listCategoria = new List<Entidad>();
+            int _fkCategoria = 0;
 
             try
             {
@@ -241,28 +242,25 @@ namespace DatosCC.Categoria
                     int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
                     int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());
                     DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
-                    int _fkCategoria = int.Parse(row[RecursoCategoria.CategoriafKCategoria].ToString());
+                    
+                    Dominio.Entidades.Categoria _LaCategoria = new Dominio.Entidades.Categoria(_nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);
+                    _LaCategoria.IdCat = _id;
 
-
-                    Dominio.Entidades.Categoria _LaCategoria = new Dominio.Entidades.Categoria(_nombre, _destacado, _activo, _fechaCreacion);
-                    //_ElProducto.Id = facId;
-
-                    //listCategoria.Add(_LaCategoria);
+                    listCategoria.Add(_LaCategoria);
                 }
 
 
             }
             catch (FormatException ex)
             {
-
-                /* throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoCategoria.Codigo,
-                      RecursoCategoria.MensajeFormato, ex);*/
+                throw new WrongFormatException(RecursoCategoria.Codigo,
+                      RecursoCategoria.MensajeFormato, ex);
             }
             catch (ArgumentNullException ex)
             {
 
-                /* throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoCategoria.Codigo,
-                     RecursoCategoria.MensajeNull, ex);*/
+                throw new NullArgumentException(RecursoCategoria.Codigo,
+                     RecursoCategoria.MensajeNull, ex);
             }
             catch (ExceptionCcConBD ex)
             {
@@ -273,8 +271,8 @@ namespace DatosCC.Categoria
             catch (Exception ex)
             {
 
-                /*throw new ExceptionsCity(RecursoCategoria.Codigo,
-                    RecursoCategoria.MensajeOtro, ex);*/
+                throw new ExceptionsCity(RecursoCategoria.Codigo,
+                    RecursoCategoria.MensajeOtro, ex);
             }
 
             return listCategoria;

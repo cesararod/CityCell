@@ -13,7 +13,6 @@ using Dominio.Entidades;
 using ExceptionCity;
 using LogicaCC.Fabrica;
 
-
 namespace Presentador.CategoriaCC
 {
     public class PresentadorAgregarCategoria

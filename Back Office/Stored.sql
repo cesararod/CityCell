@@ -1,3 +1,21 @@
+CREATE PROCEDURE ConsultarCategoria
+
+AS
+    BEGIN
+        SELECT id as id,Nombre as Nombre,Activo as Activo,Destacado as Destacado,Fecha_Creacion as Fecha_Creacion,Categoria_id as Categoria_id
+        FROM Categoria;
+    END
+GO
+
+CREATE PROCEDURE ConsultarMarca
+
+AS
+    BEGIN
+        SELECT id as id,Nombre as Nombre,Activo as Activo,Imagen as Imagen,Fecha_Creacion as Fecha_Creacion
+        FROM Marca;
+    END
+GO
+
 CREATE PROCEDURE AgregarCategoria
    
     @nombre [varchar](50),

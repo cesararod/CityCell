@@ -83,7 +83,16 @@ namespace Dominio.Entidades
             this.activo = inputActivo;
             this.fecha_creacion = inputFechaCrea;
         }
-      
+
+        public Categoria(string inputNombre, int inputDestacado, int inputActivo, DateTime inputFechaCrea, int inputCategoria)
+        {
+
+            this.nombre = inputNombre;
+            this.destacado = inputDestacado;
+            this.activo = inputActivo;
+            this.fecha_creacion = inputFechaCrea;
+            this.fk_categoria = inputCategoria;
+        }
         #endregion
     }
 }

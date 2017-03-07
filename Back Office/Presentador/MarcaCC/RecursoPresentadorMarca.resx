@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Activada" xml:space="preserve">
+    <value>&lt;span class="label label-success"&gt;Activada&lt;/span&gt;</value>
+  </data>
   <data name="alertaError" xml:space="preserve">
     <value>alert alert-danger alert-dismissible</value>
   </data>
@@ -327,14 +330,11 @@
   <data name="OpenTR1" xml:space="preserve">
     <value>&lt;tr&gt;</value>
   </data>
-  <data name="Activada" xml:space="preserve">
-    <value>&lt;span class="label label-success"&gt;Activada&lt;/span&gt;</value>
+  <data name="porActivar" xml:space="preserve">
+    <value>&lt;span class="label label-warning"&gt;Desactivado&lt;/span&gt;</value>
   </data>
   <data name="PorcentajeDeRealizacion" xml:space="preserve">
     <value>PorcentajeRealizado:</value>
-  </data>
-  <data name="porActivar" xml:space="preserve">
-    <value>&lt;span class="label label-warning"&gt;Desactivado&lt;/span&gt;</value>
   </data>
   <data name="PropuestaAprovada" xml:space="preserve">
     <value>Propuesta:</value>
@@ -359,5 +359,8 @@
   </data>
   <data name="TipoFecha" xml:space="preserve">
     <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ruta" xml:space="preserve">
+    <value>ImgBrand\\</value>
   </data>
 </root>

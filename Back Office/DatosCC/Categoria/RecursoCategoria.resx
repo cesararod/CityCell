@@ -178,7 +178,7 @@
     <value>com_telefono</value>
   </data>
   <data name="ConsultCategorias" xml:space="preserve">
-    <value>ConsultaCategoria</value>
+    <value>ConsultarCategorias</value>
   </data>
   <data name="ConsultCategoriaXId" xml:space="preserve">
     <value>ConsultaCategoriaId</value>
@@ -257,5 +257,11 @@
   </data>
   <data name="MensajeSQL" xml:space="preserve">
     <value>Error de BD - </value>
+  </data>
+  <data name="MensajeFormato" xml:space="preserve">
+    <value>Error de formato - </value>
+  </data>
+  <data name="MensajeNull" xml:space="preserve">
+    <value>Error por nulo - </value>
   </data>
 </root>

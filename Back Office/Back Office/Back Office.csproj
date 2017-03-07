@@ -137,6 +137,8 @@
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="Gruntfile.js" />
     <Content Include="GUI\Categoria\AgregarCategoria.aspx" />
+    <Content Include="GUI\Categoria\ConsultarCategoria.aspx" />
+    <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -984,10 +986,29 @@
     <Compile Include="GUI\Categoria\AgregarCategoria.aspx.designer.cs">
       <DependentUpon>AgregarCategoria.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Categoria\ConsultarCategoria.aspx.cs">
+      <DependentUpon>ConsultarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Categoria\ConsultarCategoria.aspx.designer.cs">
+      <DependentUpon>ConsultarCategoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Categoria\ResourceGUICategoria.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUICategoria.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Marca\AgregarMarca.aspx.cs">
+      <DependentUpon>AgregarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Marca\AgregarMarca.aspx.designer.cs">
+      <DependentUpon>AgregarMarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Marca\ResourceGUIMarca.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIMarca.resx</DependentUpon>
     </Compile>
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
@@ -1149,6 +1170,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUICategoria.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Marca\ResourceGUIMarca.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIMarca.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contratos\Contratos.csproj">
@@ -1175,6 +1200,9 @@
       <Project>{965a3db2-66fa-4c66-897a-ef6a9cd616d4}</Project>
       <Name>Presentador</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\Marca\ImgBrand\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

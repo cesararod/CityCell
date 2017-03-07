@@ -39,7 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comando.cs" />
-    <Compile Include="Comandos\ComandoAgregarCategoria.cs" />
+    <Compile Include="Comandos\Categoria\ComandoAgregarCategoria.cs" />
+    <Compile Include="Comandos\Categoria\ComandoConsultarCategoria.cs" />
+    <Compile Include="Comandos\Marca\ComandoAgregarMarca.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">
       <DependentUpon>ResourcesLogic.resx</DependentUpon>
@@ -70,6 +72,7 @@
       <LastGenOutput>ResourcesLogic.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

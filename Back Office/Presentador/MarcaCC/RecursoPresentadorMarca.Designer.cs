@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Presentador.CategoriaCC {
+namespace Presentador.MarcaCC {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Presentador.CategoriaCC {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RecursoPresentadorCategoria {
+    internal class RecursoPresentadorMarca {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RecursoPresentadorCategoria() {
+        internal RecursoPresentadorMarca() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Presentador.CategoriaCC {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentador.CategoriaCC.RecursoPresentadorCategoria", typeof(RecursoPresentadorCategoria).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentador.MarcaCC.RecursoPresentadorMarca", typeof(RecursoPresentadorMarca).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -750,6 +750,15 @@ namespace Presentador.CategoriaCC {
         internal static string recordatorio {
             get {
                 return ResourceManager.GetString("recordatorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ImgBrand\\.
+        /// </summary>
+        internal static string ruta {
+            get {
+                return ResourceManager.GetString("ruta", resourceCulture);
             }
         }
         

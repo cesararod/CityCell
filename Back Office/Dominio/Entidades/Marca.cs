@@ -29,25 +29,26 @@ namespace Dominio.Entidades
         public string Nombre
         {
             get { return nombre; }
+            set { nombre = value; }
            
         }
 
         public string Imagen
         {
             get { return imagen; }
-            
+            set { imagen = value; }
         }
 
         public int Activo
         {
             get { return activo; }
-            
+            set { activo = value; }
         }        
 
         public DateTime Fecha
         {
             get { return fecha; }
-            
+            set { fecha = value; }
         }
 
         

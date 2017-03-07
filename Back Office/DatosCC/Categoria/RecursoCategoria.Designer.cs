@@ -250,7 +250,7 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultaCategoria.
+        ///   Looks up a localized string similar to ConsultarCategorias.
         /// </summary>
         internal static string ConsultCategorias {
             get {
@@ -340,11 +340,29 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error de formato - .
+        /// </summary>
+        internal static string MensajeFormato {
+            get {
+                return ResourceManager.GetString("MensajeFormato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Entrada en el Método.
         /// </summary>
         internal static string MensajeInicioInfoLogger {
             get {
                 return ResourceManager.GetString("MensajeInicioInfoLogger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error por nulo - .
+        /// </summary>
+        internal static string MensajeNull {
+            get {
+                return ResourceManager.GetString("MensajeNull", resourceCulture);
             }
         }
         
