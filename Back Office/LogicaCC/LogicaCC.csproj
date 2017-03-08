@@ -42,6 +42,7 @@
     <Compile Include="Comandos\Categoria\ComandoAgregarCategoria.cs" />
     <Compile Include="Comandos\Categoria\ComandoConsultarCategoria.cs" />
     <Compile Include="Comandos\Marca\ComandoAgregarMarca.cs" />
+    <Compile Include="Comandos\Marca\ComandoConsultarMarca.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">
       <DependentUpon>ResourcesLogic.resx</DependentUpon>

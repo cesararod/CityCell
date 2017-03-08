@@ -41,6 +41,7 @@
     <Compile Include="Categoria\IContratoAgregarCategoria.cs" />
     <Compile Include="Categoria\IContratoConsultarCategoria.cs" />
     <Compile Include="Marca\IContratoAgregarMarca.cs" />
+    <Compile Include="Marca\IContratoConsultarMarca.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

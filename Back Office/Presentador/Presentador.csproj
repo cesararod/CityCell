@@ -78,6 +78,7 @@
       <DependentUpon>RecursoPresentadorCategoria.resx</DependentUpon>
     </Compile>
     <Compile Include="MarcaCC\PresentadorAgregarMarca.cs" />
+    <Compile Include="MarcaCC\PresentadorConsultaMarca.cs" />
     <Compile Include="MarcaCC\RecursoPresentadorMarca.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -49,6 +49,16 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
 
+        /// <summary>
+        /// metodo para crear comando que permite consultar todas las Categorias
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosMarca()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarMarca();
+            return respuesta;
+        }
+
         #endregion
 
         #region Producto

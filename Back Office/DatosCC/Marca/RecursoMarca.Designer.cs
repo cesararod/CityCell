@@ -79,6 +79,15 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error BD.
+        /// </summary>
+        internal static string Codigo {
+            get {
+                return ResourceManager.GetString("Codigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TGE_00_001.
         /// </summary>
         internal static string Codigo_Error_Formato {
@@ -88,7 +97,7 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultaMarca.
+        ///   Looks up a localized string similar to ConsultarMarca.
         /// </summary>
         internal static string ConsultMarcas {
             get {
@@ -241,11 +250,47 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error de formato - .
+        /// </summary>
+        internal static string MensajeFormato {
+            get {
+                return ResourceManager.GetString("MensajeFormato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Entrada en el Método.
         /// </summary>
         internal static string MensajeInicioInfoLogger {
             get {
                 return ResourceManager.GetString("MensajeInicioInfoLogger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error por nulo - .
+        /// </summary>
+        internal static string MensajeNull {
+            get {
+                return ResourceManager.GetString("MensajeNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error no reconocido.
+        /// </summary>
+        internal static string MensajeOtro {
+            get {
+                return ResourceManager.GetString("MensajeOtro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error de BD - .
+        /// </summary>
+        internal static string MensajeSQL {
+            get {
+                return ResourceManager.GetString("MensajeSQL", resourceCulture);
             }
         }
         

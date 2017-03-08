@@ -127,7 +127,7 @@
     <value>TGE_00_001</value>
   </data>
   <data name="ConsultMarcas" xml:space="preserve">
-    <value>ConsultaMarca</value>
+    <value>ConsultarMarca</value>
   </data>
   <data name="ConsultMarcaXId" xml:space="preserve">
     <value>ConsultaMarcaId</value>
@@ -212,5 +212,20 @@
   </data>
   <data name="ParamTelefono" xml:space="preserve">
     <value>@telefono</value>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Error BD</value>
+  </data>
+  <data name="MensajeFormato" xml:space="preserve">
+    <value>Error de formato - </value>
+  </data>
+  <data name="MensajeNull" xml:space="preserve">
+    <value>Error por nulo - </value>
+  </data>
+  <data name="MensajeOtro" xml:space="preserve">
+    <value>Error no reconocido</value>
+  </data>
+  <data name="MensajeSQL" xml:space="preserve">
+    <value>Error de BD - </value>
   </data>
 </root>

@@ -258,27 +258,26 @@ namespace DatosCC.Marca
             }
             catch (FormatException ex)
             {
-
-                /* throw new ExcepcionesTangerine.M8.WrongFormatException(RecursoMarca.Codigo,
-                      RecursoMarca.MensajeFormato, ex);*/
+                throw new WrongFormatException(RecursoMarca.Codigo,
+                      RecursoMarca.MensajeFormato, ex);
             }
             catch (ArgumentNullException ex)
             {
 
-                /* throw new ExcepcionesTangerine.M8.NullArgumentException(RecursoMarca.Codigo,
-                     RecursoMarca.MensajeNull, ex);*/
+                throw new NullArgumentException(RecursoMarca.Codigo,
+                     RecursoMarca.MensajeNull, ex);
             }
             catch (ExceptionCcConBD ex)
             {
 
-                /*throw new ExceptionsCity(RecursoMarca.Codigo,
-                   RecursoMarca.MensajeSQL, ex);*/
+                throw new ExceptionsCity(RecursoMarca.Codigo,
+                   RecursoMarca.MensajeSQL, ex);
             }
             catch (Exception ex)
             {
 
-                /*throw new ExceptionsCity(RecursoMarca.Codigo,
-                    RecursoMarca.MensajeOtro, ex);*/
+                throw new ExceptionsCity(RecursoMarca.Codigo,
+                    RecursoMarca.MensajeOtro, ex);
             }
 
             return listMarca;
