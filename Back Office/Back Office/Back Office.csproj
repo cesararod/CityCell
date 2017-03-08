@@ -139,6 +139,7 @@
     <Content Include="GUI\Categoria\AgregarCategoria.aspx" />
     <Content Include="GUI\Categoria\ConsultarCategoria.aspx" />
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
+    <Content Include="GUI\Marca\ConsultarMarca.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -1004,6 +1005,13 @@
     </Compile>
     <Compile Include="GUI\Marca\AgregarMarca.aspx.designer.cs">
       <DependentUpon>AgregarMarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Marca\ConsultarMarca.aspx.cs">
+      <DependentUpon>ConsultarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Marca\ConsultarMarca.aspx.designer.cs">
+      <DependentUpon>ConsultarMarca.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Marca\ResourceGUIMarca.Designer.cs">
       <AutoGen>True</AutoGen>
