@@ -67,11 +67,11 @@ namespace Dominio.Entidades
 
         public Marca(int inputId, string inputNombre, string inputImagen, int inputActivo, DateTime inputFecha)
         {
-            id = 0;
-            nombre = String.Empty;
-            imagen = String.Empty;
+            id = inputId;
+            nombre = inputNombre;
+            imagen = inputImagen;
             activo = inputActivo;
-            fecha = DateTime.Now;
+            fecha = inputFecha;
         }
         #endregion
     }

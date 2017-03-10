@@ -50,6 +50,9 @@ namespace DatosCC.Producto
                     false);
                 parameters.Add(theParam);
 
+                theParam = new Parametro(RecursoProducto.ParamPeso, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Peso.ToString(), false);
+                parameters.Add(theParam);
+
                 theParam = new Parametro(RecursoProducto.ParamAlto, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Alto.ToString(), false);
                 parameters.Add(theParam);
 
@@ -64,6 +67,10 @@ namespace DatosCC.Producto
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoProducto.ParamIdCategoria, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Fk_Categoria.ToString(),
+                    false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoProducto.ParamFechaCreacion, SqlDbType.Date, ((Dominio.Entidades.Producto)ElProducto).Fecha_Creacion.ToString(),
                     false);
                 parameters.Add(theParam);
 
@@ -84,12 +91,14 @@ namespace DatosCC.Producto
             }
             catch (ExceptionCcConBD ex)
             {
-
+                throw new ExceptionsCity(RecursoProducto.Codigo,
+                   RecursoProducto.MensajeSQL, ex);
             }
             catch (Exception ex)
             {
-
-            }
+                throw new ExceptionsCity(RecursoProducto.Codigo,
+                    RecursoProducto.MensajeOtro, ex);
+            }            
 
             return true;
         }

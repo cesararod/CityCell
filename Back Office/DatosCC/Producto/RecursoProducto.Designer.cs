@@ -79,6 +79,15 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error BD.
+        /// </summary>
+        internal static string Codigo {
+            get {
+                return ResourceManager.GetString("Codigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ConsultaProducto.
         /// </summary>
         internal static string ConsultProductos {
@@ -102,6 +111,24 @@ namespace DatosCC.Producto {
         internal static string DeactivateProducto {
             get {
                 return ResourceManager.GetString("DeactivateProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error no reconocido.
+        /// </summary>
+        internal static string MensajeOtro {
+            get {
+                return ResourceManager.GetString("MensajeOtro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error de BD - .
+        /// </summary>
+        internal static string MensajeSQL {
+            get {
+                return ResourceManager.GetString("MensajeSQL", resourceCulture);
             }
         }
         
@@ -169,7 +196,7 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @id_categoria.
+        ///   Looks up a localized string similar to @fk_categoria.
         /// </summary>
         internal static string ParamIdCategoria {
             get {
@@ -178,7 +205,7 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @id_marca.
+        ///   Looks up a localized string similar to @fk_marca.
         /// </summary>
         internal static string ParamIdMarca {
             get {
@@ -241,7 +268,7 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @valido.
+        ///   Looks up a localized string similar to @activo.
         /// </summary>
         internal static string Paramstatus {
             get {

@@ -11,6 +11,15 @@ namespace Dominio.Fabrica
     public class FabricaEntidades
     {
         /// <summary>
+        /// Metodo que crea la instancia de la entidad Producto
+        /// </summary>
+        /// <returns>Retorna la instancia a la clase Marca</returns>
+        public static Entidad ProductoVacio()
+        {
+            return new Producto();
+        }
+
+        /// <summary>
         /// Metodo que crea la instancia de la entidad Marca
         /// </summary>
         /// <returns>Retorna la instancia a la clase Marca</returns>

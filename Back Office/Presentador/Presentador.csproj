@@ -84,6 +84,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorMarca.resx</DependentUpon>
     </Compile>
+    <Compile Include="ProductoCC\PresentadorAgregarProducto.cs" />
+    <Compile Include="ProductoCC\RecursoPresentadorProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorProducto.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CategoriaCC\RecursoPresentadorCategoria.resx">
@@ -93,6 +99,10 @@
     <EmbeddedResource Include="MarcaCC\RecursoPresentadorMarca.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorMarca.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoCC\RecursoPresentadorProducto.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorProducto.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

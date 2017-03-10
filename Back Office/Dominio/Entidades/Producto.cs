@@ -36,84 +36,98 @@ namespace Dominio.Entidades
         public string Nombre
         {
             get { return nombre; }
+            set { nombre = value; }
            
         }
         
         public int Activo
         {
             get { return activo; }
+            set { activo = value; }
             
         } 
 
         public string Modelo
         {
             get { return modelo; }
+            set { modelo = value; }
             
         }
 
         public string Descripcion
         {
             get { return descripcion; }
+            set { descripcion = value; }
 
         }
 
         public float Precio
         {
             get { return precio; }
+            set { precio = value; }
 
         }
 
         public int Cantidad
         {
             get { return cantidad; }
+            set { cantidad = value; }
 
         }
 
         public float Peso
         {
             get { return peso; }
+            set { peso = value; }
 
         }
 
         public float Alto
         {
             get { return alto; }
+            set { alto = value; }
 
         }
 
         public float Ancho
         {
             get { return ancho; }
+            set { ancho = value; }
 
         }
 
         public float Largo
         {
             get { return largo; }
+            set { largo = value; }
 
         }
 
         public DateTime Fecha_Creacion
         {
             get { return fecha_creacion; }
+            set { fecha_creacion = value; }
 
         }
 
         public DateTime Fecha_Modificacion
         {
             get { return fecha_modificacion; }
+            set { fecha_modificacion = value; }
 
         }
 
         public int Fk_Marca
         {
             get { return fk_marca; }
+            set { fk_marca = value; }
 
         }
 
         public int Fk_Categoria
         {
             get { return fk_categoria; }
+            set { fk_categoria = value; }
 
         }
         #endregion

@@ -117,121 +117,121 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddNuevoProducto" xml:space="preserve">
-    <value>AgregarProducto</value>
+  <data name="alertClase" xml:space="preserve">
+    <value>class</value>
   </data>
-  <data name="ChangeProducto" xml:space="preserve">
-    <value>ModificarProducto</value>
+  <data name="alertRole" xml:space="preserve">
+    <value>role</value>
   </data>
-  <data name="ConsultProductos" xml:space="preserve">
-    <value>ConsultaProducto</value>
+  <data name="amount" xml:space="preserve">
+    <value>Monto</value>
   </data>
-  <data name="ConsultProductoXId" xml:space="preserve">
-    <value>ConsultaProductoId</value>
+  <data name="anulada" xml:space="preserve">
+    <value>&lt;span class="label label-danger"&gt;Anulada&lt;/span&gt;</value>
   </data>
-  <data name="DeactivateProducto" xml:space="preserve">
-    <value>DesactivarProducto</value>
+  <data name="asd" xml:space="preserve">
+    <value />
   </data>
-  <data name="ParamAlto" xml:space="preserve">
-    <value>@Alto</value>
+  <data name="BotonAnular" xml:space="preserve">
+    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="AnularFacturaM8.aspx?idFac=</value>
   </data>
-  <data name="ParamAncho" xml:space="preserve">
-    <value>@ancho</value>
+  <data name="BotonAnularInhabilitado" xml:space="preserve">
+    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" disabled="disabled" href="AnularFacturaM8.aspx?idFac=</value>
   </data>
-  <data name="ParamCantidad" xml:space="preserve">
-    <value>@cantidad</value>
+  <data name="BotonGenerarFactura" xml:space="preserve">
+    <value>&lt;a  class="btn btn-default glyphicon glyphicon-pencil" href="ConsultarFacturaM8.aspx</value>
   </data>
-  <data name="ParamDescripcion" xml:space="preserve">
-    <value>@descripcion</value>
+  <data name="BotonHab" xml:space="preserve">
+    <value>&lt;a title="Habilitar"  class="btn btn-success glyphicon glyphicon-ok"&gt;&lt;/a&gt;</value>
   </data>
-  <data name="ParamFechaCreacion" xml:space="preserve">
-    <value>@fecha_creacion</value>
+  <data name="BotonInfo" xml:space="preserve">
+    <value>&lt;a title="Informacion" class="btn btn-default glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"&gt;&lt;/a&gt;</value>
   </data>
-  <data name="ParamFechaModificacion" xml:space="preserve">
-    <value>@fecha_mod</value>
+  <data name="BotonInvol" xml:space="preserve">
+    <value>&lt;a title="Involucrados" class="btn btn-info glyphicon glyphicon-user"&gt;&lt;/a&gt;</value>
   </data>
-  <data name="ParamId" xml:space="preserve">
-    <value>@id</value>
+  <data name="BotonMail" xml:space="preserve">
+    <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idFac=</value>
   </data>
-  <data name="ParamIdCategoria" xml:space="preserve">
-    <value>@fk_categoria</value>
+  <data name="BotonMail1" xml:space="preserve">
+    <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idCompania=</value>
   </data>
-  <data name="ParamIdMarca" xml:space="preserve">
-    <value>@fk_marca</value>
+  <data name="BotonModif" xml:space="preserve">
+    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" href="ModificarFacturaM8.aspx?idFac=</value>
   </data>
-  <data name="ParamImagen" xml:space="preserve">
-    <value>@imagen</value>
+  <data name="BotonModifInhabilitado" xml:space="preserve">
+    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" disabled="disabled" href="ModificarFacturaM8.aspx?idFac=</value>
   </data>
-  <data name="Paramlargo" xml:space="preserve">
-    <value>@largo</value>
+  <data name="BotonPagar" xml:space="preserve">
+    <value>&lt;a title="Pagar" class="btn btn-success glyphicon glyphicon-euro" href="/GUI/M9/CargarPago1.aspx?id=</value>
   </data>
-  <data name="ParamModelo" xml:space="preserve">
-    <value>@modelo</value>
+  <data name="BotonPagarInhabilitado" xml:space="preserve">
+    <value>&lt;a title="Pagar" disabled="disabled" class="btn btn-success glyphicon glyphicon-euro" </value>
   </data>
-  <data name="ParamNombre" xml:space="preserve">
-    <value>@nombre</value>
+  <data name="CloseBoton" xml:space="preserve">
+    <value>&gt;&lt;/a&gt;</value>
   </data>
-  <data name="ParamPeso" xml:space="preserve">
-    <value>@peso</value>
+  <data name="CloseBotonParametro" xml:space="preserve">
+    <value>"&gt;&lt;/a&gt;</value>
   </data>
-  <data name="ParamPrecio" xml:space="preserve">
-    <value>@precio</value>
+  <data name="CloseTD" xml:space="preserve">
+    <value>&lt;/td&gt;</value>
   </data>
-  <data name="Paramstatus" xml:space="preserve">
-    <value>@activo</value>
+  <data name="CloseTR" xml:space="preserve">
+    <value>&lt;/tr&gt;</value>
   </data>
-  <data name="ProductoActivo" xml:space="preserve">
-    <value>Activo</value>
+  <data name="Coma" xml:space="preserve">
+    <value>,</value>
   </data>
-  <data name="ProductoAlto" xml:space="preserve">
-    <value>Alto</value>
+  <data name="dateTipe" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
   </data>
-  <data name="ProductoAncho" xml:space="preserve">
-    <value>Ancho</value>
+  <data name="estado" xml:space="preserve">
+    <value>estado</value>
   </data>
-  <data name="ProductoCantidad" xml:space="preserve">
-    <value>cantidad</value>
+  <data name="Factura" xml:space="preserve">
+    <value>Factura.aspx?idFac=</value>
   </data>
-  <data name="ProductoDescripcion" xml:space="preserve">
-    <value>Descripcion</value>
+  <data name="idC" xml:space="preserve">
+    <value>IdCompania</value>
   </data>
-  <data name="ProductoFechaCre" xml:space="preserve">
-    <value>Fecha_Creacion</value>
+  <data name="idF" xml:space="preserve">
+    <value>idFac</value>
   </data>
-  <data name="ProductoFechaMod" xml:space="preserve">
-    <value>Fecha_Modificacion</value>
+  <data name="idFac" xml:space="preserve">
+    <value>idFac</value>
   </data>
-  <data name="ProductofKCategoria" xml:space="preserve">
-    <value>Categoria_id</value>
+  <data name="idP" xml:space="preserve">
+    <value>IdProyecto</value>
   </data>
-  <data name="ProductoFkMARCA" xml:space="preserve">
-    <value>Marca_Id</value>
+  <data name="OpenTD" xml:space="preserve">
+    <value>&lt;td&gt;</value>
   </data>
-  <data name="ProductoId" xml:space="preserve">
-    <value>SKU</value>
+  <data name="OpenTR" xml:space="preserve">
+    <value>&lt;tr&gt;</value>
   </data>
-  <data name="ProductoLargo" xml:space="preserve">
-    <value>Largo</value>
+  <data name="pagada" xml:space="preserve">
+    <value>&lt;span class="label label-success"&gt;Pagada&lt;/span&gt;</value>
   </data>
-  <data name="ProductoModelo" xml:space="preserve">
-    <value>Modelo</value>
+  <data name="path" xml:space="preserve">
+    <value>/m8</value>
   </data>
-  <data name="ProductoNombre" xml:space="preserve">
-    <value>Nombre</value>
+  <data name="porPagar" xml:space="preserve">
+    <value>&lt;span class="label label-warning"&gt;Por Pagar&lt;/span&gt;</value>
   </data>
-  <data name="ProductoPeso" xml:space="preserve">
-    <value>Peso</value>
+  <data name="redirectHome" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx</value>
   </data>
-  <data name="ProductoPrecio" xml:space="preserve">
-    <value>Precio</value>
+  <data name="volver" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx</value>
   </data>
-  <data name="Codigo" xml:space="preserve">
-    <value>Error BD</value>
+  <data name="volverAnular" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=2</value>
   </data>
-  <data name="MensajeOtro" xml:space="preserve">
-    <value>Error no reconocido</value>
+  <data name="volverCorreo" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=3</value>
   </data>
-  <data name="MensajeSQL" xml:space="preserve">
-    <value>Error de BD - </value>
+  <data name="volverModificado" xml:space="preserve">
+    <value>ConsultarFacturaM8.aspx?estado=1</value>
   </data>
 </root>

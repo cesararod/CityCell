@@ -140,6 +140,8 @@
     <Content Include="GUI\Categoria\ConsultarCategoria.aspx" />
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
+    <Content Include="GUI\Producto\AgregaProducto.aspx" />
+    <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -1018,6 +1020,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUIMarca.resx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Producto\AgregaProducto.aspx.cs">
+      <DependentUpon>AgregaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Producto\AgregaProducto.aspx.designer.cs">
+      <DependentUpon>AgregaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Producto\ResourceGUIProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Usuario\AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Usuario\AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1181,6 +1202,10 @@
     <EmbeddedResource Include="GUI\Marca\ResourceGUIMarca.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUIMarca.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Producto\ResourceGUIProducto.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIProducto.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
