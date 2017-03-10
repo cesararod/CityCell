@@ -37,7 +37,7 @@ namespace Back_Office.GUI.Usuario {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList nombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText nombre;
         
         /// <summary>
         /// apellido control.
@@ -46,7 +46,7 @@ namespace Back_Office.GUI.Usuario {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList apellido;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText apellido;
         
         /// <summary>
         /// genero control.
