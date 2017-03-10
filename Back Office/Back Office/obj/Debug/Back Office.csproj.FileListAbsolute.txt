@@ -31,3 +31,4 @@ C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\L
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Presentador.pdb
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Usuario.ResourceGUIUsuario.resources

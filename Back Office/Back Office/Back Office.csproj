@@ -1039,6 +1039,11 @@
     <Compile Include="GUI\Usuario\AgregarUsuario.aspx.designer.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Usuario\ResourceGUIUsuario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIUsuario.resx</DependentUpon>
+    </Compile>
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1206,6 +1211,10 @@
     <EmbeddedResource Include="GUI\Producto\ResourceGUIProducto.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUIProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Usuario\ResourceGUIUsuario.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIUsuario.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -90,6 +90,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorProducto.resx</DependentUpon>
     </Compile>
+    <Compile Include="UsuarioCC\PresentadorAgregarUsuario.cs" />
+    <Compile Include="UsuarioCC\RecursoPresentadorUsuario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorUsuario.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CategoriaCC\RecursoPresentadorCategoria.resx">
@@ -103,6 +109,10 @@
     <EmbeddedResource Include="ProductoCC\RecursoPresentadorProducto.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioCC\RecursoPresentadorUsuario.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorUsuario.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

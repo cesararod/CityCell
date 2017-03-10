@@ -65,6 +65,12 @@
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
     <Compile Include="Resultado.cs" />
+    <Compile Include="Usuario\DaoUsuario.cs" />
+    <Compile Include="Usuario\RecursoUsuario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoUsuario.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Categoria\RecursoCategoria.resx">
@@ -81,6 +87,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RecursoGeneralBD.resx" />
     <EmbeddedResource Include="RecursoGeneralDAO.resx" />
+    <EmbeddedResource Include="Usuario\RecursoUsuario.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoUsuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
