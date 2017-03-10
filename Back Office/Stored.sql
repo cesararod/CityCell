@@ -139,6 +139,27 @@ AS
     END;
 GO
 
+CREATE PROCEDURE AgregarUsuario
+   
+    @nombre [varchar](50),
+    @apellido [varchar](50),
+    @cedula [varchar](50),
+    @telefono [varchar](255),
+    @celular float,
+    @password int,
+    @f_nac float,
+    @f_ingres float,
+    @email float,
+    @genero float,    
+    @rol int,
+    @tipo_doc int
+
+AS
+    BEGIN
+        INSERT INTO PRODUCTO(Nombre, Activo, Modelo, Descripcion, Precio, cantidad, Peso, Alto, Ancho, Largo, Marca_Id, Categoria_id, Fecha_Creacion)
+        VALUES(@nombre,@activo,@modelo,@descripcion,@precio,@cantidad,@peso,@alto,@ancho,@largo,@fk_marca,@fk_categoria,@fecha_creacion);
+    END;
+GO
 
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
@@ -147,3 +168,4 @@ select * from rol
 
 INSERT INTO USUARIO(Nombre,Apellido,Cedula,Telefono,Celular,Password,Fecha_Nacimineto,Fecha_Ingreso,Email,Genero_id,Rol_Id,Tipo_documento,Origen)
         VALUES('Cesar','Rodriguez','19195483','02124330234','04122300353','1234','23-02-1990 13:23:44','20-02-2017 13:23:44','carr235@gmail.com',1,1,'v','Pagina');
+
