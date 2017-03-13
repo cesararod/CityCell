@@ -43,6 +43,8 @@
     <Compile Include="Marca\IContratoAgregarMarca.cs" />
     <Compile Include="Marca\IContratoConsultarMarca.cs" />
     <Compile Include="Producto\IContratoAgregarProducto.cs" />
+    <Compile Include="Producto\IContratoConsultarProducto.cs" />
+    <Compile Include="Promocion\IContratoAgregarPromocion.cs" />
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
   </ItemGroup>
   <ItemGroup>

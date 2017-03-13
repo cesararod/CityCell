@@ -31,42 +31,53 @@ namespace DatosCC.Usuario
                 theParam = new Parametro(RecursoUsuario.ParamNombre, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Nombre, false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.Paramstatus, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Apellido,
+                theParam = new Parametro(RecursoUsuario.ParamApellido, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Apellido,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamModelo, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Cedula.ToString(), false);
+                theParam = new Parametro(RecursoUsuario.ParamCedula, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Cedula.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamDescripcion, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Telefono,
+                theParam = new Parametro(RecursoUsuario.ParamTelefono, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Telefono,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamPrecio, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Celular,
+                theParam = new Parametro(RecursoUsuario.ParamCelular, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Celular,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamCantidad, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Password,
+                theParam = new Parametro(RecursoUsuario.ParamPassword, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Password,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamPeso, SqlDbType.Date, ((Dominio.Entidades.Usuario)ElUsuario).Fecha_Nacimiento.ToString(), false);
+                theParam = new Parametro(RecursoUsuario.ParamFechaNacimieto, SqlDbType.Date, ((Dominio.Entidades.Usuario)ElUsuario).Fecha_Nacimiento.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamAlto, SqlDbType.Date, ((Dominio.Entidades.Usuario)ElUsuario).Fecha_Ingreso.ToString(), false);
+                theParam = new Parametro(RecursoUsuario.ParamFechaIngreso, SqlDbType.Date, ((Dominio.Entidades.Usuario)ElUsuario).Fecha_Ingreso.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamAncho, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Email, false);
+                theParam = new Parametro(RecursoUsuario.ParamMail, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Email, false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.Paramlargo, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Fk_Genero.ToString(), false);
+                theParam = new Parametro(RecursoUsuario.ParamGenero, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Fk_Genero.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamIdMarca, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Fk_Rol.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamRol, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Fk_Rol.ToString(),
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamIdCategoria, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Tipo_Documento,
+                theParam = new Parametro(RecursoUsuario.ParamTipoDoc, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Tipo_Documento,
+                    false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoUsuario.ParamOrigen, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Origen,
+                    false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoUsuario.ParamValidacionDC, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Validacion_dc.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoUsuario.ParamValidoDC, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Valido_dc.ToString(),
                     false);
                 parameters.Add(theParam);
 
@@ -112,15 +123,15 @@ namespace DatosCC.Usuario
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoUsuario.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamNombre, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamPrecio, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Precio.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamValidoDC, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Precio.ToString(),
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamCantidad, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Cantidad.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamTelefono, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Cantidad.ToString(),
                     false);
                 parameters.Add(theParam);
 
@@ -167,7 +178,7 @@ namespace DatosCC.Usuario
                 theParam = new Parametro(RecursoUsuario.ParamId, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Id.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamNombre, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
                     false);
                 parameters.Add(theParam);
 

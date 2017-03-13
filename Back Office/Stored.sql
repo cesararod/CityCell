@@ -161,6 +161,32 @@ AS
     END;
 GO
 
+CREATE PROCEDURE ConsultarProductos
+AS
+    BEGIN
+        select Producto.SKU as SKU,Producto.Nombre as Nombre,Producto.Modelo as Modelo,Producto.cantidad as cantidad, Producto.Activo As Activo,
+Producto.Precio as Precio, Producto.Descripcion as Descripcion,  Producto.Peso as Peso, Producto.Alto as Alto, Producto.Ancho as Ancho,
+Producto.Largo as Largo, Producto.Fecha_Creacion, Producto.Fecha_Modificacion, Producto.Marca_Id, Producto.Categoria_id
+ from producto
+    END
+GO
+
+CREATE PROCEDURE AgregarPromocion
+   
+    @precio float,
+    @producto int,
+    @activo int,
+    @fecha_inicio date,
+    @fecha_fin date,
+    @fecha_creacion date
+
+AS
+    BEGIN
+        INSERT INTO Promocion(Producto_id,Fecha_Inicio,Fecha_Fin,Activo,Fecha_Creacion,Precio)
+        VALUES(@producto,@fecha_inicio,@fecha_fin,@activo,@fecha_creacion,@precio);
+    END;
+GO
+
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
 

@@ -165,6 +165,26 @@ namespace Dominio.Entidades
             fk_rol = input_fk_rol;
             fk_genero = input_fk_genero;
         }
+
+        public Usuario()
+        {
+            Id = 0;
+            nombre = string.Empty;
+            apellido = String.Empty;
+            cedula = 0;
+            telefono = String.Empty;
+            celular = String.Empty;
+            password = String.Empty;
+            fecha_nacimiento = DateTime.Now;
+            fecha_ingreso = DateTime.Now;
+            email = String.Empty;
+            tipo_documento = String.Empty;
+            origen = String.Empty;
+            validacion_dc = 0;
+            valido_dc = 0;
+            fk_rol = 0;
+            fk_genero = 0;
+        }
       
         #endregion
     }

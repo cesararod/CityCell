@@ -85,10 +85,17 @@
       <DependentUpon>RecursoPresentadorMarca.resx</DependentUpon>
     </Compile>
     <Compile Include="ProductoCC\PresentadorAgregarProducto.cs" />
+    <Compile Include="ProductoCC\PresentadorConsultaProductos.cs" />
     <Compile Include="ProductoCC\RecursoPresentadorProducto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionCC\PresentadorAgregarPromocion.cs" />
+    <Compile Include="PromocionCC\RecursoPresentadorPromocion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorPromocion.resx</DependentUpon>
     </Compile>
     <Compile Include="UsuarioCC\PresentadorAgregarUsuario.cs" />
     <Compile Include="UsuarioCC\RecursoPresentadorUsuario.Designer.cs">
@@ -109,6 +116,10 @@
     <EmbeddedResource Include="ProductoCC\RecursoPresentadorProducto.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromocionCC\RecursoPresentadorPromocion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorPromocion.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioCC\RecursoPresentadorUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>

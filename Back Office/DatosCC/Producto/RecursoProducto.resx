@@ -124,7 +124,7 @@
     <value>ModificarProducto</value>
   </data>
   <data name="ConsultProductos" xml:space="preserve">
-    <value>ConsultaProducto</value>
+    <value>ConsultarProductos</value>
   </data>
   <data name="ConsultProductoXId" xml:space="preserve">
     <value>ConsultaProductoId</value>

@@ -62,6 +62,11 @@
       <DependentUpon>RecursoProducto.resx</DependentUpon>
     </Compile>
     <Compile Include="Promocion\DaoPromocion.cs" />
+    <Compile Include="Promocion\RecursoPromocion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPromocion.resx</DependentUpon>
+    </Compile>
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
     <Compile Include="Resultado.cs" />
@@ -84,6 +89,10 @@
     <EmbeddedResource Include="Producto\RecursoProducto.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promocion\RecursoPromocion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPromocion.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RecursoGeneralBD.resx" />
     <EmbeddedResource Include="RecursoGeneralDAO.resx" />

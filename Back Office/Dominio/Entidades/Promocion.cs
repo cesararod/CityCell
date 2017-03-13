@@ -9,6 +9,7 @@ namespace Dominio.Entidades
     public class Promocion : Entidad
     {
         #region Atributos
+        private int id_promo;
         private int fk_producto;
         private int activo;
         private float precio;
@@ -24,36 +25,42 @@ namespace Dominio.Entidades
         public int Fk_Producto
         {
             get { return fk_producto; }
+            set { fk_producto = value; }
            
         }
 
         public int Activo
         {
             get { return activo; }
+            set { activo = value; }
             
         }
 
         public float Precio
         {
             get { return precio; }
+            set { precio = value; }
             
         }
 
         public DateTime Fecha_Creacion
         {
             get { return fecha_creacion; }
+            set { fecha_creacion = value; }
 
         }
 
         public DateTime Fecha_Inicio
         {
             get { return fecha_inicio; }
+            set { Fecha_Inicio = value; }
 
         }
 
         public DateTime Fecha_Fin
         {
             get { return fecha_fin; }
+            set { fecha_fin = value; }
 
         }
 
@@ -64,7 +71,6 @@ namespace Dominio.Entidades
 
         public Promocion()
         {
-            Id = 0;
             fk_producto = 0;
             precio = 0;
             activo = 0;

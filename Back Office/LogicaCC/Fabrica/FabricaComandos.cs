@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using LogicaCC.Comandos;
+using LogicaCC.Comandos.Promocion;
+using LogicaCC.Comandos.Usuario;
 using LogicaCC.Comandos.Marca;
 using LogicaCC.Comandos.Producto;
 
@@ -75,11 +77,43 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
 
+        /// <summary>
+        /// metodo para crear comando que permite consultar todos los Productos
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosProductos()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarProducto();
+            return respuesta;
+        }
+
+        #endregion
+
+        #region Usuario
+        /// <summary>
+        /// metodo para crear comando que permite agregar un Usuario
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearAgregarUsuario(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoAgregarUsuario(usuario);
+            return respuesta;
+        }
         #endregion
 
         #region Promocion
+        /// <summary>
+        /// metodo para crear comando que permite agregar una promocion
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearAgregarPromocion(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoAgregaPromocion(usuario);
+            return respuesta;
+        }
 
-        
 
         #endregion
     }

@@ -300,10 +300,9 @@ namespace DatosCC.Producto
                     float _ancho = float.Parse(row[RecursoProducto.ProductoAncho].ToString());
                     float _largo = float.Parse(row[RecursoProducto.ProductoLargo].ToString());
                     DateTime _fechaCreacion = DateTime.Parse(row[RecursoProducto.ProductoFechaCre].ToString());
-                    DateTime _fechaModificacion = DateTime.Parse(row[RecursoProducto.ProductoFechaMod].ToString());
+                    DateTime _fechaModificacion = DateTime.Now;
                     int _fkMarca = int.Parse(row[RecursoProducto.ProductoFkMARCA].ToString());
                     int _fkCategoria = int.Parse(row[RecursoProducto.ProductofKCategoria].ToString());
-
 
                     Dominio.Entidades.Producto _ElProducto = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso,
                                                               _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria);

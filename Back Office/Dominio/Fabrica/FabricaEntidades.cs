@@ -45,5 +45,23 @@ namespace Dominio.Fabrica
         {
             return new Categoria(nombre, destacado, activo, fechaCreacion);
         }
+
+        /// <summary>
+        /// Metodo que crea la instancia de la entidad Producto
+        /// </summary>
+        /// <returns>Retorna la instancia a la clase Marca</returns>
+        public static Entidad UsuarioVacio()
+        {
+            return new Usuario();
+        }
+
+        /// <summary>
+        /// Metodo que crea la instancia de la entidad promocion
+        /// </summary>
+        /// <returns>Retorna la instancia a la clase Promocion</returns>
+        public static Entidad PromocionVacia()
+        {
+            return new Promocion();
+        }
     }
 }

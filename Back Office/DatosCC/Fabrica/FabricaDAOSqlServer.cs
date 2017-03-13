@@ -8,6 +8,7 @@ using DatosCC.Categoria;
 using DatosCC.Marca;
 using DatosCC.Producto;
 using DatosCC.Promocion;
+using DatosCC.Usuario;
 
 
 namespace DatosCC.Fabrica
@@ -41,12 +42,19 @@ namespace DatosCC.Fabrica
 
         #endregion
 
+        #region Usuario
+        static public IDao crearDaoUsuario()
+        {
+            return new Usuario.DaoUsuario();
+        }
+        #endregion
+
         #region Promocion
 
-        /*static public IDao crearDaoPromocion()
+        static public IDao crearDaoPromocion()
         {
             return new Promocion.DaoPromocion();
-        }*/
+        }
 
         #endregion
     }

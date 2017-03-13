@@ -88,7 +88,7 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultaProducto.
+        ///   Looks up a localized string similar to ConsultarProductos.
         /// </summary>
         internal static string ConsultProductos {
             get {

@@ -44,7 +44,9 @@
     <Compile Include="Comandos\Marca\ComandoAgregarMarca.cs" />
     <Compile Include="Comandos\Marca\ComandoConsultarMarca.cs" />
     <Compile Include="Comandos\Producto\ComandoAgregaProducto.cs" />
-    <Compile Include="Comandos\Usuario\ComandoAgregaUsuario.cs" />
+    <Compile Include="Comandos\Producto\ComandoConsultarProducto.cs" />
+    <Compile Include="Comandos\Promocion\ComandoAgregaPromocion.cs" />
+    <Compile Include="Comandos\Usuario\ComandoAgregarUsuario.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">
       <DependentUpon>ResourcesLogic.resx</DependentUpon>

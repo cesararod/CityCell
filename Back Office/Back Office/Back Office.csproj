@@ -141,6 +141,8 @@
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
     <Content Include="GUI\Producto\AgregaProducto.aspx" />
+    <Content Include="GUI\Producto\ConsultarPromocion.aspx" />
+    <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
@@ -1027,10 +1029,29 @@
     <Compile Include="GUI\Producto\AgregaProducto.aspx.designer.cs">
       <DependentUpon>AgregaProducto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Producto\ConsultarPromocion.aspx.cs">
+      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Producto\ConsultarPromocion.aspx.designer.cs">
+      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Producto\ResourceGUIProducto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUIProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Promocion\AgregaPromocion.aspx.cs">
+      <DependentUpon>AgregaPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Promocion\AgregaPromocion.aspx.designer.cs">
+      <DependentUpon>AgregaPromocion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Promocion\ResourceGUIPromocion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIPromocion.resx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Usuario\AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
@@ -1211,6 +1232,10 @@
     <EmbeddedResource Include="GUI\Producto\ResourceGUIProducto.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUIProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Promocion\ResourceGUIPromocion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIPromocion.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Usuario\ResourceGUIUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>

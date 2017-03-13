@@ -133,56 +133,56 @@ namespace DatosCC.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @Alto.
+        ///   Looks up a localized string similar to @apellido.
         /// </summary>
-        internal static string ParamAlto {
+        internal static string ParamApellido {
             get {
-                return ResourceManager.GetString("ParamAlto", resourceCulture);
+                return ResourceManager.GetString("ParamApellido", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @ancho.
+        ///   Looks up a localized string similar to @cedula.
         /// </summary>
-        internal static string ParamAncho {
+        internal static string ParamCedula {
             get {
-                return ResourceManager.GetString("ParamAncho", resourceCulture);
+                return ResourceManager.GetString("ParamCedula", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @cantidad.
+        ///   Looks up a localized string similar to @celular.
         /// </summary>
-        internal static string ParamCantidad {
+        internal static string ParamCelular {
             get {
-                return ResourceManager.GetString("ParamCantidad", resourceCulture);
+                return ResourceManager.GetString("ParamCelular", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @descripcion.
+        ///   Looks up a localized string similar to @fecha_ingreso.
         /// </summary>
-        internal static string ParamDescripcion {
+        internal static string ParamFechaIngreso {
             get {
-                return ResourceManager.GetString("ParamDescripcion", resourceCulture);
+                return ResourceManager.GetString("ParamFechaIngreso", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @fecha_creacion.
+        ///   Looks up a localized string similar to @fecha_nac.
         /// </summary>
-        internal static string ParamFechaCreacion {
+        internal static string ParamFechaNacimieto {
             get {
-                return ResourceManager.GetString("ParamFechaCreacion", resourceCulture);
+                return ResourceManager.GetString("ParamFechaNacimieto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @fecha_mod.
+        ///   Looks up a localized string similar to @fk_genero.
         /// </summary>
-        internal static string ParamFechaModificacion {
+        internal static string ParamGenero {
             get {
-                return ResourceManager.GetString("ParamFechaModificacion", resourceCulture);
+                return ResourceManager.GetString("ParamGenero", resourceCulture);
             }
         }
         
@@ -196,47 +196,11 @@ namespace DatosCC.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @fk_categoria.
+        ///   Looks up a localized string similar to @email.
         /// </summary>
-        internal static string ParamIdCategoria {
+        internal static string ParamMail {
             get {
-                return ResourceManager.GetString("ParamIdCategoria", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @fk_marca.
-        /// </summary>
-        internal static string ParamIdMarca {
-            get {
-                return ResourceManager.GetString("ParamIdMarca", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @imagen.
-        /// </summary>
-        internal static string ParamImagen {
-            get {
-                return ResourceManager.GetString("ParamImagen", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @largo.
-        /// </summary>
-        internal static string Paramlargo {
-            get {
-                return ResourceManager.GetString("Paramlargo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @modelo.
-        /// </summary>
-        internal static string ParamModelo {
-            get {
-                return ResourceManager.GetString("ParamModelo", resourceCulture);
+                return ResourceManager.GetString("ParamMail", resourceCulture);
             }
         }
         
@@ -250,29 +214,65 @@ namespace DatosCC.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @peso.
+        ///   Looks up a localized string similar to @origen.
         /// </summary>
-        internal static string ParamPeso {
+        internal static string ParamOrigen {
             get {
-                return ResourceManager.GetString("ParamPeso", resourceCulture);
+                return ResourceManager.GetString("ParamOrigen", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @precio.
+        ///   Looks up a localized string similar to @password.
         /// </summary>
-        internal static string ParamPrecio {
+        internal static string ParamPassword {
             get {
-                return ResourceManager.GetString("ParamPrecio", resourceCulture);
+                return ResourceManager.GetString("ParamPassword", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @activo.
+        ///   Looks up a localized string similar to @fk_rol.
         /// </summary>
-        internal static string Paramstatus {
+        internal static string ParamRol {
             get {
-                return ResourceManager.GetString("Paramstatus", resourceCulture);
+                return ResourceManager.GetString("ParamRol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @telefono.
+        /// </summary>
+        internal static string ParamTelefono {
+            get {
+                return ResourceManager.GetString("ParamTelefono", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @tipo_doc.
+        /// </summary>
+        internal static string ParamTipoDoc {
+            get {
+                return ResourceManager.GetString("ParamTipoDoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @validacion_dc.
+        /// </summary>
+        internal static string ParamValidacionDC {
+            get {
+                return ResourceManager.GetString("ParamValidacionDC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @valido_dc.
+        /// </summary>
+        internal static string ParamValidoDC {
+            get {
+                return ResourceManager.GetString("ParamValidoDC", resourceCulture);
             }
         }
         

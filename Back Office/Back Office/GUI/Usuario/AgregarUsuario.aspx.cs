@@ -10,12 +10,13 @@ using System.Web.UI.WebControls;
 using System.Windows;
 using Contratos.Usuario;
 using Presentador.UsuarioCC;
+using ExceptionCity;
 
 namespace Back_Office.GUI.Usuario
 {
     public partial class AgregarUsuario : System.Web.UI.Page, IContratoAgregarUsuario
     {
-        private PresentadorAgregarUsuario presentador;      
+         
         private string[] Substrings;
         private string fecha;
 
@@ -119,6 +120,15 @@ namespace Back_Office.GUI.Usuario
         }
         #endregion
 
+        #region constructor
+        PresentadorAgregarUsuario Presentador;
+
+        public AgregarUsuario()
+        {
+            Presentador = new PresentadorAgregarUsuario(this);
+        }
+        #endregion
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -126,11 +136,17 @@ namespace Back_Office.GUI.Usuario
 
         protected void buttonGenerarUsuario_Click(object sender, EventArgs e)
         {
+            try { 
             //this.nombre = Request.QueryString[ResourceGUICategoria.idC];
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
-            //Presentador.GenerarUsuario();
+            Presentador.GenerarUsuario();
             //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
+            }
+            catch (Exception ex) {
+
+                throw ex;
+            }
         }
     }
 }

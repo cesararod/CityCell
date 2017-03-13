@@ -97,7 +97,7 @@
                         <label for="DateEmployee">Fecha de Nacimiento</label> <label for="Requerido" style="color: red;">*</label>
                         <div class="form-control input-group date ">
                             <input type="date" class="form-control" placeholder="fecha de nacimiento" id="fecha_nacimineto"
-                                runat="server" min="1916-01-01" max="2001-01-01" oninput="setCustomValidity('')"
+                                runat="server" oninput="setCustomValidity('')"
                                 required oninvalid="setCustomValidity('Porfavor colocar una fecha entre 1916 y 2001')">
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
@@ -107,7 +107,7 @@
 
                         <div class="form-group ">
                         <label for="EmailPerson">Correo</label> <label for="Requerido" style="color: red;">*</label>
-                        <input type="email" runat="server" id="EmailPerson" maxlength="25" class="form-control" 
+                        <input type="email" runat="server" id="EmailPerson" maxlength="100" class="form-control" 
                             placeholder="Introduzca una direccion email Ej: correo@dominio.com" required>                       
                         </div>
 
