@@ -21,6 +21,12 @@ namespace Dominio.Entidades
 
         #region Get's Set's
 
+        public int Id_Promo
+        {
+            get { return id_promo; }
+            set { id_promo = value; }
+
+        }
 
         public int Fk_Producto
         {
@@ -53,7 +59,7 @@ namespace Dominio.Entidades
         public DateTime Fecha_Inicio
         {
             get { return fecha_inicio; }
-            set { Fecha_Inicio = value; }
+            set { fecha_inicio = value; }
 
         }
 
@@ -71,6 +77,7 @@ namespace Dominio.Entidades
 
         public Promocion()
         {
+            id_promo = 0;
             fk_producto = 0;
             precio = 0;
             activo = 0;

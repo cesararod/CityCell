@@ -9,7 +9,7 @@ namespace Dominio.Entidades
     public class Producto : Entidad
     {
         #region Atributos
-        private int id;
+        private int id_Prod;
         private string nombre;
         private int activo;
         private string modelo;
@@ -30,7 +30,8 @@ namespace Dominio.Entidades
 
         public int IdProducto
         {
-            get { return id; }
+            get { return id_Prod; }
+            set { id_Prod = value; }
         } 
 
         public string Nombre
@@ -136,7 +137,7 @@ namespace Dominio.Entidades
 
         public Producto()
         {
-            Id = 0;
+            id_Prod = 0;
             nombre = String.Empty;
             activo = 0;
             modelo = String.Empty;
@@ -157,7 +158,7 @@ namespace Dominio.Entidades
             int inputCantidad, float inputPeso, float inputAlto, float inputAncho, float inputLargo, DateTime inputFechaCrea, DateTime inputFechaMod
             , int inputMarca, int inputCategoria)    
         {
-            Id = inputId;
+            id_Prod = inputId;
             nombre = inputNombre;
             activo = inputActivo;
             modelo = inputModelo;
