@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="ConsultarPromocion.aspx.cs" Inherits="Back_Office.GUI.Producto.ConsultarPromocion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="ConsultarProducto.aspx.cs" Inherits="Back_Office.GUI.Producto.ConsultarProducto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
-    Gestión de Marcas
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-    Datos
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     
@@ -70,6 +68,7 @@
                                     <th>Cantidad</th>
                                     <th>Marca</th>
                                     <th>Categoria</th>
+                                    <th>Garantia</th>
                                     <th>Activo</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>

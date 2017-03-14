@@ -141,7 +141,7 @@
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
     <Content Include="GUI\Producto\AgregaProducto.aspx" />
-    <Content Include="GUI\Producto\ConsultarPromocion.aspx" />
+    <Content Include="GUI\Producto\ConsultarProducto.aspx" />
     <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="index.html" />
@@ -1029,12 +1029,12 @@
     <Compile Include="GUI\Producto\AgregaProducto.aspx.designer.cs">
       <DependentUpon>AgregaProducto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Producto\ConsultarPromocion.aspx.cs">
-      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+    <Compile Include="GUI\Producto\ConsultarProducto.aspx.cs">
+      <DependentUpon>ConsultarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\Producto\ConsultarPromocion.aspx.designer.cs">
-      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+    <Compile Include="GUI\Producto\ConsultarProducto.aspx.designer.cs">
+      <DependentUpon>ConsultarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Producto\ResourceGUIProducto.Designer.cs">
       <AutoGen>True</AutoGen>

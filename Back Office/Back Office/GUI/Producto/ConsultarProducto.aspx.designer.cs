@@ -10,7 +10,7 @@
 namespace Back_Office.GUI.Producto {
     
     
-    public partial class ConsultarPromocion {
+    public partial class ConsultarProducto {
         
         /// <summary>
         /// alert control.

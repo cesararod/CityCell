@@ -176,6 +176,80 @@ namespace Presentador.ProductoCC
                     + RecursoPresentadorProducto.alertaHtmlFinal;
             }
         }
+
+        public void CargarConsultarProductos()
+        {
+            bool activada = false;
+            try
+            {
+                Comando<List<Entidad>> comando = LogicaCC.Fabrica.FabricaComandos.CrearConsultarTodosProductos();
+                List<Entidad> productos = comando.Ejecutar();
+
+                foreach (Producto ElProducto in productos)
+                {
+
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTr;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.IdProducto.ToString()
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Nombre
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Modelo
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Cantidad
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Fk_Marca
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Fk_Categoria
+                        + RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + " "
+                        + RecursoPresentadorProducto.CloseTd;
+
+                    //Equals cero para factura "Por Pagar"
+                    if (ElProducto.Activo.Equals(0))
+                    {
+                        vista.productosCreados += RecursoPresentadorProducto.OpenTD + RecursoPresentadorProducto.porActivar
+                            + RecursoPresentadorProducto.CloseTd;
+
+                    }
+                    //Equals uno para factura "Pagada"
+                    else if (ElProducto.Activo.Equals(1))
+                    {
+                        activada = true;
+                        vista.productosCreados += RecursoPresentadorProducto.OpenTD + RecursoPresentadorProducto.Activada
+                            + RecursoPresentadorProducto.CloseTd;
+                    }
+
+                    //Acciones de cada contacto
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD;
+
+                    if (activada == true)
+                    {
+                        vista.productosCreados +=
+                            RecursoPresentadorProducto.BotonModif + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.CloseBotonParametro
+                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.CloseBotonParametro;
+                    }
+                    else
+                    {
+                        vista.productosCreados +=
+                            RecursoPresentadorProducto.BotonModif + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.CloseBotonParametro
+                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.CloseBotonParametro;
+                    }
+                    vista.productosCreados += RecursoPresentadorProducto.CloseTd;
+                    vista.productosCreados += RecursoPresentadorProducto.CloseTr;
+                    activada = false;
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                vista.alerta = ex.Message;
+            }
+        }
     }
 
 
