@@ -2,8 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
+    Gestión de Productos
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
+   
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     
