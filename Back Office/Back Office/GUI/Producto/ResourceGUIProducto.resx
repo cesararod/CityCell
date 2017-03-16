@@ -192,12 +192,6 @@
   <data name="Factura" xml:space="preserve">
     <value>Factura.aspx?idFac=</value>
   </data>
-  <data name="idC" xml:space="preserve">
-    <value>IdCompania</value>
-  </data>
-  <data name="idF" xml:space="preserve">
-    <value>idFac</value>
-  </data>
   <data name="idProd" xml:space="preserve">
     <value>sku</value>
   </data>
@@ -233,5 +227,20 @@
   </data>
   <data name="volverModificado" xml:space="preserve">
     <value>ConsultarProducto.aspx?estado=1</value>
+  </data>
+  <data name="cantidad" xml:space="preserve">
+    <value>cantidad</value>
+  </data>
+  <data name="proddescripcion" xml:space="preserve">
+    <value>descripcion</value>
+  </data>
+  <data name="prodmodelo" xml:space="preserve">
+    <value>modelo</value>
+  </data>
+  <data name="prodnombre" xml:space="preserve">
+    <value>nombre</value>
+  </data>
+  <data name="prodprecio" xml:space="preserve">
+    <value>precio</value>
   </data>
 </root>

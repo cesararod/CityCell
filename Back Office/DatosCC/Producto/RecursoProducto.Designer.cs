@@ -207,7 +207,7 @@ namespace DatosCC.Producto {
         /// <summary>
         ///   Looks up a localized string similar to @fk_marca.
         /// </summary>
-        internal static string ParamIdMarca {
+        internal static string ParamIdProd {
             get {
                 return ResourceManager.GetString("ParamIdMarca", resourceCulture);
             }

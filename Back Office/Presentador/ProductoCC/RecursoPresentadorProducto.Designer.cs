@@ -106,6 +106,15 @@ namespace Presentador.ProductoCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;.
+        /// </summary>
+        internal static string and {
+            get {
+                return ResourceManager.GetString("and", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;span class=&quot;label label-danger&quot;&gt;Anulada&lt;/span&gt;.
         /// </summary>
         internal static string anulada {
@@ -295,6 +304,15 @@ namespace Presentador.ProductoCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;cantidad=.
+        /// </summary>
+        internal static string cantidadPr {
+            get {
+                return ResourceManager.GetString("cantidadPr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &gt;&lt;/a&gt;.
         /// </summary>
         internal static string CloseBoton {
@@ -466,6 +484,15 @@ namespace Presentador.ProductoCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;descripcion=.
+        /// </summary>
+        internal static string descripcionPr {
+            get {
+                return ResourceManager.GetString("descripcionPr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to $.
         /// </summary>
         internal static string Dolar {
@@ -565,6 +592,15 @@ namespace Presentador.ProductoCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;modelo=.
+        /// </summary>
+        internal static string modeloPr {
+            get {
+                return ResourceManager.GetString("modeloPr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TOTAL :.
         /// </summary>
         internal static string MontoTotal {
@@ -597,6 +633,15 @@ namespace Presentador.ProductoCC {
         internal static string MsjModificado {
             get {
                 return ResourceManager.GetString("MsjModificado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;nombre=.
+        /// </summary>
+        internal static string nombrePr {
+            get {
+                return ResourceManager.GetString("nombrePr", resourceCulture);
             }
         }
         
@@ -723,6 +768,15 @@ namespace Presentador.ProductoCC {
         internal static string PorcentajeDeRealizacion {
             get {
                 return ResourceManager.GetString("PorcentajeDeRealizacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;precio=.
+        /// </summary>
+        internal static string precioPr {
+            get {
+                return ResourceManager.GetString("precioPr", resourceCulture);
             }
         }
         

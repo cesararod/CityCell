@@ -62,7 +62,7 @@ namespace DatosCC.Producto
                 theParam = new Parametro(RecursoProducto.Paramlargo, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Largo.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoProducto.ParamIdMarca, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Fk_Marca.ToString(),
+                theParam = new Parametro(RecursoProducto.ParamIdProd, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Fk_Marca.ToString(),
                     false);
                 parameters.Add(theParam);
 
@@ -116,7 +116,7 @@ namespace DatosCC.Producto
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoProducto.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Activo.ToString(),
+                theParam = new Parametro(RecursoProducto.ParamIdProd, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).IdProducto.ToString(),
                     false);
                 parameters.Add(theParam); 
                 

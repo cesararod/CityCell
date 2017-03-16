@@ -49,7 +49,7 @@ namespace Presentador.ProductoCC
                  elProducto.Precio = float.Parse(vista.precio.ToString());
                  elProducto.Nombre = vista.nombre;
                  elProducto.Modelo = vista.modelo;
-                 elProducto.Descripcion = vista.descripcion;
+                 elProducto.Descripcion =vista.descripcion;
                  //elProducto.tipoMoneda;
                  Comando<bool> comando = FabricaComandos.CrearModificarProducto(elProducto);
                  comando.Ejecutar();

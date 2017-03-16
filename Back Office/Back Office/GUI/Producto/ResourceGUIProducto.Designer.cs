@@ -214,6 +214,15 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to cantidad.
+        /// </summary>
+        internal static string cantidad {
+            get {
+                return ResourceManager.GetString("cantidad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &gt;&lt;/a&gt;.
         /// </summary>
         internal static string CloseBoton {
@@ -286,24 +295,6 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IdCompania.
-        /// </summary>
-        internal static string idC {
-            get {
-                return ResourceManager.GetString("idC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to idFac.
-        /// </summary>
-        internal static string idF {
-            get {
-                return ResourceManager.GetString("idF", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
@@ -363,6 +354,42 @@ namespace Back_Office.GUI.Producto {
         internal static string porPagar {
             get {
                 return ResourceManager.GetString("porPagar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to descripcion.
+        /// </summary>
+        internal static string proddescripcion {
+            get {
+                return ResourceManager.GetString("proddescripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to modelo.
+        /// </summary>
+        internal static string prodmodelo {
+            get {
+                return ResourceManager.GetString("prodmodelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nombre.
+        /// </summary>
+        internal static string prodnombre {
+            get {
+                return ResourceManager.GetString("prodnombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to precio.
+        /// </summary>
+        internal static string prodprecio {
+            get {
+                return ResourceManager.GetString("prodprecio", resourceCulture);
             }
         }
         

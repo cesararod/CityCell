@@ -95,7 +95,13 @@ namespace Back_Office.GUI.Producto
         {
             try
             {
-                id_Producto = Request.QueryString[ResourceGUIProducto.idProd]; ;
+                id_Producto = Request.QueryString[ResourceGUIProducto.idProd];
+                /*nombre = Request.QueryString[ResourceGUIProducto.prodnombre];
+                this.InputModelo.Value = Request.QueryString[ResourceGUIProducto.prodmodelo];
+                this.InputDescripcion.Value = Request.QueryString[ResourceGUIProducto.proddescripcion];
+                precio = Request.QueryString[ResourceGUIProducto.prodprecio];
+                cantidad = Request.QueryString[ResourceGUIProducto.cantidad];
+                _presentador.LLenarModificar();*/
 
             }
             catch

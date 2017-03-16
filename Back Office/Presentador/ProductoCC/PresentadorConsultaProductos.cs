@@ -226,16 +226,23 @@ namespace Presentador.ProductoCC
                     {
                         vista.productosCreados +=
                             RecursoPresentadorProducto.BotonModif + ElProducto.IdProducto.ToString()
-                            + RecursoPresentadorProducto.CloseBotonParametro
-                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.nombrePr + ElProducto.Nombre.ToString()
+                            + RecursoPresentadorProducto.modeloPr + ElProducto.Modelo
+                            + RecursoPresentadorProducto.precioPr + ElProducto.Precio
+                            + RecursoPresentadorProducto.descripcionPr + ElProducto.Descripcion
+                            + RecursoPresentadorProducto.cantidadPr + ElProducto.Cantidad
                             + RecursoPresentadorProducto.CloseBotonParametro;
                     }
                     else
                     {
                         vista.productosCreados +=
                             RecursoPresentadorProducto.BotonModif + ElProducto.IdProducto.ToString()
-                            + RecursoPresentadorProducto.CloseBotonParametro
-                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.nombrePr + ElProducto.Nombre.ToString()
+                            /*
+                            + RecursoPresentadorProducto.modeloPr + ElProducto.Modelo 
+                            + RecursoPresentadorProducto.precioPr + ElProducto.Precio 
+                            + RecursoPresentadorProducto.descripcionPr + ElProducto.Descripcion 
+                            + RecursoPresentadorProducto.cantidadPr + ElProducto.Cantidad*/
                             + RecursoPresentadorProducto.CloseBotonParametro;
                     }
                     vista.productosCreados += RecursoPresentadorProducto.CloseTd;

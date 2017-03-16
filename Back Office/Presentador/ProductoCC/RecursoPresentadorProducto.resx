@@ -369,4 +369,22 @@
   <data name="valueCombo" xml:space="preserve">
     <value>value</value>
   </data>
+  <data name="and" xml:space="preserve">
+    <value>&amp;</value>
+  </data>
+  <data name="cantidadPr" xml:space="preserve">
+    <value>&amp;cantidad=</value>
+  </data>
+  <data name="descripcionPr" xml:space="preserve">
+    <value>&amp;descripcion=</value>
+  </data>
+  <data name="modeloPr" xml:space="preserve">
+    <value>&amp;modelo=</value>
+  </data>
+  <data name="nombrePr" xml:space="preserve">
+    <value>&amp;nombre=</value>
+  </data>
+  <data name="precioPr" xml:space="preserve">
+    <value>&amp;precio=</value>
+  </data>
 </root>
