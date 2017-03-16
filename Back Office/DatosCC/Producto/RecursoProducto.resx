@@ -156,7 +156,7 @@
   <data name="ParamIdCategoria" xml:space="preserve">
     <value>@fk_categoria</value>
   </data>
-  <data name="ParamIdMarca" xml:space="preserve">
+  <data name="ParamIdProd" xml:space="preserve">
     <value>@fk_marca</value>
   </data>
   <data name="ParamImagen" xml:space="preserve">

@@ -209,7 +209,7 @@ namespace DatosCC.Producto {
         /// </summary>
         internal static string ParamIdProd {
             get {
-                return ResourceManager.GetString("ParamIdMarca", resourceCulture);
+                return ResourceManager.GetString("ParamIdProd", resourceCulture);
             }
         }
         
