@@ -40,11 +40,15 @@
   <ItemGroup>
     <Compile Include="Categoria\IContratoAgregarCategoria.cs" />
     <Compile Include="Categoria\IContratoConsultarCategoria.cs" />
+    <Compile Include="Categoria\IContratoModificarCategoria.cs" />
     <Compile Include="Marca\IContratoAgregarMarca.cs" />
     <Compile Include="Marca\IContratoConsultarMarca.cs" />
+    <Compile Include="Marca\IContratoModificarMarca.cs" />
     <Compile Include="Producto\IContratoAgregarProducto.cs" />
     <Compile Include="Producto\IContratoConsultarProducto.cs" />
+    <Compile Include="Producto\IContratoModificarProducto.cs" />
     <Compile Include="Promocion\IContratoAgregarPromocion.cs" />
+    <Compile Include="Promocion\IContratoConsultarPromocion.cs" />
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
   </ItemGroup>
   <ItemGroup>

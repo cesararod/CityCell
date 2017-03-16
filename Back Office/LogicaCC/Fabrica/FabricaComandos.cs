@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using LogicaCC.Comandos;
+using LogicaCC.Comandos.Categoria;
 using LogicaCC.Comandos.Promocion;
 using LogicaCC.Comandos.Usuario;
 using LogicaCC.Comandos.Marca;
@@ -24,6 +25,17 @@ namespace LogicaCC.Fabrica
         public static Comando<bool> CrearAgregarCategoria(Entidad categoria)
         {
             Comando<bool> respuesta = new ComandoAgregarCategoria(categoria);
+            return respuesta;
+        }
+
+        /// <summary>
+        /// metodo para crear comando que permite modificar una categoria
+        /// </summary>
+        /// <param name="categoria">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearModificarCategoria(Entidad categoria)
+        {
+            Comando<bool> respuesta = new ComandoModificarCategoria(categoria);
             return respuesta;
         }
 
@@ -53,6 +65,18 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
+        /// metodo para crear comando que permite modificar una marca
+        /// </summary>
+        /// <param name="marca">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearModificarMarca(Entidad marca)
+        {
+            Comando<bool> respuesta = new ComandoModificarMarca(marca);
+            return respuesta;
+        }
+
+
+        /// <summary>
         /// metodo para crear comando que permite consultar todas las Categorias
         /// </summary>
         /// <returns></returns>
@@ -74,6 +98,19 @@ namespace LogicaCC.Fabrica
         public static Comando<bool> CrearAgregarProducto(Entidad producto)
         {
             Comando<bool> respuesta = new ComandoAgregaProducto(producto);
+            return respuesta;
+        } 
+        
+        /// <summary>
+        /// metodo para crear comando que permite modificar un Producto
+        /// </summary>
+        /// <param name="producto">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        /// 
+
+        public static Comando<bool> CrearModificarProducto(Entidad producto)
+        {
+            Comando<bool> respuesta = new ComandoModificarProducto(producto);
             return respuesta;
         }
 
@@ -114,7 +151,20 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
 
+        /// <summary>
+        /// metodo para crear comando que permite consultar todas las Promociones
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosPromociones()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarPromocion();
+            return respuesta;
+        }
 
+        #endregion
+
+        #region Ventas
+        
         #endregion
     }
 }

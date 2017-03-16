@@ -102,7 +102,7 @@ namespace DatosCC.Promocion
                 parameters.Add(theParam);
 
                 //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
-                EjecutarStoredProcedure(RecursoPromocion.ChangeMarca, parameters);
+                EjecutarStoredProcedure(RecursoPromocion.Changepromo, parameters);
 
             }
             catch (FormatException ex)
@@ -186,11 +186,11 @@ namespace DatosCC.Promocion
                 //Guardar los datos 
                 DataRow row = dt.Rows[0];
 
-                int _id = int.Parse(row[RecursoPromocion.MarcaId].ToString());
-                String _nombre = row[RecursoPromocion.MarcaNombre].ToString();
-                String _imagen = row[RecursoPromocion.MarcaImagen].ToString();
-                int _activo = int.Parse(row[RecursoPromocion.MarcaActivo].ToString());
-                DateTime _fechaCreacion = DateTime.Parse(row[RecursoPromocion.MarcaFechaCre].ToString());
+                int _id = int.Parse(row[RecursoPromocion.PromoId].ToString());
+                String _nombre = row[RecursoPromocion.FechaFin].ToString();
+                String _imagen = row[RecursoPromocion.ProductoID].ToString();
+                int _activo = int.Parse(row[RecursoPromocion.PromoActivo].ToString());
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoPromocion.PromoFechaCre].ToString());
 
                 //_LaPromocion = new Dominio.Entidades.Promocion(_id, _nombre, _imagen, _activo, _fechaCreacion);
                 //_LaPromocion.Id = _id;
@@ -232,28 +232,30 @@ namespace DatosCC.Promocion
         {
             List<Parametro> parameters = new List<Parametro>();
             Parametro theParam = new Parametro();
-            List<Entidad> listMarca = new List<Entidad>();
+            List<Entidad> listPromociones = new List<Entidad>();
 
             try
             {
                 //Guardo la tabla que me regresa el procedimiento de consultar contactos
-                DataTable dt = EjecutarStoredProcedureTuplas(RecursoPromocion.ConsultMarcas, parameters);
+                DataTable dt = EjecutarStoredProcedureTuplas(RecursoPromocion.ConsultPromos, parameters);
 
                 //Guardar los datos 
                 foreach (DataRow row in dt.Rows)
                 {
 
-                    int _id = int.Parse(row[RecursoPromocion.MarcaId].ToString());
-                    String _nombre = row[RecursoPromocion.MarcaNombre].ToString();
-                    String _imagen = row[RecursoPromocion.MarcaImagen].ToString();
-                    int _activo = int.Parse(row[RecursoPromocion.MarcaActivo].ToString());
-                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoPromocion.MarcaFechaCre].ToString());
+                    int _id = int.Parse(row[RecursoPromocion.PromoId].ToString());
+                    int _idProducto = int.Parse(row[RecursoPromocion.ProductoID].ToString());
+                    int _activo = int.Parse(row[RecursoPromocion.PromoActivo].ToString());
+                    float _precio = float.Parse(row[RecursoPromocion.PromoPrecio].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoPromocion.PromoFechaCre].ToString());
+                    DateTime _fechaInicio = DateTime.Parse(row[RecursoPromocion.FechaIni].ToString());
+                    DateTime _fechaFin = DateTime.Parse(row[RecursoPromocion.FechaFin].ToString());
 
 
-                    Dominio.Entidades.Marca _LaPromocion = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);
+                    Dominio.Entidades.Promocion _LaPromocion = new Dominio.Entidades.Promocion(_id, _idProducto, _precio, _activo, _fechaInicio, _fechaFin, _fechaCreacion);
                     //_ElProducto.Id = facId;
 
-                    listMarca.Add(_LaPromocion);
+                    listPromociones.Add(_LaPromocion);
                 }
 
 
@@ -282,7 +284,7 @@ namespace DatosCC.Promocion
                     RecursoPromocion.MensajeOtro, ex);
             }
 
-            return listMarca;
+            return listPromociones;
         }
     }
 }

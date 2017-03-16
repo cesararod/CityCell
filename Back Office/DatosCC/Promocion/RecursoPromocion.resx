@@ -120,8 +120,8 @@
   <data name="AddNuevaPromocion" xml:space="preserve">
     <value>AgregarPromocion</value>
   </data>
-  <data name="ChangeMarca" xml:space="preserve">
-    <value>ModificarMarca</value>
+  <data name="Changepromo" xml:space="preserve">
+    <value>ModificarPromocion</value>
   </data>
   <data name="Codigo" xml:space="preserve">
     <value>Error BD</value>
@@ -129,8 +129,8 @@
   <data name="Codigo_Error_Formato" xml:space="preserve">
     <value>TGE_00_001</value>
   </data>
-  <data name="ConsultMarcas" xml:space="preserve">
-    <value>ConsultarMarca</value>
+  <data name="ConsultPromos" xml:space="preserve">
+    <value>ConsultarPromociones</value>
   </data>
   <data name="ConsultMarcaXId" xml:space="preserve">
     <value>ConsultaMarcaId</value>
@@ -138,13 +138,13 @@
   <data name="DeactivateMarca" xml:space="preserve">
     <value>DesactivarMarca</value>
   </data>
-  <data name="MarcaActivo" xml:space="preserve">
+  <data name="PromoActivo" xml:space="preserve">
     <value>Activo</value>
   </data>
   <data name="MarcaCantidad" xml:space="preserve">
     <value>cantidad</value>
   </data>
-  <data name="MarcaFechaCre" xml:space="preserve">
+  <data name="PromoFechaCre" xml:space="preserve">
     <value>Fecha_Creacion</value>
   </data>
   <data name="MarcaFechaMod" xml:space="preserve">
@@ -156,22 +156,22 @@
   <data name="MarcaFkMARCA" xml:space="preserve">
     <value>Marca_Id</value>
   </data>
-  <data name="MarcaId" xml:space="preserve">
-    <value>id</value>
+  <data name="PromoId" xml:space="preserve">
+    <value>Promo_id</value>
   </data>
-  <data name="MarcaImagen" xml:space="preserve">
-    <value>Imagen</value>
+  <data name="ProductoID" xml:space="preserve">
+    <value>Producto_id</value>
   </data>
-  <data name="MarcaModelo" xml:space="preserve">
-    <value>Modelo</value>
+  <data name="FechaIni" xml:space="preserve">
+    <value>Fecha_Inicio</value>
   </data>
-  <data name="MarcaNombre" xml:space="preserve">
-    <value>Nombre</value>
+  <data name="FechaFin" xml:space="preserve">
+    <value>Fecha_Fin</value>
   </data>
   <data name="MarcaPeso" xml:space="preserve">
     <value>Peso</value>
   </data>
-  <data name="MarcaPrecio" xml:space="preserve">
+  <data name="PromoPrecio" xml:space="preserve">
     <value>Precio</value>
   </data>
   <data name="MensajeFinInfoLogger" xml:space="preserve">

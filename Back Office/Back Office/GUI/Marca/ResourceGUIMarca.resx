@@ -201,8 +201,8 @@
   <data name="idF" xml:space="preserve">
     <value>idFac</value>
   </data>
-  <data name="idFac" xml:space="preserve">
-    <value>idFac</value>
+  <data name="idMarca" xml:space="preserve">
+    <value>idMarca</value>
   </data>
   <data name="idP" xml:space="preserve">
     <value>IdProyecto</value>
@@ -229,15 +229,15 @@
     <value>ImgBrand\\</value>
   </data>
   <data name="volver" xml:space="preserve">
-    <value>ConsultarFacturaM8.aspx</value>
+    <value>ConsultarMarca.aspx</value>
   </data>
   <data name="volverAnular" xml:space="preserve">
-    <value>ConsultarFacturaM8.aspx?estado=2</value>
+    <value>ConsultarMarca.aspx?estado=2</value>
   </data>
   <data name="volverCorreo" xml:space="preserve">
-    <value>ConsultarFacturaM8.aspx?estado=3</value>
+    <value>ConsultarMarca.aspx?estado=3</value>
   </data>
   <data name="volverModificado" xml:space="preserve">
-    <value>ConsultarFacturaM8.aspx?estado=1</value>
+    <value>ConsultarMarca.aspx?estado=1</value>
   </data>
 </root>

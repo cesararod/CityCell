@@ -138,11 +138,15 @@
     <Content Include="Gruntfile.js" />
     <Content Include="GUI\Categoria\AgregarCategoria.aspx" />
     <Content Include="GUI\Categoria\ConsultarCategoria.aspx" />
+    <Content Include="GUI\Categoria\ModificarCategoria.aspx" />
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
+    <Content Include="GUI\Marca\ModificarMarca.aspx" />
     <Content Include="GUI\Producto\AgregaProducto.aspx" />
     <Content Include="GUI\Producto\ConsultarProducto.aspx" />
+    <Content Include="GUI\Producto\ModificarProducto.aspx" />
     <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
+    <Content Include="GUI\Promocion\ConsultarPromocion.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
@@ -998,6 +1002,13 @@
     <Compile Include="GUI\Categoria\ConsultarCategoria.aspx.designer.cs">
       <DependentUpon>ConsultarCategoria.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Categoria\ModificarCategoria.aspx.cs">
+      <DependentUpon>ModificarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Categoria\ModificarCategoria.aspx.designer.cs">
+      <DependentUpon>ModificarCategoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Categoria\ResourceGUICategoria.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1016,6 +1027,13 @@
     </Compile>
     <Compile Include="GUI\Marca\ConsultarMarca.aspx.designer.cs">
       <DependentUpon>ConsultarMarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Marca\ModificarMarca.aspx.cs">
+      <DependentUpon>ModificarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Marca\ModificarMarca.aspx.designer.cs">
+      <DependentUpon>ModificarMarca.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Marca\ResourceGUIMarca.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1036,6 +1054,13 @@
     <Compile Include="GUI\Producto\ConsultarProducto.aspx.designer.cs">
       <DependentUpon>ConsultarProducto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Producto\ModificarProducto.aspx.cs">
+      <DependentUpon>ModificarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Producto\ModificarProducto.aspx.designer.cs">
+      <DependentUpon>ModificarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Producto\ResourceGUIProducto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1047,6 +1072,13 @@
     </Compile>
     <Compile Include="GUI\Promocion\AgregaPromocion.aspx.designer.cs">
       <DependentUpon>AgregaPromocion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Promocion\ConsultarPromocion.aspx.cs">
+      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Promocion\ConsultarPromocion.aspx.designer.cs">
+      <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Promocion\ResourceGUIPromocion.Designer.cs">
       <AutoGen>True</AutoGen>

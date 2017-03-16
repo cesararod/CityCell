@@ -171,6 +171,16 @@ Producto.Largo as Largo, Producto.Fecha_Creacion, Producto.Fecha_Modificacion, P
     END
 GO
 
+CREATE PROCEDURE ConsultarPromociones
+AS
+    BEGIN
+        select Promocion.Id as Promo_id,Promocion.Producto_id as Producto_id, Promocion.Fecha_Inicio as Fecha_Inicio,
+         Promocion.Fecha_Fin as Fecha_Fin, Promocion.Activo as Activo, Promocion.Fecha_Creacion as Fecha_Creacion,
+         Promocion.Precio as Precio
+          from Promocion
+    END
+GO
+
 CREATE PROCEDURE AgregarPromocion
    
     @precio float,

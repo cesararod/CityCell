@@ -23,6 +23,7 @@ namespace Dominio.Entidades
         public int IdMarca
         {
             get { return id; }
+            set { id = value; }
 
         }        
 

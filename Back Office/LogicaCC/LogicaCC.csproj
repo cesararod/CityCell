@@ -41,11 +41,15 @@
     <Compile Include="Comando.cs" />
     <Compile Include="Comandos\Categoria\ComandoAgregarCategoria.cs" />
     <Compile Include="Comandos\Categoria\ComandoConsultarCategoria.cs" />
+    <Compile Include="Comandos\Categoria\ComandoModificarCategoria.cs" />
     <Compile Include="Comandos\Marca\ComandoAgregarMarca.cs" />
     <Compile Include="Comandos\Marca\ComandoConsultarMarca.cs" />
+    <Compile Include="Comandos\Marca\ComandoModificarMarca.cs" />
     <Compile Include="Comandos\Producto\ComandoAgregaProducto.cs" />
     <Compile Include="Comandos\Producto\ComandoConsultarProducto.cs" />
+    <Compile Include="Comandos\Producto\ComandoModificarProducto.cs" />
     <Compile Include="Comandos\Promocion\ComandoAgregaPromocion.cs" />
+    <Compile Include="Comandos\Promocion\ComandoConsultarPromocion.cs" />
     <Compile Include="Comandos\Usuario\ComandoAgregarUsuario.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">

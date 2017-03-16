@@ -69,7 +69,7 @@
                             <label for="labelActivo">Activo</label> <label for="Requerido" style="color: red;">*</label>
                             <asp:DropDownList id="activoInput" name="activoInput" class="form-control"  runat="server">
                                     <asp:ListItem Selected="True" Value="1"> Si </asp:ListItem>
-                                    <asp:ListItem Value="2"> No </asp:ListItem>
+                                    <asp:ListItem Value="0"> No </asp:ListItem>
                             </asp:DropDownList>
                         </div>
                      </div><!-- /.box-body -->

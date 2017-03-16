@@ -313,11 +313,11 @@ namespace Back_Office.GUI.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to idFac.
+        ///   Looks up a localized string similar to idMarca.
         /// </summary>
-        internal static string idFac {
+        internal static string idMarca {
             get {
-                return ResourceManager.GetString("idFac", resourceCulture);
+                return ResourceManager.GetString("idMarca", resourceCulture);
             }
         }
         
@@ -394,7 +394,7 @@ namespace Back_Office.GUI.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx.
+        ///   Looks up a localized string similar to ConsultarMarca.aspx.
         /// </summary>
         internal static string volver {
             get {
@@ -403,7 +403,7 @@ namespace Back_Office.GUI.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=2.
+        ///   Looks up a localized string similar to ConsultarMarca.aspx?estado=2.
         /// </summary>
         internal static string volverAnular {
             get {
@@ -412,7 +412,7 @@ namespace Back_Office.GUI.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=3.
+        ///   Looks up a localized string similar to ConsultarMarca.aspx?estado=3.
         /// </summary>
         internal static string volverCorreo {
             get {
@@ -421,7 +421,7 @@ namespace Back_Office.GUI.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=1.
+        ///   Looks up a localized string similar to ConsultarMarca.aspx?estado=1.
         /// </summary>
         internal static string volverModificado {
             get {

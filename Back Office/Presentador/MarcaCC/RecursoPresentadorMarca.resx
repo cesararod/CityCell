@@ -175,10 +175,10 @@
     <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idCompania=</value>
   </data>
   <data name="BotonModif" xml:space="preserve">
-    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" href="ModificarFacturaM8.aspx?idFac=</value>
+    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" href="ModificarMarca.aspx?idMarca=</value>
   </data>
   <data name="BotonModifInhabilitado" xml:space="preserve">
-    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" disabled="disabled" href="ModificarFacturaM8.aspx?idFac=</value>
+    <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" disabled="disabled" href="ModificarMarca.aspx?idMarca=</value>
   </data>
   <data name="BotonPagar" xml:space="preserve">
     <value>&lt;a title="Pagar" class="btn btn-success glyphicon glyphicon-euro" href="/GUI/M9/CargarPago1.aspx?id=</value>

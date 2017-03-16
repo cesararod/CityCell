@@ -313,7 +313,7 @@ namespace DatosCC.Marca {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @id.
+        ///   Looks up a localized string similar to @id_marca.
         /// </summary>
         internal static string ParamId {
             get {

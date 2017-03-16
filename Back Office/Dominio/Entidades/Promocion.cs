@@ -85,6 +85,17 @@ namespace Dominio.Entidades
             fecha_inicio = DateTime.Now;
             fecha_fin = DateTime.Now;
         }
+
+        public Promocion(int inputId, int inputProducto, float inputPrecio, int inputActivo, DateTime inputFechaInicio, DateTime inputFechaFin, DateTime inputFechaCreacion)
+        {
+            id_promo = inputId;
+            fk_producto = inputProducto;
+            precio = inputPrecio;
+            activo = inputActivo;
+            fecha_creacion = inputFechaCreacion;
+            fecha_inicio = inputFechaInicio;
+            fecha_fin = inputFechaFin;
+        }
       
         #endregion
     }

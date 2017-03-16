@@ -421,7 +421,7 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @id.
+        ///   Looks up a localized string similar to @id_categoria.
         /// </summary>
         internal static string ParamId {
             get {

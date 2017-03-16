@@ -70,11 +70,11 @@ namespace DatosCC.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ModificarMarca.
+        ///   Looks up a localized string similar to ModificarPromocion.
         /// </summary>
-        internal static string ChangeMarca {
+        internal static string Changepromo {
             get {
-                return ResourceManager.GetString("ChangeMarca", resourceCulture);
+                return ResourceManager.GetString("Changepromo", resourceCulture);
             }
         }
         
@@ -97,20 +97,20 @@ namespace DatosCC.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarMarca.
-        /// </summary>
-        internal static string ConsultMarcas {
-            get {
-                return ResourceManager.GetString("ConsultMarcas", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ConsultaMarcaId.
         /// </summary>
         internal static string ConsultMarcaXId {
             get {
                 return ResourceManager.GetString("ConsultMarcaXId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConsultarPromociones.
+        /// </summary>
+        internal static string ConsultPromos {
+            get {
+                return ResourceManager.GetString("ConsultPromos", resourceCulture);
             }
         }
         
@@ -124,11 +124,20 @@ namespace DatosCC.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Activo.
+        ///   Looks up a localized string similar to Fecha_Fin.
         /// </summary>
-        internal static string MarcaActivo {
+        internal static string FechaFin {
             get {
-                return ResourceManager.GetString("MarcaActivo", resourceCulture);
+                return ResourceManager.GetString("FechaFin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha_Inicio.
+        /// </summary>
+        internal static string FechaIni {
+            get {
+                return ResourceManager.GetString("FechaIni", resourceCulture);
             }
         }
         
@@ -138,15 +147,6 @@ namespace DatosCC.Promocion {
         internal static string MarcaCantidad {
             get {
                 return ResourceManager.GetString("MarcaCantidad", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fecha_Creacion.
-        /// </summary>
-        internal static string MarcaFechaCre {
-            get {
-                return ResourceManager.GetString("MarcaFechaCre", resourceCulture);
             }
         }
         
@@ -178,56 +178,11 @@ namespace DatosCC.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to id.
-        /// </summary>
-        internal static string MarcaId {
-            get {
-                return ResourceManager.GetString("MarcaId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Imagen.
-        /// </summary>
-        internal static string MarcaImagen {
-            get {
-                return ResourceManager.GetString("MarcaImagen", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Modelo.
-        /// </summary>
-        internal static string MarcaModelo {
-            get {
-                return ResourceManager.GetString("MarcaModelo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nombre.
-        /// </summary>
-        internal static string MarcaNombre {
-            get {
-                return ResourceManager.GetString("MarcaNombre", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Peso.
         /// </summary>
         internal static string MarcaPeso {
             get {
                 return ResourceManager.GetString("MarcaPeso", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Precio.
-        /// </summary>
-        internal static string MarcaPrecio {
-            get {
-                return ResourceManager.GetString("MarcaPrecio", resourceCulture);
             }
         }
         
@@ -408,6 +363,51 @@ namespace DatosCC.Promocion {
         internal static string ParamTelefono {
             get {
                 return ResourceManager.GetString("ParamTelefono", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Producto_id.
+        /// </summary>
+        internal static string ProductoID {
+            get {
+                return ResourceManager.GetString("ProductoID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Activo.
+        /// </summary>
+        internal static string PromoActivo {
+            get {
+                return ResourceManager.GetString("PromoActivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha_Creacion.
+        /// </summary>
+        internal static string PromoFechaCre {
+            get {
+                return ResourceManager.GetString("PromoFechaCre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promo_id.
+        /// </summary>
+        internal static string PromoId {
+            get {
+                return ResourceManager.GetString("PromoId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Precio.
+        /// </summary>
+        internal static string PromoPrecio {
+            get {
+                return ResourceManager.GetString("PromoPrecio", resourceCulture);
             }
         }
     }

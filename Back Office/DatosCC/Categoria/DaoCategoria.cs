@@ -85,10 +85,7 @@ namespace DatosCC.Categoria
             {
                 theParam = new Parametro(RecursoCategoria.ParamId, SqlDbType.Int, _LaCategoria.IdCat.ToString(), false);
                 parameters.Add(theParam);
-
-                theParam = new Parametro(RecursoCategoria.ParamNombre, SqlDbType.VarChar, _LaCategoria.Nombre, false);
-                parameters.Add(theParam);
-
+                                
                 theParam = new Parametro(RecursoCategoria.ParamStatus, SqlDbType.Int, _LaCategoria.Activo.ToString(), false);
                 parameters.Add(theParam);
 

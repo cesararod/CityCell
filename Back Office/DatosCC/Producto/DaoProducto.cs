@@ -118,15 +118,30 @@ namespace DatosCC.Producto
 
                 theParam = new Parametro(RecursoProducto.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Activo.ToString(),
                     false);
+                parameters.Add(theParam); 
+                
+                theParam = new Parametro(RecursoProducto.ParamNombre, SqlDbType.VarChar, ((Dominio.Entidades.Producto)ElProducto).Nombre, 
+                    false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoProducto.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Activo.ToString(),
+                    false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoProducto.ParamModelo, SqlDbType.VarChar, ((Dominio.Entidades.Producto)ElProducto).Modelo, false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoProducto.ParamDescripcion, SqlDbType.VarChar, ((Dominio.Entidades.Producto)ElProducto).Descripcion,
+                    false);
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoProducto.ParamPrecio, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Precio.ToString(),
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoProducto.ParamCantidad, SqlDbType.Float, ((Dominio.Entidades.Producto)ElProducto).Cantidad.ToString(),
+                theParam = new Parametro(RecursoProducto.ParamCantidad, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Cantidad.ToString(),
                     false);
-                parameters.Add(theParam);  
+                parameters.Add(theParam);
 
                 List<Resultado> results = EjecutarStoredProcedure(RecursoProducto.ChangeProducto, parameters);
 

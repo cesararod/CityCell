@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="AgregarCategoria.aspx.cs" Inherits="Back_Office.GUI.Categoria.AgregarCategoria" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="ModificarCategoria.aspx.cs" Inherits="Back_Office.GUI.Categoria.ModificarCategoria" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
-    Agregar Nueva Categoría
+    Modificar Categoría
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
 </asp:Content>
@@ -29,12 +29,17 @@
                     <div class="box-body" runat="server">
                         
                         <div class="form-group" runat="server">
+                            <label for="IdCategoria">Id de la Categoria</label>
+                            <input runat="server" class="form-control" id="IdCat" name="IdCat" disabled="disabled">
+                        </div>
+
+                        <div class="form-group" runat="server">
                             <label for="labelNombre">Nombre Categoría<a style="color:rgb(255, 0, 0);">*</a></label>
                             <input type="text" runat="server" class="form-control"
                                 pattern="^[0-9a-zñA-ZÑ ]+$"
                                 oninvalid="setCustomValidity('Campo obligatorio, no puede tener símbolos')" oninput="setCustomValidity('')"
                                 id="nombreCat" name="NombreCat"
-                                placeholder="Nombre" maxlength="50" required>
+                                placeholder="Nombre" maxlength="50" required disabled="disabled">
                         </div> 
 
                         <div class="form-group" runat="server">
@@ -54,7 +59,7 @@
                         </div>
 
                         <div class="box-footer" runat="server">
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerarCategoria_Click"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonModificarCategoria_Click"></asp:Button>
                         </div>
 
                     </div>

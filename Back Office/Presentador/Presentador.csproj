@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="CategoriaCC\PresentadorAgregarCategoria.cs" />
     <Compile Include="CategoriaCC\PresentadorConsultaCategoria.cs" />
+    <Compile Include="CategoriaCC\PresentadorModificarCategoria.cs" />
     <Compile Include="CategoriaCC\RecursoPresentadorCategoria.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +80,7 @@
     </Compile>
     <Compile Include="MarcaCC\PresentadorAgregarMarca.cs" />
     <Compile Include="MarcaCC\PresentadorConsultaMarca.cs" />
+    <Compile Include="MarcaCC\PresentadorModificarMarca.cs" />
     <Compile Include="MarcaCC\RecursoPresentadorMarca.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,12 +88,14 @@
     </Compile>
     <Compile Include="ProductoCC\PresentadorAgregarProducto.cs" />
     <Compile Include="ProductoCC\PresentadorConsultaProductos.cs" />
+    <Compile Include="ProductoCC\PresentadorModificarProducto.cs" />
     <Compile Include="ProductoCC\RecursoPresentadorProducto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorProducto.resx</DependentUpon>
     </Compile>
     <Compile Include="PromocionCC\PresentadorAgregarPromocion.cs" />
+    <Compile Include="PromocionCC\PresentadorConsultaPromocion.cs" />
     <Compile Include="PromocionCC\RecursoPresentadorPromocion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

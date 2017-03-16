@@ -46,7 +46,7 @@
                             <label for="labelGenero">Genero</label> <label for="Requerido" style="color: red;">*</label>
                             <asp:DropDownList id="genero" name="genero" class="form-control"  runat="server">
                                     <asp:ListItem Selected="True" Value="1"> Masculino </asp:ListItem>
-                                    <asp:ListItem Value="2"> Femenino </asp:ListItem>
+                                    <asp:ListItem Value="0"> Femenino </asp:ListItem>
                             </asp:DropDownList>
                         </div>
 

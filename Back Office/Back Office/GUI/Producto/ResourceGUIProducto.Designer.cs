@@ -178,7 +178,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarProducto.aspx?sku=.
         /// </summary>
         internal static string BotonModif {
             get {
@@ -187,7 +187,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarProducto.aspx?sku=.
         /// </summary>
         internal static string BotonModifInhabilitado {
             get {
@@ -304,20 +304,20 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to idFac.
-        /// </summary>
-        internal static string idFac {
-            get {
-                return ResourceManager.GetString("idFac", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
             get {
                 return ResourceManager.GetString("idP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sku.
+        /// </summary>
+        internal static string idProd {
+            get {
+                return ResourceManager.GetString("idProd", resourceCulture);
             }
         }
         
@@ -376,7 +376,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx.
+        ///   Looks up a localized string similar to ConsultarProducto.aspx.
         /// </summary>
         internal static string volver {
             get {
@@ -385,7 +385,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=2.
+        ///   Looks up a localized string similar to ConsultarProducto.aspx?estado=2.
         /// </summary>
         internal static string volverAnular {
             get {
@@ -394,7 +394,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=3.
+        ///   Looks up a localized string similar to ConsultarProducto.aspx?estado=3.
         /// </summary>
         internal static string volverCorreo {
             get {
@@ -403,7 +403,7 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=1.
+        ///   Looks up a localized string similar to ConsultarProducto.aspx?estado=1.
         /// </summary>
         internal static string volverModificado {
             get {
