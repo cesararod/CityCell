@@ -5,6 +5,7 @@ C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\Exc
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\bin\Debug\ExceptionCity.dll.config
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\bin\Debug\ExceptionCity.dll
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\bin\Debug\ExceptionCity.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csprojResolveAssemblyReference.cache
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.ExceptionCcRecursoGeneral.resources
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.ResourcesLogic.resources
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csproj.GenerateResource.Cache
