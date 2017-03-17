@@ -304,20 +304,20 @@ namespace Back_Office.GUI.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to idFac.
-        /// </summary>
-        internal static string idFac {
-            get {
-                return ResourceManager.GetString("idFac", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
             get {
                 return ResourceManager.GetString("idP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to idPromo.
+        /// </summary>
+        internal static string idpromo {
+            get {
+                return ResourceManager.GetString("idpromo", resourceCulture);
             }
         }
         
@@ -376,7 +376,7 @@ namespace Back_Office.GUI.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx.
+        ///   Looks up a localized string similar to ConsultarPromocion.aspx.
         /// </summary>
         internal static string volver {
             get {
@@ -385,7 +385,7 @@ namespace Back_Office.GUI.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=2.
+        ///   Looks up a localized string similar to ConsultarPromocion.aspx?estado=2.
         /// </summary>
         internal static string volverAnular {
             get {
@@ -394,7 +394,7 @@ namespace Back_Office.GUI.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=3.
+        ///   Looks up a localized string similar to ConsultarPromocion.aspx?estado=3.
         /// </summary>
         internal static string volverCorreo {
             get {
@@ -403,7 +403,7 @@ namespace Back_Office.GUI.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx?estado=1.
+        ///   Looks up a localized string similar to ConsultarPromocion.aspx?estado=1.
         /// </summary>
         internal static string volverModificado {
             get {

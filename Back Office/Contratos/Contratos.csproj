@@ -49,6 +49,7 @@
     <Compile Include="Producto\IContratoModificarProducto.cs" />
     <Compile Include="Promocion\IContratoAgregarPromocion.cs" />
     <Compile Include="Promocion\IContratoConsultarPromocion.cs" />
+    <Compile Include="Promocion\IContratoModificarPromocion.cs" />
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
   </ItemGroup>
   <ItemGroup>

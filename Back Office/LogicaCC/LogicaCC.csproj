@@ -50,6 +50,7 @@
     <Compile Include="Comandos\Producto\ComandoModificarProducto.cs" />
     <Compile Include="Comandos\Promocion\ComandoAgregaPromocion.cs" />
     <Compile Include="Comandos\Promocion\ComandoConsultarPromocion.cs" />
+    <Compile Include="Comandos\Promocion\ComandoModificarPromocion.cs" />
     <Compile Include="Comandos\Usuario\ComandoAgregarUsuario.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">

@@ -13,7 +13,6 @@ using Dominio.Entidades;
 using ExceptionCity;
 using LogicaCC.Fabrica;
 
-
 namespace Presentador.ProductoCC
 {
     public class PresentadorModificarProducto
@@ -33,6 +32,15 @@ namespace Presentador.ProductoCC
              vista.alertaClase = RecursoPresentadorProducto.alertaError;
              vista.alertaRol = RecursoPresentadorProducto.tipoAlerta;
              vista.alerta = RecursoPresentadorProducto.alertaHtml + msj + RecursoPresentadorProducto.alertaHtmlFinal;
+         }
+
+
+         public void LLenarModificar(string prodnombre,  string prodmodelo, string proddescripcion,  string prodprecio, string cantidad){
+            vista.nombre = prodnombre;
+            vista.modelo = prodmodelo;
+            vista.descripcion = proddescripcion;
+            vista.precio = prodprecio;
+            vista.cantidad = cantidad;
          }
 
          /// <summary>

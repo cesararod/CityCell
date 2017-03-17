@@ -202,7 +202,7 @@
     <value>@fecha_creacion</value>
   </data>
   <data name="ParamId" xml:space="preserve">
-    <value>@id</value>
+    <value>@id_promocion</value>
   </data>
   <data name="ParamIdLugar" xml:space="preserve">
     <value>@id_lugar</value>

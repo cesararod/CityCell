@@ -89,14 +89,20 @@ namespace DatosCC.Promocion
 
             try
             {
-                theParam = new Parametro(RecursoPromocion.ParamId, SqlDbType.Int, _LaPromocion.Id.ToString(), false);
+                theParam = new Parametro(RecursoPromocion.ParamId, SqlDbType.Int, _LaPromocion.Id_Promo.ToString(), false);
                 parameters.Add(theParam);
 
-                /*theParam = new Parametro(RecursoPromocion.ParamFechaFin, SqlDbType.VarChar, _LaPromocion.IdMarca.ToString(), false);
+                theParam = new Parametro(RecursoPromocion.ParamPrecio, SqlDbType.Float, 
+                    ((Dominio.Entidades.Promocion)LaPromocion).Precio.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoPromocion.ParamImagen, SqlDbType.VarChar, _LaPromocion.IdMarca.ToString(), false);
-                parameters.Add(theParam);*/
+                theParam = new Parametro(RecursoPromocion.ParamFechaInicio, SqlDbType.Date,
+                    ((Dominio.Entidades.Promocion)LaPromocion).Fecha_Inicio.ToString(), false);
+                parameters.Add(theParam);
+
+                theParam = new Parametro(RecursoPromocion.ParamFechaFin, SqlDbType.Date,
+                    ((Dominio.Entidades.Promocion)LaPromocion).Fecha_Fin.ToString(), false);
+                parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoPromocion.ParamStatus, SqlDbType.Int, _LaPromocion.Activo.ToString(), false);
                 parameters.Add(theParam);

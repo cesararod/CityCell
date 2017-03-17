@@ -147,6 +147,7 @@
     <Content Include="GUI\Producto\ModificarProducto.aspx" />
     <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
     <Content Include="GUI\Promocion\ConsultarPromocion.aspx" />
+    <Content Include="GUI\Promocion\ModificarPromocion.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
@@ -1079,6 +1080,13 @@
     </Compile>
     <Compile Include="GUI\Promocion\ConsultarPromocion.aspx.designer.cs">
       <DependentUpon>ConsultarPromocion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Promocion\ModificarPromocion.aspx.cs">
+      <DependentUpon>ModificarPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Promocion\ModificarPromocion.aspx.designer.cs">
+      <DependentUpon>ModificarPromocion.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Promocion\ResourceGUIPromocion.Designer.cs">
       <AutoGen>True</AutoGen>

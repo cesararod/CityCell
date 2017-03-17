@@ -59,7 +59,7 @@ namespace Back_Office.GUI.Marca
         {
             try
             {
-                id_Marca = Request.QueryString[ResourceGUIMarca.idMarca]; ;
+                id_Marca = Request.QueryString[ResourceGUIMarca.idMarca]; 
 
             }
             catch

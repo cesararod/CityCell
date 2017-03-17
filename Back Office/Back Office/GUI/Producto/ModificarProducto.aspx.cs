@@ -96,12 +96,10 @@ namespace Back_Office.GUI.Producto
             try
             {
                 id_Producto = Request.QueryString[ResourceGUIProducto.idProd];
-                /*nombre = Request.QueryString[ResourceGUIProducto.prodnombre];
-                this.InputModelo.Value = Request.QueryString[ResourceGUIProducto.prodmodelo];
-                this.InputDescripcion.Value = Request.QueryString[ResourceGUIProducto.proddescripcion];
-                precio = Request.QueryString[ResourceGUIProducto.prodprecio];
-                cantidad = Request.QueryString[ResourceGUIProducto.cantidad];
-                _presentador.LLenarModificar();*/
+                _presentador.LLenarModificar(Request.QueryString[ResourceGUIProducto.prodnombre],
+                    Request.QueryString[ResourceGUIProducto.prodmodelo], Request.QueryString[ResourceGUIProducto.proddescripcion],
+                    Request.QueryString[ResourceGUIProducto.prodprecio], Request.QueryString[ResourceGUIProducto.cantidad]);
+
 
             }
             catch

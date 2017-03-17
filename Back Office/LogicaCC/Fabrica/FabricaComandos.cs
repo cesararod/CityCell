@@ -152,6 +152,19 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
+        /// metodo para crear comando que permite modificar un Producto
+        /// </summary>
+        /// <param name="promocion">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        /// 
+
+        public static Comando<bool> CrearModificarPromocion(Entidad promocion)
+        {
+            Comando<bool> respuesta = new ComandoModificarPromocion(promocion);
+            return respuesta;
+        }
+
+        /// <summary>
         /// metodo para crear comando que permite consultar todas las Promociones
         /// </summary>
         /// <returns></returns>

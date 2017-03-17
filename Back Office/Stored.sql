@@ -197,6 +197,34 @@ AS
     END;
 GO
 
+
+CREATE PROCEDURE ModificarPromocion
+@id_promocion int,
+@activo int,
+@precio float,
+@fecha_inicio date,
+@fecha_fin date
+AS
+BEGIN
+UPDATE Promocion SET Activo = @activo, Precio = @precio, Fecha_Inicio = @fecha_inicio , Fecha_Fin = @fecha_fin
+  WHERE id = @id_promocion
+END;
+
+
+CREATE PROCEDURE ModificarProducto
+@id_producto int,
+@activo int,
+@nombre varchar(50),
+@modelo varchar(50),
+@descripcion varchar(255),
+@precio float,
+@cantidad int
+AS
+BEGIN
+UPDATE Producto SET Activo = @activo, Nombre= @nombre, Modelo = @modelo, Descripcion= @descripcion,
+Precio = @precio, cantidad = @cantidad   WHERE SKU = @id_producto
+END;
+
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
 

@@ -96,6 +96,7 @@
     </Compile>
     <Compile Include="PromocionCC\PresentadorAgregarPromocion.cs" />
     <Compile Include="PromocionCC\PresentadorConsultaPromocion.cs" />
+    <Compile Include="PromocionCC\PresentadorModificarPromocion.cs" />
     <Compile Include="PromocionCC\RecursoPresentadorPromocion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
