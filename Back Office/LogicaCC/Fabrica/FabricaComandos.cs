@@ -152,7 +152,7 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
-        /// metodo para crear comando que permite modificar un Producto
+        /// metodo para crear comando que permite modificar una Promocion
         /// </summary>
         /// <param name="promocion">entidad sobre la cual se va a trabajar el comando</param>
         /// <returns></returns>

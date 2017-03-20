@@ -462,7 +462,7 @@ CREATE
   (
     Nombre           VARCHAR (20) ,
     Apellido         VARCHAR (50) ,
-    Cedula           INTEGER NOT NULL ,
+    Cedula           VARCHAR (50)  NOT NULL ,
     Telefono         VARCHAR (50) ,
     Celular          VARCHAR (50) ,
     Password         VARCHAR (20) ,
