@@ -3,30 +3,6 @@ c:\users\cesar\documents\visual studio 2013\Projects\Back Office\Back Office\bin
 c:\users\cesar\documents\visual studio 2013\Projects\Back Office\Back Office\bin\Back Office.pdb
 c:\users\cesar\documents\visual studio 2013\Projects\Back Office\Back Office\obj\Debug\Back Office.dll
 c:\users\cesar\documents\visual studio 2013\Projects\Back Office\Back Office\obj\Debug\Back Office.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll.config
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Contratos.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\DatosCC.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Dominio.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\ExceptionCity.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\LogicaCC.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Presentador.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Contratos.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\DatosCC.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Dominio.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\ExceptionCity.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\LogicaCC.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Presentador.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csprojResolveAssemblyReference.cache
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Categoria.ResourceGUICategoria.resources
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Marca.ResourceGUIMarca.resources
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Producto.ResourceGUIProducto.resources
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Promocion.ResourceGUIPromocion.resources
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Usuario.ResourceGUIUsuario.resources
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csproj.GenerateResource.Cache
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll.config
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.pdb
@@ -51,3 +27,27 @@ C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csproj.GenerateResource.Cache
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll.config
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Back Office.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Contratos.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\DatosCC.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Dominio.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\ExceptionCity.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\LogicaCC.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Presentador.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Contratos.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\DatosCC.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Dominio.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\ExceptionCity.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\LogicaCC.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\bin\Presentador.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csprojResolveAssemblyReference.cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Categoria.ResourceGUICategoria.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Marca.ResourceGUIMarca.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Producto.ResourceGUIProducto.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Promocion.ResourceGUIPromocion.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Usuario.ResourceGUIUsuario.resources
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csproj.GenerateResource.Cache
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb

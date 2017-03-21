@@ -232,7 +232,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarUsuario.aspx?idUsu=.
         /// </summary>
         internal static string BotonModif {
             get {
@@ -241,7 +241,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarUsuario.aspx?idUsu=.
         /// </summary>
         internal static string BotonModifInhabilitado {
             get {

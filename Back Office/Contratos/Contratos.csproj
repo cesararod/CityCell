@@ -52,6 +52,7 @@
     <Compile Include="Promocion\IContratoModificarPromocion.cs" />
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
     <Compile Include="Usuario\IContratoConsultarUsuario.cs" />
+    <Compile Include="Usuario\IContratoModificarUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

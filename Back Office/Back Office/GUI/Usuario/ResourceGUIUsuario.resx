@@ -198,8 +198,8 @@
   <data name="idF" xml:space="preserve">
     <value>idFac</value>
   </data>
-  <data name="idFac" xml:space="preserve">
-    <value>idFac</value>
+  <data name="idUsu" xml:space="preserve">
+    <value>idUsu</value>
   </data>
   <data name="idP" xml:space="preserve">
     <value>IdProyecto</value>

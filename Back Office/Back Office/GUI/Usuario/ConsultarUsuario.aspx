@@ -64,14 +64,13 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>SKU</th>
+                                    <th>Id</th>
                                     <th>Nombre</th>
-                                    <th>Modelo</th>
-                                    <th>Cantidad</th>
-                                    <th>Marca</th>
-                                    <th>Categoria</th>
-                                    <th>Garantia</th>
-                                    <th>Activo</th>
+                                    <th>Cedula</th>
+                                    <th>Fecha Ingreso</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
+                                    <th>Celular</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>
                             </thead>

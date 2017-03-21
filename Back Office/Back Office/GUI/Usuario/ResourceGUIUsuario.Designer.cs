@@ -304,20 +304,20 @@ namespace Back_Office.GUI.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to idFac.
-        /// </summary>
-        internal static string idFac {
-            get {
-                return ResourceManager.GetString("idFac", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
             get {
                 return ResourceManager.GetString("idP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to idUsu.
+        /// </summary>
+        internal static string idUsu {
+            get {
+                return ResourceManager.GetString("idUsu", resourceCulture);
             }
         }
         

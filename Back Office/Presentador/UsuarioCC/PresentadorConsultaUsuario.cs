@@ -58,7 +58,7 @@ namespace Presentador.UsuarioCC
             }
         }
 
-        public void CargarConsultarPromocion()
+        public void CargarConsultarUsuario()
         {
             bool activada = false;
             try
@@ -72,16 +72,18 @@ namespace Presentador.UsuarioCC
                     vista.usuariosCreados += RecursoPresentadorUsuario.OpenTr;
                     vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.IdUser.ToString()
                         + RecursoPresentadorUsuario.CloseTd;
-                    /*vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Fk_Producto
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Nombre + RecursoPresentadorUsuario.espacio + ElUsuario.Apellido
                         + RecursoPresentadorUsuario.CloseTd;
-                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Fecha_Creacion
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Cedula
                         + RecursoPresentadorUsuario.CloseTd;
-                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Fecha_Fin
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Fecha_Ingreso
                         + RecursoPresentadorUsuario.CloseTd;
-                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Fecha_Creacion
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Email
                         + RecursoPresentadorUsuario.CloseTd;
-                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Precio
-                        + RecursoPresentadorUsuario.CloseTd;*/
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Telefono
+                        + RecursoPresentadorUsuario.CloseTd;
+                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + ElUsuario.Celular
+                        + RecursoPresentadorUsuario.CloseTd;
 
                     //Equals cero para factura "Por Pagar"
                    /* if (ElUsuario.Activo.Equals(0))

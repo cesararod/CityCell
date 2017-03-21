@@ -146,7 +146,7 @@ namespace Dominio.Entidades
         public Usuario(int inputId, string input_Nombre, string input_Apellido, string input_cedula, string input_telefono, string input_celular,
              DateTime input_FNacimineto, DateTime input_FIngreso, string input_email)
         {
-            Id = inputId;
+            idUser = inputId;
             nombre = input_Nombre;
             apellido = input_Apellido;
             cedula = input_cedula;
