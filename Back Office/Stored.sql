@@ -235,6 +235,21 @@ AS
     END
 GO
 
+CREATE PROCEDURE ModificarUsuario
+   
+    @telefono [varchar](50),
+    @celular [varchar](50),
+    @password [varchar](20),
+    @idUsu int,
+    @email [varchar](255)  
+
+AS
+    BEGIN
+UPDATE Usuario SET Telefono = @telefono, Celular= @celular, Password = @password, Email= @email
+ WHERE Id = @idUsu
+END;
+GO
+
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
 

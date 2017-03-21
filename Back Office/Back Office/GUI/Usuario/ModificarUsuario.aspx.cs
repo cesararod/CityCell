@@ -13,9 +13,7 @@ namespace Back_Office.GUI.Usuario
 {
     public partial class ModificarUsuario : System.Web.UI.Page, IContratoModificarUsuario
     {
-        private string[] Substrings;
-        private string fecha;
-
+        
         #region contrato
         public string UsuId
         {
@@ -26,30 +24,6 @@ namespace Back_Office.GUI.Usuario
             set
             {
                 this.IdUsuario.Value = value;
-            }
-        }
-
-        public DropDownList Rol
-        {
-            get
-            {
-                return rol;
-            }
-            set
-            {
-                rol = value;
-            }
-        }
-
-        public DropDownList TipoDoc
-        {
-            get
-            {
-                return tipodoc;
-            }
-            set
-            {
-                tipodoc = value;
             }
         }
 
@@ -71,12 +45,6 @@ namespace Back_Office.GUI.Usuario
             set { this.cedula.Value = value; }
         }
 
-        public DropDownList Genero
-        {
-            get { return this.genero; }
-            set { this.genero = value; }
-        }
-
         public string Telefono
         {
             get { return this.InputTelefono.Value; }
@@ -93,17 +61,6 @@ namespace Back_Office.GUI.Usuario
         {
             get { return this.password.Value; }
             set { this.password.Value = value; }
-        }
-
-        public string Fecha_Nnacimiento
-        {
-            get
-            {
-                Substrings = fecha_nacimineto.Value.ToString().Split('-');
-                fecha = Substrings[1] + '/' + Substrings[2] + '/' + Substrings[0];
-                return fecha;
-            }
-            set { this.fecha_nacimineto.Value = value; }
         }
 
         public string Correo
@@ -128,11 +85,23 @@ namespace Back_Office.GUI.Usuario
         }
         #endregion
 
+         #region constructor
+        PresentadorModificarUsuario Presentador;
+
+        public ModificarUsuario()
+        {
+            Presentador = new PresentadorModificarUsuario(this);
+        }
+        #endregion
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
                 UsuId = Request.QueryString[ResourceGUIUsuario.idUsu];
+                Nombre = Request.QueryString[ResourceGUIUsuario.nombreUsu];
+                Apellido = Request.QueryString[ResourceGUIUsuario.apellidoUsu];
+                Cedula = Request.QueryString[ResourceGUIUsuario.cedulaUsu];
                 //_presentador.LLenarModificar(Request.QueryString[ResourceGUIProducto.prodnombre],
                  //   Request.QueryString[ResourceGUIUsuario.prodmodelo], Request.QueryString[ResourceGUIUsuario.proddescripcion],
                   //  Request.QueryString[ResourceGUIUsuario.prodprecio], Request.QueryString[ResourceGUIUsuario.cantidad]);
@@ -150,7 +119,7 @@ namespace Back_Office.GUI.Usuario
             //this.nombre = Request.QueryString[ResourceGUICategoria.idC];
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
-            //_presentador.Modificar();
+            Presentador.Modificar();
             //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
         }
     }

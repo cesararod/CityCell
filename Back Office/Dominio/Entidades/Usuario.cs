@@ -33,6 +33,7 @@ namespace Dominio.Entidades
         public int IdUser
         {
             get { return idUser; }
+            set { idUser = value; }
         } 
 
         public string Nombre

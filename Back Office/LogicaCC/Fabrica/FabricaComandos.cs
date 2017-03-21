@@ -139,6 +139,17 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
+        /// metodo para crear comando que permite modificar un Usuario
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearModificarUsuario(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoModificarUsuario(usuario);
+            return respuesta;
+        }
+
+        /// <summary>
         /// metodo para crear comando que permite consultar todos los Usuarios
         /// </summary>
         /// <returns></returns>

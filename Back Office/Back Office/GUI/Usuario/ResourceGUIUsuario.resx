@@ -234,4 +234,13 @@
   <data name="volverModificado" xml:space="preserve">
     <value>ConsultarFacturaM8.aspx?estado=1</value>
   </data>
+  <data name="apellidoUsu" xml:space="preserve">
+    <value>apellido</value>
+  </data>
+  <data name="cedulaUsu" xml:space="preserve">
+    <value>cedula</value>
+  </data>
+  <data name="nombreUsu" xml:space="preserve">
+    <value>nombre</value>
+  </data>
 </root>

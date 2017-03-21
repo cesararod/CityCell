@@ -115,6 +115,15 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;apellido=.
+        /// </summary>
+        internal static string apellidous {
+            get {
+                return ResourceManager.GetString("apellidous", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string asd {
@@ -291,6 +300,15 @@ namespace Presentador.UsuarioCC {
         internal static string Cancelado {
             get {
                 return ResourceManager.GetString("Cancelado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;cedula=.
+        /// </summary>
+        internal static string cedulaus {
+            get {
+                return ResourceManager.GetString("cedulaus", resourceCulture);
             }
         }
         
@@ -606,6 +624,15 @@ namespace Presentador.UsuarioCC {
         internal static string NombreProyecto {
             get {
                 return ResourceManager.GetString("NombreProyecto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;nombre=.
+        /// </summary>
+        internal static string nombreus {
+            get {
+                return ResourceManager.GetString("nombreus", resourceCulture);
             }
         }
         

@@ -107,14 +107,18 @@ namespace Presentador.UsuarioCC
                     {
                         vista.usuariosCreados +=
                             RecursoPresentadorUsuario.BotonModif + ElUsuario.IdUser.ToString()
+                            + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()
+                            + RecursoPresentadorUsuario.apellidous + ElUsuario.Apellido.ToString()
+                            + RecursoPresentadorUsuario.cedulaus + ElUsuario.Cedula.ToString()
                             + RecursoPresentadorUsuario.CloseBotonParametro;
                     }
                     else
                     {
                         vista.usuariosCreados +=
                             RecursoPresentadorUsuario.BotonModif + ElUsuario.IdUser.ToString()
-                            + RecursoPresentadorUsuario.CloseBotonParametro
-                            + RecursoPresentadorUsuario.BotonAnular + ElUsuario.IdUser.ToString()
+                            + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()
+                            + RecursoPresentadorUsuario.apellidous + ElUsuario.Apellido.ToString()
+                            + RecursoPresentadorUsuario.cedulaus + ElUsuario.Cedula.ToString() 
                             + RecursoPresentadorUsuario.CloseBotonParametro;
                     }
                     vista.usuariosCreados += RecursoPresentadorUsuario.CloseTd;

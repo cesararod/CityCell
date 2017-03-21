@@ -97,6 +97,15 @@ namespace Back_Office.GUI.Usuario {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to apellido.
+        /// </summary>
+        internal static string apellidoUsu {
+            get {
+                return ResourceManager.GetString("apellidoUsu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string asd {
@@ -214,6 +223,15 @@ namespace Back_Office.GUI.Usuario {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to cedula.
+        /// </summary>
+        internal static string cedulaUsu {
+            get {
+                return ResourceManager.GetString("cedulaUsu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &gt;&lt;/a&gt;.
         /// </summary>
         internal static string CloseBoton {
@@ -318,6 +336,15 @@ namespace Back_Office.GUI.Usuario {
         internal static string idUsu {
             get {
                 return ResourceManager.GetString("idUsu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nombre.
+        /// </summary>
+        internal static string nombreUsu {
+            get {
+                return ResourceManager.GetString("nombreUsu", resourceCulture);
             }
         }
         

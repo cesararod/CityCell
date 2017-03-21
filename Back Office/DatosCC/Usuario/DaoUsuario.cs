@@ -119,22 +119,28 @@ namespace DatosCC.Usuario
         {
 
             Parametro theParam = new Parametro();
+            List<Parametro> parameters = new List<Parametro>();
             try
             {
-                List<Parametro> parameters = new List<Parametro>();
-
-                theParam = new Parametro(RecursoUsuario.ParamNombre, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamId, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).IdUser.ToString(), false);
+                parameters.Add(theParam);
+                                
+                theParam = new Parametro(RecursoUsuario.ParamTelefono, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Telefono,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamValidoDC, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Precio.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamCelular, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Celular,
                     false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamTelefono, SqlDbType.Float, ((Dominio.Entidades.Producto)ElUsuario).Cantidad.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamPassword, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Password,
                     false);
                 parameters.Add(theParam);
+                
+                theParam = new Parametro(RecursoUsuario.ParamMail, SqlDbType.VarChar, ((Dominio.Entidades.Usuario)ElUsuario).Email, false);
+                parameters.Add(theParam);
 
+                
                 List<Resultado> results = EjecutarStoredProcedure(RecursoUsuario.ChangeUsuario, parameters);
 
             }

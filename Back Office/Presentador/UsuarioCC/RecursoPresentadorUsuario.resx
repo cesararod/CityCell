@@ -369,4 +369,13 @@
   <data name="valueCombo" xml:space="preserve">
     <value>value</value>
   </data>
+  <data name="apellidous" xml:space="preserve">
+    <value>&amp;apellido=</value>
+  </data>
+  <data name="cedulaus" xml:space="preserve">
+    <value>&amp;cedula=</value>
+  </data>
+  <data name="nombreus" xml:space="preserve">
+    <value>&amp;nombre=</value>
+  </data>
 </root>

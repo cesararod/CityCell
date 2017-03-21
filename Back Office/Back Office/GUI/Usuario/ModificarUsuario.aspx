@@ -38,37 +38,23 @@
                         <div class="form-group" runat="server">
                             <label for="InputNombre">Nombre</label> <label for="Requerido" style="color: red;">*</label>
                             <input runat="server" type="text" class="form-control" id="nombre" name="nombre" 
-                                placeholder="Introduzca nombre" maxlength="50" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido o vacío')">
+                                placeholder="Introduzca nombre" maxlength="50" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido o vacío')" disabled="disabled">
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="InputNombreApellido">Apellido</label> <label for="Requerido" style="color: red;">*</label>
                             <input runat="server" type="text" class="form-control" id="apellido" name="apellido" 
-                                placeholder="Introduzca apellido" maxlength="50" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido o vacío')">
+                                placeholder="Introduzca apellido" maxlength="50" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido o vacío')" disabled="disabled">
                         </div>
-
-                        <div class="form-group" runat="server">
-                            <label for="labelGenero">Genero</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList id="genero" name="genero" class="form-control"  runat="server">
-                                    <asp:ListItem Selected="True" Value="1"> Masculino </asp:ListItem>
-                                    <asp:ListItem Value="0"> Femenino </asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-
+                        
                         <!--Nombre-->
                         <div class="form-group date">
                             <label for="InputCedula">Cedula</label> <label for="Requerido" style="color: red;">*</label>
                             <div class="form-control input-group date ">
                                 <input type="text" class="form-control" placeholder="C.I." id="cedula" runat="server" name="cedula" 
                                      maxlength="50" oninput="setCustomValidity('')" pattern="^[0-9]*$" 
-                                    required oninvalid="setCustomValidity('Campo inválido o vacío')" style="width: 500px !important; height: 54px !important;">
-                                <div class="input-group-addon" style="width: 102px !important;">
-                                    <asp:DropDownList id="tipodoc" name="tipodoc" class="form-control"  runat="server">
-                                        <asp:ListItem Selected="True" Value="1"> V </asp:ListItem>
-                                        <asp:ListItem Value="2"> E </asp:ListItem>
-                                        <asp:ListItem Value="3"> J </asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
+                                    required oninvalid="setCustomValidity('Campo inválido o vacío')" style="width: 500px !important; height: 54px !important;" disabled="disabled">
+                                
                             </div>
                         </div>
                         <!--Acronimo-->
@@ -98,30 +84,10 @@
                                 placeholder="" required/>
                         </div>
 
-                        <div class="form-group date">
-                        <label for="DateEmployee">Fecha de Nacimiento</label> <label for="Requerido" style="color: red;">*</label>
-                        <div class="form-control input-group date ">
-                            <input type="date" class="form-control" placeholder="fecha de nacimiento" id="fecha_nacimineto"
-                                runat="server" oninput="setCustomValidity('')"
-                                required oninvalid="setCustomValidity('Porfavor colocar una fecha entre 1916 y 2001')">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                        </div>
-                        </div>
-
                         <div class="form-group ">
                         <label for="EmailPerson">Correo</label> <label for="Requerido" style="color: red;">*</label>
                         <input type="email" runat="server" id="EmailPerson" maxlength="100" class="form-control" 
                             placeholder="Introduzca una direccion email Ej: correo@dominio.com" required>                       
-                        </div>
-
-                        <div class="form-group" runat="server">
-                            <label for="labelRol">Rol</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList id="rol" name="rol" class="form-control"  runat="server">
-                                    <asp:ListItem Selected="True" Value="1"> Administrador </asp:ListItem>
-                                    <asp:ListItem Value="2"> Operador </asp:ListItem>
-                            </asp:DropDownList>
                         </div>
                          
                      </div><!-- /.box-body -->

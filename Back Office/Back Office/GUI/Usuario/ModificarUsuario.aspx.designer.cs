@@ -58,15 +58,6 @@ namespace Back_Office.GUI.Usuario {
         protected global::System.Web.UI.HtmlControls.HtmlInputText apellido;
         
         /// <summary>
-        /// genero control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList genero;
-        
-        /// <summary>
         /// cedula control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace Back_Office.GUI.Usuario {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText cedula;
-        
-        /// <summary>
-        /// tipodoc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList tipodoc;
         
         /// <summary>
         /// InputTelefono control.
@@ -112,15 +94,6 @@ namespace Back_Office.GUI.Usuario {
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
         
         /// <summary>
-        /// fecha_nacimineto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fecha_nacimineto;
-        
-        /// <summary>
         /// EmailPerson control.
         /// </summary>
         /// <remarks>
@@ -128,15 +101,6 @@ namespace Back_Office.GUI.Usuario {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl EmailPerson;
-        
-        /// <summary>
-        /// rol control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rol;
         
         /// <summary>
         /// buttonGenerarCategoria control.
