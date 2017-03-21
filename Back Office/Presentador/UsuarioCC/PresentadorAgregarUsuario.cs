@@ -56,6 +56,9 @@ namespace Presentador.UsuarioCC
                 elUsuario.Email = vista.Correo;
                 elUsuario.Fk_Genero = int.Parse(vista.Genero.SelectedValue.ToString());
                 elUsuario.Fk_Rol = int.Parse(vista.Rol.SelectedValue.ToString());
+                elUsuario.Validacion_dc = 0;
+                elUsuario.Valido_dc = 0;
+                elUsuario.Origen = "n/a";
                 //laMarca.tipoMoneda;
                 Comando<bool> comandoGenerar = FabricaComandos.CrearAgregarUsuario(elUsuario);
                 comandoGenerar.Ejecutar();

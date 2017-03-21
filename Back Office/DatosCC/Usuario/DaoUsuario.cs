@@ -158,11 +158,13 @@ namespace DatosCC.Usuario
             }
             catch (ExceptionCcConBD ex)
             {
-
+                throw new ExceptionsCity(RecursoUsuario.Codigo,
+                   RecursoUsuario.MensajeSQL, ex);
             }
             catch (Exception ex)
             {
-
+                throw new ExceptionsCity(RecursoUsuario.Codigo,
+                    RecursoUsuario.MensajeOtro, ex);
             }
 
             return true;

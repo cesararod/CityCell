@@ -46,7 +46,7 @@
                             <label for="labelGenero">Genero</label> <label for="Requerido" style="color: red;">*</label>
                             <asp:DropDownList id="genero" name="genero" class="form-control"  runat="server">
                                     <asp:ListItem Selected="True" Value="1"> Masculino </asp:ListItem>
-                                    <asp:ListItem Value="0"> Femenino </asp:ListItem>
+                                    <asp:ListItem Value="2"> Femenino </asp:ListItem>
                             </asp:DropDownList>
                         </div>
 
@@ -116,6 +116,7 @@
                             <asp:DropDownList id="rol" name="rol" class="form-control"  runat="server">
                                     <asp:ListItem Selected="True" Value="1"> Administrador </asp:ListItem>
                                     <asp:ListItem Value="2"> Operador </asp:ListItem>
+                                    <asp:ListItem Value="3"> Cliente </asp:ListItem>
                             </asp:DropDownList>
                         </div>
                          

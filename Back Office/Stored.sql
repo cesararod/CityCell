@@ -255,6 +255,18 @@ insert into Genero values('Femenino');
 
 select * from rol
 
+insert into Estado (Nombre) values ('Caracas')
+insert into dbo.Empresa_Envio (NOMBRE) values ('TEALCA')
+insert into Estatus values ('Recibido')   
+insert into Pago (Monto, Descripcion, Banco) values (178.54,'Pago de prueba', 'Mercantil')
+ALTER TABLE compra DROP COLUMN Usuario_Cedula;
+insert into dbo.Compra (Pedido, [Sub-Total],IVA,Precio_Envio,Numero_Pedido,Estatus_Id,
+                        Usuario_Id,Direccion_Id,Direccion_Id1,Pago_Id,Empresa_Envio_Id) values 
+                        (123,178.43,12,100,'track1234',1,7,1,1,1,1);
+ 
+SET IDENTITY_INSERT [dbo].direccion ON                        
+insert into direccion (Id,Ciudad,Municipio,Estado_Id,Usuario_Id)values (1,'caracas','libertador',1,7);
+insert into Compra_Producto(Fecha,Precio,Producto_id,Compra_Pedido) values (CURRENT_TIMESTAMP, 199.8416,1,1);    
 INSERT INTO USUARIO(Nombre,Apellido,Cedula,Telefono,Celular,Password,Fecha_Nacimineto,Fecha_Ingreso,Email,Genero_id,Rol_Id,Tipo_documento,Origen)
         VALUES('Cesar','Rodriguez','19195483','02124330234','04122300353','1234','23-02-1990 13:23:44','20-02-2017 13:23:44','carr235@gmail.com',1,1,'v','Pagina');
 

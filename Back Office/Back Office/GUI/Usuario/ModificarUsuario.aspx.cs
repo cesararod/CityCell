@@ -120,7 +120,7 @@ namespace Back_Office.GUI.Usuario
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
             Presentador.Modificar();
-            //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
+            //Response.Redirect(ResourceGUIUsuario.Factura + _presentador.ResourceGUIUsuario().ToString());
         }
     }
 }
