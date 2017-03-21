@@ -12,7 +12,7 @@ namespace Dominio.Entidades
         private int idUser;
         private string nombre;
         private string apellido;
-        private int cedula;
+        private string cedula;
         private string telefono;
         private string celular;
         private string password;
@@ -48,8 +48,8 @@ namespace Dominio.Entidades
             set { apellido = value; }
             
         }
-        
-        public int Cedula
+
+        public string Cedula
         {
             get { return cedula; }
             set { cedula = value; }
@@ -143,27 +143,18 @@ namespace Dominio.Entidades
 
         #region Constructores
 
-        public Usuario(int inputId, string input_Nombre, string input_Apellido, int input_cedula, string input_telefono, string input_celular,
-            string input_password, DateTime input_FNacimineto, DateTime input_FIngreso, string input_email, string input_tDoc, string input_origen
-            , int input_validacion_dc, int input_valido_dc, int input_fk_rol, int input_fk_genero)
-            : base()
+        public Usuario(int inputId, string input_Nombre, string input_Apellido, string input_cedula, string input_telefono, string input_celular,
+             DateTime input_FNacimineto, DateTime input_FIngreso, string input_email)
         {
-            Id = 0;
+            Id = inputId;
             nombre = input_Nombre;
             apellido = input_Apellido;
             cedula = input_cedula;
             telefono = input_telefono;
             celular = input_celular;
-            password = input_password;
             fecha_nacimiento = input_FNacimineto;
             fecha_ingreso = input_FIngreso;
             email = input_email;
-            tipo_documento = input_tDoc;
-            origen = input_origen;
-            validacion_dc = input_validacion_dc;
-            valido_dc = input_valido_dc;
-            fk_rol = input_fk_rol;
-            fk_genero = input_fk_genero;
         }
 
         public Usuario()
@@ -171,7 +162,7 @@ namespace Dominio.Entidades
             Id = 0;
             nombre = string.Empty;
             apellido = String.Empty;
-            cedula = 0;
+            cedula = string.Empty;
             telefono = String.Empty;
             celular = String.Empty;
             password = String.Empty;
