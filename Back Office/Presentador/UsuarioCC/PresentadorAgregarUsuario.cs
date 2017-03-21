@@ -45,7 +45,7 @@ namespace Presentador.UsuarioCC
                 Usuario elUsuario = (Usuario)FabricaEntidades.UsuarioVacio();
                 elUsuario.Nombre = vista.Nombre;
                 elUsuario.Apellido = vista.Apellido;
-                elUsuario.Cedula = int.Parse(vista.Cedula.ToString());
+                elUsuario.Cedula = vista.Cedula.ToString();
                 elUsuario.Tipo_Documento = vista.TipoDoc.SelectedValue.ToString();
                 elUsuario.Telefono = vista.Telefono;
                 elUsuario.Celular = vista.Celular;

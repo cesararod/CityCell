@@ -149,6 +149,7 @@
     <Content Include="GUI\Promocion\ConsultarPromocion.aspx" />
     <Content Include="GUI\Promocion\ModificarPromocion.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
+    <Content Include="GUI\Usuario\ConsultarUsuario.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -1099,6 +1100,13 @@
     </Compile>
     <Compile Include="GUI\Usuario\AgregarUsuario.aspx.designer.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Usuario\ConsultarUsuario.aspx.cs">
+      <DependentUpon>ConsultarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Usuario\ConsultarUsuario.aspx.designer.cs">
+      <DependentUpon>ConsultarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Usuario\ResourceGUIUsuario.Designer.cs">
       <AutoGen>True</AutoGen>

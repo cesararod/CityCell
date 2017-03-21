@@ -137,6 +137,16 @@ namespace LogicaCC.Fabrica
             Comando<bool> respuesta = new ComandoAgregarUsuario(usuario);
             return respuesta;
         }
+
+        /// <summary>
+        /// metodo para crear comando que permite consultar todos los Usuarios
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosUsuarios()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarUsuario();
+            return respuesta;
+        }
         #endregion
 
         #region Promocion

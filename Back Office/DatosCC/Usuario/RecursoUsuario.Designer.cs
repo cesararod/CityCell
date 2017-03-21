@@ -279,135 +279,135 @@ namespace DatosCC.Usuario {
         /// <summary>
         ///   Looks up a localized string similar to Activo.
         /// </summary>
-        internal static string ProductoActivo {
+        internal static string UsuarioActivo {
             get {
-                return ResourceManager.GetString("ProductoActivo", resourceCulture);
+                return ResourceManager.GetString("UsuarioActivo", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Alto.
         /// </summary>
-        internal static string ProductoAlto {
+        internal static string UsuarioAlto {
             get {
-                return ResourceManager.GetString("ProductoAlto", resourceCulture);
+                return ResourceManager.GetString("UsuarioAlto", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Ancho.
         /// </summary>
-        internal static string ProductoAncho {
+        internal static string UsuarioAncho {
             get {
-                return ResourceManager.GetString("ProductoAncho", resourceCulture);
+                return ResourceManager.GetString("UsuarioAncho", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to cantidad.
+        ///   Looks up a localized string similar to Apellido.
         /// </summary>
-        internal static string ProductoCantidad {
+        internal static string UsuarioApellido {
             get {
-                return ResourceManager.GetString("ProductoCantidad", resourceCulture);
+                return ResourceManager.GetString("UsuarioApellido", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Descripcion.
+        ///   Looks up a localized string similar to Cedula.
         /// </summary>
-        internal static string ProductoDescripcion {
+        internal static string UsuarioCedula {
             get {
-                return ResourceManager.GetString("ProductoDescripcion", resourceCulture);
+                return ResourceManager.GetString("UsuarioCedula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to celular.
+        /// </summary>
+        internal static string UsuarioCelular {
+            get {
+                return ResourceManager.GetString("UsuarioCelular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string UsuarioEmail {
+            get {
+                return ResourceManager.GetString("UsuarioEmail", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fecha_Creacion.
         /// </summary>
-        internal static string ProductoFechaCre {
+        internal static string UsuarioFechaCre {
             get {
-                return ResourceManager.GetString("ProductoFechaCre", resourceCulture);
+                return ResourceManager.GetString("UsuarioFechaCre", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fecha_Modificacion.
+        ///   Looks up a localized string similar to FechaNac.
         /// </summary>
-        internal static string ProductoFechaMod {
+        internal static string UsuarioFechaNac {
             get {
-                return ResourceManager.GetString("ProductoFechaMod", resourceCulture);
+                return ResourceManager.GetString("UsuarioFechaNac", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Categoria_id.
         /// </summary>
-        internal static string ProductofKCategoria {
+        internal static string UsuariofKCategoria {
             get {
-                return ResourceManager.GetString("ProductofKCategoria", resourceCulture);
+                return ResourceManager.GetString("UsuariofKCategoria", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Marca_Id.
         /// </summary>
-        internal static string ProductoFkMARCA {
+        internal static string UsuarioFkMARCA {
             get {
-                return ResourceManager.GetString("ProductoFkMARCA", resourceCulture);
+                return ResourceManager.GetString("UsuarioFkMARCA", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SKU.
+        ///   Looks up a localized string similar to UsuId.
         /// </summary>
-        internal static string ProductoId {
+        internal static string UsuarioId {
             get {
-                return ResourceManager.GetString("ProductoId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Largo.
-        /// </summary>
-        internal static string ProductoLargo {
-            get {
-                return ResourceManager.GetString("ProductoLargo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Modelo.
-        /// </summary>
-        internal static string ProductoModelo {
-            get {
-                return ResourceManager.GetString("ProductoModelo", resourceCulture);
+                return ResourceManager.GetString("UsuarioId", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nombre.
         /// </summary>
-        internal static string ProductoNombre {
+        internal static string UsuarioNombre {
             get {
-                return ResourceManager.GetString("ProductoNombre", resourceCulture);
+                return ResourceManager.GetString("UsuarioNombre", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Peso.
         /// </summary>
-        internal static string ProductoPeso {
+        internal static string UsuarioPeso {
             get {
-                return ResourceManager.GetString("ProductoPeso", resourceCulture);
+                return ResourceManager.GetString("UsuarioPeso", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Precio.
+        ///   Looks up a localized string similar to Tele.
         /// </summary>
-        internal static string ProductoPrecio {
+        internal static string UsuarioTelefono {
             get {
-                return ResourceManager.GetString("ProductoPrecio", resourceCulture);
+                return ResourceManager.GetString("UsuarioTelefono", resourceCulture);
             }
         }
     }

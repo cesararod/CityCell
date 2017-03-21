@@ -189,49 +189,49 @@
   <data name="ParamNombre" xml:space="preserve">
     <value>@nombre</value>
   </data>
-  <data name="ProductoActivo" xml:space="preserve">
+  <data name="UsuarioActivo" xml:space="preserve">
     <value>Activo</value>
   </data>
-  <data name="ProductoAlto" xml:space="preserve">
+  <data name="UsuarioAlto" xml:space="preserve">
     <value>Alto</value>
   </data>
-  <data name="ProductoAncho" xml:space="preserve">
+  <data name="UsuarioAncho" xml:space="preserve">
     <value>Ancho</value>
   </data>
-  <data name="ProductoCantidad" xml:space="preserve">
-    <value>cantidad</value>
+  <data name="UsuarioCelular" xml:space="preserve">
+    <value>celular</value>
   </data>
-  <data name="ProductoDescripcion" xml:space="preserve">
-    <value>Descripcion</value>
+  <data name="UsuarioTelefono" xml:space="preserve">
+    <value>Tele</value>
   </data>
-  <data name="ProductoFechaCre" xml:space="preserve">
+  <data name="UsuarioFechaCre" xml:space="preserve">
     <value>Fecha_Creacion</value>
   </data>
-  <data name="ProductoFechaMod" xml:space="preserve">
-    <value>Fecha_Modificacion</value>
+  <data name="UsuarioFechaNac" xml:space="preserve">
+    <value>FechaNac</value>
   </data>
-  <data name="ProductofKCategoria" xml:space="preserve">
+  <data name="UsuariofKCategoria" xml:space="preserve">
     <value>Categoria_id</value>
   </data>
-  <data name="ProductoFkMARCA" xml:space="preserve">
+  <data name="UsuarioFkMARCA" xml:space="preserve">
     <value>Marca_Id</value>
   </data>
-  <data name="ProductoId" xml:space="preserve">
-    <value>SKU</value>
+  <data name="UsuarioId" xml:space="preserve">
+    <value>UsuId</value>
   </data>
-  <data name="ProductoLargo" xml:space="preserve">
-    <value>Largo</value>
+  <data name="UsuarioCedula" xml:space="preserve">
+    <value>Cedula</value>
   </data>
-  <data name="ProductoNombre" xml:space="preserve">
+  <data name="UsuarioNombre" xml:space="preserve">
     <value>Nombre</value>
   </data>
-  <data name="ProductoPeso" xml:space="preserve">
+  <data name="UsuarioPeso" xml:space="preserve">
     <value>Peso</value>
   </data>
-  <data name="ProductoPrecio" xml:space="preserve">
-    <value>Precio</value>
+  <data name="UsuarioEmail" xml:space="preserve">
+    <value>Email</value>
   </data>
-  <data name="ProductoModelo" xml:space="preserve">
-    <value>Modelo</value>
+  <data name="UsuarioApellido" xml:space="preserve">
+    <value>Apellido</value>
   </data>
 </root>

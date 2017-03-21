@@ -226,21 +226,21 @@ namespace DatosCC.Usuario
                 //Guardar los datos 
                 DataRow row = dt.Rows[0];
 
-                int _id = int.Parse(row[RecursoUsuario.ProductoId].ToString());
-                String _nombre = row[RecursoUsuario.ProductoNombre].ToString();
-                int _activo = int.Parse(row[RecursoUsuario.ProductoActivo].ToString());
-                String _modelo = row[RecursoUsuario.ProductoModelo].ToString();
-                String _descripcion = row[RecursoUsuario.ProductoDescripcion].ToString();
-                float _precio = float.Parse(row[RecursoUsuario.ProductoPrecio].ToString());
-                int _cantidad = int.Parse(row[RecursoUsuario.ProductoCantidad].ToString());
-                float _peso = float.Parse(row[RecursoUsuario.ProductoPeso].ToString());
-                float _alto = float.Parse(row[RecursoUsuario.ProductoAlto].ToString());
-                float _ancho = float.Parse(row[RecursoUsuario.ProductoAncho].ToString());
-                float _largo = float.Parse(row[RecursoUsuario.ProductoLargo].ToString());
-                DateTime _fechaCreacion = DateTime.Parse(row[RecursoUsuario.ProductoFechaCre].ToString());
-                DateTime _fechaModificacion = DateTime.Parse(row[RecursoUsuario.ProductoFechaMod].ToString());
-                int _fkMarca = int.Parse(row[RecursoUsuario.ProductoFkMARCA].ToString());
-                int _fkCategoria = int.Parse(row[RecursoUsuario.ProductofKCategoria].ToString());
+                int _id = int.Parse(row[RecursoUsuario.UsuarioId].ToString());
+                String _nombre = row[RecursoUsuario.UsuarioNombre].ToString();
+                int _activo = int.Parse(row[RecursoUsuario.UsuarioActivo].ToString());
+                String _modelo = row[RecursoUsuario.UsuarioApellido].ToString();
+                String _descripcion = row[RecursoUsuario.UsuarioTelefono].ToString();
+                float _precio = float.Parse(row[RecursoUsuario.UsuarioEmail].ToString());
+                int _cantidad = int.Parse(row[RecursoUsuario.UsuarioCelular].ToString());
+                float _peso = float.Parse(row[RecursoUsuario.UsuarioPeso].ToString());
+                float _alto = float.Parse(row[RecursoUsuario.UsuarioAlto].ToString());
+                float _ancho = float.Parse(row[RecursoUsuario.UsuarioAncho].ToString());
+                float _largo = float.Parse(row[RecursoUsuario.UsuarioCedula].ToString());
+                DateTime _fechaCreacion = DateTime.Parse(row[RecursoUsuario.UsuarioFechaCre].ToString());
+                DateTime _fechaModificacion = DateTime.Parse(row[RecursoUsuario.UsuarioFechaNac].ToString());
+                int _fkMarca = int.Parse(row[RecursoUsuario.UsuarioFkMARCA].ToString());
+                int _fkCategoria = int.Parse(row[RecursoUsuario.UsuariofKCategoria].ToString());
 
                 //Creo un objeto de tipo Compania con los datos de la fila y lo guardo.
                 _ElUsuario = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso,
@@ -295,25 +295,18 @@ namespace DatosCC.Usuario
                 foreach (DataRow row in dt.Rows)
                 {
 
-                    int _id = int.Parse(row[RecursoUsuario.ProductoId].ToString());
-                    String _nombre = row[RecursoUsuario.ProductoNombre].ToString();
-                    int _activo = int.Parse(row[RecursoUsuario.ProductoActivo].ToString());
-                    String _modelo = row[RecursoUsuario.ProductoModelo].ToString();
-                    String _descripcion = row[RecursoUsuario.ProductoDescripcion].ToString();
-                    float _precio = float.Parse(row[RecursoUsuario.ProductoPrecio].ToString());
-                    int _cantidad = int.Parse(row[RecursoUsuario.ProductoCantidad].ToString());
-                    float _peso = float.Parse(row[RecursoUsuario.ProductoPeso].ToString());
-                    float _alto = float.Parse(row[RecursoUsuario.ProductoAlto].ToString());
-                    float _ancho = float.Parse(row[RecursoUsuario.ProductoAncho].ToString());
-                    float _largo = float.Parse(row[RecursoUsuario.ProductoLargo].ToString());
-                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoUsuario.ProductoFechaCre].ToString());
-                    DateTime _fechaModificacion = DateTime.Parse(row[RecursoUsuario.ProductoFechaMod].ToString());
-                    int _fkMarca = int.Parse(row[RecursoUsuario.ProductoFkMARCA].ToString());
-                    int _fkCategoria = int.Parse(row[RecursoUsuario.ProductofKCategoria].ToString());
+                    int _id = int.Parse(row[RecursoUsuario.UsuarioId].ToString());
+                    string _nombre = row[RecursoUsuario.UsuarioNombre].ToString();
+                    string _apellido = row[RecursoUsuario.UsuarioApellido].ToString();
+                    string _cedula = row[RecursoUsuario.UsuarioCedula].ToString();
+                    DateTime _fechaNacimiento = DateTime.Parse(row[RecursoUsuario.UsuarioFechaNac].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoUsuario.UsuarioFechaCre].ToString());
+                    string _email = row[RecursoUsuario.UsuarioEmail].ToString();
+                    string _telefono = row[RecursoUsuario.UsuarioTelefono].ToString();
+                    string _celular = row[RecursoUsuario.UsuarioCelular].ToString();
 
-
-                    Dominio.Entidades.Producto _ElUsuario = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso,
-                                                              _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria);
+                    Dominio.Entidades.Usuario _ElUsuario = new Dominio.Entidades.Usuario(_id, _nombre, _apellido, _cedula, _telefono, _celular,
+                                                            _fechaNacimiento, _fechaCreacion, _email);
                     //_ElUsuario.Id = facId;
 
                     listProducto.Add(_ElUsuario);

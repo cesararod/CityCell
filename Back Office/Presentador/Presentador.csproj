@@ -103,6 +103,7 @@
       <DependentUpon>RecursoPresentadorPromocion.resx</DependentUpon>
     </Compile>
     <Compile Include="UsuarioCC\PresentadorAgregarUsuario.cs" />
+    <Compile Include="UsuarioCC\PresentadorConsultaUsuario.cs" />
     <Compile Include="UsuarioCC\RecursoPresentadorUsuario.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

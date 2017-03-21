@@ -225,6 +225,16 @@ UPDATE Producto SET Activo = @activo, Nombre= @nombre, Modelo = @modelo, Descrip
 Precio = @precio, cantidad = @cantidad   WHERE SKU = @id_producto
 END;
 
+CREATE PROCEDURE ConsultaUsuario
+
+AS
+    BEGIN
+       select Id as UsuId, Nombre as Nombre, Apellido as Apellido, Cedula as Cedula, 
+              Telefono as Tele, Celular as celular, Fecha_Ingreso as Fecha_Creacion, Email as Email, 
+              Fecha_Nacimineto as FechaNac from usuario 
+    END
+GO
+
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
 
