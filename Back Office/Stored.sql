@@ -250,6 +250,39 @@ UPDATE Usuario SET Telefono = @telefono, Celular= @celular, Password = @password
 END;
 GO
 
+
+
+CREATE PROCEDURE ConsultaVenta
+
+AS
+    BEGIN
+       select Compra.Id as idventa, Compra.pedido as numpedido, Compra."Sub-Total" as subtotal,Compra.IVA as iva, Estatus.Estado as estatus, 
+Usuario.Nombre as nombreusu,Usuario.Apellido as apeusu,Compra.Precio_Envio as precioenv,Compra.Numero_Pedido as track,Direccion.Ciudad as Dirfacturacion,
+Direccion.Ciudad as DirEnvio,Compra.Pago_Id numpago,Empresa_Envio.Nombre as operador,Marca.Nombre,producto.Nombre ,Producto.Modelo, compra_producto.Fecha
+from Compra, Usuario, Estatus, Direccion, Pago, Empresa_Envio, compra_producto, Producto, Marca
+where Usuario.Id = Compra.Usuario_Id 
+and Estatus.Id = Compra.Estatus_Id
+and Direccion.Id = Compra.Direccion_Id
+and Direccion.Id = Compra.Direccion_Id1
+and Pago.Id = Compra.Pago_Id
+and Empresa_Envio.Id = Compra.Empresa_Envio_Id
+and Direccion.Usuario_Id = Usuario.Id
+and compra_producto.Compra_Pedido =  Compra.Id
+and compra_producto.Producto_id = Producto.sku
+and producto.Marca_Id = Marca.Id
+
+    END
+GO
+
+
+CREATE PROCEDURE [dbo].[ModificarVenta]
+@idVenta int,
+@estatus int
+AS
+BEGIN
+UPDATE Compra SET Estatus_Id = 2  WHERE Id = 3
+END;
+
 insert into Genero values('Masculino');
 insert into Genero values('Femenino');
 
@@ -284,4 +317,7 @@ and Direccion.Id = Compra.Direccion_Id1
 and Pago.Id = Compra.Pago_Id
 and Empresa_Envio.Id = Compra.Empresa_Envio_Id
 and Direccion.Usuario_Id = Usuario.Id;
+
+
+
 

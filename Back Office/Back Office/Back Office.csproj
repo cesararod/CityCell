@@ -153,6 +153,7 @@
     <Content Include="GUI\Usuario\ModificarUsuario.aspx" />
     <Content Include="GUI\Ventas\AgregarVenta.aspx" />
     <Content Include="GUI\Ventas\ConsultarVenta.aspx" />
+    <Content Include="GUI\Ventas\ModificarVenta.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -1137,6 +1138,18 @@
     <Compile Include="GUI\Ventas\ConsultarVenta.aspx.designer.cs">
       <DependentUpon>ConsultarVenta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Ventas\ModificarVenta.aspx.cs">
+      <DependentUpon>ModificarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Ventas\ModificarVenta.aspx.designer.cs">
+      <DependentUpon>ModificarVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Ventas\ResourceGUIVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIVenta.resx</DependentUpon>
+    </Compile>
     <Compile Include="home.Master.cs">
       <DependentUpon>home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1312,6 +1325,10 @@
     <EmbeddedResource Include="GUI\Usuario\ResourceGUIUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUIUsuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Ventas\ResourceGUIVenta.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIVenta.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

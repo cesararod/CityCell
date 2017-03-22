@@ -67,9 +67,10 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Usuario</th>
-                                    <th>Cedula</th>
+                                    <th>#Pedido</th>
                                     <th>Producto</th>
                                     <th>Monto</th>
+                                    <th>Estatus</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>
                             </thead>

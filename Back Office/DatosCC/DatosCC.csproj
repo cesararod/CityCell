@@ -76,6 +76,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoUsuario.resx</DependentUpon>
     </Compile>
+    <Compile Include="Venta\DaoVenta.cs" />
+    <Compile Include="Venta\RecursoVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoVenta.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Categoria\RecursoCategoria.resx">
@@ -99,6 +105,10 @@
     <EmbeddedResource Include="Usuario\RecursoUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoUsuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\RecursoVenta.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoVenta.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

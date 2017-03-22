@@ -54,6 +54,8 @@
     <Compile Include="Comandos\Usuario\ComandoAgregarUsuario.cs" />
     <Compile Include="Comandos\Usuario\ComandoConsultarUsuario.cs" />
     <Compile Include="Comandos\Usuario\ComandoModificarUsuario.cs" />
+    <Compile Include="Comandos\Venta\ComandoConsultarVenta.cs" />
+    <Compile Include="Comandos\Venta\ComandoModificarVenta.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />
     <Compile Include="ResourcesLogic.Designer.cs">
       <DependentUpon>ResourcesLogic.resx</DependentUpon>

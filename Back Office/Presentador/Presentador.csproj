@@ -110,6 +110,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorUsuario.resx</DependentUpon>
     </Compile>
+    <Compile Include="VentaCC\PresentadorConsultaVenta.cs" />
+    <Compile Include="VentaCC\PresentadorModificarVenta.cs" />
+    <Compile Include="VentaCC\RecursoPresentadorVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorVenta.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CategoriaCC\RecursoPresentadorCategoria.resx">
@@ -131,6 +138,10 @@
     <EmbeddedResource Include="UsuarioCC\RecursoPresentadorUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorUsuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentaCC\RecursoPresentadorVenta.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorVenta.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

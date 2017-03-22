@@ -57,5 +57,13 @@ namespace DatosCC.Fabrica
         }
 
         #endregion
+
+        #region Venta
+
+        static public IDao crearDaoVenta()
+        {
+            return new Venta.DaoVenta();
+        }
+        #endregion
     }
 }

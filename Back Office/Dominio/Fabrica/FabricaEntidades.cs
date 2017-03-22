@@ -63,5 +63,14 @@ namespace Dominio.Fabrica
         {
             return new Promocion();
         }
+
+        /// <summary>
+        /// Metodo que crea la instancia de la entidad Venta
+        /// </summary>
+        /// <returns>Retorna la instancia a la clase Venta</returns>
+        public static Entidad VentaVacia()
+        {
+            return new Venta();
+        }
     }
 }

@@ -6,46 +6,56 @@ using System.Threading.Tasks;
 
 namespace Dominio.Entidades
 {
-    public class Venta
+    public class Venta : Entidad
     {
         #region Atributos
         private int id_venta;
-        private int fk_producto;
-        private int activo;
-        private float precio;
+        private string nombre;
+        private string apellido;
+        private string tracking;
         private DateTime fecha_creacion;
-        private DateTime fecha_inicio;
-        private DateTime fecha_fin;
+        private string subtotal;
+        private string pedido;
+        private string iva;
+        private string precioEnvio;
+        private string estatus;
+        private string dirFact;
+        private string dirEnv;
+        private string numPago;
+        private string operador;
+        private string producto;
+        private string modelo;
+        private string marca;
 
         #endregion
 
         #region Get's Set's
 
-        public int Id_Promo
+        public int Id_Venta
         {
             get { return id_venta; }
             set { id_venta = value; }
 
         }
 
-        public int Fk_Producto
+        public string Nombre
         {
-            get { return fk_producto; }
-            set { fk_producto = value; }
+            get { return nombre; }
+            set { nombre = value; }
 
         }
 
-        public int Activo
+        public string Apellido
         {
-            get { return activo; }
-            set { activo = value; }
+            get { return apellido; }
+            set { apellido = value; }
 
         }
 
-        public float Precio
+        public string Tracking
         {
-            get { return precio; }
-            set { precio = value; }
+            get { return tracking; }
+            set { tracking = value; }
 
         }
 
@@ -56,21 +66,139 @@ namespace Dominio.Entidades
 
         }
 
-        public DateTime Fecha_Inicio
+        public string Subtotal
         {
-            get { return fecha_inicio; }
-            set { fecha_inicio = value; }
+            get { return subtotal; }
+            set { subtotal = value; }
 
         }
 
-        public DateTime Fecha_Fin
+        public string Pedido
         {
-            get { return fecha_fin; }
-            set { fecha_fin = value; }
+            get { return pedido; }
+            set { pedido = value; }
 
         }
 
+        public string Iva
+        {
+            get { return iva; }
+            set { iva = value; }
 
+        }
+
+        public string PrecioEnvio
+        {
+            get { return precioEnvio; }
+            set { precioEnvio = value; }
+
+        }
+
+        public string Estatus
+        {
+            get { return estatus; }
+            set { estatus = value; }
+
+        }
+
+        public string DirFact
+        {
+            get { return dirFact; }
+            set { dirFact = value; }
+
+        }
+
+        public string DirEnv
+        {
+            get { return dirEnv; }
+            set { dirEnv = value; }
+
+        }
+
+        public string NumPago
+        {
+            get { return numPago; }
+            set { numPago = value; }
+
+        }
+
+        public string Operador
+        {
+            get { return operador; }
+            set { operador = value; }
+
+        }
+
+        public string Producto
+        {
+            get { return producto; }
+            set { producto = value; }
+
+        }
+
+        public string Modelo
+        {
+            get { return modelo; }
+            set { modelo = value; }
+
+        }
+
+        public string Marca
+        {
+            get { return marca; }
+            set { marca = value; }
+
+        }
+
+        #endregion\
+
+        #region Constructores
+       
+                    
+        public Venta(int inputId, string input_Nombre, string input_Apellido, string input_tracking, string input_subtotal, string input_pedido,
+             DateTime input_fechaCreacion, string input_iva, string input_precioEnvio, string input_estatus, string input_dirFact, string input_dirEnv,
+             string input_numPago, string input_operador, string input_producto, string input_modelo, string input_marca)
+        {
+            id_venta = inputId;
+            nombre = input_Nombre;
+            apellido = input_Apellido;
+            tracking = input_tracking;
+            subtotal = input_subtotal;
+            pedido = input_pedido;
+            fecha_creacion = input_fechaCreacion;
+            iva = input_iva;
+            precioEnvio = input_precioEnvio;
+            estatus = input_estatus;
+            dirFact = input_dirFact;
+            dirEnv = input_dirEnv;
+            numPago = input_numPago;
+            operador = input_operador;
+            producto = input_producto;
+            modelo = input_modelo;
+            marca = input_marca;
+        }
+
+        public Venta()
+        {
+            id_venta = 0;
+            nombre = string.Empty;
+            apellido = string.Empty;
+            tracking = string.Empty;
+            subtotal = string.Empty;
+            pedido = string.Empty;
+            fecha_creacion = DateTime.Now;
+            iva = string.Empty;
+            precioEnvio = string.Empty;
+            estatus = string.Empty;
+            dirFact = string.Empty;
+            dirEnv = string.Empty;
+            numPago = string.Empty;
+            operador = string.Empty;
+            producto = string.Empty;
+            modelo = string.Empty;
+            marca = string.Empty;
+        }
+      
         #endregion
     }
 }

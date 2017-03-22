@@ -53,6 +53,8 @@
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
     <Compile Include="Usuario\IContratoConsultarUsuario.cs" />
     <Compile Include="Usuario\IContratoModificarUsuario.cs" />
+    <Compile Include="Venta\IContratoConsultarVenta.cs" />
+    <Compile Include="Venta\IContratoModificarVenta.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +67,7 @@
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

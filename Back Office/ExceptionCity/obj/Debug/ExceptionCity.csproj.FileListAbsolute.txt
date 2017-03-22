@@ -15,4 +15,3 @@ C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csproj.GenerateResource.Cache
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.dll
 C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.pdb
-C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\ExceptionCity\obj\Debug\ExceptionCity.csprojResolveAssemblyReference.cache

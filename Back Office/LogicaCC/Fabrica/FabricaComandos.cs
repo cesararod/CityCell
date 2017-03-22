@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using LogicaCC.Comandos;
+using LogicaCC.Comandos.Venta;
 using LogicaCC.Comandos.Categoria;
 using LogicaCC.Comandos.Promocion;
 using LogicaCC.Comandos.Usuario;
@@ -198,7 +199,30 @@ namespace LogicaCC.Fabrica
         #endregion
 
         #region Ventas
-        
+
+        /// <summary>
+        /// metodo para crear comando que permite consultar todas las Ventas
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosVentas()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarVenta();
+            return respuesta;
+        }
+
+        /// <summary>
+        /// metodo para crear comando que permite modificar una venta
+        /// </summary>
+        /// <param name="venta">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        /// 
+
+        public static Comando<bool> CrearModificarVenta(Entidad venta)
+        {
+            Comando<bool> respuesta = new ComandoModificarVenta(venta);
+            return respuesta;
+        }
+
         #endregion
     }
 }
