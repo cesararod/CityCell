@@ -270,3 +270,18 @@ insert into Compra_Producto(Fecha,Precio,Producto_id,Compra_Pedido) values (CURR
 INSERT INTO USUARIO(Nombre,Apellido,Cedula,Telefono,Celular,Password,Fecha_Nacimineto,Fecha_Ingreso,Email,Genero_id,Rol_Id,Tipo_documento,Origen)
         VALUES('Cesar','Rodriguez','19195483','02124330234','04122300353','1234','23-02-1990 13:23:44','20-02-2017 13:23:44','carr235@gmail.com',1,1,'v','Pagina');
 
+
+        select * from direccion
+
+select Compra.Id, Compra.pedido, Compra."Sub-Total",Compra.IVA, Estatus.Estado, 
+Usuario.Nombre,Usuario.Apellido,Compra.Precio_Envio,Compra.Numero_Pedido,Direccion.Ciudad,
+Direccion.Ciudad as DirEnvio,Compra.Pago_Id,Empresa_Envio.Nombre
+from Compra, Usuario, Estatus, Direccion, Pago, Empresa_Envio
+where Usuario.Id = Compra.Usuario_Id 
+and Estatus.Id = Compra.Estatus_Id
+and Direccion.Id = Compra.Direccion_Id
+and Direccion.Id = Compra.Direccion_Id1
+and Pago.Id = Compra.Pago_Id
+and Empresa_Envio.Id = Compra.Empresa_Envio_Id
+and Direccion.Usuario_Id = Usuario.Id;
+
