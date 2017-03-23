@@ -72,5 +72,45 @@ namespace Dominio.Fabrica
         {
             return new Venta();
         }
+
+
+        /// <summary>
+        /// Constructor de CorreoGmailM8.
+        /// </summary>
+        public static Entidad ObtenerCorreo()
+        {
+            return new Correo();
+        }
+
+        /// <summary>
+        /// Constructor de datos correo vacio.
+        /// </summary>
+        public static Entidad ObtenerDatosCorreo()
+        {
+            return new DatosCorreo();
+        }
+
+        /// <summary>
+        /// Constructor de datos correo sin archivo adjunto.
+        /// </summary>
+        /// <param name="asunto">Asunto del mensaje</param>
+        /// <param name="destinatario">Destinatarios del mensaje</param>
+        /// <param name="mensaje">Contenido del mensaje</param>
+        public static Entidad ObtenerDatosCorreo(string asunto, string destinatario, string mensaje)
+        {
+            return new DatosCorreo(asunto, destinatario, mensaje);
+        }
+
+        /// <summary>
+        /// Constructor de datos correo con todos sus atributos.
+        /// </summary>
+        /// <param name="asunto">Asunto del mensaje</param>
+        /// <param name="destinatario">Destinatarios del mensaje</param>
+        /// <param name="mensaje">Contenido del mensaje</param>
+        /// <param name="adjunto">Archivo adjunto del mensaje</param>
+        public static Entidad ObtenerDatosCorreo(string asunto, string destinatario, string mensaje, string adjunto)
+        {
+            return new DatosCorreo(asunto, destinatario, mensaje, adjunto);
+        }
     }
 }
