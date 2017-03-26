@@ -9,9 +9,9 @@ namespace Contratos.Garantia
 {
     public interface IContratoAgregarGarantia
     {
-        string id { get; set; }
+        //string id { get; set; }
         DropDownList marca { get; set; }
-        DropDownList cateoria { get; set; }
+        DropDownList categoria { get; set; }
         string descripcion { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }

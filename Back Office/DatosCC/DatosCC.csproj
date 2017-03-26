@@ -45,6 +45,12 @@
       <DependentUpon>RecursoCategoria.resx</DependentUpon>
     </Compile>
     <Compile Include="Fabrica\FabricaDAOSqlServer.cs" />
+    <Compile Include="Garantia\DaoGarantia.cs" />
+    <Compile Include="Garantia\RecursoGarantia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoGarantia.resx</DependentUpon>
+    </Compile>
     <Compile Include="General.cs" />
     <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
     <Compile Include="InterfazDAO\IDao.cs" />
@@ -88,6 +94,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoCategoria.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Garantia\RecursoGarantia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoGarantia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Marca\RecursoMarca.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoMarca.Designer.cs</LastGenOutput>
@@ -127,6 +137,7 @@
       <Name>ExceptionCity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

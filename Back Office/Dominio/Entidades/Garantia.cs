@@ -13,6 +13,8 @@ namespace Dominio.Entidades
         private int marca;
         private int cateoria;
         private string descripcion;
+        private string Nmarca;
+        private string Ncategoria;
 
         #endregion
 
@@ -45,6 +47,20 @@ namespace Dominio.Entidades
             set { descripcion = value; }
 
         }
+
+        public string NMarca
+        {
+            get { return Nmarca; }
+            set { Nmarca = value; }
+
+        }
+
+        public string NCategoria
+        {
+            get { return Ncategoria; }
+            set { Ncategoria = value; }
+
+        }
         #endregion
 
         #region Constructores
@@ -57,11 +73,11 @@ namespace Dominio.Entidades
         }
 
 
-        public Garantia(int inputid, int inputmarca, int inputcateoria, string inputdescripcion)
+        public Garantia(int inputid, string inputmarca, string inputcateoria, string inputdescripcion)
         {
             this.IdGar = inputid;
-            this.marca = inputmarca;
-            this.cateoria = inputcateoria;
+            this.Nmarca = inputmarca;
+            this.Ncategoria = inputcateoria;
             this.descripcion = inputdescripcion;
         }
         #endregion

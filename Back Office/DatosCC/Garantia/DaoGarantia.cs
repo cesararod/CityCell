@@ -223,8 +223,8 @@ namespace DatosCC.Garantia
 
                     int _id = int.Parse(row[RecursoGarantia.GarantiaId].ToString());
                     string _descripcion = row[RecursoGarantia.GarantiaCondiciones].ToString();
-                    int _marca = int.Parse(row[RecursoGarantia.GarantiaMarca].ToString());
-                    int _categoria = int.Parse(row[RecursoGarantia.GarantiaCategoria].ToString());
+                    string _marca = row[RecursoGarantia.GarantiaMarca].ToString();
+                    string _categoria = row[RecursoGarantia.GarantiaCategoria].ToString();
 
                     Dominio.Entidades.Garantia _LaGarantia = new Dominio.Entidades.Garantia(_id, _marca, _categoria, _descripcion);
                   

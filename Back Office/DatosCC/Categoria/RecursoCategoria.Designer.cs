@@ -250,7 +250,7 @@ namespace DatosCC.Categoria {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarCategorias.
+        ///   Looks up a localized string similar to ConsultarCategoria.
         /// </summary>
         internal static string ConsultCategorias {
             get {

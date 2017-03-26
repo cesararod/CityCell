@@ -238,7 +238,7 @@ namespace DatosCC.Categoria
                     String _nombre = row[RecursoCategoria.CategoriaNombre].ToString();
                     int _destacado = int.Parse(row[RecursoCategoria.CategoriaDestacado].ToString());
                     int _activo = int.Parse(row[RecursoCategoria.CategoriaActivo].ToString());
-                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
+                    DateTime _fechaCreacion = DateTime.Now;//Parse(row[RecursoCategoria.CategoriaFechaCre].ToString());
                     
                     Dominio.Entidades.Categoria _LaCategoria = new Dominio.Entidades.Categoria(_nombre, _destacado, _activo, _fechaCreacion, _fkCategoria);
                     _LaCategoria.IdCat = _id;

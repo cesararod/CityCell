@@ -139,6 +139,7 @@
     <Content Include="GUI\Categoria\AgregarCategoria.aspx" />
     <Content Include="GUI\Categoria\ConsultarCategoria.aspx" />
     <Content Include="GUI\Categoria\ModificarCategoria.aspx" />
+    <Content Include="GUI\Garantia\AgregarGarantia.aspx" />
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
     <Content Include="GUI\Marca\ModificarMarca.aspx" />
@@ -1020,6 +1021,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUICategoria.resx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Garantia\AgregarGarantia.aspx.cs">
+      <DependentUpon>AgregarGarantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Garantia\AgregarGarantia.aspx.designer.cs">
+      <DependentUpon>AgregarGarantia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Garantia\ResourceGUIGarantia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGUIGarantia.resx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Marca\AgregarMarca.aspx.cs">
       <DependentUpon>AgregarMarca.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1309,6 +1322,10 @@
     <EmbeddedResource Include="GUI\Categoria\ResourceGUICategoria.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUICategoria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Garantia\ResourceGUIGarantia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGUIGarantia.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Marca\ResourceGUIMarca.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -556,6 +556,15 @@ namespace Presentador.GarantiaCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to key.
+        /// </summary>
+        internal static string keyCombo {
+            get {
+                return ResourceManager.GetString("keyCombo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TOTAL :.
         /// </summary>
         internal static string MontoTotal {
@@ -795,6 +804,15 @@ namespace Presentador.GarantiaCC {
         internal static string TipoFecha {
             get {
                 return ResourceManager.GetString("TipoFecha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to value.
+        /// </summary>
+        internal static string valueCombo {
+            get {
+                return ResourceManager.GetString("valueCombo", resourceCulture);
             }
         }
     }

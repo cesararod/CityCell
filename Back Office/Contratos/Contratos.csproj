@@ -41,6 +41,10 @@
     <Compile Include="Categoria\IContratoAgregarCategoria.cs" />
     <Compile Include="Categoria\IContratoConsultarCategoria.cs" />
     <Compile Include="Categoria\IContratoModificarCategoria.cs" />
+    <Compile Include="Correo\IContratoCorreo.cs" />
+    <Compile Include="Garantia\IContratoAgregarGarantia.cs" />
+    <Compile Include="Garantia\IContratoConsultarGarantia.cs" />
+    <Compile Include="Garantia\IContratoModificarGarantia.cs" />
     <Compile Include="Marca\IContratoAgregarMarca.cs" />
     <Compile Include="Marca\IContratoConsultarMarca.cs" />
     <Compile Include="Marca\IContratoModificarMarca.cs" />

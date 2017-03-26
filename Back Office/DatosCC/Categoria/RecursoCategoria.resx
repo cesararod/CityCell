@@ -178,7 +178,7 @@
     <value>com_telefono</value>
   </data>
   <data name="ConsultCategorias" xml:space="preserve">
-    <value>ConsultarCategorias</value>
+    <value>ConsultarCategoria</value>
   </data>
   <data name="ConsultCategoriaXId" xml:space="preserve">
     <value>ConsultaCategoriaId</value>

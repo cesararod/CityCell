@@ -42,6 +42,7 @@
     <Compile Include="Entidades\Categoria.cs" />
     <Compile Include="Entidades\Correo.cs" />
     <Compile Include="Entidades\DatosCorreo.cs" />
+    <Compile Include="Entidades\Garantia.cs" />
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Promocion.cs" />

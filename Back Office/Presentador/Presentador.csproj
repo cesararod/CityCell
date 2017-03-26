@@ -78,6 +78,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorCategoria.resx</DependentUpon>
     </Compile>
+    <Compile Include="GarantiaCC\PresentadorAgregarGarantia.cs" />
+    <Compile Include="GarantiaCC\PresentadorConsultaGarantia.cs" />
+    <Compile Include="GarantiaCC\PresentadorModificarGarantia.cs" />
+    <Compile Include="GarantiaCC\RecursoPresentadorGarantia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursoPresentadorGarantia.resx</DependentUpon>
+    </Compile>
     <Compile Include="MarcaCC\PresentadorAgregarMarca.cs" />
     <Compile Include="MarcaCC\PresentadorConsultaMarca.cs" />
     <Compile Include="MarcaCC\PresentadorModificarMarca.cs" />
@@ -122,6 +130,10 @@
     <EmbeddedResource Include="CategoriaCC\RecursoPresentadorCategoria.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorCategoria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GarantiaCC\RecursoPresentadorGarantia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursoPresentadorGarantia.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MarcaCC\RecursoPresentadorMarca.resx">
       <Generator>ResXFileCodeGenerator</Generator>
