@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using LogicaCC.Comandos;
+using LogicaCC.Comandos.Garantia;
 using LogicaCC.Comandos.Venta;
 using LogicaCC.Comandos.Categoria;
 using LogicaCC.Comandos.Promocion;
@@ -223,6 +224,41 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
 
+        #endregion
+
+        #region Garantia
+        /// <summary>
+        /// metodo para crear comando que permite agregar una marca
+        /// </summary>
+        /// <param name="garantia">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearAgregarGarantia(Entidad garantia)
+        {
+            Comando<bool> respuesta = new ComandoAgregarGarantia(garantia);
+            return respuesta;
+        }
+
+        /// <summary>
+        /// metodo para crear comando que permite modificar una marca
+        /// </summary>
+        /// <param name="garantia">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearModificarGarantia(Entidad garantia)
+        {
+            Comando<bool> respuesta = new ComandoModificarGarantia(garantia);
+            return respuesta;
+        }
+
+
+        /// <summary>
+        /// metodo para crear comando que permite consultar todas las Categorias
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarTodosGarantia()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoConsultarGarantia();
+            return respuesta;
+        }
         #endregion
     }
 }

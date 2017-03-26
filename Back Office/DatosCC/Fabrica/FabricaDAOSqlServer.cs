@@ -9,6 +9,7 @@ using DatosCC.Marca;
 using DatosCC.Producto;
 using DatosCC.Promocion;
 using DatosCC.Usuario;
+using DatosCC.Garantia;
 
 
 namespace DatosCC.Fabrica
@@ -63,6 +64,13 @@ namespace DatosCC.Fabrica
         static public IDao crearDaoVenta()
         {
             return new Venta.DaoVenta();
+        }
+        #endregion
+
+        #region Garantia
+        static public IDao crearDaoGarantia()
+        {
+            return new Garantia.DaoGarantia();
         }
         #endregion
     }

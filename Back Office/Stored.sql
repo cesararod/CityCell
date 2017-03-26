@@ -45,6 +45,19 @@ AS
     END;
 GO
 
+CREATE PROCEDURE AgregarGarantia
+   
+    @condiciones [varchar](255),
+    @fk_marca int,
+    @fk_categoria int
+
+AS
+    BEGIN
+       insert into garantia (condiciones, marca_id, categoria_id)
+values (@condiciones,@fk_marca,@fk_categoria)
+    END;
+GO
+
 CREATE PROCEDURE AgregarMarca
    
     @nombre [varchar](50),
@@ -197,6 +210,16 @@ AS
     END;
 GO
 
+CREATE PROCEDURE ModificarGarantia
+    @id_garantia int,
+    @condiciones [varchar](255)
+
+AS
+    BEGIN
+       update Garantia set Condiciones = @condiciones
+       where Garantia.id = @id_garantia
+    END;
+GO
 
 CREATE PROCEDURE ModificarPromocion
 @id_promocion int,
@@ -250,6 +273,16 @@ UPDATE Usuario SET Telefono = @telefono, Celular= @celular, Password = @password
 END;
 GO
 
+CREATE PROCEDURE ConsultarGarantia
+AS
+Begin
+select Garantia.id as id,Marca.Nombre as Marca,Categoria.Nombre AS Categoria, Garantia.Condiciones as Condiciones
+from Garantia,Marca,Categoria
+where
+Garantia.Marca_Id = Marca.Id and
+Garantia.Categoria_id = Categoria.id
+End
+go
 
 
 CREATE PROCEDURE ConsultaVenta
@@ -280,7 +313,7 @@ CREATE PROCEDURE [dbo].[ModificarVenta]
 @estatus int
 AS
 BEGIN
-UPDATE Compra SET Estatus_Id = 2  WHERE Id = 3
+UPDATE Compra SET Estatus_Id = @estatus  WHERE Id = @idVenta
 END;
 
 insert into Genero values('Masculino');

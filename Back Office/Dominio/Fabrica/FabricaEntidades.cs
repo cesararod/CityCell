@@ -27,6 +27,15 @@ namespace Dominio.Fabrica
         {
             return new Marca();
         }
+
+         /// <summary>
+         /// Metodo que crea la instancia de la entidad Garantia
+         /// </summary>
+         /// <returns>Retorna la instancia a la clase Garantia</returns>
+         public static Entidad GarantiaVacia()
+         {
+             return new Garantia();
+         }
         
         /// <summary>
         /// Metodo que crea la instancia de la entidad Categoria
