@@ -239,7 +239,7 @@ namespace DatosCC.Marca
                     String _nombre = row[RecursoMarca.MarcaNombre].ToString();
                     String _imagen = row[RecursoMarca.MarcaImagen].ToString();
                     int _activo = int.Parse(row[RecursoMarca.MarcaActivo].ToString());
-                    DateTime _fechaCreacion = DateTime.Now;//Parse(row[RecursoMarca.MarcaFechaCre].ToString());
+                    DateTime _fechaCreacion = DateTime.Parse(row[RecursoMarca.MarcaFechaCre].ToString());
 
 
                     Dominio.Entidades.Marca _LaMarca = new Dominio.Entidades.Marca(_id, _nombre, _imagen, _activo, _fechaCreacion);

@@ -61,7 +61,7 @@ namespace Presentador.GarantiaCC
         /// <summary>
         /// Método para cargar la tabla con las facturas existentes
         /// </summary>
-        public void cargarConsultarMarcas()
+        public void cargarConsultar()
         {
             bool activada = false;
             try
@@ -78,12 +78,12 @@ namespace Presentador.GarantiaCC
                     vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTr;
                     vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.IdGar.ToString()
                         + RecursoPresentadorGarantia.CloseTd;
-                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Marca
+                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.NMarca
                         + RecursoPresentadorGarantia.CloseTd;
-                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Cateoria
+                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.NCategoria
                         + RecursoPresentadorGarantia.CloseTd;
-                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Descripcion
-                        + RecursoPresentadorGarantia.CloseTd;
+                    //vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Descripcion
+                        //+ RecursoPresentadorGarantia.CloseTd;
                     //Acciones de cada contacto
                     vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD;
 

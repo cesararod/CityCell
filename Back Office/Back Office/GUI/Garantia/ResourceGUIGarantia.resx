@@ -198,8 +198,8 @@
   <data name="idP" xml:space="preserve">
     <value>IdProyecto</value>
   </data>
-  <data name="idProd" xml:space="preserve">
-    <value>sku</value>
+  <data name="idGar" xml:space="preserve">
+    <value>idGar</value>
   </data>
   <data name="OpenTD" xml:space="preserve">
     <value>&lt;td&gt;</value>

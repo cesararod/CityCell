@@ -44,7 +44,7 @@ namespace Presentador.GarantiaCC
              try
              {
                  Garantia laGarantia = (Garantia)FabricaEntidades.GarantiaVacia();
-                 laGarantia.IdGar = int.Parse(vista.id.ToString());
+                 laGarantia.IdGar = int.Parse(vista.idGar.ToString());
                  laGarantia.Descripcion = vista.descripcion;
                  //laGarantia.tipoMoneda;
                  Comando<bool> comando = FabricaComandos.CrearModificarGarantia(laGarantia);

@@ -295,20 +295,20 @@ namespace Back_Office.GUI.Garantia {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to idGar.
+        /// </summary>
+        internal static string idGar {
+            get {
+                return ResourceManager.GetString("idGar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
             get {
                 return ResourceManager.GetString("idP", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to sku.
-        /// </summary>
-        internal static string idProd {
-            get {
-                return ResourceManager.GetString("idProd", resourceCulture);
             }
         }
         

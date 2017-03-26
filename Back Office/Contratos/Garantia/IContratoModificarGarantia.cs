@@ -9,7 +9,7 @@ namespace Contratos.Garantia
 {
     public interface IContratoModificarGarantia
     {
-        string id { get; set; }
+        string idGar { get; set; }
         string descripcion { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }
