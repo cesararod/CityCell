@@ -583,6 +583,15 @@ namespace Presentador.VentaCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;correo=.
+        /// </summary>
+        internal static string mail {
+            get {
+                return ResourceManager.GetString("mail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TOTAL :.
         /// </summary>
         internal static string MontoTotal {

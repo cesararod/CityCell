@@ -286,6 +286,15 @@ namespace DatosCC.Venta {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to correo.
+        /// </summary>
+        internal static string VentaCorreo {
+            get {
+                return ResourceManager.GetString("VentaCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DirEnvio.
         /// </summary>
         internal static string VentaDirEnv {

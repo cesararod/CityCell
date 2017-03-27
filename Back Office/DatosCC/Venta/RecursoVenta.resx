@@ -240,4 +240,7 @@
   <data name="VentaMarca" xml:space="preserve">
     <value>Marca</value>
   </data>
+  <data name="VentaCorreo" xml:space="preserve">
+    <value>correo</value>
+  </data>
 </root>

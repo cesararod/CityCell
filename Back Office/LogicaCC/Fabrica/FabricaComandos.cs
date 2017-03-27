@@ -260,5 +260,13 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
         #endregion
+
+        #region Correo
+        public static Comando<bool> CrearEnviarCorreo(Entidad correo)
+        {
+            Comando<bool> respuesta = new ComandoCorreos(correo);
+            return respuesta;
+        }
+        #endregion
     }
 }

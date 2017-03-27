@@ -306,10 +306,11 @@ namespace DatosCC.Venta
                     string _numPago = row[RecursoVenta.VentaNPago].ToString();
                     string _operador = row[RecursoVenta.VentaOperador].ToString();
                     string _modelo = row[RecursoVenta.VentaModelo].ToString();
+                    string _mail = row[RecursoVenta.VentaCorreo].ToString();
 
 
                     Dominio.Entidades.Venta _LaVenta = new Dominio.Entidades.Venta(_id, _nombre, _apellido, _tracking, _subtotal, _pedido,
-                                              _fechaCreacion, _iva, _precioEnvio, _estatus, _dirFact, _dirEnv, _numPago, _operador, _producto, _modelo, _marca);
+                                              _fechaCreacion, _iva, _precioEnvio, _estatus, _dirFact, _dirEnv, _numPago, _operador, _producto, _modelo, _marca, _mail);
                     
                     listVenta.Add(_LaVenta);
                 }

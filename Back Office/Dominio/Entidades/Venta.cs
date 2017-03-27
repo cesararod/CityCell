@@ -26,6 +26,7 @@ namespace Dominio.Entidades
         private string producto;
         private string modelo;
         private string marca;
+        private string mail;
 
         #endregion
 
@@ -150,6 +151,13 @@ namespace Dominio.Entidades
 
         }
 
+        public string Mail
+        {
+            get { return mail; }
+            set { mail = value; }
+
+        }
+
         #endregion\
 
         #region Constructores
@@ -157,7 +165,7 @@ namespace Dominio.Entidades
                     
         public Venta(int inputId, string input_Nombre, string input_Apellido, string input_tracking, string input_subtotal, string input_pedido,
              DateTime input_fechaCreacion, string input_iva, string input_precioEnvio, string input_estatus, string input_dirFact, string input_dirEnv,
-             string input_numPago, string input_operador, string input_producto, string input_modelo, string input_marca)
+             string input_numPago, string input_operador, string input_producto, string input_modelo, string input_marca, string input_mail)
         {
             id_venta = inputId;
             nombre = input_Nombre;
@@ -176,6 +184,7 @@ namespace Dominio.Entidades
             producto = input_producto;
             modelo = input_modelo;
             marca = input_marca;
+            mail = input_mail;
         }
 
         public Venta()
@@ -197,6 +206,7 @@ namespace Dominio.Entidades
             producto = string.Empty;
             modelo = string.Empty;
             marca = string.Empty;
+            mail = string.Empty;
         }
       
         #endregion

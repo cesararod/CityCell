@@ -71,6 +71,7 @@ namespace Back_Office.GUI.Ventas
             if (!IsPostBack)
             {
                 _presentador.CargarConsultar();
+                _presentador.enviarCorreo();
             }
         }
     }

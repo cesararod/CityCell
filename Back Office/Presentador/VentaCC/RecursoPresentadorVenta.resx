@@ -384,4 +384,7 @@
   <data name="usuario" xml:space="preserve">
     <value>&amp;nombre=</value>
   </data>
+  <data name="mail" xml:space="preserve">
+    <value>&amp;correo=</value>
+  </data>
 </root>

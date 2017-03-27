@@ -290,7 +290,7 @@ CREATE PROCEDURE ConsultaVenta
 AS
     BEGIN
        select Compra.Id as idventa, Compra.pedido as numpedido, Compra."Sub-Total" as subtotal,Compra.IVA as iva, Estatus.Estado as estatus, 
-Usuario.Nombre as nombreusu,Usuario.Apellido as apeusu,Compra.Precio_Envio as precioenv,Compra.Numero_Pedido as track,Direccion.Ciudad as Dirfacturacion,
+Usuario.Nombre as nombreusu,Usuario.Apellido as apeusu,Usuario.Email as correo,Compra.Precio_Envio as precioenv,Compra.Numero_Pedido as track,Direccion.Ciudad as Dirfacturacion,
 Direccion.Ciudad as DirEnvio,Compra.Pago_Id numpago,Empresa_Envio.Nombre as operador,Marca.Nombre,producto.Nombre ,Producto.Modelo, compra_producto.Fecha
 from Compra, Usuario, Estatus, Direccion, Pago, Empresa_Envio, compra_producto, Producto, Marca
 where Usuario.Id = Compra.Usuario_Id 

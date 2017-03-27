@@ -104,7 +104,10 @@ namespace Presentador.VentaCC
                     {
                         vista.ventasCreados +=
                             RecursoPresentadorVenta.BotonModif + LaVenta.Id_Venta.ToString() + RecursoPresentadorVenta.usuario +
-                            LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido + RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio + LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo 
+                            LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido + 
+                            RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio +
+                            LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo + 
+                            RecursoPresentadorVenta.mail + LaVenta.Mail
                             + RecursoPresentadorVenta.CloseBotonParametro;
                     }
                     else
@@ -124,6 +127,42 @@ namespace Presentador.VentaCC
             catch (Exception ex)
             {
                 vista.alerta = ex.Message;
+            }
+        }
+
+        public bool enviarCorreo()
+        {
+            try
+            {
+                Comando<List<Entidad>> comando = LogicaCC.Fabrica.FabricaComandos.CrearConsultarTodosVentas();
+                List<Entidad> venta = comando.Ejecutar();
+
+                foreach (Venta LaVenta in venta)
+                {
+
+                    DatosCorreo _datosCorreo =
+                            (DatosCorreo)FabricaEntidades.ObtenerDatosCorreo("Recordatorio de Pao", LaVenta.Mail,
+                            "mensaje");
+
+                    /*if (vista.adjunto != String.Empty)
+                    {
+                        _datosCorreo.adjunto = RecursoPresentadorM8.rutaFacturas + vista.adjunto;
+                    }*/
+
+                    Comando<bool> _comandoCorreo = FabricaComandos.CrearEnviarCorreo(_datosCorreo);
+
+                    return _comandoCorreo.Ejecutar();
+                }
+                return true;
+
+            }
+            catch (ExceptionsCity ex)
+            {
+                vista.alertaClase = RecursoPresentadorVenta.alertaError;
+                vista.alertaRol = RecursoPresentadorVenta.tipoAlerta;
+                vista.alerta = RecursoPresentadorVenta.alertaHtml + ex.Mensaje + ex.Excepcion.InnerException.Message
+                    + RecursoPresentadorVenta.alertaHtmlFinal;
+                return false;
             }
         }
     }
