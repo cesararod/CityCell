@@ -25,7 +25,7 @@ namespace Dominio.Entidades
              * Direccion de Correo (Gmail o Hotmail)
              * y Contrasena correspondiente
              */
-            server.Credentials = new System.Net.NetworkCredential("crodriguez@citycellgsm.com", "Dragon2libra@");
+            server.Credentials = new System.Net.NetworkCredential("carr235@gmail.com", "Dragon2libra@");
             server.EnableSsl = true;
         }
 

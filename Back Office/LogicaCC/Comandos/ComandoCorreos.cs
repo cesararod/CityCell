@@ -53,6 +53,8 @@ namespace LogicaCC.Comandos
 
                 Correo cr = new Correo();
                 MailMessage mnsj = new MailMessage();
+                mnsj.From = new MailAddress(ResourceLogica.systemmail, ResourceLogica.SysName);
+                 
 
                 mnsj.Subject = _datosCorreo.asunto;
                 //mnsj.From = new MailAddress(ResourcesLogic.systemmail, ResourcesLogic.SysName);
@@ -71,6 +73,7 @@ namespace LogicaCC.Comandos
                     IsValid(value);
                     mnsj.To.Add(value);
                 }
+
                 cr.mandarCorreo(mnsj);
 
                 return true;
