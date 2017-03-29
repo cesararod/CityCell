@@ -1,0 +1,23 @@
+select * from Compra_Producto
+
+select * from Compra
+
+select Compra.[Sub-Total], Estado.Nombre, Usuario.Nombre, Usuario.Apellido, Fecha
+ from Compra, Direccion, Estado , usuario, Compra_Producto 
+ where
+ compra.Direccion_Id = Direccion.Id and
+ Direccion.Estado_Id = Estado.Id and 
+ Usuario.Id = Compra.Usuario_Id and 
+ Compra.Id = Compra_Producto.Compra_Pedido and 
+ Fecha between '2017/02/25' and '2017/03/27'
+ 
+ 
+ select compra.Id,Estatus.Estado from Compra, estatus 
+ where 
+ compra.Estatus_Id = Estatus.Id
+ 
+ 
+ select * from Usuario
+ Select Usuario.Nombre,Usuario.Apellido,Usuario.Email,Usuario.Id,Usuario.Activo 
+ from Usuario where Usuario.Rol_Id = 3
+ 
