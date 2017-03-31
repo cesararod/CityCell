@@ -71,6 +71,7 @@
                                     <th>Correo</th>
                                     <th>Telefono</th>
                                     <th>Celular</th>
+                                    <th>Estado</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>
                             </thead>

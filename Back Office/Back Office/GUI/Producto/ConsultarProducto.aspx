@@ -70,7 +70,6 @@
                                     <th>Cantidad</th>
                                     <th>Marca</th>
                                     <th>Categoria</th>
-                                    <th>Garantia</th>
                                     <th>Activo</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>

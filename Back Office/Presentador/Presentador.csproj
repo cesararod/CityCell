@@ -110,6 +110,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorPromocion.resx</DependentUpon>
     </Compile>
+    <Compile Include="ReporteCC\PresentadorReporte1.cs" />
+    <Compile Include="ReporteCC\PresentadorReporte2.cs" />
+    <Compile Include="ReporteCC\Recurso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recurso.resx</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioCC\PresentadorAgregarUsuario.cs" />
     <Compile Include="UsuarioCC\PresentadorConsultaUsuario.cs" />
     <Compile Include="UsuarioCC\PresentadorModificarUsuario.cs" />
@@ -146,6 +153,10 @@
     <EmbeddedResource Include="PromocionCC\RecursoPresentadorPromocion.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoPresentadorPromocion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCC\Recurso.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Recurso.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioCC\RecursoPresentadorUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>

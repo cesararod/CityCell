@@ -53,6 +53,8 @@
     </Compile>
     <Compile Include="General.cs" />
     <Compile Include="InterfazDAO\BackOffice\IDaoMarca.cs" />
+    <Compile Include="InterfazDAO\BackOffice\IReportes.cs" />
+    <Compile Include="InterfazDAO\BackOffice\IReportes2.cs" />
     <Compile Include="InterfazDAO\IDao.cs" />
     <Compile Include="Marca\DaoMarca.cs" />
     <Compile Include="Marca\RecursoMarca.Designer.cs">
@@ -75,6 +77,13 @@
     </Compile>
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
+    <Compile Include="Reportes\DaoReporte2.cs" />
+    <Compile Include="Reportes\Recurso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recurso.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DaoReporte1.cs" />
     <Compile Include="Resultado.cs" />
     <Compile Include="Usuario\DaoUsuario.cs" />
     <Compile Include="Usuario\RecursoUsuario.Designer.cs">
@@ -112,6 +121,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RecursoGeneralBD.resx" />
     <EmbeddedResource Include="RecursoGeneralDAO.resx" />
+    <EmbeddedResource Include="Reportes\Recurso.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Recurso.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuario\RecursoUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursoUsuario.Designer.cs</LastGenOutput>

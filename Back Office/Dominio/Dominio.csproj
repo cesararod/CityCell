@@ -46,6 +46,7 @@
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Promocion.cs" />
+    <Compile Include="Entidades\Reporte.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Entidades\Venta.cs" />
     <Compile Include="Fabrica\FabricaEntidades.cs" />

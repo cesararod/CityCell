@@ -151,6 +151,8 @@
     <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
     <Content Include="GUI\Promocion\ConsultarPromocion.aspx" />
     <Content Include="GUI\Promocion\ModificarPromocion.aspx" />
+    <Content Include="GUI\Reportes\Reporte01.aspx" />
+    <Content Include="GUI\Reportes\Reporte02.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="GUI\Usuario\ConsultarUsuario.aspx" />
     <Content Include="GUI\Usuario\ModificarUsuario.aspx" />
@@ -1127,6 +1129,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUIPromocion.resx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Reportes\Recurso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recurso.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte01.aspx.cs">
+      <DependentUpon>Reporte01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte01.aspx.designer.cs">
+      <DependentUpon>Reporte01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte02.aspx.cs">
+      <DependentUpon>Reporte02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte02.aspx.designer.cs">
+      <DependentUpon>Reporte02.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Usuario\AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1354,6 +1375,10 @@
     <EmbeddedResource Include="GUI\Promocion\ResourceGUIPromocion.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceGUIPromocion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Recurso.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Recurso.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Usuario\ResourceGUIUsuario.resx">
       <Generator>ResXFileCodeGenerator</Generator>

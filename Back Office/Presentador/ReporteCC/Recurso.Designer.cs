@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Presentador.UsuarioCC {
+namespace Presentador.ReporteCC {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Presentador.UsuarioCC {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RecursoPresentadorUsuario {
+    internal class Recurso {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RecursoPresentadorUsuario() {
+        internal Recurso() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Presentador.UsuarioCC {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentador.UsuarioCC.RecursoPresentadorUsuario", typeof(RecursoPresentadorUsuario).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentador.ReporteCC.Recurso", typeof(Recurso).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,15 +66,6 @@ namespace Presentador.UsuarioCC {
         internal static string Activada {
             get {
                 return ResourceManager.GetString("Activada", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;span class=&quot;label label-success&quot;&gt;Activo&lt;/span&gt;.
-        /// </summary>
-        internal static string Activo {
-            get {
-                return ResourceManager.GetString("Activo", resourceCulture);
             }
         }
         
@@ -120,15 +111,6 @@ namespace Presentador.UsuarioCC {
         internal static string anulada {
             get {
                 return ResourceManager.GetString("anulada", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &amp;apellido=.
-        /// </summary>
-        internal static string apellidous {
-            get {
-                return ResourceManager.GetString("apellidous", resourceCulture);
             }
         }
         
@@ -250,7 +232,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarUsuario.aspx?idUsu=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; href=&quot;ModificarPromocion.aspx?idPromo=.
         /// </summary>
         internal static string BotonModif {
             get {
@@ -259,7 +241,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarUsuario.aspx?idUsu=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Modificar&quot;  class=&quot;btn btn-primary glyphicon glyphicon-pencil&quot; disabled=&quot;disabled&quot; href=&quot;ModificarPromocion.aspx?idPromo=.
         /// </summary>
         internal static string BotonModifInhabilitado {
             get {
@@ -309,15 +291,6 @@ namespace Presentador.UsuarioCC {
         internal static string Cancelado {
             get {
                 return ResourceManager.GetString("Cancelado", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &amp;cedula=.
-        /// </summary>
-        internal static string cedulaus {
-            get {
-                return ResourceManager.GetString("cedulaus", resourceCulture);
             }
         }
         
@@ -565,15 +538,6 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;span class=&quot;label label-danger&quot;&gt;Inactivo&lt;/span&gt;.
-        /// </summary>
-        internal static string Inactivo {
-            get {
-                return ResourceManager.GetString("Inactivo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IVA :.
         /// </summary>
         internal static string Iva {
@@ -642,15 +606,6 @@ namespace Presentador.UsuarioCC {
         internal static string NombreProyecto {
             get {
                 return ResourceManager.GetString("NombreProyecto", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &amp;nombre=.
-        /// </summary>
-        internal static string nombreus {
-            get {
-                return ResourceManager.GetString("nombreus", resourceCulture);
             }
         }
         

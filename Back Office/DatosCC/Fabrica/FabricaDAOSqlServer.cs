@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DatosCC.InterfazDAO;
+using DatosCC.InterfazDAO.BackOffice;
 using DatosCC.Categoria;
 using DatosCC.Marca;
 using DatosCC.Producto;
@@ -71,6 +72,18 @@ namespace DatosCC.Fabrica
         static public IDao crearDaoGarantia()
         {
             return new Garantia.DaoGarantia();
+        }
+        #endregion
+
+        #region Reportes
+        static public IReportes crearDaoReportes1()
+        {
+            return new Reportes.DaoReporte1();
+        }
+
+        static public IReportes2 crearDaoReportes2()
+        {
+            return new Reportes.DaoReporte2();
         }
         #endregion
     }

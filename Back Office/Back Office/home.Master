@@ -105,119 +105,17 @@
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- Sidebar user panel -->
-          <!--<div class="user-panel">
-            <div class="pull-left image">
-              <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Alexander Pierce</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>-->
-          <!-- search form 
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
-           /.search form -->
-          <!-- sidebar menu: : style can be found in sidebar.less -->
+          
           <ul class="sidebar-menu">
             <li class="header">Menu Principal</li>
-            <li class="treeview" id="Configuracion" runat="server">
-              <a href="#">
-                <i class="fa fa-angle-left pull-right"></i> <span>Configuración</span>
-              </a>
-              <ul class="treeview-menu">
-                <li id="Usuario" runat="server">
-                  <a href="#"><i class="fa fa-circle-o"></i>  <i class="fa fa-angle-left pull-right"></i> Usuario</a>
-                  <ul class="treeview-menu">
-                    <li id="RegistrarUsuario" runat="server"><a href="..AgregarUsuario.aspx"><i class="fa fa-circle-o"></i> Registrar Usuario</a></li>
-                    <li id="ModificarRol" runat="server"><a href="../M2/CambiarRol.aspx"><i class="fa fa-circle-o"></i> Modificar Usuario</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview" id="GestionDeLeads" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Leads</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li id="RegistrarLead" runat="server"><a href="../M3/AgregarLeads.aspx"><i class="fa fa-circle-o"></i>Registrar Nuevo Lead</a></li>
-                <li id="ConsultarLead" runat="server"><a href="../M3/Listar.aspx"><i class="fa fa-circle-o"></i>Consulta Sobre lead</a></li>
-                <li id="AdministrarLead" runat="server"><a href="../M3/AdministrarListaClientesPotenciales.aspx"><i class="fa fa-circle-o"></i>Administrar Leads</a></li>
-              </ul>                
-            </li>
-            <li class="treeview" id="GestionDeCompañias" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Compañías</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li id="RegistrarCompañía" runat="server"><a href="../M4/AgregarCompania.aspx"><i class="fa fa-circle-o"></i>Registrar Compañía</a></li>
-                <li id="ConsultarCompañía" runat="server"><a href="../M4/ConsultarCompania.aspx"><i class="fa fa-circle-o"></i>Consultar Compañía</a></li>
-              </ul>                
-            </li>
-            <li class="treeview" id="GestionDePropuestas" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Propuestas</span> <i class="fa fa-angle-left pull-right"></i>
-              </a> 
-                <ul class="treeview-menu">
-                <li id="AgregarPropuesta" runat="server"><a href="../M6/AgregarPropuesta.aspx"><i class="fa fa-circle-o"></i> Agregar Propuesta</a></li>
-                <li id="ConsultarPropuestas" runat="server"><a href="../M6/ConsultarPropuesta.aspx"><i class="fa fa-circle-o"></i> Consultar Propuestas</a></li>
-                
-              </ul>             
-            </li>
-            <li class="treeview" id="GestionDeProyectos" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Proyectos</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-                   <ul class="treeview-menu">
-                <li id="CrearProyecto" runat="server"><a href="../M7/Agregar proyecto.aspx"><i class="fa fa-circle-o"></i> Crear Proyecto</a></li>
-               
-                <li id="ConsultarProyecto" runat="server"><a href="../M7/ConsultaProyecto.aspx"><i class="fa fa-circle-o"></i> Consultar Proyecto</a></li>
-
-              </ul>            
-            </li>
-              <li class="treeview" id="GestionDeFacturas" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Facturas</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-                   <ul class="treeview-menu">
-               <!-- <li id="GenerarFactura" runat="server"><a href="../M8/GenerarFacturaM8.aspx"><i class="fa fa-circle-o"></i> Generar Factura</a></li>-->
-                <li id="ConsultarFactura" runat="server"><a href="../M8/ConsultarFacturaM8.aspx"><i class="fa fa-circle-o"></i> Consultar Factura</a></li>
-               <!-- <li id="ModificarFactura" runat="server"><a href="../M8/ModificarFacturaM8.aspx"><i class="fa fa-circle-o"></i> Modificar Factura</a></li>
-                <li id="AnularFactura" runat="server"><a href="../M8/AnularFacturaM8.aspx"><i class="fa fa-circle-o"></i> Anular Factura</a></li>-->
-
-              </ul>            
-            </li>
-             <li class="treeview" id="GestionDePagos" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Pagos</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li id="Cargarpago" runat="server"><a href="../M9/SeleccionCompania.aspx"><i class="fa fa-circle-o"></i>Cargar pago</a></li>
-                <!--<li id="Li1" runat="server"><a href="../M9/SeleccionCompaniaPagadas.aspx"><i class="fa fa-circle-o"></i>Consultar pago</a></li>-->
-              </ul>
-            </li>
-             <li class="treeview" id="GestionDeEmpleados" runat="server">
-              <a href="#">
-                <i></i> <span>Gestión de Empleados</span><i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                  <li id="AgregarEmpleados" runat="server"><a href="../M1/crearempleado.aspx?" ><i class="fa fa-circle-o"></i> Agregar Empleado</a></li>
-                  <li id="Empleados" runat="server"><a href="../M1/EmpleadosAdmin.aspx?EmployeeId=0" ><i class="fa fa-circle-o"></i> Consultar Empleados</a></li>
-                
-                  <!--<li id="Cargos" runat="server"><a href="../M10/AdminCargo.aspx" ><i class="fa fa-circle-o"></i> Cargos</a></li>-->
-              </ul>
-            </li>
-            <!--<li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
+            <li id="" class="treeview"><a href="../Usuario/ConsultarUsuario.aspx"> Usuarios</a></li>
+            <li id="" class="treeview"><a href="../Producto/ConsultarProducto.aspx"> Productos</a></li>
+            <li id="" class="treeview"><a href="../Promocion/ConsultarPromocion.aspx"> Promocion</a></li>
+            <li id="" class="treeview"><a href="../Ventas/ConsultarVenta.aspx"> Ventas</a></li>
+            <li id="" class="treeview"><a href="../Categoria/ConsultarCategoria.aspx"> Categoria</a></li>
+            <li id="" class="treeview"><a href="../Marca/ConsultarMarca.aspx"> Marca</a></li>
+            <li id="" class="treeview"><a href="../Garantia/ConsultarGarantia.aspx"> Garantia</a></li>
+            
           </ul>
         </section>
         <!-- /.sidebar -->

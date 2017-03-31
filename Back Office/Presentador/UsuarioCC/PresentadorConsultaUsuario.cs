@@ -101,10 +101,13 @@ namespace Presentador.UsuarioCC
                     }*/
 
                     //Acciones de cada contacto
-                    vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD;
+                    //vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD;
 
-                    if (activada == true)
+                    if (ElUsuario.Activo == 1)
                     {
+                        vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + RecursoPresentadorUsuario.Activo
+                        + RecursoPresentadorUsuario.CloseTd;
+                        vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD;
                         vista.usuariosCreados +=
                             RecursoPresentadorUsuario.BotonModif + ElUsuario.IdUser.ToString()
                             + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()
@@ -114,6 +117,9 @@ namespace Presentador.UsuarioCC
                     }
                     else
                     {
+                        vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD + RecursoPresentadorUsuario.Inactivo
+                        + RecursoPresentadorUsuario.CloseTd;
+                        vista.usuariosCreados += RecursoPresentadorUsuario.OpenTD;
                         vista.usuariosCreados +=
                             RecursoPresentadorUsuario.BotonModif + ElUsuario.IdUser.ToString()
                             + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()

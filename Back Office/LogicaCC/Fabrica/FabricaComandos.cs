@@ -12,6 +12,7 @@ using LogicaCC.Comandos.Promocion;
 using LogicaCC.Comandos.Usuario;
 using LogicaCC.Comandos.Marca;
 using LogicaCC.Comandos.Producto;
+using LogicaCC.Comandos.Reportes;
 
 namespace LogicaCC.Fabrica
 {
@@ -257,6 +258,25 @@ namespace LogicaCC.Fabrica
         public static Comando<List<Entidad>> CrearConsultarTodosGarantia()
         {
             Comando<List<Entidad>> respuesta = new ComandoConsultarGarantia();
+            return respuesta;
+        }
+        #endregion
+
+        #region Reportes
+
+        /// <summary>
+        /// metodo para crear comando que permite consultar todas las Categorias
+        /// </summary>
+        /// <returns></returns>
+        public static Comando<List<Entidad>> CrearConsultarReporte1(Entidad parametro)
+        {
+            Comando<List<Entidad>> respuesta = new ComandoReporte1(parametro);
+            return respuesta;
+        }
+
+        public static Comando<List<Entidad>> CrearConsultarReporte2()
+        {
+            Comando<List<Entidad>> respuesta = new ComandoReporte2();
             return respuesta;
         }
         #endregion

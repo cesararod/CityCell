@@ -121,5 +121,14 @@ namespace Dominio.Fabrica
         {
             return new DatosCorreo(asunto, destinatario, mensaje, adjunto);
         }
+
+        /// <summary>
+        /// Metodo que crea la instancia de la entidad Reporte
+        /// </summary>
+        /// <returns>Retorna la instancia a la clase Reporte</returns>
+        public static Entidad ReporteVacio()
+        {
+            return new Reporte();
+        }
     }
 }

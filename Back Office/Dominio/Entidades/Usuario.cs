@@ -24,7 +24,8 @@ namespace Dominio.Entidades
         private int validacion_dc;
         private int valido_dc;
         private int fk_genero;
-        private int fk_rol;       
+        private int fk_rol;
+        private int activo;       
 
         #endregion
 
@@ -34,6 +35,12 @@ namespace Dominio.Entidades
         {
             get { return idUser; }
             set { idUser = value; }
+        }
+
+        public int Activo
+        {
+            get { return activo; }
+            set { activo = value; }
         } 
 
         public string Nombre
@@ -145,7 +152,7 @@ namespace Dominio.Entidades
         #region Constructores
 
         public Usuario(int inputId, string input_Nombre, string input_Apellido, string input_cedula, string input_telefono, string input_celular,
-             DateTime input_FNacimineto, DateTime input_FIngreso, string input_email)
+             DateTime input_FNacimineto, DateTime input_FIngreso, string input_email, int inputActivo)
         {
             idUser = inputId;
             nombre = input_Nombre;
@@ -156,6 +163,7 @@ namespace Dominio.Entidades
             fecha_nacimiento = input_FNacimineto;
             fecha_ingreso = input_FIngreso;
             email = input_email;
+            activo = inputActivo;
         }
 
         public Usuario()
@@ -176,6 +184,7 @@ namespace Dominio.Entidades
             valido_dc = 0;
             fk_rol = 0;
             fk_genero = 0;
+            activo = 0;
         }
       
         #endregion

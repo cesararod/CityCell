@@ -54,6 +54,8 @@
     <Compile Include="Promocion\IContratoAgregarPromocion.cs" />
     <Compile Include="Promocion\IContratoConsultarPromocion.cs" />
     <Compile Include="Promocion\IContratoModificarPromocion.cs" />
+    <Compile Include="Reportes\IContratoReporte1.cs" />
+    <Compile Include="Reportes\IContratoReporte2.cs" />
     <Compile Include="Usuario\IContratoAgregarUsuario.cs" />
     <Compile Include="Usuario\IContratoConsultarUsuario.cs" />
     <Compile Include="Usuario\IContratoModificarUsuario.cs" />

@@ -312,9 +312,11 @@ namespace DatosCC.Usuario
                     string _email = row[RecursoUsuario.UsuarioEmail].ToString();
                     string _telefono = row[RecursoUsuario.UsuarioTelefono].ToString();
                     string _celular = row[RecursoUsuario.UsuarioCelular].ToString();
+                    int _activo = int.Parse(row[RecursoUsuario.UsuarioActivo].ToString());
+
 
                     Dominio.Entidades.Usuario _ElUsuario = new Dominio.Entidades.Usuario(_id, _nombre, _apellido, _cedula, _telefono, _celular,
-                                                            _fechaNacimiento, _fechaCreacion, _email);
+                                                            _fechaNacimiento, _fechaCreacion, _email, _activo);
                     //_ElUsuario.Id = facId;
 
                     listProducto.Add(_ElUsuario);

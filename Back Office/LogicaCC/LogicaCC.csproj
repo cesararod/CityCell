@@ -55,6 +55,8 @@
     <Compile Include="Comandos\Promocion\ComandoAgregaPromocion.cs" />
     <Compile Include="Comandos\Promocion\ComandoConsultarPromocion.cs" />
     <Compile Include="Comandos\Promocion\ComandoModificarPromocion.cs" />
+    <Compile Include="Comandos\Reportes\ComandoReporte1.cs" />
+    <Compile Include="Comandos\Reportes\ComandoReporte2.cs" />
     <Compile Include="Comandos\ResourceLogica.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
