@@ -110,6 +110,7 @@ namespace Back_Office.GUI.Promocion
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
             Presentador.Modificar();
+            Response.Redirect(ResourceGUIPromocion.volver);
             //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
         }
     }

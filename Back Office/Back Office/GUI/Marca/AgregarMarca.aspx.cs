@@ -73,6 +73,7 @@ namespace Back_Office.GUI.Marca
         {
             _presentador.GenerarMarca();
             rutaMarca.SaveAs(Server.MapPath(ResourceGUIMarca.ruta + rutaMarca.FileName + ResourceGUIMarca.Extencion));
+            Response.Redirect(ResourceGUIMarca.volver);
         }
     }
 }

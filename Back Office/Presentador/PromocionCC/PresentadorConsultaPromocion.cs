@@ -111,8 +111,6 @@ namespace Presentador.PromocionCC
                     {
                         vista.promocionesCreadas +=
                             RecursoPresentadorPromocion.BotonModif + LaPromocion.Id_Promo.ToString()
-                            + RecursoPresentadorPromocion.CloseBotonParametro
-                            + RecursoPresentadorPromocion.BotonAnular + LaPromocion.Id_Promo.ToString()
                             + RecursoPresentadorPromocion.CloseBotonParametro;
                     }
                     vista.promocionesCreadas += RecursoPresentadorPromocion.CloseTd;

@@ -140,7 +140,8 @@ namespace Back_Office.GUI.Usuario
             //this.nombre = Request.QueryString[ResourceGUICategoria.idC];
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
-            Presentador.GenerarUsuario();
+                Presentador.GenerarUsuario();
+                Response.Redirect(ResourceGUIUsuario.volver);
             //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
             }
             catch (Exception ex) {

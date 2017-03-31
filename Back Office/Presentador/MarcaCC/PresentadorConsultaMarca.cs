@@ -102,16 +102,12 @@ namespace Presentador.MarcaCC
                     {
                         vista.marcasCreadas +=
                             RecursoPresentadorMarca.BotonModif + laMarca.IdMarca.ToString()
-                            + RecursoPresentadorMarca.CloseBotonParametro
-                            + RecursoPresentadorMarca.BotonAnular + laMarca.IdMarca.ToString()
                             + RecursoPresentadorMarca.CloseBotonParametro;
                     }
                     else
                     {
                         vista.marcasCreadas +=
                             RecursoPresentadorMarca.BotonModif + laMarca.IdMarca.ToString()
-                            + RecursoPresentadorMarca.CloseBotonParametro
-                            + RecursoPresentadorMarca.BotonAnular + laMarca.IdMarca.ToString()
                             + RecursoPresentadorMarca.CloseBotonParametro;
                     }
                     vista.marcasCreadas += RecursoPresentadorMarca.CloseTd;

@@ -73,7 +73,7 @@ namespace Back_Office.GUI.Garantia
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
             _presentador.Modificar();
-            //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
+            Response.Redirect(ResourceGUIGarantia.regresar);
         }
     }
 }

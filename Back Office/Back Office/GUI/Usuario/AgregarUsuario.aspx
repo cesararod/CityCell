@@ -124,7 +124,7 @@
 
                     <div class="box-footer" runat="server">
                         
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerarUsuario_Click"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar este usuario?');" OnClick="buttonGenerarUsuario_Click"></asp:Button>
                     </div>
                 </form>
               </div><!-- /.box -->

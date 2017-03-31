@@ -75,6 +75,7 @@ namespace Back_Office.GUI.Marca
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
             _presentador.Modificar();
+            Response.Redirect(ResourceGUIMarca.volver);
             //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
         }
     }

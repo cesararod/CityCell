@@ -1417,6 +1417,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI\Marca\ImgBrand\" />
+    <Folder Include="GUI\Producto\ImgProduct\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

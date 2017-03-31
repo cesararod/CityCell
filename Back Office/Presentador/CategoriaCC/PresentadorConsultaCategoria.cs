@@ -94,10 +94,7 @@ namespace Presentador.CategoriaCC
                         vista.categoriasCreadas += RecursoPresentadorCategoria.OpenTD + RecursoPresentadorCategoria.Activada
                             + RecursoPresentadorCategoria.CloseTd;
                     }
-                    vista.categoriasCreadas += RecursoPresentadorCategoria.OpenTD + laCategoria.Destacado.ToString()
-                        + RecursoPresentadorCategoria.CloseTd;
-                    vista.categoriasCreadas += RecursoPresentadorCategoria.OpenTD +
-                        laCategoria.Fk_categoria.ToString() + RecursoPresentadorCategoria.CloseTd;
+                    
 
                    
                     
@@ -108,16 +105,12 @@ namespace Presentador.CategoriaCC
                     {
                         vista.categoriasCreadas +=
                             RecursoPresentadorCategoria.BotonModif + laCategoria.IdCat.ToString()
-                            + RecursoPresentadorCategoria.CloseBotonParametro
-                            + RecursoPresentadorCategoria.BotonAnular + laCategoria.IdCat.ToString()
                             + RecursoPresentadorCategoria.CloseBotonParametro;
                     }
                     else
                     {
                         vista.categoriasCreadas +=
                             RecursoPresentadorCategoria.BotonModif + laCategoria.IdCat.ToString()
-                            + RecursoPresentadorCategoria.CloseBotonParametro
-                            + RecursoPresentadorCategoria.BotonAnular + laCategoria.IdCat.ToString()
                             + RecursoPresentadorCategoria.CloseBotonParametro;
                     }
                     vista.categoriasCreadas += RecursoPresentadorCategoria.CloseTd;

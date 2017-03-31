@@ -5,7 +5,11 @@
     Gestión de Garantias
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-    Datos
+     <ul class="">
+           
+            <li id="" class=""><a href="../Garantia/AgregarGarantia.aspx"> Crear Garantia Nueva</a></li>
+            
+          </ul>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     
@@ -67,6 +71,7 @@
                                     <th>N° Garantia</th>
                                     <th>Marca</th>
                                     <th>Categoria</th>
+                                    <th>Descripcion</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>
                             </thead>

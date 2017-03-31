@@ -5,7 +5,11 @@
     Gestión de Usuarios
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-   
+   <ul class="">
+           
+            <li id="" class=""><a href="../Usuario/AgregarUsuario.aspx"> Crear Usuario Nuevo</a></li>
+            
+          </ul>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     

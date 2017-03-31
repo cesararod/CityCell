@@ -403,7 +403,7 @@ namespace Back_Office.GUI.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx.
+        ///   Looks up a localized string similar to ConsultarUsuario.aspx.
         /// </summary>
         internal static string volver {
             get {

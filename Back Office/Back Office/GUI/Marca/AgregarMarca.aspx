@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="box-footer" runat="server">
-                            <asp:Button id="buttonGenerarMarca" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerarMarca_Click"></asp:Button>
+                            <asp:Button id="buttonGenerarMarca" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta marca?');" OnClick="buttonGenerarMarca_Click"></asp:Button>
                         </div>
 
                     </div>

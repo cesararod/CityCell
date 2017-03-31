@@ -286,15 +286,6 @@ namespace Back_Office.GUI.Producto {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Factura.aspx?idFac=.
-        /// </summary>
-        internal static string Factura {
-            get {
-                return ResourceManager.GetString("Factura", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to IdProyecto.
         /// </summary>
         internal static string idP {
@@ -399,6 +390,15 @@ namespace Back_Office.GUI.Producto {
         internal static string redirectHome {
             get {
                 return ResourceManager.GetString("redirectHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConsultarProducto.aspx.
+        /// </summary>
+        internal static string Retornar {
+            get {
+                return ResourceManager.GetString("Retornar", resourceCulture);
             }
         }
         

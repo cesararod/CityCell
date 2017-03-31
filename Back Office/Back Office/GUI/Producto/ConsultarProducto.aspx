@@ -5,7 +5,11 @@
     Gestión de Productos
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-   
+   <ul class="">
+           
+            <li id="" class=""><a href="../Producto/AgregarProducto.aspx"> Crear Producto Nuevo</a></li>
+            
+          </ul>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     

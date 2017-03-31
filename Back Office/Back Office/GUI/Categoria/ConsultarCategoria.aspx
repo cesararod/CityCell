@@ -5,12 +5,17 @@
     Gestión de Categorias
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-    Datos
+       <ul class="">
+           
+            <li id="" class=""><a href="../Categoria/AgregarCategoria.aspx"> Crear Categoria Nueva</a></li>
+            
+          </ul>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Main content -->
@@ -67,8 +72,6 @@
                                     <th>N° Categoria</th>
                                     <th>Nombre</th>
                                     <th>Activo</th>
-                                    <th>Destacado</th>
-                                    <th>Madre</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>
                             </thead>

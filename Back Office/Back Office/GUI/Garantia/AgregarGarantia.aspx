@@ -2,14 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
-    Gestión de Productos
+    Gestión de Garantias
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
     Registrar
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-    <li><a href="#">Gestión de Productos</a></li>
+    <li><a href="#">Gestión de Garantias</a></li>
     <li class="active">Registrar</li>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -23,7 +23,7 @@
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Datos del Producto</h3>
+                  <h3 class="box-title">Datos de la Garantias</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" name="agregar_producto" id="agregar_producto" method="post" runat="server">
@@ -53,7 +53,7 @@
 
                     <div class="box-footer" runat="server">
                         
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonGenerar_Click"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta Garantia?');" OnClick="buttonGenerar_Click"></asp:Button>
                     </div>
                 </form>
               </div><!-- /.box -->

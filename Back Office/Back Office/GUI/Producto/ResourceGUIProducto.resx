@@ -189,8 +189,8 @@
   <data name="estado" xml:space="preserve">
     <value>estado</value>
   </data>
-  <data name="Factura" xml:space="preserve">
-    <value>Factura.aspx?idFac=</value>
+  <data name="Retornar" xml:space="preserve">
+    <value>ConsultarProducto.aspx</value>
   </data>
   <data name="idProd" xml:space="preserve">
     <value>sku</value>

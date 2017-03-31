@@ -82,8 +82,8 @@ namespace Presentador.GarantiaCC
                         + RecursoPresentadorGarantia.CloseTd;
                     vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.NCategoria
                         + RecursoPresentadorGarantia.CloseTd;
-                    //vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Descripcion
-                        //+ RecursoPresentadorGarantia.CloseTd;
+                    vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD + laGarantia.Descripcion
+                        + RecursoPresentadorGarantia.CloseTd;
                     //Acciones de cada contacto
                     vista.garantiasCreadas += RecursoPresentadorGarantia.OpenTD;
 
