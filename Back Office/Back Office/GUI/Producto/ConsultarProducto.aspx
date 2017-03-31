@@ -68,7 +68,6 @@
                                     <th>Nombre</th>
                                     <th>Modelo</th>
                                     <th>Cantidad</th>
-                                    <th>Marca</th>
                                     <th>Categoria</th>
                                     <th>Activo</th>
                                     <th style="text-align: center;">Acciones</th>

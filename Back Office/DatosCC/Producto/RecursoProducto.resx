@@ -234,4 +234,10 @@
   <data name="MensajeSQL" xml:space="preserve">
     <value>Error de BD - </value>
   </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Marca" xml:space="preserve">
+    <value>Marca</value>
+  </data>
 </root>

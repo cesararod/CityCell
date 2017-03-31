@@ -191,17 +191,14 @@ namespace Presentador.ProductoCC
                     vista.productosCreados += RecursoPresentadorProducto.OpenTr;
                     vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.IdProducto.ToString()
                         + RecursoPresentadorProducto.CloseTd;
-                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Nombre
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.MarcaNombre +
+                        RecursoPresentadorProducto.espacio + ElProducto.Nombre
                         + RecursoPresentadorProducto.CloseTd;
                     vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Modelo
                         + RecursoPresentadorProducto.CloseTd;
                     vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Cantidad
                         + RecursoPresentadorProducto.CloseTd;
-                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Fk_Marca
-                        + RecursoPresentadorProducto.CloseTd;
-                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.Fk_Categoria
-                        + RecursoPresentadorProducto.CloseTd;
-                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + " "
+                    vista.productosCreados += RecursoPresentadorProducto.OpenTD + ElProducto.CategoriaNombre
                         + RecursoPresentadorProducto.CloseTd;
 
                     //Equals cero para factura "Por Pagar"

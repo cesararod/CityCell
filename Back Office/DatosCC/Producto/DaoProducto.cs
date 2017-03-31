@@ -305,6 +305,8 @@ namespace DatosCC.Producto
 
                     int _id = int.Parse(row[RecursoProducto.ProductoId].ToString());
                     String _nombre = row[RecursoProducto.ProductoNombre].ToString();
+                    String _marcaNombre = row[RecursoProducto.Marca].ToString();
+                    String _categoriaNombre = row[RecursoProducto.Categoria].ToString();
                     int _activo = int.Parse(row[RecursoProducto.ProductoActivo].ToString());
                     String _modelo = row[RecursoProducto.ProductoModelo].ToString();
                     String _descripcion = row[RecursoProducto.ProductoDescripcion].ToString();
@@ -320,7 +322,7 @@ namespace DatosCC.Producto
                     int _fkCategoria = int.Parse(row[RecursoProducto.ProductofKCategoria].ToString());
 
                     Dominio.Entidades.Producto _ElProducto = new Dominio.Entidades.Producto(_id, _nombre, _activo, _modelo, _descripcion, _precio, _cantidad, _peso,
-                                                              _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria);
+                                                              _alto, _ancho, _largo, _fechaCreacion, _fechaModificacion, _fkMarca, _fkCategoria, _marcaNombre, _categoriaNombre);
                     //_ElProducto.Id = facId;
 
                     listProducto.Add(_ElProducto);

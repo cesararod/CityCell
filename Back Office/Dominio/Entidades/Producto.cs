@@ -11,6 +11,8 @@ namespace Dominio.Entidades
         #region Atributos
         private int id_Prod;
         private string nombre;
+        private string marcaNombre;
+        private string categoriaNombre;
         private int activo;
         private string modelo;
         private string descripcion;
@@ -40,7 +42,20 @@ namespace Dominio.Entidades
             set { nombre = value; }
            
         }
-        
+
+        public string MarcaNombre
+        {
+            get { return marcaNombre; }
+            set { marcaNombre = value; }
+
+        }
+
+        public string CategoriaNombre
+        {
+            get { return categoriaNombre; }
+            set { categoriaNombre = value; }
+
+        }
         public int Activo
         {
             get { return activo; }
@@ -139,6 +154,7 @@ namespace Dominio.Entidades
         {
             id_Prod = 0;
             nombre = String.Empty;
+            marcaNombre = String.Empty;
             activo = 0;
             modelo = String.Empty;
             descripcion = String.Empty;
@@ -156,7 +172,30 @@ namespace Dominio.Entidades
 
         public Producto(int inputId, string inputNombre, int inputActivo, string inputModelo, string inputDescripcion, float inputPrecio,
             int inputCantidad, float inputPeso, float inputAlto, float inputAncho, float inputLargo, DateTime inputFechaCrea, DateTime inputFechaMod
-            , int inputMarca, int inputCategoria)    
+            , int inputMarca, int inputCategoria, string inputMarcaNombre, string inputCategoriaNombre)    
+        {
+            id_Prod = inputId;
+            nombre = inputNombre;
+            marcaNombre = inputMarcaNombre;
+            categoriaNombre = inputCategoriaNombre;
+            activo = inputActivo;
+            modelo = inputModelo;
+            descripcion = inputDescripcion;
+            precio = inputPrecio;
+            cantidad = inputCantidad;
+            peso = inputPeso;
+            alto = inputAlto;
+            ancho = inputAncho;
+            largo = inputLargo;
+            fecha_creacion = inputFechaCrea;
+            fecha_modificacion = inputFechaMod;
+            fk_marca = inputMarca;
+            fk_categoria = inputCategoria;
+        }
+
+        public Producto(int inputId, string inputNombre, int inputActivo, string inputModelo, string inputDescripcion, float inputPrecio,
+           int inputCantidad, float inputPeso, float inputAlto, float inputAncho, float inputLargo, DateTime inputFechaCrea, DateTime inputFechaMod
+           , int inputMarca, int inputCategoria)
         {
             id_Prod = inputId;
             nombre = inputNombre;
@@ -174,7 +213,6 @@ namespace Dominio.Entidades
             fk_marca = inputMarca;
             fk_categoria = inputCategoria;
         }
-      
         #endregion
     }
 }

@@ -70,6 +70,15 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Categoria.
+        /// </summary>
+        internal static string Categoria {
+            get {
+                return ResourceManager.GetString("Categoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ModificarProducto.
         /// </summary>
         internal static string ChangeProducto {
@@ -111,6 +120,15 @@ namespace DatosCC.Producto {
         internal static string DeactivateProducto {
             get {
                 return ResourceManager.GetString("DeactivateProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca.
+        /// </summary>
+        internal static string Marca {
+            get {
+                return ResourceManager.GetString("Marca", resourceCulture);
             }
         }
         
