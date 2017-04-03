@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
    <ul class="">
            
-            <li id="" class=""><a href="../Producto/AgregarProducto.aspx"> Crear Producto Nuevo</a></li>
+            <li id="" class=""><a href="../Producto/AgregaProducto.aspx"> Crear Producto Nuevo</a></li>
             
           </ul>
 </asp:Content>

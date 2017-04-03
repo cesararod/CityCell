@@ -56,3 +56,4 @@ C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.csproj.GenerateResource.Cache
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.dll
 C:\Users\Cesar\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back Office.pdb
+C:\Users\Cesar Rodriguez\Documents\GitHub\CityCell\Back Office\Back Office\obj\Debug\Back_Office.GUI.Reportes.Recurso.resources

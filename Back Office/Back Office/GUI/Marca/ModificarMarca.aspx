@@ -52,7 +52,7 @@
                         
 
                         <div class="box-footer" runat="server">
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" " OnClick="buttonModificarMarca_Click"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar"  OnClick="buttonModificarMarca_Click"></asp:Button>
                         </div>
 
                     </div>

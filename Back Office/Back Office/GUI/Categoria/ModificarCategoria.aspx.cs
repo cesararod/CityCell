@@ -90,7 +90,7 @@ namespace Back_Office.GUI.Categoria
             //this.activo = Request.QueryString[ResourceGUICategoria.idP];
             //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
             _presentador.ModificarCategoria();
-            //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
+            Response.Redirect(ResourceGUICategoria.volver);
         }
     }
 }

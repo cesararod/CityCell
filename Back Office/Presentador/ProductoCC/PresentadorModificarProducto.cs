@@ -39,8 +39,6 @@ namespace Presentador.ProductoCC
             vista.nombre = prodnombre;
             vista.modelo = prodmodelo;
             vista.descripcion = proddescripcion;
-            vista.precio = prodprecio;
-            vista.cantidad = cantidad;
          }
 
          /// <summary>
