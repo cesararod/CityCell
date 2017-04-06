@@ -12,7 +12,7 @@ using Contratos.Reportes;
 
 namespace Back_Office.GUI.Reportes
 {
-    public partial class Reporte02 : System.Web.UI.Page, IContratoReporte2
+    public partial class Reporte04 : System.Web.UI.Page, IContratoReporte2
     {
         #region contrato
 
@@ -20,11 +20,11 @@ namespace Back_Office.GUI.Reportes
         {
             get
             {
-                return this.inputEstado;
+                return this.Activo;
             }
             set
             {
-                this.inputEstado = value;
+                this.Activo = value;
             }
         }
 
@@ -58,31 +58,17 @@ namespace Back_Office.GUI.Reportes
         #endregion
 
         #region presentador
-        PresentadorReporte2 _presentador;
+        PresentadorReporte4 _presentador;
 
-        public Reporte02()
+        public Reporte04()
         {
-            _presentador = new PresentadorReporte2(this);
+            _presentador = new PresentadorReporte4(this);
         }
         #endregion
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                //Esto ocurre cuando se modifica una factura, se muestra mensaje a usuario
-                string _estado = Request.QueryString[Recurso.estado];
-                if (_estado != null)
-                    _presentador.Alerta(_estado);
-            }
-            catch
-            {
-                //No hago nada, no es obligatorio el parametro
-            }
-            if (!IsPostBack)
-            {
-               // _presentador.CargarReporte();
-            }
+
         }
 
         protected void buttonBuscar(object sender, EventArgs e)

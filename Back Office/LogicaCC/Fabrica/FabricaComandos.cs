@@ -153,6 +153,17 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
+        /// metodo para crear comando que permite modificar un Usuario
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearActivarUsuario(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoActivarUsuario(usuario);
+            return respuesta;
+        }
+
+        /// <summary>
         /// metodo para crear comando que permite consultar todos los Usuarios
         /// </summary>
         /// <returns></returns>
@@ -274,9 +285,21 @@ namespace LogicaCC.Fabrica
             return respuesta;
         }
 
-        public static Comando<List<Entidad>> CrearConsultarReporte2()
+        public static Comando<List<Entidad>> CrearConsultarReporte2(Entidad parametro)
         {
-            Comando<List<Entidad>> respuesta = new ComandoReporte2();
+            Comando<List<Entidad>> respuesta = new ComandoReporte2(parametro);
+            return respuesta;
+        }
+
+        public static Comando<List<Entidad>> CrearConsultarReporte3(Entidad parametro)
+        {
+            Comando<List<Entidad>> respuesta = new ComandoReporte3(parametro);
+            return respuesta;
+        }
+
+        public static Comando<List<Entidad>> CrearConsultarReporte4(Entidad parametro)
+        {
+            Comando<List<Entidad>> respuesta = new ComandoReporte4(parametro);
             return respuesta;
         }
         #endregion

@@ -78,6 +78,8 @@
     <Compile Include="RecursoGeneralBD.Designer.cs" />
     <Compile Include="RecursoGeneralDAO.Designer.cs" />
     <Compile Include="Reportes\DaoReporte2.cs" />
+    <Compile Include="Reportes\DaoReporte3.cs" />
+    <Compile Include="Reportes\DaoReporte4.cs" />
     <Compile Include="Reportes\Recurso.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

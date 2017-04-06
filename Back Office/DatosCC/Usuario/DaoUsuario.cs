@@ -183,10 +183,10 @@ namespace DatosCC.Usuario
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoUsuario.ParamId, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Id.ToString(), false);
+                theParam = new Parametro(RecursoUsuario.ParamId, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).IdUser.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoUsuario.ParamNombre, SqlDbType.Int, ((Dominio.Entidades.Producto)ElUsuario).Activo.ToString(),
+                theParam = new Parametro(RecursoUsuario.ParamEstatus, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElUsuario).Activo.ToString(),
                     false);
                 parameters.Add(theParam);
 

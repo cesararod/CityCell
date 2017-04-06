@@ -10,7 +10,7 @@
 namespace Back_Office.GUI.Reportes {
     
     
-    public partial class Reporte02 {
+    public partial class Reporte04 {
         
         /// <summary>
         /// alert control.
@@ -31,13 +31,13 @@ namespace Back_Office.GUI.Reportes {
         protected global::System.Web.UI.HtmlControls.HtmlForm agregar_promocion;
         
         /// <summary>
-        /// inputEstado control.
+        /// Activo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList inputEstado;
+        protected global::System.Web.UI.WebControls.DropDownList Activo;
         
         /// <summary>
         /// buttonGenerarCategoria control.

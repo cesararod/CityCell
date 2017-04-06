@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Back_Office.GUI.Reportes {
+namespace Back_Office.GUI.Usuario {
     
     
-    public partial class Reporte02 {
+    public partial class ActivarUsuario {
         
         /// <summary>
         /// alert control.
@@ -22,39 +22,30 @@ namespace Back_Office.GUI.Reportes {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl alert;
         
         /// <summary>
-        /// agregar_promocion control.
+        /// agregar_usuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm agregar_promocion;
+        protected global::System.Web.UI.HtmlControls.HtmlForm agregar_usuario;
         
         /// <summary>
-        /// inputEstado control.
+        /// IdUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList inputEstado;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText IdUsuario;
         
         /// <summary>
-        /// buttonGenerarCategoria control.
+        /// Activo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonGenerarCategoria;
-        
-        /// <summary>
-        /// tabla control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal tabla;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Activo;
     }
 }

@@ -154,6 +154,9 @@
     <Content Include="GUI\Promocion\ModificarPromocion.aspx" />
     <Content Include="GUI\Reportes\Reporte01.aspx" />
     <Content Include="GUI\Reportes\Reporte02.aspx" />
+    <Content Include="GUI\Reportes\Reporte03.aspx" />
+    <Content Include="GUI\Reportes\Reporte04.aspx" />
+    <Content Include="GUI\Usuario\ActivarUsuario.aspx" />
     <Content Include="GUI\Usuario\AgregarUsuario.aspx" />
     <Content Include="GUI\Usuario\ConsultarUsuario.aspx" />
     <Content Include="GUI\Usuario\ModificarUsuario.aspx" />
@@ -1155,6 +1158,27 @@
     </Compile>
     <Compile Include="GUI\Reportes\Reporte02.aspx.designer.cs">
       <DependentUpon>Reporte02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte03.aspx.cs">
+      <DependentUpon>Reporte03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte03.aspx.designer.cs">
+      <DependentUpon>Reporte03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte04.aspx.cs">
+      <DependentUpon>Reporte04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Reporte04.aspx.designer.cs">
+      <DependentUpon>Reporte04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Usuario\ActivarUsuario.aspx.cs">
+      <DependentUpon>ActivarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Usuario\ActivarUsuario.aspx.designer.cs">
+      <DependentUpon>ActivarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Usuario\AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>

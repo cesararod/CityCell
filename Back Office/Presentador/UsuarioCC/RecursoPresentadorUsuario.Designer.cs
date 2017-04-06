@@ -160,7 +160,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;AnularFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;ActivarUsuario.aspx?idUsu=.
         /// </summary>
         internal static string BotonAnular {
             get {
@@ -169,7 +169,7 @@ namespace Presentador.UsuarioCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; disabled=&quot;disabled&quot; href=&quot;AnularFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; disabled=&quot;disabled&quot; href=&quot;ActivarUsuario.aspx?idUsu=.
         /// </summary>
         internal static string BotonAnularInhabilitado {
             get {

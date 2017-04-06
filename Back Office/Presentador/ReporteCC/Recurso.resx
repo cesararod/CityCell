@@ -369,4 +369,10 @@
   <data name="valueCombo" xml:space="preserve">
     <value>value</value>
   </data>
+  <data name="Activo" xml:space="preserve">
+    <value>&lt;span class="label label-success"&gt;Activo&lt;/span&gt;</value>
+  </data>
+  <data name="Inactivo" xml:space="preserve">
+    <value>&lt;span class="label label-danger"&gt;Inactivo&lt;/span&gt;</value>
+  </data>
 </root>

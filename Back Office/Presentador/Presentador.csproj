@@ -112,11 +112,14 @@
     </Compile>
     <Compile Include="ReporteCC\PresentadorReporte1.cs" />
     <Compile Include="ReporteCC\PresentadorReporte2.cs" />
+    <Compile Include="ReporteCC\PresentadorReporte3.cs" />
+    <Compile Include="ReporteCC\PresentadorReporte4.cs" />
     <Compile Include="ReporteCC\Recurso.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Recurso.resx</DependentUpon>
     </Compile>
+    <Compile Include="UsuarioCC\PresentadorActivarUsuario.cs" />
     <Compile Include="UsuarioCC\PresentadorAgregarUsuario.cs" />
     <Compile Include="UsuarioCC\PresentadorConsultaUsuario.cs" />
     <Compile Include="UsuarioCC\PresentadorModificarUsuario.cs" />

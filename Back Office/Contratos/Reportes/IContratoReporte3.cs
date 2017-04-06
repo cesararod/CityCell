@@ -7,11 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace Contratos.Reportes
 {
-    public interface IContratoReporte2
+    public interface IContratoReporte3
     {
-
-        DropDownList Estado { get; set; }
-        string TablaReporte2 { get; set; }
+        string TablaReporte { get; set; }
+        string Fecha_Inicio { get; set; }
+        string Fecha_Fin { get; set; }
+        DropDownList categoria { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }
         string alerta { set; }

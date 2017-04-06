@@ -106,7 +106,7 @@ namespace DatosCC.Usuario {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DesactivarUsuario.
+        ///   Looks up a localized string similar to ActivarUsuario.
         /// </summary>
         internal static string DeactivateUsuario {
             get {
@@ -156,6 +156,15 @@ namespace DatosCC.Usuario {
         internal static string ParamCelular {
             get {
                 return ResourceManager.GetString("ParamCelular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @activo.
+        /// </summary>
+        internal static string ParamEstatus {
+            get {
+                return ResourceManager.GetString("ParamEstatus", resourceCulture);
             }
         }
         

@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputPrecio">Precio</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputPrecio">Precio (Bs)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="InputPrecio" name="InputPrecio" 
                                 placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
                         </div>

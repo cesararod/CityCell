@@ -10,7 +10,7 @@
 namespace Back_Office.GUI.Reportes {
     
     
-    public partial class Reporte02 {
+    public partial class Reporte03 {
         
         /// <summary>
         /// alert control.
@@ -31,13 +31,31 @@ namespace Back_Office.GUI.Reportes {
         protected global::System.Web.UI.HtmlControls.HtmlForm agregar_promocion;
         
         /// <summary>
-        /// inputEstado control.
+        /// Categoria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList inputEstado;
+        protected global::System.Web.UI.WebControls.DropDownList Categoria;
+        
+        /// <summary>
+        /// fecha_inicio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fecha_inicio;
+        
+        /// <summary>
+        /// fecha_fin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fecha_fin;
         
         /// <summary>
         /// buttonGenerarCategoria control.

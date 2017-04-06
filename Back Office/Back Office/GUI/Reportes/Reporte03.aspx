@@ -1,16 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="AgregaPromocion.aspx.cs" Inherits="Back_Office.GUI.Promocion.AgregaPromocion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Reporte03.aspx.cs" Inherits="Back_Office.GUI.Reportes.Reporte03" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
-    Gestión de Promociones
+    Gestión de Busqueda
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Subtitulo" runat="server">
-    Registrar
+    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Breadcrumps" runat="server">
     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-    <li><a href="#">Gestión de Promociones</a></li>
-    <li class="active">Registrar</li>
+    <li><a href="#">Reportes</a></li>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
@@ -19,20 +19,20 @@
     </div>
     <div class="row">
             <!-- left column -->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Datos de la Promocion</h3>
+                  <h3 class="box-title">Datos de la busqueda</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" name="agregar_promocion" id="agregar_promocion" method="post" runat="server">
+                <form class="form-inline" role="form" name="agregar_promocion" id="agregar_promocion" method="post" runat="server">
                     <div class="box-body" runat="server">
 
                          <!--Direccion-->
                         <div class="form-group" runat="server">
-                            <label for="InputProducto">Seleccione el Producto a promocionar</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList runat="server" class="form-control" id="Producto" name="Producto"></asp:DropDownList>
+                            <label for="InputCategoria">Categoria</label> <label for="Requerido" style="color: red;">*</label>
+                            <asp:DropDownList runat="server" class="form-control" id="Categoria" name="Categoria"></asp:DropDownList>
                         </div>
                         
                         <div class="form-group date">
@@ -58,25 +58,36 @@
                             </div>
                         </div>
                         </div>
-
-                        <div class="form-group" runat="server">
-                            <label for="InputPrecio">Precio (Bs)</label><label for="Requerido" style="color: red;">*</label> 
-                            <input runat="server" type="text" class="form-control" id="InputPrecio" name="InputPrecio" 
-                                placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
-                        </div>
-
-                        <div class="form-group" runat="server">
-                            <label for="labelActivo">Activo</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList id="activoInput" name="activoInput" class="form-control"  runat="server">
-                                    <asp:ListItem Selected="True" Value="1"> Si </asp:ListItem>
-                                    <asp:ListItem Value="0"> No </asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                        
                      </div><!-- /.box-body -->
 
                     <div class="box-footer" runat="server">
                         
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Generar" OnClientClick="return confirm('¿Seguro que desea generar esta promocion?');" OnClick="buttonGenerarPromo_Click"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Buscar"  OnClick="buttonBuscar"></asp:Button>
+                    </div>
+
+                    <div class="box-body table-responsive no-padding">
+                        <div style="float:right; padding-top:5px;">
+                            <a style="margin-right:10px;">Buscador</a>
+                            <input id="searchTerm" type="text" onkeyup="doSearch()"/>
+                        </div>
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th># de pedido</th>
+                                    <th>Cliente</th>
+                                    <th>Prducto</th>
+                                    <th>Total (Bs)</th>
+                                    <th>Estatus</th>
+                                    <th>Categoria</th>
+                                    <th>Fecha</th>
+                                </tr>
+                            </thead>
+                              <asp:Literal runat="server" ID="tabla"></asp:Literal>
+                            <tbody>
+                            </tbody>
+                        </table>
+
                     </div>
                 </form>
               </div><!-- /.box -->

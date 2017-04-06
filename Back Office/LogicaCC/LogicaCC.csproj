@@ -57,14 +57,19 @@
     <Compile Include="Comandos\Promocion\ComandoModificarPromocion.cs" />
     <Compile Include="Comandos\Reportes\ComandoReporte1.cs" />
     <Compile Include="Comandos\Reportes\ComandoReporte2.cs" />
+    <Compile Include="Comandos\Reportes\ComandoReporte3.cs" />
+    <Compile Include="Comandos\Reportes\ComandoReporte4.cs" />
     <Compile Include="Comandos\ResourceLogica.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceLogica.resx</DependentUpon>
     </Compile>
+    <Compile Include="Comandos\Usuario\ComandoActivarUsuario.cs" />
     <Compile Include="Comandos\Usuario\ComandoAgregarUsuario.cs" />
     <Compile Include="Comandos\Usuario\ComandoConsultarUsuario.cs" />
-    <Compile Include="Comandos\Usuario\ComandoModificarUsuario.cs" />
+    <Compile Include="Comandos\Usuario\ComandoModificarUsuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Comandos\Venta\ComandoConsultarVenta.cs" />
     <Compile Include="Comandos\Venta\ComandoModificarVenta.cs" />
     <Compile Include="Fabrica\FabricaComandos.cs" />

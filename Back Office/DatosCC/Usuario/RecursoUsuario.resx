@@ -133,7 +133,7 @@
     <value>ConsultaUsuarioId</value>
   </data>
   <data name="DeactivateUsuario" xml:space="preserve">
-    <value>DesactivarUsuario</value>
+    <value>ActivarUsuario</value>
   </data>
   <data name="MensajeOtro" xml:space="preserve">
     <value>Error no reconocido</value>
@@ -233,5 +233,8 @@
   </data>
   <data name="UsuarioApellido" xml:space="preserve">
     <value>Apellido</value>
+  </data>
+  <data name="ParamEstatus" xml:space="preserve">
+    <value>@activo</value>
   </data>
 </root>

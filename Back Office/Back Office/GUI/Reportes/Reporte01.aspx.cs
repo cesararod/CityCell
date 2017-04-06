@@ -92,7 +92,6 @@ namespace Back_Office.GUI.Reportes
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void buttonBuscar(object sender, EventArgs e)

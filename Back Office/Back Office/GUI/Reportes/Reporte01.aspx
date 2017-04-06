@@ -93,7 +93,7 @@
                             <thead>
                                 <tr>
                                     <th>Cliente</th>
-                                    <th>Sub Total</th>
+                                    <th>Sub Total (Bs)</th>
                                     <th>Ciudad</th>
                                     <th>Fecha</th>
                                 </tr>

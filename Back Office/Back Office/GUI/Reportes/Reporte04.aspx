@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Reporte02.aspx.cs" Inherits="Back_Office.GUI.Reportes.Reporte02" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Reporte04.aspx.cs" Inherits="Back_Office.GUI.Reportes.Reporte04" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Titulo" runat="server">
@@ -31,15 +31,10 @@
 
                          <!--Direccion-->
                         <div class="form-group" runat="server">
-                            <label for="inputEstado">Estado de la compra</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList runat="server" class="form-control" id="inputEstado" name="inputEstado">
-
-                                <asp:ListItem Selected="True" Value="1"> Pagado </asp:ListItem>
-                                    <asp:ListItem Value="2"> Confirmado </asp:ListItem>
-                                    <asp:ListItem Value="3"> Enviado </asp:ListItem>
-                                    <asp:ListItem Value="4"> Fraude </asp:ListItem>
-                                    <asp:ListItem Value="5"> Devuelto </asp:ListItem>
-                                    <asp:ListItem Value="6"> Recibido </asp:ListItem>
+                            <label for="labelActivo">Activo</label> <label for="Requerido" style="color: red;">*</label>
+                            <asp:DropDownList id="Activo" name="Activo" class="form-control"  runat="server">
+                                    <asp:ListItem Selected="True" Value="1"> Si </asp:ListItem>
+                                    <asp:ListItem Value="0"> No </asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         
@@ -55,10 +50,14 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Cliente</th>
-                                    <th>Sub Total (Bs)</th>
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Cedula</th>
+                                    <th>Fecha Ingreso</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
+                                    <th>Celular</th>
                                     <th>Estado</th>
-                                    <th>Fecha</th>
                                 </tr>
                             </thead>
                               <asp:Literal runat="server" ID="tabla"></asp:Literal>

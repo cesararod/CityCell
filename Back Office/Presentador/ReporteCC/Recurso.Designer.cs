@@ -70,6 +70,15 @@ namespace Presentador.ReporteCC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;span class=&quot;label label-success&quot;&gt;Activo&lt;/span&gt;.
+        /// </summary>
+        internal static string Activo {
+            get {
+                return ResourceManager.GetString("Activo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to alert alert-danger alert-dismissible.
         /// </summary>
         internal static string alertaError {
@@ -534,6 +543,15 @@ namespace Presentador.ReporteCC {
         internal static string FechaInicio {
             get {
                 return ResourceManager.GetString("FechaInicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;span class=&quot;label label-danger&quot;&gt;Inactivo&lt;/span&gt;.
+        /// </summary>
+        internal static string Inactivo {
+            get {
+                return ResourceManager.GetString("Inactivo", resourceCulture);
             }
         }
         

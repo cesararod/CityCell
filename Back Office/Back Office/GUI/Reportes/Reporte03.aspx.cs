@@ -12,23 +12,47 @@ using Contratos.Reportes;
 
 namespace Back_Office.GUI.Reportes
 {
-    public partial class Reporte02 : System.Web.UI.Page, IContratoReporte2
+    public partial class Reporte03 : System.Web.UI.Page, IContratoReporte3
     {
+        private string[] Substrings;
+        private string fecha;
+        private string fecha2;
         #region contrato
-
-        public DropDownList Estado
+        public string Fecha_Inicio
         {
             get
             {
-                return this.inputEstado;
+                Substrings = fecha_inicio.Value.ToString().Split('-');
+                fecha2 = Substrings[1] + '/' + Substrings[2] + '/' + Substrings[0];
+                return fecha2;
+            }
+            set { this.fecha_inicio.Value = value; }
+        }
+
+        public string Fecha_Fin
+        {
+            get
+            {
+                Substrings = fecha_fin.Value.ToString().Split('-');
+                fecha = Substrings[1] + '/' + Substrings[2] + '/' + Substrings[0];
+                return fecha;
+            }
+            set { this.fecha_fin.Value = value; }
+        }
+
+        public DropDownList categoria
+        {
+            get
+            {
+                return this.Categoria;
             }
             set
             {
-                this.inputEstado = value;
+                this.Categoria = value;
             }
         }
 
-        public string TablaReporte2
+        public string TablaReporte
         {
             get
             {
@@ -58,30 +82,19 @@ namespace Back_Office.GUI.Reportes
         #endregion
 
         #region presentador
-        PresentadorReporte2 _presentador;
+        PresentadorReporte3 _presentador;
 
-        public Reporte02()
+        public Reporte03()
         {
-            _presentador = new PresentadorReporte2(this);
+            _presentador = new PresentadorReporte3(this);
         }
         #endregion
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                //Esto ocurre cuando se modifica una factura, se muestra mensaje a usuario
-                string _estado = Request.QueryString[Recurso.estado];
-                if (_estado != null)
-                    _presentador.Alerta(_estado);
-            }
-            catch
-            {
-                //No hago nada, no es obligatorio el parametro
-            }
             if (!IsPostBack)
             {
-               // _presentador.CargarReporte();
+                
+                _presentador.CargarCategorias();
             }
         }
 

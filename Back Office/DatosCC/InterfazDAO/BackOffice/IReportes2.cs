@@ -9,7 +9,7 @@ namespace DatosCC.InterfazDAO.BackOffice
 {
     public interface IReportes2
     {
-        List<Entidad> ConsultarTodos();  
+        List<Entidad> ConsultarTodos(Entidad _parametro);  
     }
 }
 

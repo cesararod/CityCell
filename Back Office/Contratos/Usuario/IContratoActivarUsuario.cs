@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 
-namespace Contratos.Reportes
+namespace Contratos.Usuario
 {
-    public interface IContratoReporte2
+    public interface IContratoActivarUsuario
     {
-
-        DropDownList Estado { get; set; }
-        string TablaReporte2 { get; set; }
+        string UsuId { get; set; }
+        string activo { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }
         string alerta { set; }

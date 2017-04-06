@@ -79,6 +79,15 @@ namespace DatosCC.Reportes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Categoria.
+        /// </summary>
+        internal static string Categoria {
+            get {
+                return ResourceManager.GetString("Categoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ModificarPromocion.
         /// </summary>
         internal static string Changepromo {
@@ -115,6 +124,15 @@ namespace DatosCC.Reportes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ConsultaUsuario2.
+        /// </summary>
+        internal static string ConsultaUsuario2 {
+            get {
+                return ResourceManager.GetString("ConsultaUsuario2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ConsultaMarcaId.
         /// </summary>
         internal static string ConsultMarcaXId {
@@ -129,6 +147,15 @@ namespace DatosCC.Reportes {
         internal static string DeactivateMarca {
             get {
                 return ResourceManager.GetString("DeactivateMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   .
+        /// </summary>
+        internal static string espacio {
+            get {
+                return ResourceManager.GetString("espacio", resourceCulture);
             }
         }
         
@@ -165,6 +192,15 @@ namespace DatosCC.Reportes {
         internal static string FechaIni {
             get {
                 return ResourceManager.GetString("FechaIni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca.
+        /// </summary>
+        internal static string Marca {
+            get {
+                return ResourceManager.GetString("Marca", resourceCulture);
             }
         }
         
@@ -277,11 +313,38 @@ namespace DatosCC.Reportes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modelo.
+        /// </summary>
+        internal static string Modelo {
+            get {
+                return ResourceManager.GetString("Modelo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nombre.
         /// </summary>
         internal static string Nombre {
             get {
                 return ResourceManager.GetString("Nombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numero_Pedido.
+        /// </summary>
+        internal static string Numero_Pedido {
+            get {
+                return ResourceManager.GetString("Numero_Pedido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @categoria.
+        /// </summary>
+        internal static string ParamCategoria {
+            get {
+                return ResourceManager.GetString("ParamCategoria", resourceCulture);
             }
         }
         
@@ -412,6 +475,15 @@ namespace DatosCC.Reportes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Producto.
+        /// </summary>
+        internal static string Producto {
+            get {
+                return ResourceManager.GetString("Producto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Producto_id.
         /// </summary>
         internal static string ProductoID {
@@ -493,11 +565,164 @@ namespace DatosCC.Reportes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Estatus.
+        /// </summary>
+        internal static string status {
+            get {
+                return ResourceManager.GetString("status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SubTotal.
         /// </summary>
         internal static string SubTotal {
             get {
                 return ResourceManager.GetString("SubTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MontoTotalBs.
+        /// </summary>
+        internal static string Total {
+            get {
+                return ResourceManager.GetString("Total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Activo.
+        /// </summary>
+        internal static string UsuarioActivo {
+            get {
+                return ResourceManager.GetString("UsuarioActivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alto.
+        /// </summary>
+        internal static string UsuarioAlto {
+            get {
+                return ResourceManager.GetString("UsuarioAlto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ancho.
+        /// </summary>
+        internal static string UsuarioAncho {
+            get {
+                return ResourceManager.GetString("UsuarioAncho", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apellido.
+        /// </summary>
+        internal static string UsuarioApellido {
+            get {
+                return ResourceManager.GetString("UsuarioApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cedula.
+        /// </summary>
+        internal static string UsuarioCedula {
+            get {
+                return ResourceManager.GetString("UsuarioCedula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to celular.
+        /// </summary>
+        internal static string UsuarioCelular {
+            get {
+                return ResourceManager.GetString("UsuarioCelular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string UsuarioEmail {
+            get {
+                return ResourceManager.GetString("UsuarioEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha_Creacion.
+        /// </summary>
+        internal static string UsuarioFechaCre {
+            get {
+                return ResourceManager.GetString("UsuarioFechaCre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FechaNac.
+        /// </summary>
+        internal static string UsuarioFechaNac {
+            get {
+                return ResourceManager.GetString("UsuarioFechaNac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categoria_id.
+        /// </summary>
+        internal static string UsuariofKCategoria {
+            get {
+                return ResourceManager.GetString("UsuariofKCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca_Id.
+        /// </summary>
+        internal static string UsuarioFkMARCA {
+            get {
+                return ResourceManager.GetString("UsuarioFkMARCA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UsuId.
+        /// </summary>
+        internal static string UsuarioId {
+            get {
+                return ResourceManager.GetString("UsuarioId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        internal static string UsuarioNombre {
+            get {
+                return ResourceManager.GetString("UsuarioNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Peso.
+        /// </summary>
+        internal static string UsuarioPeso {
+            get {
+                return ResourceManager.GetString("UsuarioPeso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tele.
+        /// </summary>
+        internal static string UsuarioTelefono {
+            get {
+                return ResourceManager.GetString("UsuarioTelefono", resourceCulture);
             }
         }
     }

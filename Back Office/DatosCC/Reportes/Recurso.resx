@@ -264,4 +264,79 @@
   <data name="SubTotal" xml:space="preserve">
     <value>SubTotal</value>
   </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Marca" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="ParamCategoria" xml:space="preserve">
+    <value>@categoria</value>
+  </data>
+  <data name="espacio" xml:space="preserve">
+    <value>  </value>
+  </data>
+  <data name="Modelo" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="Numero_Pedido" xml:space="preserve">
+    <value>Numero_Pedido</value>
+  </data>
+  <data name="Producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="ConsultaUsuario2" xml:space="preserve">
+    <value>ConsultaUsuario2</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>MontoTotalBs</value>
+  </data>
+  <data name="UsuarioActivo" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="UsuarioAlto" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="UsuarioAncho" xml:space="preserve">
+    <value>Ancho</value>
+  </data>
+  <data name="UsuarioApellido" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="UsuarioCedula" xml:space="preserve">
+    <value>Cedula</value>
+  </data>
+  <data name="UsuarioCelular" xml:space="preserve">
+    <value>celular</value>
+  </data>
+  <data name="UsuarioEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UsuarioFechaCre" xml:space="preserve">
+    <value>Fecha_Creacion</value>
+  </data>
+  <data name="UsuarioFechaNac" xml:space="preserve">
+    <value>FechaNac</value>
+  </data>
+  <data name="UsuariofKCategoria" xml:space="preserve">
+    <value>Categoria_id</value>
+  </data>
+  <data name="UsuarioFkMARCA" xml:space="preserve">
+    <value>Marca_Id</value>
+  </data>
+  <data name="UsuarioId" xml:space="preserve">
+    <value>UsuId</value>
+  </data>
+  <data name="UsuarioNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="UsuarioPeso" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="UsuarioTelefono" xml:space="preserve">
+    <value>Tele</value>
+  </data>
 </root>

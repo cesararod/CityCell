@@ -113,6 +113,9 @@ namespace Presentador.UsuarioCC
                             + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()
                             + RecursoPresentadorUsuario.apellidous + ElUsuario.Apellido.ToString()
                             + RecursoPresentadorUsuario.cedulaus + ElUsuario.Cedula.ToString()
+                            + RecursoPresentadorUsuario.CloseBotonParametro
+                            + RecursoPresentadorUsuario.BotonAnular + ElUsuario.IdUser.ToString()
+                            + RecursoPresentadorUsuario.nombreus + ElUsuario.Activo.ToString()
                             + RecursoPresentadorUsuario.CloseBotonParametro;
                     }
                     else
@@ -125,6 +128,9 @@ namespace Presentador.UsuarioCC
                             + RecursoPresentadorUsuario.nombreus + ElUsuario.Nombre.ToString()
                             + RecursoPresentadorUsuario.apellidous + ElUsuario.Apellido.ToString()
                             + RecursoPresentadorUsuario.cedulaus + ElUsuario.Cedula.ToString() 
+                            + RecursoPresentadorUsuario.CloseBotonParametro
+                            + RecursoPresentadorUsuario.BotonAnular + ElUsuario.IdUser.ToString()
+                            + RecursoPresentadorUsuario.nombreus + ElUsuario.Activo.ToString()
                             + RecursoPresentadorUsuario.CloseBotonParametro;
                     }
                     vista.usuariosCreados += RecursoPresentadorUsuario.CloseTd;

@@ -50,7 +50,7 @@
                         <div class="form-group" runat="server">
                             <label for="InputModelo">Modelo</label> <label for="Requerido" style="color: red;">*</label>
                             <input runat="server" type="text" class="form-control" id="InputModelo" name="InputModelo" 
-                                placeholder="Introduzca el modelo del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca el modelo del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
                         <!--RIF-->
                         <div class="form-group" runat="server">
@@ -62,39 +62,39 @@
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputPrecio">Precio</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputPrecio">Precio (Bs)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="InputPrecio" name="InputPrecio" 
-                                placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">Bs
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="InputCantidad">Cantidad</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Cantidad" name="Cantidad" 
-                                placeholder="Introduzca Cantidad del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Cantidad del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputPeso">Peso</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputPeso">Peso (Kg)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Peso" name="Peso" 
-                                placeholder="Introduzca Peso del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Peso del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputAlto">Alto</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputAlto">Alto (Cm)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Alto" name="Alto" 
-                                placeholder="Introduzca Alto del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Alto del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputAncho">Ancho</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputAncho">Ancho (Cm)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Ancho" name="Ancho" 
-                                placeholder="Introduzca Ancho del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Ancho del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
 
                         <div class="form-group" runat="server">
-                            <label for="InputLargo">Largo</label><label for="Requerido" style="color: red;">*</label> 
+                            <label for="InputLargo">Largo (Cm)</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Largo" name="Largo" 
-                                placeholder="Introduzca Largo del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Largo del producto" maxlength="5" oninput="setCustomValidity('')" pattern="^[0-9]*$" required oninvalid="setCustomValidity('Campo inválido')">
                         </div>
                        
                         <div class="form-group" runat="server">

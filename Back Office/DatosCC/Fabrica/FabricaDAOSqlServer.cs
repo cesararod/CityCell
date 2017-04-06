@@ -85,6 +85,16 @@ namespace DatosCC.Fabrica
         {
             return new Reportes.DaoReporte2();
         }
+
+        static public IReportes crearDaoReportes3()
+        {
+            return new Reportes.DaoReporte3();
+        }
+
+        static public IReportes crearDaoReportes4()
+        {
+            return new Reportes.DaoReporte4();
+        }
         #endregion
     }
 }

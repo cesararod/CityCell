@@ -16,7 +16,7 @@ using LogicaCC.Fabrica;
 
 namespace Presentador.ReporteCC
 {
-    public class PresentadorReporte2
+    public class PresentadorReporte4
     {
         IContratoReporte2 vista;
 
@@ -24,7 +24,7 @@ namespace Presentador.ReporteCC
         /// Constructor de la clase, que recibe la vista
         /// </summary>
         /// <param name="vista"></param>
-        public PresentadorReporte2(IContratoReporte2 vista)
+        public PresentadorReporte4(IContratoReporte2 vista)
         {
             this.vista = vista;
         }
@@ -66,22 +66,43 @@ namespace Presentador.ReporteCC
                 Reporte ElReporte = new Reporte();
                 ElReporte.Estado_Id = int.Parse(vista.Estado.SelectedValue.ToString());
 
-                Comando<List<Entidad>> comando = LogicaCC.Fabrica.FabricaComandos.CrearConsultarReporte2(ElReporte);
+                Comando<List<Entidad>> comando = LogicaCC.Fabrica.FabricaComandos.CrearConsultarReporte4(ElReporte);
                 List<Entidad> reporte = comando.Ejecutar();
-
-                foreach (Reporte _ElReporte in reporte)
+                vista.TablaReporte2 = null;
+                foreach (Usuario ElUsuario in reporte)
                 {
 
                     vista.TablaReporte2 += Recurso.OpenTr;
-                    vista.TablaReporte2 += Recurso.OpenTD + _ElReporte.Nombre.ToString() + Recurso.espacio + _ElReporte.Apellido
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.IdUser.ToString()
                         + Recurso.CloseTd;
-                    vista.TablaReporte2 += Recurso.OpenTD + _ElReporte.Subtotal
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Nombre + Recurso.espacio + ElUsuario.Apellido
                         + Recurso.CloseTd;
-                    vista.TablaReporte2 += Recurso.OpenTD + _ElReporte.Ciudad
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Cedula
                         + Recurso.CloseTd;
-                    vista.TablaReporte2 += Recurso.OpenTD + _ElReporte.Fecha
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Fecha_Ingreso
                         + Recurso.CloseTd;
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Email
+                        + Recurso.CloseTd;
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Telefono
+                        + Recurso.CloseTd;
+                    vista.TablaReporte2 += Recurso.OpenTD + ElUsuario.Celular
+                        + Recurso.CloseTd;
+
+
+
+                    if (ElUsuario.Activo == 1)
+                    {
+                        vista.TablaReporte2 += Recurso.OpenTD + Recurso.Activo
+                        + Recurso.CloseTd;
+                    }
+                    else
+                    {
+                        vista.TablaReporte2 += Recurso.OpenTD + Recurso.Inactivo
+                        + Recurso.CloseTd;
+                    }
+                    vista.TablaReporte2 += Recurso.CloseTd;
                     vista.TablaReporte2 += Recurso.CloseTr;
+
                 }
 
             }

@@ -58,13 +58,13 @@
                         <div class="form-group" runat="server">
                             <label for="InputPrecio">Precio</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="InputPrecio" name="InputPrecio" 
-                                placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca el precio del producto" maxlength="10" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')" required>
                         </div>
 
                         <div class="form-group" runat="server">
                             <label for="InputCantidad">Cantidad</label><label for="Requerido" style="color: red;">*</label> 
                             <input runat="server" type="text" class="form-control" id="Cantidad" name="Cantidad" 
-                                placeholder="Introduzca Cantidad del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')">
+                                placeholder="Introduzca Cantidad del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')" required>
                         </div>
                        
                         <div class="form-group" runat="server">
