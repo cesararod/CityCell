@@ -228,6 +228,9 @@ namespace Presentador.ProductoCC
                             + RecursoPresentadorProducto.precioPr + ElProducto.Precio
                             + RecursoPresentadorProducto.descripcionPr + ElProducto.Descripcion
                             + RecursoPresentadorProducto.cantidadPr + ElProducto.Cantidad
+                            + RecursoPresentadorProducto.CloseBotonParametro
+                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.nombrePr + ElProducto.Activo.ToString()
                             + RecursoPresentadorProducto.CloseBotonParametro;
                     }
                     else
@@ -235,11 +238,13 @@ namespace Presentador.ProductoCC
                         vista.productosCreados +=
                             RecursoPresentadorProducto.BotonModif + ElProducto.IdProducto.ToString()
                             + RecursoPresentadorProducto.nombrePr + ElProducto.Nombre.ToString()
-                            /*
                             + RecursoPresentadorProducto.modeloPr + ElProducto.Modelo 
                             + RecursoPresentadorProducto.precioPr + ElProducto.Precio 
                             + RecursoPresentadorProducto.descripcionPr + ElProducto.Descripcion 
-                            + RecursoPresentadorProducto.cantidadPr + ElProducto.Cantidad*/
+                            + RecursoPresentadorProducto.cantidadPr + ElProducto.Cantidad
+                            + RecursoPresentadorProducto.CloseBotonParametro
+                            + RecursoPresentadorProducto.BotonAnular + ElProducto.IdProducto.ToString()
+                            + RecursoPresentadorProducto.nombrePr + ElProducto.Activo.ToString()
                             + RecursoPresentadorProducto.CloseBotonParametro;
                     }
                     vista.productosCreados += RecursoPresentadorProducto.CloseTd;

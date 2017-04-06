@@ -240,4 +240,10 @@
   <data name="Marca" xml:space="preserve">
     <value>Marca</value>
   </data>
+  <data name="ParamEstatus" xml:space="preserve">
+    <value>@activo</value>
+  </data>
+  <data name="ParamId1" xml:space="preserve">
+    <value>@idUsu</value>
+  </data>
 </root>

@@ -67,15 +67,6 @@ namespace Back_Office.GUI.Promocion {
         protected global::System.Web.UI.HtmlControls.HtmlInputText InputPrecio;
         
         /// <summary>
-        /// activoInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList activoInput;
-        
-        /// <summary>
         /// buttonGenerarCategoria control.
         /// </summary>
         /// <remarks>

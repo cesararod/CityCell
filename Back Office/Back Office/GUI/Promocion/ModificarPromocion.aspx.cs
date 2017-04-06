@@ -26,18 +26,6 @@ namespace Back_Office.GUI.Promocion
             set { this.IdPromocion.Value = value; }
         }
 
-        public DropDownList activo
-        {
-            get
-            {
-                return this.activoInput;
-            }
-            set
-            {
-                this.activoInput = value;
-            }
-        }
-
         public string precio
         {
             get { return this.InputPrecio.Value; }

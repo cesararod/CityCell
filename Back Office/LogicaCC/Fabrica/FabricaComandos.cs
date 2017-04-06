@@ -118,6 +118,17 @@ namespace LogicaCC.Fabrica
         }
 
         /// <summary>
+        /// metodo para crear comando que permite modificar un Usuario
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearActivarproducto(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoActivarProducto(usuario);
+            return respuesta;
+        }
+
+        /// <summary>
         /// metodo para crear comando que permite consultar todos los Productos
         /// </summary>
         /// <returns></returns>
@@ -196,6 +207,17 @@ namespace LogicaCC.Fabrica
         public static Comando<bool> CrearModificarPromocion(Entidad promocion)
         {
             Comando<bool> respuesta = new ComandoModificarPromocion(promocion);
+            return respuesta;
+        }
+
+        /// <summary>
+        /// metodo para crear comando que permite modificar un Usuario
+        /// </summary>
+        /// <param name="usuario">entidad sobre la cual se va a trabajar el comando</param>
+        /// <returns></returns>
+        public static Comando<bool> CrearActivarPromo(Entidad usuario)
+        {
+            Comando<bool> respuesta = new ComandoActivarPromo(usuario);
             return respuesta;
         }
 

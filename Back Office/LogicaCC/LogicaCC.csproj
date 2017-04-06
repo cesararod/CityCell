@@ -49,9 +49,11 @@
     <Compile Include="Comandos\Marca\ComandoAgregarMarca.cs" />
     <Compile Include="Comandos\Marca\ComandoConsultarMarca.cs" />
     <Compile Include="Comandos\Marca\ComandoModificarMarca.cs" />
+    <Compile Include="Comandos\Producto\ComandoActivarProducto.cs" />
     <Compile Include="Comandos\Producto\ComandoAgregaProducto.cs" />
     <Compile Include="Comandos\Producto\ComandoConsultarProducto.cs" />
     <Compile Include="Comandos\Producto\ComandoModificarProducto.cs" />
+    <Compile Include="Comandos\Promocion\ComandoActivarPromo.cs" />
     <Compile Include="Comandos\Promocion\ComandoAgregaPromocion.cs" />
     <Compile Include="Comandos\Promocion\ComandoConsultarPromocion.cs" />
     <Compile Include="Comandos\Promocion\ComandoModificarPromocion.cs" />

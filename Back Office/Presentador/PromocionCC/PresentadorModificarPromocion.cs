@@ -55,7 +55,6 @@ namespace Presentador.PromocionCC
 
                  laPromocion.Precio = int.Parse(vista.precio);
                  laPromocion.Id_Promo = int.Parse(vista.id_promocion.ToString());
-                 laPromocion.Activo = int.Parse(vista.activo.SelectedValue.ToString());
                  laPromocion.Fecha_Fin = DateTime.ParseExact(vista.Fecha_Fin, "MM/dd/yyyy", CultureInfo.InvariantCulture);
                  laPromocion.Fecha_Inicio = DateTime.ParseExact(vista.Fecha_Inicio, "MM/dd/yyyy", CultureInfo.InvariantCulture);
                  //laPromocion.tipoMoneda;

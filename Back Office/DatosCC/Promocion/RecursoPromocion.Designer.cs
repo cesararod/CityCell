@@ -115,11 +115,11 @@ namespace DatosCC.Promocion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DesactivarMarca.
+        ///   Looks up a localized string similar to DesactivarPromocion.
         /// </summary>
-        internal static string DeactivateMarca {
+        internal static string Deactivate {
             get {
-                return ResourceManager.GetString("DeactivateMarca", resourceCulture);
+                return ResourceManager.GetString("Deactivate", resourceCulture);
             }
         }
         

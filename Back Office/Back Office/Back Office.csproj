@@ -146,9 +146,11 @@
     <Content Include="GUI\Marca\AgregarMarca.aspx" />
     <Content Include="GUI\Marca\ConsultarMarca.aspx" />
     <Content Include="GUI\Marca\ModificarMarca.aspx" />
+    <Content Include="GUI\Producto\ActivarProducto.aspx" />
     <Content Include="GUI\Producto\AgregaProducto.aspx" />
     <Content Include="GUI\Producto\ConsultarProducto.aspx" />
     <Content Include="GUI\Producto\ModificarProducto.aspx" />
+    <Content Include="GUI\Promocion\ActivarPromocion.aspx" />
     <Content Include="GUI\Promocion\AgregaPromocion.aspx" />
     <Content Include="GUI\Promocion\ConsultarPromocion.aspx" />
     <Content Include="GUI\Promocion\ModificarPromocion.aspx" />
@@ -1088,6 +1090,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUIMarca.resx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Producto\ActivarProducto.aspx.cs">
+      <DependentUpon>ActivarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Producto\ActivarProducto.aspx.designer.cs">
+      <DependentUpon>ActivarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Producto\AgregaProducto.aspx.cs">
       <DependentUpon>AgregaProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1113,6 +1122,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceGUIProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Promocion\ActivarPromocion.aspx.cs">
+      <DependentUpon>ActivarPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Promocion\ActivarPromocion.aspx.designer.cs">
+      <DependentUpon>ActivarPromocion.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Promocion\AgregaPromocion.aspx.cs">
       <DependentUpon>AgregaPromocion.aspx</DependentUpon>

@@ -73,7 +73,7 @@
                                     <th>Fecha Inicio</th>
                                     <th>Fecha Fin</th>
                                     <th>Fecha Creacion</th>
-                                    <th>Precio</th>
+                                    <th>Precio (Bs)</th>
                                     <th>Activo</th>
                                     <th style="text-align: center;">Acciones</th>
                                 </tr>

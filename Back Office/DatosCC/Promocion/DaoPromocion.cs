@@ -104,9 +104,6 @@ namespace DatosCC.Promocion
                     ((Dominio.Entidades.Promocion)LaPromocion).Fecha_Fin.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoPromocion.ParamStatus, SqlDbType.Int, _LaPromocion.Activo.ToString(), false);
-                parameters.Add(theParam);
-
                 //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
                 EjecutarStoredProcedure(RecursoPromocion.Changepromo, parameters);
 
@@ -140,19 +137,19 @@ namespace DatosCC.Promocion
         public bool Desactivar(Entidad LaPromocion)
         {
             List<Parametro> parameters = new List<Parametro>();
-            Dominio.Entidades.Promocion _LaPromocion = (Dominio.Entidades.Promocion)LaPromocion;
+            Dominio.Entidades.Usuario _LaPromocion = (Dominio.Entidades.Usuario)LaPromocion;
             Parametro theParam = new Parametro();
 
             try
             {
-                theParam = new Parametro(RecursoPromocion.ParamId, SqlDbType.Int, _LaPromocion.Id.ToString(), false);
+                theParam = new Parametro(RecursoPromocion.ParamId, SqlDbType.Int, _LaPromocion.IdUser.ToString(), false);
                 parameters.Add(theParam);
 
                 theParam = new Parametro(RecursoPromocion.ParamStatus, SqlDbType.Int, _LaPromocion.Activo.ToString(), false);
                 parameters.Add(theParam);
 
                 //Se manda a ejecutar el stored procedure M8_ModificarFactura y todos los parametros que recibe
-                EjecutarStoredProcedure(RecursoPromocion.DeactivateMarca, parameters);
+                EjecutarStoredProcedure(RecursoPromocion.Deactivate, parameters);
 
             }
             catch (FormatException ex)

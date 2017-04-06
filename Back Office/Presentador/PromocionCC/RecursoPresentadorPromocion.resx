@@ -145,10 +145,10 @@
     <value>Bolivares</value>
   </data>
   <data name="BotonAnular" xml:space="preserve">
-    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="AnularFacturaM8.aspx?idFac=</value>
+    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="ActivarPromocion.aspx?idPromo=</value>
   </data>
   <data name="BotonAnularInhabilitado" xml:space="preserve">
-    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" disabled="disabled" href="AnularFacturaM8.aspx?idFac=</value>
+    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" disabled="disabled" href="ActivarPromocion.aspx?idPromo=</value>
   </data>
   <data name="BotonFactura" xml:space="preserve">
     <value>&lt;a title="Factura"  class="btn btn-info glyphicon glyphicon-file" href="Factura.aspx?idFac=</value>
@@ -368,5 +368,8 @@
   </data>
   <data name="valueCombo" xml:space="preserve">
     <value>value</value>
+  </data>
+  <data name="estado" xml:space="preserve">
+    <value>&amp;estado=</value>
   </data>
 </root>

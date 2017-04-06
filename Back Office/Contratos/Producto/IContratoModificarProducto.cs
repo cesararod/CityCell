@@ -14,8 +14,7 @@ namespace Contratos.Producto
         string modelo { get; set; }
         string descripcion { get; set; }
         string precio { get; set; }
-        string cantidad { get; set; }       
-        DropDownList activo { get; set; }
+        string cantidad { get; set; }  
         string alertaClase { set; }
         string alertaRol { set; }
         string alerta { set; }

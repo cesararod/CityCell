@@ -135,8 +135,8 @@
   <data name="ConsultMarcaXId" xml:space="preserve">
     <value>ConsultaMarcaId</value>
   </data>
-  <data name="DeactivateMarca" xml:space="preserve">
-    <value>DesactivarMarca</value>
+  <data name="Deactivate" xml:space="preserve">
+    <value>DesactivarPromocion</value>
   </data>
   <data name="PromoActivo" xml:space="preserve">
     <value>Activo</value>

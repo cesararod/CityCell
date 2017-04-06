@@ -50,7 +50,6 @@ namespace Presentador.ProductoCC
              {
                  Producto elProducto = (Producto)FabricaEntidades.ProductoVacio();
                  elProducto.IdProducto = int.Parse(vista.id_Producto.ToString());
-                 elProducto.Activo = int.Parse(vista.activo.SelectedValue.ToString());
                  elProducto.Cantidad = int.Parse(vista.cantidad.ToString());
                  elProducto.Precio = float.Parse(vista.precio.ToString());
                  elProducto.Nombre = vista.nombre;

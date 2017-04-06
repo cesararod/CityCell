@@ -48,6 +48,7 @@
     <Compile Include="Marca\IContratoAgregarMarca.cs" />
     <Compile Include="Marca\IContratoConsultarMarca.cs" />
     <Compile Include="Marca\IContratoModificarMarca.cs" />
+    <Compile Include="Producto\IContratoActivar.cs" />
     <Compile Include="Producto\IContratoAgregarProducto.cs" />
     <Compile Include="Producto\IContratoConsultarProducto.cs" />
     <Compile Include="Producto\IContratoModificarProducto.cs" />

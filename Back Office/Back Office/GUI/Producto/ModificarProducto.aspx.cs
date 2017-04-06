@@ -23,18 +23,6 @@ namespace Back_Office.GUI.Producto
             set { this.IdProducto.Value = value; }
         }
 
-        public DropDownList activo
-        {
-            get
-            {
-                return Activo;
-            }
-            set
-            {
-                Activo = value;
-            }
-        }
-
         public string nombre
         {
             get { return this.InputNombre.Value; }

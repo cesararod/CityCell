@@ -151,7 +151,7 @@ namespace Presentador.ProductoCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;AnularFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;ActivarProducto.aspx?sku=.
         /// </summary>
         internal static string BotonAnular {
             get {

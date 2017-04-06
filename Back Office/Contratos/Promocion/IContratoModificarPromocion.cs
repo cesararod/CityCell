@@ -12,7 +12,6 @@ namespace Contratos.Promocion
         string precio { get; set; }
         string Fecha_Inicio { get; set; }
         string Fecha_Fin { get; set; }
-        DropDownList activo { get; set; }
         string alertaClase { set; }
         string alertaRol { set; }
         string alerta { set; }

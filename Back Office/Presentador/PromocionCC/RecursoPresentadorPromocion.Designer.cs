@@ -142,7 +142,7 @@ namespace Presentador.PromocionCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;AnularFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; href=&quot;ActivarPromocion.aspx?idPromo=.
         /// </summary>
         internal static string BotonAnular {
             get {
@@ -151,7 +151,7 @@ namespace Presentador.PromocionCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; disabled=&quot;disabled&quot; href=&quot;AnularFacturaM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Anular&quot;  class=&quot;btn btn-danger glyphicon glyphicon-ban-circle&quot; disabled=&quot;disabled&quot; href=&quot;ActivarPromocion.aspx?idPromo=.
         /// </summary>
         internal static string BotonAnularInhabilitado {
             get {
@@ -489,6 +489,15 @@ namespace Presentador.PromocionCC {
         internal static string espacio {
             get {
                 return ResourceManager.GetString("espacio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;estado=.
+        /// </summary>
+        internal static string estado {
+            get {
+                return ResourceManager.GetString("estado", resourceCulture);
             }
         }
         

@@ -66,14 +66,7 @@
                             <input runat="server" type="text" class="form-control" id="Cantidad" name="Cantidad" 
                                 placeholder="Introduzca Cantidad del producto" maxlength="3" oninput="setCustomValidity('')" pattern="^[0-9]*$" oninvalid="setCustomValidity('Campo inválido')" required>
                         </div>
-                       
-                        <div class="form-group" runat="server">
-                            <label for="labelActivo">Activo</label> <label for="Requerido" style="color: red;">*</label>
-                            <asp:DropDownList id="Activo" name="Activo" class="form-control"  runat="server">
-                                    <asp:ListItem Selected="True" Value="1"> Si </asp:ListItem>
-                                    <asp:ListItem Value="0"> No </asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
+                                               
                      </div><!-- /.box-body -->
 
                     <div class="box-footer" runat="server">

@@ -94,6 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorMarca.resx</DependentUpon>
     </Compile>
+    <Compile Include="ProductoCC\PresentadorActivar.cs" />
     <Compile Include="ProductoCC\PresentadorAgregarProducto.cs" />
     <Compile Include="ProductoCC\PresentadorConsultaProductos.cs" />
     <Compile Include="ProductoCC\PresentadorModificarProducto.cs" />
@@ -102,6 +103,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecursoPresentadorProducto.resx</DependentUpon>
     </Compile>
+    <Compile Include="PromocionCC\PresentadorActivar.cs" />
     <Compile Include="PromocionCC\PresentadorAgregarPromocion.cs" />
     <Compile Include="PromocionCC\PresentadorConsultaPromocion.cs" />
     <Compile Include="PromocionCC\PresentadorModificarPromocion.cs" />

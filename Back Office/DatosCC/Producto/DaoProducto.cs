@@ -116,15 +116,11 @@ namespace DatosCC.Producto
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoProducto.ParamIdProd, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).IdProducto.ToString(),
+                theParam = new Parametro("@id_producto", SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).IdProducto.ToString(),
                     false);
                 parameters.Add(theParam); 
                 
                 theParam = new Parametro(RecursoProducto.ParamNombre, SqlDbType.VarChar, ((Dominio.Entidades.Producto)ElProducto).Nombre, 
-                    false);
-                parameters.Add(theParam);
-
-                theParam = new Parametro(RecursoProducto.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Activo.ToString(),
                     false);
                 parameters.Add(theParam);
 
@@ -183,10 +179,10 @@ namespace DatosCC.Producto
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoProducto.ParamId, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Id.ToString(), false);
+                theParam = new Parametro(RecursoProducto.ParamId1, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElProducto).IdUser.ToString(), false);
                 parameters.Add(theParam);
 
-                theParam = new Parametro(RecursoProducto.Paramstatus, SqlDbType.Int, ((Dominio.Entidades.Producto)ElProducto).Activo.ToString(),
+                theParam = new Parametro(RecursoProducto.ParamEstatus, SqlDbType.Int, ((Dominio.Entidades.Usuario)ElProducto).Activo.ToString(),
                     false);
                 parameters.Add(theParam);
                 

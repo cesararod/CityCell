@@ -187,6 +187,15 @@ namespace DatosCC.Producto {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @activo.
+        /// </summary>
+        internal static string ParamEstatus {
+            get {
+                return ResourceManager.GetString("ParamEstatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @fecha_creacion.
         /// </summary>
         internal static string ParamFechaCreacion {
@@ -210,6 +219,15 @@ namespace DatosCC.Producto {
         internal static string ParamId {
             get {
                 return ResourceManager.GetString("ParamId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @idUsu.
+        /// </summary>
+        internal static string ParamId1 {
+            get {
+                return ResourceManager.GetString("ParamId1", resourceCulture);
             }
         }
         

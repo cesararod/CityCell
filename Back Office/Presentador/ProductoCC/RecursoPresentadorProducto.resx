@@ -145,7 +145,7 @@
     <value>Bolivares</value>
   </data>
   <data name="BotonAnular" xml:space="preserve">
-    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="AnularFacturaM8.aspx?idFac=</value>
+    <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" href="ActivarProducto.aspx?sku=</value>
   </data>
   <data name="BotonAnularInhabilitado" xml:space="preserve">
     <value>&lt;a title="Anular"  class="btn btn-danger glyphicon glyphicon-ban-circle" disabled="disabled" href="AnularFacturaM8.aspx?idFac=</value>
