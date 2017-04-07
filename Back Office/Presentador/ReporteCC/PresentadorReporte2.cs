@@ -69,6 +69,7 @@ namespace Presentador.ReporteCC
                 Comando<List<Entidad>> comando = LogicaCC.Fabrica.FabricaComandos.CrearConsultarReporte2(ElReporte);
                 List<Entidad> reporte = comando.Ejecutar();
 
+                vista.TablaReporte2 = null;
                 foreach (Reporte _ElReporte in reporte)
                 {
 
