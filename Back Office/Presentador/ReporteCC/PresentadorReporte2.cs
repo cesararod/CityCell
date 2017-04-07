@@ -70,6 +70,7 @@ namespace Presentador.ReporteCC
                 List<Entidad> reporte = comando.Ejecutar();
 
                 vista.TablaReporte2 = null;
+                float count = 0;
                 foreach (Reporte _ElReporte in reporte)
                 {
 
@@ -83,7 +84,13 @@ namespace Presentador.ReporteCC
                     vista.TablaReporte2 += Recurso.OpenTD + _ElReporte.Fecha
                         + Recurso.CloseTd;
                     vista.TablaReporte2 += Recurso.CloseTr;
+                    count = count + _ElReporte.Subtotal;
                 }
+                vista.TablaReporte2 += Recurso.OpenTr;
+                vista.TablaReporte2 += Recurso.OpenTD + "Total Acumulado " + Recurso.CloseTd;
+
+                
+                vista.TablaReporte2 += Recurso.OpenTD + count + Recurso.CloseTd + Recurso.CloseTr;
 
             }
             catch (Exception ex)
