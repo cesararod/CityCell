@@ -81,7 +81,7 @@
 
                     <div class="box-footer" runat="server">
                         
-                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Buscar" OnClientClick="return confirm('¿Seguro que desea generar esta factura?');" OnClick="buttonBuscar"></asp:Button>
+                            <asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-primary" type="submit" runat="server" Text="Buscar"  OnClick="buttonBuscar"></asp:Button>
                     </div>
 
                     <div class="box-body table-responsive no-padding">
