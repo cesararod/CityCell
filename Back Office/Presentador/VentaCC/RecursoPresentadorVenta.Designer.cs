@@ -223,7 +223,7 @@ namespace Presentador.VentaCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Correo&quot; class=&quot;btn btn-default glyphicon glyphicon-envelope&quot; href=&quot;EnviarCorreoM8.aspx?idFac=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Correo&quot; class=&quot;btn btn-default glyphicon glyphicon-envelope&quot; href=&quot;EnviarCorreo.aspx?idven=.
         /// </summary>
         internal static string BotonMail {
             get {
@@ -232,11 +232,11 @@ namespace Presentador.VentaCC {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;a title=&quot;Mail&quot; class=&quot;btn btn-primary glyphicon glyphicon-envelope&quot; href=&quot;EnviarCorreoM8.aspx?idCompania=.
+        ///   Looks up a localized string similar to &lt;a title=&quot;Mail&quot; class=&quot;btn btn-primary glyphicon glyphicon-envelope&quot; disabled=&quot;disabled&quot; href=&quot;EnviarCorreo.aspx?idven=.
         /// </summary>
-        internal static string BotonMail1 {
+        internal static string BotonMailinabilitado {
             get {
-                return ResourceManager.GetString("BotonMail1", resourceCulture);
+                return ResourceManager.GetString("BotonMailinabilitado", resourceCulture);
             }
         }
         
@@ -831,6 +831,24 @@ namespace Presentador.VentaCC {
         internal static string saludos {
             get {
                 return ResourceManager.GetString("saludos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;status=.
+        /// </summary>
+        internal static string status {
+            get {
+                return ResourceManager.GetString("status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;asp:Button ID=&quot;buttonGenerarCategoria&quot; Style=&quot;margin-top: 5%&quot; class=&quot;btn btn-default glyphicon glyphicon-envelope&quot; type=&quot;submit&quot; runat=&quot;server&quot;  OnClick=&quot;&quot;&gt;&lt;/asp:Button&gt;.
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
         

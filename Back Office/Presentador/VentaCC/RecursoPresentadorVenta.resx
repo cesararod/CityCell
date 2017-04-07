@@ -172,10 +172,10 @@
     <value>&lt;a title="Involucrados" class="btn btn-info glyphicon glyphicon-user"&gt;&lt;/a&gt;</value>
   </data>
   <data name="BotonMail" xml:space="preserve">
-    <value>&lt;a title="Correo" class="btn btn-default glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idFac=</value>
+    <value>&lt;a title="Correo" class="btn btn-default glyphicon glyphicon-envelope" href="EnviarCorreo.aspx?idven=</value>
   </data>
-  <data name="BotonMail1" xml:space="preserve">
-    <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" href="EnviarCorreoM8.aspx?idCompania=</value>
+  <data name="BotonMailinabilitado" xml:space="preserve">
+    <value>&lt;a title="Mail" class="btn btn-primary glyphicon glyphicon-envelope" disabled="disabled" href="EnviarCorreo.aspx?idven=</value>
   </data>
   <data name="BotonModif" xml:space="preserve">
     <value>&lt;a title="Modificar"  class="btn btn-primary glyphicon glyphicon-pencil" href="ModificarVenta.aspx?idven=</value>
@@ -386,5 +386,11 @@
   </data>
   <data name="mail" xml:space="preserve">
     <value>&amp;correo=</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>&amp;status=</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>&lt;asp:Button ID="buttonGenerarCategoria" Style="margin-top: 5%" class="btn btn-default glyphicon glyphicon-envelope" type="submit" runat="server"  OnClick=""&gt;&lt;/asp:Button&gt;</value>
   </data>
 </root>

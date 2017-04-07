@@ -10,6 +10,7 @@ namespace Dominio.Entidades
     {
         #region Atributos
 
+        private int _idventa;
         private String _asunto;
         private String _destinatario;
         private String _mensaje;
@@ -19,6 +20,11 @@ namespace Dominio.Entidades
 
         #region Get´s Set´s
 
+        public int Idventa
+        {
+            get { return _idventa; }
+            set { _idventa = value; }
+        }
         /// <summary>
         /// Metodo para setear y obtener el asunto del correo
         /// </summary>
@@ -68,6 +74,7 @@ namespace Dominio.Entidades
         public DatosCorreo()
             : base()
         {
+            this._idventa = 0;
             this._asunto = String.Empty;
             this._destinatario = String.Empty;
             this._mensaje = String.Empty;
@@ -80,9 +87,20 @@ namespace Dominio.Entidades
         /// <param name="asunto"></param>
         /// <param name="destinatario"></param>
         /// <param name="mensaje"></param>
+        public DatosCorreo(string asunto, string destinatario, string mensaje, int idventa)
+            : base()
+        {
+            this._idventa = idventa;
+            this._asunto = asunto;
+            this._destinatario = destinatario;
+            this._mensaje = mensaje;
+            this._adjunto = String.Empty;
+        }
+
         public DatosCorreo(string asunto, string destinatario, string mensaje)
             : base()
         {
+            
             this._asunto = asunto;
             this._destinatario = destinatario;
             this._mensaje = mensaje;

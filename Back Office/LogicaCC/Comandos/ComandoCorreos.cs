@@ -7,6 +7,9 @@ using ExceptionCity;
 using Dominio;
 using Dominio.Entidades;
 using System.Net.Mail;
+using DatosCC.Venta;
+using DatosCC.Fabrica;
+using DatosCC.InterfazDAO;
 
 namespace LogicaCC.Comandos
 {
@@ -75,8 +78,9 @@ namespace LogicaCC.Comandos
                 }
 
                 cr.mandarCorreo(mnsj);
-
-                return true;
+                IDao dao = FabricaDAOSqlServer.crearDaoVenta();
+                bool respuesta = dao.Desactivar(this.LaEntidad);
+                return respuesta;
             }
             catch (ArgumentNullException ex)
             {

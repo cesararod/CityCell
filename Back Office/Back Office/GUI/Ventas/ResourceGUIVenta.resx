@@ -232,7 +232,7 @@
     <value>ConsultarFacturaM8.aspx</value>
   </data>
   <data name="volver" xml:space="preserve">
-    <value>ConsultarFacturaM8.aspx</value>
+    <value>ConsultarVenta.aspx</value>
   </data>
   <data name="volverAnular" xml:space="preserve">
     <value>ConsultarFacturaM8.aspx?estado=2</value>
@@ -248,5 +248,14 @@
   </data>
   <data name="ventaProd" xml:space="preserve">
     <value>ventaProd</value>
+  </data>
+  <data name="correo" xml:space="preserve">
+    <value>correo</value>
+  </data>
+  <data name="idven" xml:space="preserve">
+    <value>idven</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>status</value>
   </data>
 </root>

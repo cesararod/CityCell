@@ -133,7 +133,7 @@
     <value>ConsultaUsuarioId</value>
   </data>
   <data name="DeactivateUsuario" xml:space="preserve">
-    <value>DesactivarUsuario</value>
+    <value>CorreoEnviado</value>
   </data>
   <data name="MensajeOtro" xml:space="preserve">
     <value>Error no reconocido</value>
@@ -242,5 +242,8 @@
   </data>
   <data name="VentaCorreo" xml:space="preserve">
     <value>correo</value>
+  </data>
+  <data name="ParamIdCom" xml:space="preserve">
+    <value>@idcom</value>
   </data>
 </root>

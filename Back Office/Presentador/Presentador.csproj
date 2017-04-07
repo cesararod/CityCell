@@ -131,6 +131,7 @@
       <DependentUpon>RecursoPresentadorUsuario.resx</DependentUpon>
     </Compile>
     <Compile Include="VentaCC\PresentadorConsultaVenta.cs" />
+    <Compile Include="VentaCC\PresentadorCorreo.cs" />
     <Compile Include="VentaCC\PresentadorModificarVenta.cs" />
     <Compile Include="VentaCC\RecursoPresentadorVenta.Designer.cs">
       <AutoGen>True</AutoGen>

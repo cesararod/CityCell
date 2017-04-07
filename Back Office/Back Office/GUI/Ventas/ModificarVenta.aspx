@@ -53,13 +53,11 @@
                             <label for="InputEstatus">Estatus de la compra</label> 
                             <asp:DropDownList runat="server" class="form-control" id="estatus" name="estatus">
                                     <asp:ListItem Selected="True" Value="1"> Pagado </asp:ListItem>
-                                    <asp:ListItem Value="0"> Enviado </asp:ListItem>
+                                    <asp:ListItem Value="3"> Enviado </asp:ListItem>
                                     <asp:ListItem Value="2"> Confirmado </asp:ListItem>
-                                    <asp:ListItem Value="3"> Fraude </asp:ListItem>
-                                    <asp:ListItem Value="4"> Devuelto </asp:ListItem>
-                                    <asp:ListItem Value="5"> Pendiente </asp:ListItem>
-                                    <asp:ListItem Value="6"> Pendiente Recordado </asp:ListItem>
-                                    <asp:ListItem Value="7"> Fallido</asp:ListItem>
+                                    <asp:ListItem Value="4"> Fraude </asp:ListItem>
+                                    <asp:ListItem Value="5"> Devuelto </asp:ListItem>
+                                    <asp:ListItem Value="6"> Recibido </asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         

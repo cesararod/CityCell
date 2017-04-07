@@ -164,6 +164,7 @@
     <Content Include="GUI\Usuario\ModificarUsuario.aspx" />
     <Content Include="GUI\Ventas\AgregarVenta.aspx" />
     <Content Include="GUI\Ventas\ConsultarVenta.aspx" />
+    <Content Include="GUI\Ventas\EnviarCorreo.aspx" />
     <Content Include="GUI\Ventas\ModificarVenta.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
@@ -1235,6 +1236,13 @@
     </Compile>
     <Compile Include="GUI\Ventas\ConsultarVenta.aspx.designer.cs">
       <DependentUpon>ConsultarVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Ventas\EnviarCorreo.aspx.cs">
+      <DependentUpon>EnviarCorreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Ventas\EnviarCorreo.aspx.designer.cs">
+      <DependentUpon>EnviarCorreo.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Ventas\ModificarVenta.aspx.cs">
       <DependentUpon>ModificarVenta.aspx</DependentUpon>

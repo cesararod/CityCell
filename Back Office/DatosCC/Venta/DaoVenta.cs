@@ -169,11 +169,7 @@ namespace DatosCC.Venta
             {
                 List<Parametro> parameters = new List<Parametro>();
 
-                theParam = new Parametro(RecursoVenta.ParamId, SqlDbType.Int, ((Dominio.Entidades.Producto)LaVenta).Id.ToString(), false);
-                parameters.Add(theParam);
-
-                theParam = new Parametro(RecursoVenta.ParamNombre, SqlDbType.Int, ((Dominio.Entidades.Producto)LaVenta).Activo.ToString(),
-                    false);
+                theParam = new Parametro(RecursoVenta.ParamIdCom, SqlDbType.Int, ((Dominio.Entidades.DatosCorreo)LaVenta).Idventa.ToString(), false);
                 parameters.Add(theParam);
 
                 List<Resultado> results = EjecutarStoredProcedure(RecursoVenta.DeactivateUsuario, parameters);
@@ -301,16 +297,17 @@ namespace DatosCC.Venta
                     string _iva = row[RecursoVenta.VentaIva].ToString();
                     string _precioEnvio = row[RecursoVenta.VentasPEnvio].ToString();
                     string _estatus = row[RecursoVenta.VentaEstatus].ToString();
-                    string _dirFact = row[RecursoVenta.VentaDirFact].ToString();
-                    string _dirEnv = row[RecursoVenta.VentaDirEnv].ToString();
+                    //string _dirFact = row[RecursoVenta.VentaDirFact].ToString();
+                    //string _dirEnv = row[RecursoVenta.VentaDirEnv].ToString();
                     string _numPago = row[RecursoVenta.VentaNPago].ToString();
-                    string _operador = row[RecursoVenta.VentaOperador].ToString();
+                    //string _operador = row[RecursoVenta.VentaOperador].ToString();
                     string _modelo = row[RecursoVenta.VentaModelo].ToString();
                     string _mail = row[RecursoVenta.VentaCorreo].ToString();
+                    string _notificacion = row["Notificacion"].ToString();
 
 
                     Dominio.Entidades.Venta _LaVenta = new Dominio.Entidades.Venta(_id, _nombre, _apellido, _tracking, _subtotal, _pedido,
-                                              _fechaCreacion, _iva, _precioEnvio, _estatus, _dirFact, _dirEnv, _numPago, _operador, _producto, _modelo, _marca, _mail);
+                                              _fechaCreacion, _iva, _precioEnvio, _estatus, _numPago, _producto, _modelo, _marca, _mail, _notificacion);
                     
                     listVenta.Add(_LaVenta);
                 }

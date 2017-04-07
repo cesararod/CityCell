@@ -12,6 +12,7 @@ using Dominio.Fabrica;
 using Dominio.Entidades;
 using ExceptionCity;
 using LogicaCC.Fabrica;
+
 namespace Presentador.VentaCC
 {
     public class PresentadorConsultaVenta
@@ -81,41 +82,63 @@ namespace Presentador.VentaCC
                         + RecursoPresentadorVenta.CloseTd;
                     vista.ventasCreados += RecursoPresentadorVenta.OpenTD + LaVenta.Estatus
                         + RecursoPresentadorVenta.CloseTd;
-
-                    //Equals cero para factura "Por Pagar"
-                    /* if (LaVenta.Activo.Equals(0))
-                     {
-                         vista.ventasCreados += RecursoPresentadorVenta.OpenTD + RecursoPresentadorVenta.porActivar
-                             + RecursoPresentadorVenta.CloseTd;
-
-                     }
-                     //Equals uno para factura "Pagada"
-                     else if (LaVenta.Activo.Equals(1))
-                     {
-                         activada = true;
-                         vista.ventasCreados += RecursoPresentadorVenta.OpenTD + RecursoPresentadorVenta.Activada
-                             + RecursoPresentadorVenta.CloseTd;
-                     }*/
-
+                    
                     //Acciones de cada contacto
                     vista.ventasCreados += RecursoPresentadorVenta.OpenTD;
 
                     if (activada == true)
                     {
+                        if(LaVenta.Notificacion == "0")
+                        {
                         vista.ventasCreados +=
                             RecursoPresentadorVenta.BotonModif + LaVenta.Id_Venta.ToString() + RecursoPresentadorVenta.usuario +
                             LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido + 
                             RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio +
                             LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo + 
                             RecursoPresentadorVenta.mail + LaVenta.Mail
+                            + RecursoPresentadorVenta.CloseBotonParametro
+                            + RecursoPresentadorVenta.BotonMail + LaVenta.Id_Venta.ToString()
+                            + RecursoPresentadorVenta.mail + LaVenta.Mail
+                            + RecursoPresentadorVenta.status + LaVenta.Estatus
                             + RecursoPresentadorVenta.CloseBotonParametro;
+                        }
+                        if (LaVenta.Notificacion == "1")
+                        {
+                            vista.ventasCreados +=
+                                RecursoPresentadorVenta.BotonModif + LaVenta.Id_Venta.ToString() + RecursoPresentadorVenta.usuario +
+                                LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido +
+                                RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio +
+                                LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo +
+                                RecursoPresentadorVenta.mail + LaVenta.Mail
+                                + RecursoPresentadorVenta.CloseBotonParametro
+                                + RecursoPresentadorVenta.BotonMailinabilitado + LaVenta.Id_Venta.ToString()
+                            + RecursoPresentadorVenta.mail + LaVenta.Mail
+                                + RecursoPresentadorVenta.CloseBotonParametro;
+                        }
+                        
                     }
                     else
                     {
+                        if(LaVenta.Notificacion == "0")
+                        {
                         vista.ventasCreados +=
                             RecursoPresentadorVenta.BotonModif + LaVenta.Id_Venta.ToString() + RecursoPresentadorVenta.usuario +
                             LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido + RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio + LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo
+                            + RecursoPresentadorVenta.CloseBotonParametro
+                            + RecursoPresentadorVenta.BotonMail + LaVenta.Id_Venta.ToString()
+                            + RecursoPresentadorVenta.mail + LaVenta.Mail
+                            + RecursoPresentadorVenta.status + LaVenta.Estatus
                             + RecursoPresentadorVenta.CloseBotonParametro;
+                         }
+                        if (LaVenta.Notificacion == "1")
+                        {
+                            vista.ventasCreados +=
+                            RecursoPresentadorVenta.BotonModif + LaVenta.Id_Venta.ToString() + RecursoPresentadorVenta.usuario +
+                            LaVenta.Nombre + RecursoPresentadorVenta.espacio + LaVenta.Apellido + RecursoPresentadorVenta.producto + LaVenta.Marca + RecursoPresentadorVenta.espacio + LaVenta.Producto + RecursoPresentadorVenta.espacio + LaVenta.Modelo
+                            + RecursoPresentadorVenta.CloseBotonParametro
+                            + RecursoPresentadorVenta.BotonMailinabilitado + LaVenta.Id_Venta.ToString()
+                            + RecursoPresentadorVenta.CloseBotonParametro;
+                        }
                     }
                     vista.ventasCreados += RecursoPresentadorVenta.CloseTd;
                     vista.ventasCreados += RecursoPresentadorVenta.CloseTr;
@@ -165,5 +188,7 @@ namespace Presentador.VentaCC
                 return false;
             }
         }
+
+
     }
 }

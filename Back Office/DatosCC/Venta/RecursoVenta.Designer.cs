@@ -106,7 +106,7 @@ namespace DatosCC.Venta {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DesactivarUsuario.
+        ///   Looks up a localized string similar to CorreoEnviado.
         /// </summary>
         internal static string DeactivateUsuario {
             get {
@@ -192,6 +192,15 @@ namespace DatosCC.Venta {
         internal static string ParamId {
             get {
                 return ResourceManager.GetString("ParamId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @idcom.
+        /// </summary>
+        internal static string ParamIdCom {
+            get {
+                return ResourceManager.GetString("ParamIdCom", resourceCulture);
             }
         }
         

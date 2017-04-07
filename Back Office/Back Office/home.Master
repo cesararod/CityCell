@@ -109,13 +109,13 @@
           <ul class="sidebar-menu">
             <li class="header">Menu Principal</li>
             <li id="" class="treeview"><a href="../Usuario/ConsultarUsuario.aspx"> Usuarios</a></li>
-            <li id="" class="treeview"><a href="../Reportes/Reporte04.aspx"> - Usuarios y sus estatus</a></li>
+            <li id="" class="treeview"><a href="../Reportes/Reporte04.aspx">-Usuarios y sus estatus</a></li>
             <li id="" class="treeview"><a href="../Producto/ConsultarProducto.aspx"> Productos</a></li>
             <li id="" class="treeview"><a href="../Promocion/ConsultarPromocion.aspx"> Promocion</a></li>
             <li id="" class="treeview"><a href="../Ventas/ConsultarVenta.aspx"> Ventas</a></li>
-            <li id="" class="treeview"><a href="../Reportes/Reporte01.aspx"> - Ventas por estado y rango de tiempo</a></li>
-            <li id="" class="treeview"><a href="../Reportes/Reporte02.aspx"> - Ventas y sus estatus</a></li>
-            <li id="" class="treeview"><a href="../Reportes/Reporte03.aspx"> - Ventas por categoria y rango de tiempo</a></li>
+            <li id="" class="treeview"><a href="../Reportes/Reporte01.aspx">-Ventas por estado y rango de tiempo</a></li>
+            <li id="" class="treeview"><a href="../Reportes/Reporte02.aspx">-Ventas y sus estatus</a></li>
+            <li id="" class="treeview"><a href="../Reportes/Reporte03.aspx">-Ventas por categoria y rango de tiempo</a></li>
             <li id="" class="treeview"><a href="../Categoria/ConsultarCategoria.aspx"> Categoria</a></li>
             <li id="" class="treeview"><a href="../Marca/ConsultarMarca.aspx"> Marca</a></li>
             <li id="" class="treeview"><a href="../Garantia/ConsultarGarantia.aspx"> Garantia</a></li>

@@ -123,6 +123,18 @@ namespace Dominio.Fabrica
         }
 
         /// <summary>
+        /// Constructor de datos correo con todos sus atributos.
+        /// </summary>
+        /// <param name="asunto">Asunto del mensaje</param>
+        /// <param name="destinatario">Destinatarios del mensaje</param>
+        /// <param name="mensaje">Contenido del mensaje</param>
+        /// <param name="adjunto">Archivo adjunto del mensaje</param>
+        public static Entidad ObtenerDatosCorreo(string asunto, string destinatario, string mensaje, int adjunto)
+        {
+            return new DatosCorreo(asunto, destinatario, mensaje, adjunto);
+        }
+
+        /// <summary>
         /// Metodo que crea la instancia de la entidad Reporte
         /// </summary>
         /// <returns>Retorna la instancia a la clase Reporte</returns>

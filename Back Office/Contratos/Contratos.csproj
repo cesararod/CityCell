@@ -63,6 +63,7 @@
     <Compile Include="Usuario\IContratoConsultarUsuario.cs" />
     <Compile Include="Usuario\IContratoModificarUsuario.cs" />
     <Compile Include="Venta\IContratoConsultarVenta.cs" />
+    <Compile Include="Venta\IContratoCorreo.cs" />
     <Compile Include="Venta\IContratoModificarVenta.cs" />
   </ItemGroup>
   <ItemGroup>

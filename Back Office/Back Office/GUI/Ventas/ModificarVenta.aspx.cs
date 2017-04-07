@@ -99,6 +99,7 @@ namespace Back_Office.GUI.Ventas
                 //this.activo = Request.QueryString[ResourceGUICategoria.idP];
                 //this.destacado = Request.QueryString[ResourceGUICategoria.amount];
                 Presentador.Modificar();
+                Response.Redirect(ResourceGUIVenta.volver);
                 //Response.Redirect(ResourceGUICategoria.Factura + _presentador.ResourceGUICategoria().ToString());
             }
             catch (Exception ex)

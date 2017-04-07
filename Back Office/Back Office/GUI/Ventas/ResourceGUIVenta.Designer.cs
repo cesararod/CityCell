@@ -277,6 +277,15 @@ namespace Back_Office.GUI.Ventas {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to correo.
+        /// </summary>
+        internal static string correo {
+            get {
+                return ResourceManager.GetString("correo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to dd/MM/yyyy.
         /// </summary>
         internal static string dateTipe {
@@ -336,6 +345,15 @@ namespace Back_Office.GUI.Ventas {
         internal static string idUsu {
             get {
                 return ResourceManager.GetString("idUsu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to idven.
+        /// </summary>
+        internal static string idven {
+            get {
+                return ResourceManager.GetString("idven", resourceCulture);
             }
         }
         
@@ -412,6 +430,15 @@ namespace Back_Office.GUI.Ventas {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to status.
+        /// </summary>
+        internal static string status {
+            get {
+                return ResourceManager.GetString("status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ventaProd.
         /// </summary>
         internal static string ventaProd {
@@ -421,7 +448,7 @@ namespace Back_Office.GUI.Ventas {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConsultarFacturaM8.aspx.
+        ///   Looks up a localized string similar to ConsultarVenta.aspx.
         /// </summary>
         internal static string volver {
             get {

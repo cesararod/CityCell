@@ -44,7 +44,7 @@
                         <div class="form-group" runat="server">
                             <label for="InputNombre">Nombre</label> <label for="Requerido" style="color: red;">*</label>
                             <input runat="server" type="text" class="form-control" id="InputNombre" name="InputNombre" 
-                                placeholder="Introduzca nombre del producto" maxlength="50" oninput="setCustomValidity('')" pattern="^[a-zA-Z0-9_.-]*$" required oninvalid="setCustomValidity('Campo inválido o vacío')">
+                                placeholder="Introduzca nombre del producto" maxlength="50" oninput="setCustomValidity('')" required oninvalid="setCustomValidity('Campo inválido o vacío')">
                         </div>
                         <!--Acronimo-->
                         <div class="form-group" runat="server">

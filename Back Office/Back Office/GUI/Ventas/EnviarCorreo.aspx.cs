@@ -10,24 +10,33 @@ using LogicaCC;
 using Presentador.VentaCC;
 using Contratos.Venta;
 
-
 namespace Back_Office.GUI.Ventas
 {
-    public partial class ConsultarVenta : System.Web.UI.Page, IContratoConsultarVenta
+    public partial class EnviarCorreo : System.Web.UI.Page, IContratoCorreo
     {
         #region contrato
-
-        public string ventasCreados
+        public string VenId
         {
             get
             {
-                return this.tabla.Text;
+                return this.IdUsuario.Value;
             }
-
             set
             {
-                this.tabla.Text = value;
+                this.IdUsuario.Value = value;
             }
+        }
+
+        public string Status
+        {
+            get { return this.Activo.Value; }
+            set { this.Activo.Value = value; }
+        }
+
+        public string Mail
+        {
+            get { return this.mail.Value; }
+            set { this.mail.Value = value; }
         }
 
         public string alertaClase
@@ -47,31 +56,21 @@ namespace Back_Office.GUI.Ventas
         #endregion
 
         #region presentador
-        PresentadorConsultaVenta _presentador;
+        PresentadorCorreo _presentador;
 
-        public ConsultarVenta()
+        public EnviarCorreo()
         {
-            _presentador = new PresentadorConsultaVenta(this);
+            _presentador = new PresentadorCorreo(this);
         }
         #endregion  
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                //Esto ocurre cuando se modifica una factura, se muestra mensaje a usuario
-                string _estado = Request.QueryString[ResourceGUIVenta.estado];
-                if (_estado != null)
-                    _presentador.Alerta(_estado);
-            }
-            catch
-            {
-                //No hago nada, no es obligatorio el parametro
-            }
-            if (!IsPostBack)
-            {
-                _presentador.CargarConsultar();
-            }
+            VenId = Request.QueryString[ResourceGUIVenta.idven];
+            Status = Request.QueryString[ResourceGUIVenta.status];
+            Mail = Request.QueryString[ResourceGUIVenta.correo];
+            _presentador.enviarCorreo();
+            Response.Redirect(ResourceGUIVenta.volver);
         }
     }
 }
